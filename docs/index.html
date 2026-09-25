@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stanford CS 人机共学课程包 · Human + Agent Learning Packs</title>
+<style>
+  :root{--bg:#0b1220;--panel:#121c30;--line:rgba(255,255,255,.12);--text:#eef4ff;--muted:#a9bad6;--accent:#6fe2c2;--accent2:#66c7ff;--warn:#ffc96a}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 600px at 20% -10%,#16233d,#0b1220 60%);color:var(--text);
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+  .wrap{max-width:1060px;margin:0 auto;padding:48px 20px 72px}
+  h1{font-size:34px;margin:0 0 10px;letter-spacing:.5px}
+  h2{font-size:21px;margin:38px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .lead{color:var(--muted);max-width:820px}
+  .pill{display:inline-block;margin:0 8px 8px 0;padding:4px 10px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--accent2)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px;margin-top:14px}
+  a.card{display:block;padding:16px 18px;background:var(--panel);border:1px solid var(--line);border-radius:16px;
+         text-decoration:none;color:var(--text);transition:transform .12s ease,border-color .12s ease}
+  a.card:hover{transform:translateY(-2px);border-color:var(--accent)}
+  .code{font-weight:700;color:var(--accent);font-size:17px}
+  .ttl{color:var(--text);margin:2px 0 6px;font-size:14px}
+  .meta{color:var(--muted);font-size:13px}
+  .track{display:inline-block;font-size:12px;color:var(--warn);margin-left:8px}
+  pre{background:#0d1729;border:1px solid var(--line);border-radius:12px;padding:14px;overflow:auto;color:#cfe8ff}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
+  th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left}
+  th{color:var(--muted);font-weight:600}
+  footer{margin-top:44px;color:var(--muted);font-size:13px}
+  code{background:rgba(255,255,255,.06);padding:1px 5px;border-radius:5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Stanford CS 人机共学课程包</h1>
+  <p class="lead">把 Stanford 公开计算机课程做成 <b>人和 Agent 共用</b> 的学习包：可交互 HTML（人读）+ 结构化 IR / 概念库（Agent 读）+ <code>AGENTS.md</code>（使用规则）。同一套概念身份，两种投影。</p>
+  <p>
+    <span class="pill">11 门课程全通过多轮独立核验</span>
+    <span class="pill">概念状态 TEACHING_RECONSTRUCTION</span>
+    <span class="pill">讲座证据区分 official / derived</span>
+    <span class="pill">168 门课程总目录与依赖图</span>
+  </p>
+
+  <h2>课程包一览</h2>
+  <div class="grid">
+    <a class="card" href="./courses/cs106a/"><div class="code">CS106A</div><div class="ttl">Programming Methodology（SEE Java 版）<span class="track">编程基础</span></div><div class="meta">9 周 · 43 概念 · 26 讲</div></a>
+    <a class="card" href="./courses/cs106b/"><div class="code">CS106B</div><div class="ttl">Programming Abstractions（SEE C++ 版）<span class="track">编程基础</span></div><div class="meta">9 周 · 28 概念 · 20 讲</div></a>
+    <a class="card" href="./courses/cs107/"><div class="code">CS107</div><div class="ttl">Programming Paradigms（SEE 版）<span class="track">系统基础</span></div><div class="meta">9 周 · 30 概念 · 18 讲</div></a>
+    <a class="card" href="./courses/cs109/"><div class="code">CS109</div><div class="ttl">Probability for Computer Scientists · Autumn 2022<span class="track">概率统计</span></div><div class="meta">9 周 · 35 概念 · 20 讲</div></a>
+    <a class="card" href="./courses/cs221/"><div class="code">CS221</div><div class="ttl">Artificial Intelligence · Autumn 2021<span class="track">AI 基础</span></div><div class="meta">9 周 · 32 概念 · 16 讲</div></a>
+    <a class="card" href="./courses/cs224n/"><div class="code">CS224N</div><div class="ttl">NLP with Deep Learning · Winter 2021<span class="track">自然语言处理</span></div><div class="meta">9 周 · 34 概念 · 18 讲</div></a>
+    <a class="card" href="./courses/cs224w/"><div class="code">CS224W</div><div class="ttl">Machine Learning with Graphs · Autumn 2021<span class="track">图机器学习</span></div><div class="meta">9 周 · 28 概念 · 19 讲</div></a>
+    <a class="card" href="./courses/cs229/"><div class="code">CS229</div><div class="ttl">Machine Learning · Spring 2022<span class="track">机器学习</span></div><div class="meta">9 周 · 61 概念 · 14 讲</div></a>
+    <a class="card" href="./courses/cs230/"><div class="code">CS230</div><div class="ttl">Deep Learning · Autumn 2025<span class="track">深度学习</span></div><div class="meta">9 周 · 60 概念 · 9 讲</div></a>
+    <a class="card" href="./courses/cs336/"><div class="code">CS336</div><div class="ttl">Language Modeling from Scratch · Spring 2025<span class="track">大模型工程</span></div><div class="meta">9 周 · 90 概念 · 17 讲</div></a>
+    <a class="card" href="./courses/cs25/"><div class="code">CS25</div><div class="ttl">Transformers United（seminar）<span class="track">前沿研讨</span></div><div class="meta">5 主题聚类 · 59 概念 · 54 talks</div></a>
+  </div>
+
+  <h2>建议学习路径</h2>
+  <pre>编程基础   CS106A → CS106B → CS107
+数学与 AI  CS109 → CS221 / CS229 / CS224N / CS224W
+深度学习   CS230
+大模型     CS336
+前沿研讨   CS25</pre>
+
+  <h2>每个包含什么</h2>
+  <table>
+    <tr><th>文件</th><th>用途</th><th>读者</th></tr>
+    <tr><td><code>*_interactive_*.html</code></td><td>单文件交互课程：周导航、概念抽屉、Human/Agent 双视图、小测与进度</td><td>人</td></tr>
+    <tr><td><code>course_ir.json</code></td><td>课程结构：周次、目标、失败模式、小测、Agent 契约、讲次证据</td><td>Agent</td></tr>
+    <tr><td><code>concepts.json</code></td><td>canonical 概念库：定义 / 为何重要 / 失效条件 / 例子 / 关系 / 周次</td><td>人 + Agent</td></tr>
+    <tr><td><code>AGENTS.md</code></td><td>使用规则：版本边界、证据语义、能力判定、升级条件</td><td>Agent</td></tr>
+    <tr><td><code>package_manifest.json</code></td><td>全文件 bytes + sha256（可校验）</td><td>机器</td></tr>
+  </table>
+
+  <h2>证据与诚实边界</h2>
+  <p class="lead">每个包标注素材绑定：<code>active_recent</code>（2023 年后的官方公开播放列表）或 <code>archive_official</code>（官方历史最佳版本）。讲座/talk 条目区分 <code>official: true</code>（逐字官方标题）与 <code>official: false</code>（主题派生标签）。概念状态统一 <code>TEACHING_RECONSTRUCTION</code>：教学重构，<b>不是</b> Stanford 逐字讲义，无官方隶属关系。</p>
+
+  <h2>校验自己的副本</h2>
+  <pre>python3 tools/verify_pack.py docs/courses/cs336</pre>
+  <p class="lead">检查 manifest 的 bytes/sha256、HTML 内嵌 JSON 与独立文件是否逐字段一致、概念字段完整性、周↔概念双向一致、关系目标可解析、模板句骨架命中数。</p>
+
+  <footer>
+    仓库：<a href="https://github.com/guohongbin-git/stanford-cs-learning-packs" style="color:var(--accent2)">guohongbin-git/stanford-cs-learning-packs</a>
+    · 完整 QA 资产（逐页截图 / contact sheet / full-page 渲染）见 <a href="https://github.com/guohongbin-git/stanford-cs-learning-packs/releases/tag/v2.2" style="color:var(--accent2)">Release v2.2</a>
+    · 素材版权归 Stanford 及其讲者，详见 NOTICE.md
+  </footer>
+</div>
+</body>
+</html>
