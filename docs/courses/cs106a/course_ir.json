@@ -1,0 +1,724 @@
+{
+  "course": "CS106A",
+  "title": "Programming Methodology",
+  "term": "archive_official",
+  "target_offering": "SEE CS106A Java",
+  "material_status": "archive_official",
+  "weeks": [
+    {
+      "id": "w1",
+      "week": 1,
+      "label": "Week 1",
+      "title": "Karel、控制流与程序分解",
+      "question": "如何通过Karel建立程序执行和控制流程思维？",
+      "why": "Karel将抽象代码转化为可观察动作，是程序设计入门基础。",
+      "objectives": [
+        "掌握Karel世界状态建模",
+        "编写条件与循环控制程序",
+        "使用方法拆解复杂任务"
+      ],
+      "concepts": [
+        "Karel the Robot",
+        "Control Flow",
+        "Method Decomposition",
+        "Variable Scope",
+        "Boolean Logic"
+      ],
+      "pitfalls": [
+        "忽略机器人初始状态",
+        "循环条件导致无限执行",
+        "方法职责划分混乱"
+      ],
+      "quiz": {
+        "q": "程序设计的关键是什么？",
+        "choices": [
+          "理解问题并验证实现",
+          "只复制代码",
+          "忽略测试"
+        ],
+        "correct": 0,
+        "explain": "程序需要设计和验证。"
+      },
+      "agent": {
+        "goal": "辅助CS106A学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释代码概念"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 2,
+          "title": "Karel Commands, Methods, and Loops",
+          "official": true
+        },
+        {
+          "number": 3,
+          "title": "Decomposition and Pre/Post-Conditions",
+          "official": true
+        },
+        {
+          "number": 6,
+          "title": "Boolean Expressions, Scope, Control Statements",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Methodology",
+      "model_nodes": [
+        "Karel the Robot",
+        "Control Flow",
+        "Method Decomposition",
+        "Variable Scope",
+        "Boolean Logic"
+      ],
+      "part": "Part 1",
+      "assignment_ties": [
+        "CS106A assignment 1"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106A 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "用Karel机器人执行放置网球和穿越街道任务练习控制逻辑。"
+    },
+    {
+      "id": "w2",
+      "week": 2,
+      "label": "Week 2",
+      "title": "数组、字符串与文件",
+      "question": "如何用数组和字符串处理结构化数据？",
+      "why": "数组字符串训练数据组织能力，是后续算法基础。",
+      "objectives": [
+        "掌握数组索引访问",
+        "实现字符串搜索修改操作",
+        "处理常见数据遍历任务"
+      ],
+      "concepts": [
+        "Array",
+        "ArrayList",
+        "String Manipulation",
+        "File I/O"
+      ],
+      "pitfalls": [
+        "数组越界访问",
+        "字符串不可变误用",
+        "循环边界计算错误"
+      ],
+      "quiz": {
+        "q": "程序设计的关键是什么？",
+        "choices": [
+          "理解问题并验证实现",
+          "只复制代码",
+          "忽略测试"
+        ],
+        "correct": 0,
+        "explain": "程序需要设计和验证。"
+      },
+      "agent": {
+        "goal": "辅助CS106A学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释代码概念"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 13,
+          "title": "String Processing and Tokenizers",
+          "official": true
+        },
+        {
+          "number": 15,
+          "title": "Files, Exceptions, and I/O",
+          "official": true
+        },
+        {
+          "number": 16,
+          "title": "Arrays and Array Operations",
+          "official": true
+        },
+        {
+          "number": 17,
+          "title": "Multidimensional Arrays and ArrayList",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Methodology",
+      "model_nodes": [
+        "Array",
+        "ArrayList",
+        "String Manipulation",
+        "File I/O"
+      ],
+      "part": "Part 2",
+      "assignment_ties": [
+        "CS106A assignment 2"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106A 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "保存一组学生成绩并按位置读取。"
+    },
+    {
+      "id": "w3",
+      "week": 3,
+      "label": "Week 3",
+      "title": "调试与面向对象设计",
+      "question": "如何通过调试定位程序逻辑错误？",
+      "why": "调试方法决定程序开发效率和代码可靠性。",
+      "objectives": [
+        "使用调试工具追踪变量变化",
+        "设计测试发现错误",
+        "分析程序执行路径"
+      ],
+      "concepts": [
+        "Debugging",
+        "Object-Oriented Design",
+        "Class",
+        "Inheritance",
+        "Interface"
+      ],
+      "pitfalls": [
+        "只测试正常输入",
+        "忽略边界情况",
+        "依赖打印替代系统调试"
+      ],
+      "quiz": {
+        "q": "程序设计的关键是什么？",
+        "choices": [
+          "理解问题并验证实现",
+          "只复制代码",
+          "忽略测试"
+        ],
+        "correct": 0,
+        "explain": "程序需要设计和验证。"
+      },
+      "agent": {
+        "goal": "辅助CS106A学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释代码概念"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 9,
+          "title": "Writing Your Own Class, Constructor, Visibility",
+          "official": true
+        },
+        {
+          "number": 10,
+          "title": "Extending a Class, Overriding Methods, Interfaces",
+          "official": true
+        },
+        {
+          "number": 18,
+          "title": "Debugging Approaches and the Eclipse Debugger",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Methodology",
+      "model_nodes": [
+        "Debugging",
+        "Object-Oriented Design",
+        "Class",
+        "Inheritance",
+        "Interface"
+      ],
+      "part": "Part 3",
+      "assignment_ties": [
+        "CS106A assignment 3"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106A 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "使用调试器追踪循环变量变化。"
+    },
+    {
+      "id": "w4",
+      "week": 4,
+      "label": "Week 4",
+      "title": "多态、图形界面与事件",
+      "question": "如何利用OOP组织大型Java程序？",
+      "why": "对象设计帮助管理复杂程序状态和行为关系。",
+      "objectives": [
+        "设计类与对象关系",
+        "使用封装保护状态",
+        "理解继承和接口结构"
+      ],
+      "concepts": [
+        "Polymorphism",
+        "Graphics Program",
+        "Event Handler",
+        "Exception Handling"
+      ],
+      "pitfalls": [
+        "类职责过多",
+        "继承层次混乱",
+        "暴露内部数据状态"
+      ],
+      "quiz": {
+        "q": "程序设计的关键是什么？",
+        "choices": [
+          "理解问题并验证实现",
+          "只复制代码",
+          "忽略测试"
+        ],
+        "correct": 0,
+        "explain": "程序需要设计和验证。"
+      },
+      "agent": {
+        "goal": "辅助CS106A学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释代码概念"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 10,
+          "title": "Interfaces and Overriding Methods",
+          "official": true
+        },
+        {
+          "number": 11,
+          "title": "Event-Driven Programs: Mouse and Keyboard Events",
+          "official": true
+        },
+        {
+          "number": 15,
+          "title": "Exceptions and Call-by-Reference Objects",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Methodology",
+      "model_nodes": [
+        "Polymorphism",
+        "Graphics Program",
+        "Event Handler",
+        "Exception Handling"
+      ],
+      "part": "Part 4",
+      "assignment_ties": [
+        "CS106A assignment 4"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106A 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "使用Shape接口绘制不同图形。"
+    },
+    {
+      "id": "w5",
+      "week": 5,
+      "label": "Week 5",
+      "title": "算法分析与测试",
+      "question": "如何让图形程序响应用户事件？",
+      "why": "事件驱动模型连接程序逻辑与用户交互。",
+      "objectives": [
+        "创建Graphics对象绘制界面",
+        "处理鼠标键盘事件",
+        "设计交互组件响应"
+      ],
+      "concepts": [
+        "Algorithm Analysis",
+        "Big O Notation",
+        "Testing"
+      ],
+      "pitfalls": [
+        "事件监听未注册",
+        "坐标计算错误",
+        "界面状态同步失败"
+      ],
+      "quiz": {
+        "q": "程序设计的关键是什么？",
+        "choices": [
+          "理解问题并验证实现",
+          "只复制代码",
+          "忽略测试"
+        ],
+        "correct": 0,
+        "explain": "程序需要设计和验证。"
+      },
+      "agent": {
+        "goal": "辅助CS106A学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释代码概念"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 23,
+          "title": "Searching, Sorting and Algorithmic Efficiency",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Methodology",
+      "model_nodes": [
+        "Algorithm Analysis",
+        "Big O Notation",
+        "Testing"
+      ],
+      "part": "Part 5",
+      "assignment_ties": [
+        "CS106A assignment 5"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106A 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "比较两种Java排序程序处理大量整数的性能"
+    },
+    {
+      "id": "w6",
+      "week": 6,
+      "label": "Week 6",
+      "title": "封装、方法机制与集合",
+      "question": "如何比较算法效率并验证程序正确性？",
+      "why": "算法分析和测试支撑可靠程序开发。",
+      "objectives": [
+        "分析算法复杂度",
+        "编写单元测试",
+        "识别性能瓶颈"
+      ],
+      "concepts": [
+        "Encapsulation",
+        "Constructor",
+        "Static Method",
+        "Parameter Passing",
+        "Return Value",
+        "HashMap and Map Collections",
+        "Iterator"
+      ],
+      "pitfalls": [
+        "只关注功能正确",
+        "忽略运行规模",
+        "测试覆盖不足"
+      ],
+      "quiz": {
+        "q": "程序设计的关键是什么？",
+        "choices": [
+          "理解问题并验证实现",
+          "只复制代码",
+          "忽略测试"
+        ],
+        "correct": 0,
+        "explain": "程序需要设计和验证。"
+      },
+      "agent": {
+        "goal": "辅助CS106A学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释代码概念"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 8,
+          "title": "Information Hiding, Parameter Passing, Instance vs Local Variables",
+          "official": true
+        },
+        {
+          "number": 9,
+          "title": "Constructors and the this Keyword",
+          "official": true
+        },
+        {
+          "number": 19,
+          "title": "A Map, HashMap, Collection Hierarchy and Iterator",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Methodology",
+      "model_nodes": [
+        "Encapsulation",
+        "Constructor",
+        "Static Method",
+        "Parameter Passing",
+        "Return Value"
+      ],
+      "part": "Part 6",
+      "assignment_ties": [
+        "CS106A assignment 6"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106A 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "设计BankAccount类隐藏余额修改细节"
+    },
+    {
+      "id": "w7",
+      "week": 7,
+      "label": "Week 7",
+      "title": "类型系统、控制台与查找排序",
+      "question": "如何设计可维护的数据抽象结构？",
+      "why": "集合和抽象接口提升程序复用能力。",
+      "objectives": [
+        "理解Map集合操作",
+        "使用接口设计模块",
+        "管理对象之间关系"
+      ],
+      "concepts": [
+        "Reference Type",
+        "Primitive Type",
+        "Casting",
+        "Console Output",
+        "Searching and Sorting"
+      ],
+      "pitfalls": [
+        "依赖具体实现",
+        "接口设计混乱",
+        "数据封装失效"
+      ],
+      "quiz": {
+        "q": "程序设计的关键是什么？",
+        "choices": [
+          "理解问题并验证实现",
+          "只复制代码",
+          "忽略测试"
+        ],
+        "correct": 0,
+        "explain": "程序需要设计和验证。"
+      },
+      "agent": {
+        "goal": "辅助CS106A学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释代码概念"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 5,
+          "title": "Variables, Data Types and Graphics Coordinates",
+          "official": true
+        },
+        {
+          "number": 6,
+          "title": "Type Casting, Constants and Operators",
+          "official": true
+        },
+        {
+          "number": 23,
+          "title": "Linear and Binary Search, Selection and Radix Sort",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Methodology",
+      "model_nodes": [
+        "Reference Type",
+        "Primitive Type",
+        "Casting",
+        "Console Output"
+      ],
+      "part": "Part 7",
+      "assignment_ties": [
+        "CS106A assignment 7"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106A 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "使用String引用指向文本对象进行处理"
+    },
+    {
+      "id": "w8",
+      "week": 8,
+      "label": "Week 8",
+      "title": "图形系统、事件监听与 Swing",
+      "question": "如何处理Java类型系统和程序扩展？",
+      "why": "类型机制保证大型程序安全演化。",
+      "objectives": [
+        "区分基本类型引用类型",
+        "使用转换操作",
+        "处理异常情况"
+      ],
+      "concepts": [
+        "Graphics Object",
+        "Coordinate System",
+        "Mouse Listener",
+        "Keyboard Listener",
+        "Data Abstraction",
+        "Swing Components"
+      ],
+      "pitfalls": [
+        "错误类型转换",
+        "空引用异常",
+        "忽略异常传播"
+      ],
+      "quiz": {
+        "q": "程序设计的关键是什么？",
+        "choices": [
+          "理解问题并验证实现",
+          "只复制代码",
+          "忽略测试"
+        ],
+        "correct": 0,
+        "explain": "程序需要设计和验证。"
+      },
+      "agent": {
+        "goal": "辅助CS106A学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释代码概念"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 5,
+          "title": "Graphics Coordinates and the GObject Hierarchy",
+          "official": true
+        },
+        {
+          "number": 11,
+          "title": "Responding to Mouse and Keyboard Events",
+          "official": true
+        },
+        {
+          "number": 20,
+          "title": "Swing Interactor Hierarchy and Creating Interactors",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Methodology",
+      "model_nodes": [
+        "Graphics Object",
+        "Coordinate System",
+        "Mouse Listener",
+        "Keyboard Listener",
+        "Data Abstraction"
+      ],
+      "part": "Part 8",
+      "assignment_ties": [
+        "CS106A assignment 8"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106A 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "使用Graphics绘制CS106A窗口中的图案"
+    },
+    {
+      "id": "w9",
+      "week": 9,
+      "label": "Week 9",
+      "title": "代码风格、文档与并发",
+      "question": "如何形成规范的软件开发习惯？",
+      "why": "代码风格文档和并发基础连接真实开发。",
+      "objectives": [
+        "编写清晰文档",
+        "维护统一代码风格",
+        "理解并发执行风险"
+      ],
+      "concepts": [
+        "Code Style",
+        "Documentation",
+        "API Usage",
+        "Threads and Concurrency"
+      ],
+      "pitfalls": [
+        "缺少注释说明",
+        "共享状态未保护",
+        "线程行为不可预测"
+      ],
+      "quiz": {
+        "q": "程序设计的关键是什么？",
+        "choices": [
+          "理解问题并验证实现",
+          "只复制代码",
+          "忽略测试"
+        ],
+        "correct": 0,
+        "explain": "程序需要设计和验证。"
+      },
+      "agent": {
+        "goal": "辅助CS106A学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释代码概念"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 9,
+          "title": "JavaDoc and Documentation",
+          "official": true
+        },
+        {
+          "number": 25,
+          "title": "Concurrency: Thread, Runnable and Shared Data",
+          "official": true
+        },
+        {
+          "number": 26,
+          "title": "Standard Java Libraries and JAR Files",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Methodology",
+      "model_nodes": [
+        "Code Style",
+        "Documentation",
+        "API Usage"
+      ],
+      "part": "Part 9",
+      "assignment_ties": [
+        "CS106A assignment 9"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106A 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "按照Java命名规范编写类和方法"
+    }
+  ]
+}

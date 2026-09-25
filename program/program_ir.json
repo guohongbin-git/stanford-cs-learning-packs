@@ -1,0 +1,6143 @@
+{
+  "schema_version": "0.5",
+  "program_id": "stanford_cs_program",
+  "title": "Stanford Computer Science Human–Agent Co-learning Program Inventory",
+  "as_of": "2026-09-24",
+  "scope": {
+    "included": "Substantive CS-coded courses numbered below 400 that are present in current/recent official Stanford CS department schedules, plus active catalog courses needed for prerequisite continuity. Includes undergraduate and graduate lecture/project courses and selected cross-listed CS offerings.",
+    "excluded": "ACE/problem-solving labs, independent study/research registration, CPT, TGR, administrative seminars/departmental lecture series, and courses numbered 400+; these can be added in a later archival/research layer.",
+    "catalog_reference": "https://explorecourses.stanford.edu/m_search?filter-catalognumber-CS=on&filter-coursestatus-Active=on&q=CS",
+    "schedule_references": [
+      "https://www.cs.stanford.edu/academics-courses-schedule-autumn-quarter",
+      "https://www.cs.stanford.edu/course-schedule-winter-quarter",
+      "https://www.cs.stanford.edu/course-schedule-spring-quarter",
+      "https://www.cs.stanford.edu/course-schedule-summer-quarter"
+    ],
+    "anti_hallucination_policy": "Course code/title must have an official Stanford schedule/catalog/course-site evidence URL. Unknown public-video status is unverified rather than guessed."
+  },
+  "evidence_status_enum": [
+    "SOURCE_CONFIRMED",
+    "TEACHING_RECONSTRUCTION",
+    "HYPOTHESIS"
+  ],
+  "courses": [
+    {
+      "code": "CS7",
+      "title": "Personal Finance for Engineers",
+      "level": "CS100_below_intro",
+      "track": "Interdisciplinary",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%207",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS10N",
+      "title": "Computer Play: An Unconventional Introduction to CS and EE",
+      "level": "CS100_below_intro",
+      "track": "Foundations",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2010N",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS11SI",
+      "title": "How to Make VR: Introduction to Virtual Reality Design and Development",
+      "level": "CS100_below_intro",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2011SI",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS21SI",
+      "title": "AI for Social Good",
+      "level": "CS100_below_intro",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2021SI",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS22A",
+      "title": "The Social & Economic Impact of Artificial Intelligence",
+      "level": "CS100_below_intro",
+      "track": "AI & Society",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2022A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS24",
+      "title": "Minds and Machines",
+      "level": "CS100_below_intro",
+      "track": "Foundations",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2024",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS25",
+      "title": "Transformers United V6",
+      "level": "CS100_below_intro",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2025",
+      "public_materials": {
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM",
+        "syllabus_url": "https://web.stanford.edu/class/cs25/",
+        "assignments_public": true,
+        "other_video": "https://web.stanford.edu/class/cs25/recordings/",
+        "uploader_verified": true
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": "Cumulative playlist; active subset Autumn 2023–Spring 2026",
+      "material_status": "active_recent",
+      "material_note": "Treated as active_recent despite being a cumulative playlist. Official CS25 pages document V3 in Autumn 2023, V4 in Spring 2024, V5 in Spring 2025, and V6 in Spring 2026, and the official Recordings page states that new recordings are added to the course playlist. Thus the majority of documented course iterations represented by the continuing playlist fall inside the v0.3 window. Older V1/V2 items remain in the same playlist and downstream generators must select only lectures whose offering/date is Autumn 2023 or later."
+    },
+    {
+      "code": "CS25N",
+      "title": "Big Ideas in Cryptography",
+      "level": "CS100_below_intro",
+      "track": "Security",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2025N",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS31N",
+      "title": "Counterfactuals: The Science of What Ifs?",
+      "level": "CS100_below_intro",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2031N",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS42SI",
+      "title": "2D Engine-Based Game Development",
+      "level": "CS100_below_intro",
+      "track": "Graphics & Games",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2042SI",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS44N",
+      "title": "Great Ideas in Graphics",
+      "level": "CS100_below_intro",
+      "track": "Graphics & Vision",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2044N",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS47N",
+      "title": "Data Analytics and Sports",
+      "level": "CS100_below_intro",
+      "track": "Data Science",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2047N",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS51",
+      "title": "CS + Social Good Studio",
+      "level": "CS100_below_intro",
+      "track": "Social Computing",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2051",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS52",
+      "title": "CS+Social Good: Implementing Social Good Projects",
+      "level": "CS100_below_intro",
+      "track": "Social Computing",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2052",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS53N",
+      "title": "How Can Generative AI Help Us Learn?",
+      "level": "CS100_below_intro",
+      "track": "AI & Education",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2053N",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS103",
+      "title": "Mathematical Foundations of Computing",
+      "level": "CS100_intermediate",
+      "track": "Theory",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20103",
+      "public_materials": {
+        "youtube": "none_found",
+        "syllabus_url": "https://cs103.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "official",
+          "note": "may be concurrent",
+          "kind": "corequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "searched_not_found",
+      "material_note": null,
+      "search_completed_2023": true,
+      "search_note": "SEE/class-archive/官方YouTube均未找到完整公开录像集合",
+      "search_completed_2023_expanded": true
+    },
+    {
+      "code": "CS104",
+      "title": "Introduction to Essential Software Systems and Tools",
+      "level": "CS100_intermediate",
+      "track": "Software Engineering",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20104",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106A",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS105",
+      "title": "Introduction to Computers",
+      "level": "CS100_intermediate",
+      "track": "Foundations",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20105",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS106A",
+      "title": "Programming Methodology",
+      "level": "CS100_intermediate",
+      "track": "Programming",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106A",
+      "public_materials": {
+        "youtube": "https://www.youtube.com/playlist?list=PLAe8LJLmXkN1348vyNZ87L_t_KlbMFIYr",
+        "syllabus_url": "https://cs106a.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "https://see.stanford.edu/Course/CS106A/194",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": "Spring 2017",
+      "material_status": "archive_official",
+      "material_note": "Archived by v0.3 recency policy: confirmed binding is Spring 2017, earlier than Autumn 2023; excluded from generation_queue.",
+      "generation_allowed": true,
+      "uploader_verified": false,
+      "search_note": "YouTube binding is a third-party upload; official SEE.stanford.edu full course used as canonical video source."
+    },
+    {
+      "code": "CS106AX",
+      "title": "Programming Methodology in JavaScript and Python (Accelerated)",
+      "level": "CS100_intermediate",
+      "track": "Programming",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106AX",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS106B",
+      "title": "Programming Abstractions",
+      "level": "CS100_intermediate",
+      "track": "Programming",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106B",
+      "public_materials": {
+        "youtube": "none_found",
+        "syllabus_url": "https://cs106b.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "https://see.stanford.edu/Course/CS106B",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106A",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": "2008",
+      "material_status": "archive_official",
+      "material_note": null,
+      "search_completed_2023": true,
+      "search_note": "SEE Stanford Programming Abstractions 完整课程录像，讲师 Julie Zelenski",
+      "search_completed_2023_expanded": true,
+      "generation_allowed": true
+    },
+    {
+      "code": "CS106E",
+      "title": "Exploring Computing",
+      "level": "CS100_intermediate",
+      "track": "Foundations",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106E",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS106EA",
+      "title": "Exploring Artificial Intelligence",
+      "level": "CS100_intermediate",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106EA",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS106L",
+      "title": "Standard C++ Programming Laboratory",
+      "level": "CS100_intermediate",
+      "track": "Programming",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106L",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "official",
+          "note": "pre- or corequisite",
+          "kind": "corequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS106M",
+      "title": "Enrichment Adventures in Programming Abstractions",
+      "level": "CS100_intermediate",
+      "track": "Programming",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106M",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "official",
+          "note": "corequisite",
+          "kind": "corequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS106S",
+      "title": "Coding for Social Good",
+      "level": "CS100_intermediate",
+      "track": "Social Computing",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106S",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "official",
+          "note": "pre/corequisite",
+          "kind": "corequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS107",
+      "title": "Computer Organization and Systems",
+      "level": "CS100_intermediate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20107",
+      "public_materials": {
+        "youtube": "https://www.youtube.com/playlist?list=PLoCMsyE1cvdWivlV-39KKsBKUX-4DvraN",
+        "syllabus_url": "https://cs107.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": "Spring 2016",
+      "material_status": "archive_official",
+      "material_note": "Archived by v0.3 recency policy: confirmed binding is Spring 2016, earlier than Autumn 2023; excluded from generation_queue. CS107 historical YouTube binding is retained as provenance only and its broken link was not repaired per v0.3 instruction.",
+      "generation_allowed": true
+    },
+    {
+      "code": "CS107E",
+      "title": "Computer Systems from the Ground Up",
+      "level": "CS100_intermediate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20107E",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS109",
+      "title": "Introduction to Probability for Computer Scientists",
+      "level": "CS100_intermediate",
+      "track": "Math & Probability",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20109",
+      "public_materials": {
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg",
+        "syllabus_url": "https://cs109.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": "Autumn 2022",
+      "material_status": "archive_official",
+      "material_note": "Archived by v0.3 recency policy: confirmed binding is Autumn 2022, earlier than Autumn 2023; excluded from generation_queue.",
+      "generation_allowed": true
+    },
+    {
+      "code": "CS110",
+      "title": "Principles of Computer Systems",
+      "level": "CS100_intermediate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20110",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS107",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS111",
+      "title": "Operating Systems Principles",
+      "level": "CS100_intermediate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20111",
+      "public_materials": {
+        "youtube": "none_found",
+        "syllabus_url": "https://cs111.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS107",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "searched_not_found",
+      "material_note": null,
+      "search_completed_2023": true,
+      "search_note": "未发现完整公开课程录像集合",
+      "search_completed_2023_expanded": true
+    },
+    {
+      "code": "CS112",
+      "title": "Operating Systems Kernel Implementation Project",
+      "level": "CS100_intermediate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20112",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS111",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS120",
+      "title": "Introduction to AI Safety",
+      "level": "CS100_intermediate",
+      "track": "AI Safety",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20120",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "https://stanford-cs120.github.io/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS103",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS123",
+      "title": "Building AI-Enabled Robots",
+      "level": "CS100_intermediate",
+      "track": "Robotics",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20123",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS124",
+      "title": "From Languages to Information",
+      "level": "CS100_intermediate",
+      "track": "NLP",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20124",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "https://web.stanford.edu/class/cs124/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS109",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS107",
+          "basis": "official",
+          "note": "programming maturity / UNIX equivalent",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS129",
+      "title": "Applied Machine Learning",
+      "level": "CS100_intermediate",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20129",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS109",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS131",
+      "title": "Computer Vision: Foundations and Applications",
+      "level": "CS100_intermediate",
+      "track": "Graphics & Vision",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20131",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS109",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS137A",
+      "title": "Principles of Robot Autonomy I",
+      "level": "CS100_intermediate",
+      "track": "Robotics",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20137A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS109",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS140E",
+      "title": "Operating Systems Design and Implementation",
+      "level": "CS100_intermediate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20140E",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS107",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS140M",
+      "title": "Introduction to Embedded Systems",
+      "level": "CS100_intermediate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20140M",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS107",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS141",
+      "title": "Sports and Data",
+      "level": "CS100_intermediate",
+      "track": "Data Science",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20141",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS109",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS143",
+      "title": "Compilers",
+      "level": "CS100_intermediate",
+      "track": "Programming Languages",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20143",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS103",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS107",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS144",
+      "title": "Introduction to Computer Networking",
+      "level": "CS100_intermediate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20144",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "https://cs144.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS110",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS145",
+      "title": "Introduction to Modern Data Systems",
+      "level": "CS100_intermediate",
+      "track": "Data Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20145",
+      "public_materials": {
+        "youtube": "none_found",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS103",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS107",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS146",
+      "title": "Game Development",
+      "level": "CS100_intermediate",
+      "track": "Graphics & Games",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20146",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "searched_not_found",
+      "material_note": null,
+      "search_completed_2023": true,
+      "search_note": "SEE/class archive 无完整录像页",
+      "search_completed_2023_expanded": true
+    },
+    {
+      "code": "CS146J",
+      "title": "Full-Stack Web Programming",
+      "level": "CS100_intermediate",
+      "track": "Software Engineering",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20146J",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS146S",
+      "title": "The Modern Software Developer",
+      "level": "CS100_intermediate",
+      "track": "Software Engineering",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20146S",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "https://themodernsoftware.dev/fall2025",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS104",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS147",
+      "title": "Introduction to Human-Computer Interaction Design",
+      "level": "CS100_intermediate",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20147",
+      "public_materials": {
+        "youtube": "none_found",
+        "syllabus_url": "https://cs147.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "searched_not_found",
+      "material_note": null,
+      "search_completed_2023": true,
+      "search_note": "无官方录像集合",
+      "search_completed_2023_expanded": true
+    },
+    {
+      "code": "CS147L",
+      "title": "Cross-platform Mobile App Development",
+      "level": "CS100_intermediate",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20147L",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS148",
+      "title": "Introduction to Computer Graphics and Imaging",
+      "level": "CS100_intermediate",
+      "track": "Graphics & Vision",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20148",
+      "public_materials": {
+        "youtube": "none_found",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "searched_not_found",
+      "material_note": null,
+      "search_completed_2023": true,
+      "search_note": "无官方域名下完整公开录像",
+      "search_completed_2023_expanded": true
+    },
+    {
+      "code": "CS151",
+      "title": "Logic Programming",
+      "level": "CS100_intermediate",
+      "track": "Programming Languages",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20151",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS103",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS152",
+      "title": "Trust and Safety Engineering",
+      "level": "CS100_intermediate",
+      "track": "Security",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20152",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "https://cs152.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS153",
+      "title": "Frontier Systems",
+      "level": "CS100_intermediate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20153",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS154",
+      "title": "Introduction to the Theory of Computation",
+      "level": "CS100_intermediate",
+      "track": "Theory",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20154",
+      "public_materials": {
+        "youtube": "none_found",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS103",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "searched_not_found",
+      "material_note": null,
+      "search_completed_2023": true,
+      "search_note": "课程页面不足以判定 archive_official",
+      "search_completed_2023_expanded": true
+    },
+    {
+      "code": "CS155",
+      "title": "Computer and Network Security",
+      "level": "CS100_intermediate",
+      "track": "Security",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20155",
+      "public_materials": {
+        "youtube": "none_found",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS107",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS111",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "searched_not_found",
+      "material_note": null,
+      "search_completed_2023": true,
+      "search_note": "无完整公开录像集合",
+      "search_completed_2023_expanded": true
+    },
+    {
+      "code": "CS157",
+      "title": "Computational Logic",
+      "level": "CS100_intermediate",
+      "track": "Logic & Verification",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20157",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS103",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS161",
+      "title": "Design and Analysis of Algorithms",
+      "level": "CS100_intermediate",
+      "track": "Theory",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20161",
+      "public_materials": {
+        "youtube": "none_found",
+        "syllabus_url": "https://cs161.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS103",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS109",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "searched_not_found",
+      "material_note": null,
+      "search_completed_2023": true,
+      "search_note": "课程页面存在，但无官方公开录像归档",
+      "search_completed_2023_expanded": true
+    },
+    {
+      "code": "CS163",
+      "title": "The Practice of Theory Research",
+      "level": "CS100_intermediate",
+      "track": "Theory",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20163",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS161",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS154",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS166",
+      "title": "Advanced Data Structures",
+      "level": "CS100_intermediate",
+      "track": "Theory",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20166",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS161",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS170",
+      "title": "Stanford Laptop Orchestra: Composition, Coding, Performance",
+      "level": "CS100_intermediate",
+      "track": "Computational Media",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20170",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS173A",
+      "title": "Foundations of Computation Human Genomics",
+      "level": "CS100_intermediate",
+      "track": "Computational Biology",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20173A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS161",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS177",
+      "title": "Human Centered Product Management",
+      "level": "CS100_intermediate",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20177",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS147",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS180",
+      "title": "Digital Systems Architecture",
+      "level": "CS100_intermediate",
+      "track": "Architecture & Hardware",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20180",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS107",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS182",
+      "title": "Ethics, Public Policy, and Technological Change",
+      "level": "CS100_intermediate",
+      "track": "AI & Society",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20182",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106A",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS182W",
+      "title": "Ethics, Public Policy, and Technological Change (WIM)",
+      "level": "CS100_intermediate",
+      "track": "AI & Society",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20182W",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106A",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS183E",
+      "title": "Effective Leadership in High-Tech",
+      "level": "CS100_intermediate",
+      "track": "Leadership",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20183E",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS186",
+      "title": "How To Make a Moral Agent",
+      "level": "CS100_intermediate",
+      "track": "AI & Society",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20186",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS182",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS193P",
+      "title": "iOS Application Development",
+      "level": "CS100_intermediate",
+      "track": "Software Engineering",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20193P",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "https://cs193p.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106A",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS106B",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS107",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS193Q",
+      "title": "Introduction to Python Programming",
+      "level": "CS100_intermediate",
+      "track": "Programming",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20193Q",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS193T",
+      "title": "Thinking with AI: Strategies for Effective and Ethical Human-AI Collaboration",
+      "level": "CS100_intermediate",
+      "track": "AI & Society",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20193T",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106A",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS194",
+      "title": "Software Project",
+      "level": "CS100_intermediate",
+      "track": "Software Engineering",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20194",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS109",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS161",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS194W",
+      "title": "Software Project (WIM)",
+      "level": "CS100_intermediate",
+      "track": "Software Engineering",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20194W",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS109",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS161",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS202",
+      "title": "Law for Computer Science Professionals",
+      "level": "CS200_advanced_graduate",
+      "track": "Law & Policy",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20202",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS205L",
+      "title": "Continuous Mathematical Methods with an Emphasis on Machine Learning",
+      "level": "CS200_advanced_graduate",
+      "track": "Math & ML",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20205L",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS109",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS206",
+      "title": "Exploring Computational Journalism",
+      "level": "CS200_advanced_graduate",
+      "track": "Data Science",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20206",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS210A",
+      "title": "Software Project Experience with Corporate Partner",
+      "level": "CS200_advanced_graduate",
+      "track": "Software Engineering",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20210A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS194",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS210B",
+      "title": "Software Project Experience with Corporate Partner",
+      "level": "CS200_advanced_graduate",
+      "track": "Software Engineering",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20210B",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS210A",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS212",
+      "title": "Operating Systems Kernel Implementation Project",
+      "level": "CS200_advanced_graduate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20212",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS111",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS217",
+      "title": "Hardware Accelerators for Machine Learning",
+      "level": "CS200_advanced_graduate",
+      "track": "Architecture & Hardware",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20217",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS107",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS220",
+      "title": "Researching, Presenting and Publishing Work in AI & Education",
+      "level": "CS200_advanced_graduate",
+      "track": "AI & Education",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20220",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS224N",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS221",
+      "title": "Artificial Intelligence: Principles and Techniques",
+      "level": "CS200_advanced_graduate",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20221",
+      "public_materials": {
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2",
+        "syllabus_url": "https://cs221.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS103",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS106B",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS109",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS161",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": "Autumn 2021",
+      "material_status": "archive_official",
+      "material_note": "Archived by v0.3 recency policy: confirmed binding is Autumn 2021, earlier than Autumn 2023; excluded from generation_queue.",
+      "generation_allowed": true
+    },
+    {
+      "code": "CS223A",
+      "title": "Introduction to Robotics",
+      "level": "CS200_advanced_graduate",
+      "track": "Robotics",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20223A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106B",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS224G",
+      "title": "Apps With LLMs Inside",
+      "level": "CS200_advanced_graduate",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20224G",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS221",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS224N",
+      "title": "Natural Language Processing with Deep Learning",
+      "level": "CS200_advanced_graduate",
+      "track": "NLP",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20224N",
+      "public_materials": {
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4",
+        "syllabus_url": "https://web.stanford.edu/class/cs224n/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS124",
+          "basis": "official",
+          "note": "catalog says CS124, CS221, or CS229",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS221",
+          "basis": "official",
+          "note": "catalog says CS124, CS221, or CS229",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS229",
+          "basis": "official",
+          "note": "catalog says CS124, CS221, or CS229",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "any_of",
+      "target_offering": "Winter 2021",
+      "material_status": "archive_official",
+      "material_note": "Archived by v0.3 recency policy: confirmed binding is Winter 2021, earlier than Autumn 2023; excluded from generation_queue.",
+      "generation_allowed": true
+    },
+    {
+      "code": "CS224R",
+      "title": "Deep Reinforcement Learning",
+      "level": "CS200_advanced_graduate",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20224R",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS234",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS224V",
+      "title": "Agentic AI",
+      "level": "CS200_advanced_graduate",
+      "track": "AI Agents",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20224V",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS221",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS224W",
+      "title": "Machine Learning with Graphs",
+      "level": "CS200_advanced_graduate",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20224W",
+      "public_materials": {
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn",
+        "syllabus_url": "https://web.stanford.edu/class/cs224w/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS109",
+          "basis": "official",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS229",
+          "basis": "inferred",
+          "note": "catalog requires any introductory ML course; CS229 is the canonical Stanford path",
+          "kind": "recommended"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": "Autumn 2021",
+      "material_status": "archive_official",
+      "material_note": "Archived by v0.3 recency policy: confirmed binding is Autumn 2021, earlier than Autumn 2023; excluded from generation_queue.",
+      "generation_allowed": true
+    },
+    {
+      "code": "CS225A",
+      "title": "Experimental Robotics",
+      "level": "CS200_advanced_graduate",
+      "track": "Robotics",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20225A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS223A",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS227A",
+      "title": "Robot Perception",
+      "level": "CS200_advanced_graduate",
+      "track": "Robotics",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20227A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS131",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS227B",
+      "title": "General Game Playing",
+      "level": "CS200_advanced_graduate",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20227B",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS221",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS229",
+      "title": "Machine Learning",
+      "level": "CS200_advanced_graduate",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20229",
+      "public_materials": {
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy",
+        "syllabus_url": "https://cs229.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS106A",
+          "basis": "official",
+          "note": "programming equivalent",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS109",
+          "basis": "official",
+          "note": "probability equivalent",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": "Spring 2022",
+      "material_status": "archive_official",
+      "material_note": "Archived by v0.3 recency policy: confirmed binding is Spring 2022, earlier than Autumn 2023; excluded from generation_queue.",
+      "generation_allowed": true
+    },
+    {
+      "code": "CS230",
+      "title": "Deep Learning",
+      "level": "CS200_advanced_graduate",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20230",
+      "public_materials": {
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X",
+        "syllabus_url": "https://cs230.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "none_found",
+        "uploader_verified": true
+      },
+      "prerequisites": [
+        {
+          "code": "CS229",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": "Autumn 2025",
+      "material_status": "active_recent",
+      "material_note": "Active recent binding: Stanford Online public playlist for Autumn 2025; uploader verified as Stanford Online. No separate qualifying recent non-YouTube public archive was confirmed; current course-site recordings are otherwise described as Canvas-only."
+    },
+    {
+      "code": "CS231N",
+      "title": "Deep Learning for Computer Vision",
+      "level": "CS200_advanced_graduate",
+      "track": "Graphics & Vision",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20231N",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "https://cs231n.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS229",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS233",
+      "title": "Geometric and Topological Data Analysis",
+      "level": "CS200_advanced_graduate",
+      "track": "Graphics & Vision",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20233",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS161",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS234",
+      "title": "Reinforcement Learning",
+      "level": "CS200_advanced_graduate",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20234",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "https://web.stanford.edu/class/cs234/",
+        "assignments_public": true,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS229",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS235",
+      "title": "Computational Methods for Biomedical Image Analysis and Interpretation",
+      "level": "CS200_advanced_graduate",
+      "track": "Computational Biology",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20235",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS231N",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS237A",
+      "title": "Principles of Robot Autonomy I",
+      "level": "CS200_advanced_graduate",
+      "track": "Robotics",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20237A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS137A",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS238",
+      "title": "Decision Making under Uncertainty",
+      "level": "CS200_advanced_graduate",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20238",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS221",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS238V",
+      "title": "Validation of Safety Critical Systems",
+      "level": "CS200_advanced_graduate",
+      "track": "Safety & Verification",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20238V",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS238",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS240",
+      "title": "Advanced Topics in Operating Systems",
+      "level": "CS200_advanced_graduate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20240",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS111",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS240LX",
+      "title": "Advanced Systems Laboratory, Accelerated",
+      "level": "CS200_advanced_graduate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20240LX",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS111",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS241",
+      "title": "Embedded Systems Workshop",
+      "level": "CS200_advanced_graduate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20241",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS107",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS242",
+      "title": "Programming Languages",
+      "level": "CS200_advanced_graduate",
+      "track": "Programming Languages",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20242",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS107",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS103",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS243",
+      "title": "Program Analysis and Optimizations",
+      "level": "CS200_advanced_graduate",
+      "track": "Compilers & PL",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20243",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS143",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS244C",
+      "title": "Advanced Networking and Distributed Systems",
+      "level": "CS200_advanced_graduate",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20244C",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS144",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS246",
+      "title": "Mining Massive Data Sets",
+      "level": "CS200_advanced_graduate",
+      "track": "Data Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20246",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS145",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS161",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS247A",
+      "title": "Design for Artificial Intelligence",
+      "level": "CS200_advanced_graduate",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20247A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS147",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS247B",
+      "title": "Design for Behavior Change",
+      "level": "CS200_advanced_graduate",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20247B",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS147",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS247G",
+      "title": "Design for Play",
+      "level": "CS200_advanced_graduate",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20247G",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS147",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS247S",
+      "title": "Service Design",
+      "level": "CS200_advanced_graduate",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20247S",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS147",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS248A",
+      "title": "Computer Graphics: Rendering, Geometry, Image Manipulation",
+      "level": "CS200_advanced_graduate",
+      "track": "Graphics & Vision",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20248A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS148",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS248B",
+      "title": "Graphics: Animation and Simulation",
+      "level": "CS200_advanced_graduate",
+      "track": "Graphics & Vision",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20248B",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS248A",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS251",
+      "title": "Cryptocurrencies and Blockchain Technologies",
+      "level": "CS200_advanced_graduate",
+      "track": "Security",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20251",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS255",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS254",
+      "title": "Computational Complexity",
+      "level": "CS200_advanced_graduate",
+      "track": "Theory",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20254",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS154",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS161",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS254B",
+      "title": "Computational Complexity II",
+      "level": "CS200_advanced_graduate",
+      "track": "Theory",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20254B",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS254",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS255",
+      "title": "Introduction to Cryptography",
+      "level": "CS200_advanced_graduate",
+      "track": "Security",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20255",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS161",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS257",
+      "title": "Introduction to Automated Reasoning",
+      "level": "CS200_advanced_graduate",
+      "track": "Logic & Verification",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20257",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS154",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS258",
+      "title": "Quantum Cryptography",
+      "level": "CS200_advanced_graduate",
+      "track": "Security",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20258",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS255",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS259Q",
+      "title": "Quantum Computing",
+      "level": "CS200_advanced_graduate",
+      "track": "Quantum Computing",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20259Q",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS154",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS261",
+      "title": "Combinatorial Optimization",
+      "level": "CS200_advanced_graduate",
+      "track": "Theory",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20261",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS161",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS265",
+      "title": "Randomized Algorithms and Probabilistic Analysis",
+      "level": "CS200_advanced_graduate",
+      "track": "Theory",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20265",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS161",
+          "basis": "official",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS269I",
+      "title": "Incentives in Computer Science",
+      "level": "CS200_advanced_graduate",
+      "track": "Theory",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20269I",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS161",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS272",
+      "title": "Introduction to Biomedical Informatics Research Methodology",
+      "level": "CS200_advanced_graduate",
+      "track": "Computational Biology",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20272",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS273B",
+      "title": "Deep Learning in Genomics and Biomedicine",
+      "level": "CS200_advanced_graduate",
+      "track": "Computational Biology",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20273B",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS229",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS273C",
+      "title": "Cloud Computing for Biology and Healthcare",
+      "level": "CS200_advanced_graduate",
+      "track": "Computational Biology",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20273C",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS145",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS274",
+      "title": "Representations and Algorithms for Computational Molecular Biology",
+      "level": "CS200_advanced_graduate",
+      "track": "Computational Biology",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20274",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS161",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS275A",
+      "title": "Symbolic Musical Information",
+      "level": "CS200_advanced_graduate",
+      "track": "Computational Media",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20275A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS277",
+      "title": "Symbolic Musical Information",
+      "level": "CS200_advanced_graduate",
+      "track": "Computational Media",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20277",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS278",
+      "title": "Social Computing",
+      "level": "CS200_advanced_graduate",
+      "track": "Social Computing",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20278",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS147",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS279",
+      "title": "Computational Biology: Structure and Organization of Biomolecules and Cells",
+      "level": "CS200_advanced_graduate",
+      "track": "Computational Biology",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20279",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS274",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS281",
+      "title": "Ethics of AI",
+      "level": "CS200_advanced_graduate",
+      "track": "AI & Society",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20281",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS221",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS282",
+      "title": "Computer Systems Architecture",
+      "level": "CS200_advanced_graduate",
+      "track": "Architecture & Hardware",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20282",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS107",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        },
+        {
+          "code": "CS111",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS283",
+      "title": "Governing AI: Law, Policy, and Institutions",
+      "level": "CS200_advanced_graduate",
+      "track": "AI & Society",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20283",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS281",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS286",
+      "title": "Advanced Topics in Computer Vision and Biomedicine",
+      "level": "CS200_advanced_graduate",
+      "track": "Graphics & Vision",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20286",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS231N",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS293",
+      "title": "Empowering Educators via Language Technology",
+      "level": "CS200_advanced_graduate",
+      "track": "AI & Education",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20293",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS224N",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS295",
+      "title": "Software Engineering",
+      "level": "CS200_advanced_graduate",
+      "track": "Software Engineering",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20295",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS194",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS309A",
+      "title": "Cloud Computing Seminar",
+      "level": "CS300_special_topics",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20309A",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS240",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS312",
+      "title": "Deep Learning Alchemy",
+      "level": "CS300_special_topics",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20312",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS230",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS321M",
+      "title": "AI Measurement Science",
+      "level": "CS300_special_topics",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20321M",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS229",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS323",
+      "title": "The AI Awakening",
+      "level": "CS300_special_topics",
+      "track": "AI & Society",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20323",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS221",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS329H",
+      "title": "Machine Learning from Human Preferences",
+      "level": "CS300_special_topics",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20329H",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS229",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS329M",
+      "title": "Introduction to Machine Programming",
+      "level": "CS300_special_topics",
+      "track": "AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20329M",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS229",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS329X",
+      "title": "Human Centered NLP",
+      "level": "CS300_special_topics",
+      "track": "NLP",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20329X",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS224N",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS329Z",
+      "title": "Engineering AI Agents",
+      "level": "CS300_special_topics",
+      "track": "AI Agents",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20329Z",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS224V",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS334",
+      "title": "Robots and Arts: Creative Applications and Projects",
+      "level": "CS300_special_topics",
+      "track": "Robotics",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20334",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS237A",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS336",
+      "title": "Language Modeling from Scratch",
+      "level": "CS300_special_topics",
+      "track": "NLP",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20336",
+      "public_materials": {
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_",
+        "syllabus_url": "https://cs336.stanford.edu/",
+        "assignments_public": true,
+        "other_video": "none_found",
+        "uploader_verified": true
+      },
+      "prerequisites": [
+        {
+          "code": "CS229",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": "Spring 2025",
+      "material_status": "active_recent",
+      "material_note": "Active recent binding: Stanford Online public playlist for Spring 2025; uploader verified as Stanford Online. No separate qualifying recent non-YouTube public video archive was confirmed in this pass."
+    },
+    {
+      "code": "CS339R",
+      "title": "Collaborative Robotics",
+      "level": "CS300_special_topics",
+      "track": "Robotics",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20339R",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS237A",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS342",
+      "title": "Building for Digital Health",
+      "level": "CS300_special_topics",
+      "track": "Health Computing",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20342",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS229",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS343D",
+      "title": "Domain-Specific Programming Models and Compilers",
+      "level": "CS300_special_topics",
+      "track": "Compilers & PL",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20343D",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS242",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS347",
+      "title": "Human-Computer Interaction: Foundations and Frontiers",
+      "level": "CS300_special_topics",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20347",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS147",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS348C",
+      "title": "Computer Graphics: Animation and Simulation",
+      "level": "CS300_special_topics",
+      "track": "Graphics & Vision",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20348C",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS248A",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS348K",
+      "title": "Visual Computing Systems",
+      "level": "CS300_special_topics",
+      "track": "Graphics & Vision",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20348K",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS248A",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS349D",
+      "title": "Cloud Computing Technology",
+      "level": "CS300_special_topics",
+      "track": "Systems",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20349D",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS240",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS349E",
+      "title": "Efficient ML Infrastructure at Scale",
+      "level": "CS300_special_topics",
+      "track": "Systems for AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20349E",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS217",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS349F",
+      "title": "Fabric Architectures for AI Systems",
+      "level": "CS300_special_topics",
+      "track": "Architecture & Hardware",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20349F",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS217",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS349H",
+      "title": "Software Techniques for Emerging Hardware Platforms",
+      "level": "CS300_special_topics",
+      "track": "Architecture & Hardware",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20349H",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS217",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS350S",
+      "title": "Privacy-Preserving Systems",
+      "level": "CS300_special_topics",
+      "track": "Security",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20350S",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS155",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS355",
+      "title": "Advanced Topics in Cryptography",
+      "level": "CS300_special_topics",
+      "track": "Security",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20355",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS255",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS356",
+      "title": "Topics in Computer and Network Security",
+      "level": "CS300_special_topics",
+      "track": "Security",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20356",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS155",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS357S",
+      "title": "Formal Methods for Computer Systems",
+      "level": "CS300_special_topics",
+      "track": "Logic & Verification",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20357S",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS257",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS360",
+      "title": "Simplicity and Complexity in Economic Theory",
+      "level": "CS300_special_topics",
+      "track": "Theory",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20360",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS361",
+      "title": "Engineering Design Optimization",
+      "level": "CS300_special_topics",
+      "track": "Optimization",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20361",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS161",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS372",
+      "title": "AI for Precision Medicine and Psychiatric Disorders",
+      "level": "CS300_special_topics",
+      "track": "Health AI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20372",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS229",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS375",
+      "title": "Large-Scale Neural Net Modeling for Neuroscience",
+      "level": "CS300_special_topics",
+      "track": "AI & Neuroscience",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20375",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS229",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS377G",
+      "title": "Designing Serious Games",
+      "level": "CS300_special_topics",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20377G",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS147",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS377P",
+      "title": "Read, Write, Play",
+      "level": "CS300_special_topics",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20377P",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS147",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS377Q",
+      "title": "Designing for Accessibility",
+      "level": "CS300_special_topics",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20377Q",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS147",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    },
+    {
+      "code": "CS377U",
+      "title": "Understanding Users",
+      "level": "CS300_special_topics",
+      "track": "HCI",
+      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20377U",
+      "public_materials": {
+        "youtube": "unverified",
+        "syllabus_url": "unverified",
+        "assignments_public": false,
+        "other_video": "unverified",
+        "uploader_verified": null
+      },
+      "prerequisites": [
+        {
+          "code": "CS147",
+          "basis": "inferred",
+          "kind": "prerequisite"
+        }
+      ],
+      "prerequisite_mode": "all_of",
+      "target_offering": null,
+      "material_status": "pending_verification",
+      "material_note": null
+    }
+  ],
+  "dependency_dag": {
+    "edge_semantics": "from -> to is a learning/enrollment dependency. kind=prerequisite means prior completion is required/assumed; kind=corequisite means concurrent enrollment is explicitly permitted/required; kind=recommended is advisory rather than mandatory. basis=official means Stanford explicitly states the relationship; inferred is a conservative learning dependency, not an enrollment rule.",
+    "edges": [
+      {
+        "from": "CS106B",
+        "to": "CS103",
+        "basis": "official",
+        "kind": "corequisite"
+      },
+      {
+        "from": "CS106A",
+        "to": "CS104",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106A",
+        "to": "CS106B",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS106L",
+        "basis": "official",
+        "kind": "corequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS106M",
+        "basis": "official",
+        "kind": "corequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS106S",
+        "basis": "official",
+        "kind": "corequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS107",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS107E",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS109",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS110",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS111",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS111",
+        "to": "CS112",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS103",
+        "to": "CS120",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS123",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS124",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS124",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS124",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS129",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS129",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS131",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS131",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS137A",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS137A",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS140E",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS140M",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS141",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS141",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS103",
+        "to": "CS143",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS143",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS110",
+        "to": "CS144",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS103",
+        "to": "CS145",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS145",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS146",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS146J",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS146S",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS104",
+        "to": "CS146S",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS147",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS147L",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS148",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS103",
+        "to": "CS151",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS152",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS103",
+        "to": "CS154",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS155",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS111",
+        "to": "CS155",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS103",
+        "to": "CS157",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS161",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS103",
+        "to": "CS161",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS161",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS163",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS154",
+        "to": "CS163",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS166",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS173A",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS147",
+        "to": "CS177",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS180",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106A",
+        "to": "CS182",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106A",
+        "to": "CS182W",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS182",
+        "to": "CS186",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106A",
+        "to": "CS193P",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS193P",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS193P",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106A",
+        "to": "CS193T",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS194",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS194",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS194W",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS194W",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS205L",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS194",
+        "to": "CS210A",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS210A",
+        "to": "CS210B",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS111",
+        "to": "CS212",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS217",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS224N",
+        "to": "CS220",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS103",
+        "to": "CS221",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS221",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS221",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS221",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106B",
+        "to": "CS223A",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS221",
+        "to": "CS224G",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS124",
+        "to": "CS224N",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS221",
+        "to": "CS224N",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS224N",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS234",
+        "to": "CS224R",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS221",
+        "to": "CS224V",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS224W",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS224W",
+        "basis": "inferred",
+        "kind": "recommended"
+      },
+      {
+        "from": "CS223A",
+        "to": "CS225A",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS131",
+        "to": "CS227A",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS221",
+        "to": "CS227B",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS106A",
+        "to": "CS229",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS109",
+        "to": "CS229",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS230",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS231N",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS233",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS234",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS231N",
+        "to": "CS235",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS137A",
+        "to": "CS237A",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS221",
+        "to": "CS238",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS238",
+        "to": "CS238V",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS111",
+        "to": "CS240",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS111",
+        "to": "CS240LX",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS241",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS242",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS103",
+        "to": "CS242",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS143",
+        "to": "CS243",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS144",
+        "to": "CS244C",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS145",
+        "to": "CS246",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS246",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS147",
+        "to": "CS247A",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS147",
+        "to": "CS247B",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS147",
+        "to": "CS247G",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS147",
+        "to": "CS247S",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS148",
+        "to": "CS248A",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS248A",
+        "to": "CS248B",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS255",
+        "to": "CS251",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS154",
+        "to": "CS254",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS254",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS254",
+        "to": "CS254B",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS255",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS154",
+        "to": "CS257",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS255",
+        "to": "CS258",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS154",
+        "to": "CS259Q",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS261",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS265",
+        "basis": "official",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS269I",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS273B",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS145",
+        "to": "CS273C",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS274",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS147",
+        "to": "CS278",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS274",
+        "to": "CS279",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS221",
+        "to": "CS281",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS107",
+        "to": "CS282",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS111",
+        "to": "CS282",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS281",
+        "to": "CS283",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS231N",
+        "to": "CS286",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS224N",
+        "to": "CS293",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS194",
+        "to": "CS295",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS240",
+        "to": "CS309A",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS230",
+        "to": "CS312",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS321M",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS221",
+        "to": "CS323",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS329H",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS329M",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS224N",
+        "to": "CS329X",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS224V",
+        "to": "CS329Z",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS237A",
+        "to": "CS334",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS336",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS237A",
+        "to": "CS339R",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS342",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS242",
+        "to": "CS343D",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS147",
+        "to": "CS347",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS248A",
+        "to": "CS348C",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS248A",
+        "to": "CS348K",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS240",
+        "to": "CS349D",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS217",
+        "to": "CS349E",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS217",
+        "to": "CS349F",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS217",
+        "to": "CS349H",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS155",
+        "to": "CS350S",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS255",
+        "to": "CS355",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS155",
+        "to": "CS356",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS257",
+        "to": "CS357S",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS161",
+        "to": "CS361",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS372",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS229",
+        "to": "CS375",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS147",
+        "to": "CS377G",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS147",
+        "to": "CS377P",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS147",
+        "to": "CS377Q",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      },
+      {
+        "from": "CS147",
+        "to": "CS377U",
+        "basis": "inferred",
+        "kind": "prerequisite"
+      }
+    ],
+    "cycles": [],
+    "isolated_nodes": [
+      "CS7",
+      "CS10N",
+      "CS11SI",
+      "CS21SI",
+      "CS22A",
+      "CS24",
+      "CS25",
+      "CS25N",
+      "CS31N",
+      "CS42SI",
+      "CS44N",
+      "CS47N",
+      "CS51",
+      "CS52",
+      "CS53N",
+      "CS105",
+      "CS106AX",
+      "CS106E",
+      "CS106EA",
+      "CS153",
+      "CS170",
+      "CS183E",
+      "CS193Q",
+      "CS202",
+      "CS206",
+      "CS272",
+      "CS275A",
+      "CS277",
+      "CS360"
+    ],
+    "recommended_learning_order": [
+      "CS7",
+      "CS10N",
+      "CS11SI",
+      "CS21SI",
+      "CS22A",
+      "CS24",
+      "CS25",
+      "CS25N",
+      "CS31N",
+      "CS42SI",
+      "CS44N",
+      "CS47N",
+      "CS51",
+      "CS52",
+      "CS53N",
+      "CS105",
+      "CS106A",
+      "CS106AX",
+      "CS106E",
+      "CS106EA",
+      "CS153",
+      "CS170",
+      "CS183E",
+      "CS193Q",
+      "CS202",
+      "CS206",
+      "CS272",
+      "CS275A",
+      "CS277",
+      "CS360",
+      "CS104",
+      "CS106B",
+      "CS182",
+      "CS182W",
+      "CS193T",
+      "CS103",
+      "CS106L",
+      "CS106M",
+      "CS106S",
+      "CS107",
+      "CS107E",
+      "CS109",
+      "CS123",
+      "CS146",
+      "CS146J",
+      "CS146S",
+      "CS147",
+      "CS147L",
+      "CS148",
+      "CS152",
+      "CS223A",
+      "CS186",
+      "CS120",
+      "CS151",
+      "CS154",
+      "CS157",
+      "CS110",
+      "CS111",
+      "CS140E",
+      "CS140M",
+      "CS143",
+      "CS145",
+      "CS180",
+      "CS193P",
+      "CS217",
+      "CS241",
+      "CS242",
+      "CS124",
+      "CS129",
+      "CS131",
+      "CS137A",
+      "CS141",
+      "CS161",
+      "CS205L",
+      "CS229",
+      "CS177",
+      "CS247A",
+      "CS247B",
+      "CS247G",
+      "CS247S",
+      "CS278",
+      "CS347",
+      "CS377G",
+      "CS377P",
+      "CS377Q",
+      "CS377U",
+      "CS248A",
+      "CS225A",
+      "CS257",
+      "CS259Q",
+      "CS144",
+      "CS112",
+      "CS155",
+      "CS212",
+      "CS240",
+      "CS240LX",
+      "CS282",
+      "CS243",
+      "CS273C",
+      "CS349E",
+      "CS349F",
+      "CS349H",
+      "CS343D",
+      "CS227A",
+      "CS237A",
+      "CS163",
+      "CS166",
+      "CS173A",
+      "CS194",
+      "CS194W",
+      "CS221",
+      "CS233",
+      "CS246",
+      "CS254",
+      "CS255",
+      "CS261",
+      "CS265",
+      "CS269I",
+      "CS274",
+      "CS361",
+      "CS224W",
+      "CS230",
+      "CS231N",
+      "CS234",
+      "CS273B",
+      "CS321M",
+      "CS329H",
+      "CS329M",
+      "CS336",
+      "CS342",
+      "CS372",
+      "CS375",
+      "CS248B",
+      "CS348C",
+      "CS348K",
+      "CS357S",
+      "CS244C",
+      "CS350S",
+      "CS356",
+      "CS309A",
+      "CS349D",
+      "CS334",
+      "CS339R",
+      "CS210A",
+      "CS295",
+      "CS224G",
+      "CS224N",
+      "CS224V",
+      "CS227B",
+      "CS238",
+      "CS281",
+      "CS323",
+      "CS254B",
+      "CS251",
+      "CS258",
+      "CS355",
+      "CS279",
+      "CS312",
+      "CS235",
+      "CS286",
+      "CS224R",
+      "CS210B",
+      "CS220",
+      "CS293",
+      "CS329X",
+      "CS329Z",
+      "CS238V",
+      "CS283"
+    ]
+  },
+  "statistics": {
+    "course_total": 168,
+    "by_level": {
+      "CS100_below_intro": 15,
+      "CS100_intermediate": 57,
+      "CS200_advanced_graduate": 64,
+      "CS300_special_topics": 32
+    },
+    "by_track": {
+      "AI": 18,
+      "AI & Education": 3,
+      "AI & Neuroscience": 1,
+      "AI & Society": 8,
+      "AI Agents": 2,
+      "AI Safety": 1,
+      "Architecture & Hardware": 5,
+      "Compilers & PL": 2,
+      "Computational Biology": 7,
+      "Computational Media": 3,
+      "Data Science": 3,
+      "Data Systems": 2,
+      "Foundations": 4,
+      "Graphics & Games": 2,
+      "Graphics & Vision": 10,
+      "HCI": 13,
+      "Health AI": 1,
+      "Health Computing": 1,
+      "Interdisciplinary": 1,
+      "Law & Policy": 1,
+      "Leadership": 1,
+      "Logic & Verification": 3,
+      "Math & ML": 1,
+      "Math & Probability": 1,
+      "NLP": 4,
+      "Optimization": 1,
+      "Programming": 6,
+      "Programming Languages": 3,
+      "Quantum Computing": 1,
+      "Robotics": 8,
+      "Safety & Verification": 1,
+      "Security": 9,
+      "Social Computing": 4,
+      "Software Engineering": 9,
+      "Systems": 16,
+      "Systems for AI": 1,
+      "Theory": 11
+    },
+    "official_prereq_edges": 46,
+    "inferred_prereq_edges": 120,
+    "dag_edges_total": 166,
+    "cycles": 0,
+    "isolated_nodes": 29,
+    "youtube_confirmed": 7,
+    "youtube_unverified": 149,
+    "public_assignment_sets_confirmed": 23,
+    "youtube": {
+      "unverified": 149,
+      "confirmed_recent": 3,
+      "archived_confirmed": 7,
+      "none_found": 9
+    },
+    "dependency_edge_kinds": {
+      "corequisite": 4,
+      "prerequisite": 161,
+      "recommended": 1
+    },
+    "stable_explorecourses_evidence_urls": 168,
+    "target_offering_non_null": 10,
+    "active_recent": 3,
+    "archived": 7,
+    "pending_verification": 158,
+    "youtube_confirmed_historical_total": 10,
+    "youtube_confirmed_recent": 3,
+    "youtube_confirmed_archived": 7,
+    "youtube_none_found": 9,
+    "other_video_recent_confirmed": 1,
+    "generation_queue_count": 3,
+    "material_status_counts": {
+      "pending_verification": 149,
+      "active_recent": 3,
+      "searched_not_found": 8,
+      "archive_official": 8
+    },
+    "generation_queue": [
+      "CS106A",
+      "CS106B",
+      "CS107",
+      "CS109",
+      "CS221",
+      "CS224N",
+      "CS224W",
+      "CS229",
+      "CS230",
+      "CS25",
+      "CS336"
+    ]
+  },
+  "youtube_verification": {
+    "policy": "v0.3 recency-gated policy (reference 2026-09): a YouTube course binding qualifies as confirmed_recent only when a public Stanford/course lecture-series playlist can be bound to an offering in Autumn 2023 or later. Historical confirmed playlists older than the cutoff are retained as archived and MUST NOT enter generation_queue. none_found still means a dedicated search found no qualifying public YouTube series at the time of verification; pending_verification at the program-material layer means no accepted recent material binding is currently available.",
+    "priority_targets": [
+      "CS106A",
+      "CS106B",
+      "CS103",
+      "CS106",
+      "CS107",
+      "CS109",
+      "CS111",
+      "CS161",
+      "CS145",
+      "CS147",
+      "CS148",
+      "CS154",
+      "CS155"
+    ],
+    "results": [
+      {
+        "code": "CS106A",
+        "status": "archived",
+        "youtube": "https://www.youtube.com/playlist?list=PLAe8LJLmXkN1348vyNZ87L_t_KlbMFIYr",
+        "target_offering": "Spring 2017",
+        "evidence": [
+          "https://www.bilibili.com/video/BV1Ht41117SH/"
+        ],
+        "note": "Public full-course playlist identified; Stanford CS106A Spring 2017. v0.3: offering predates Autumn 2023, so this binding is archived and excluded from generation_queue."
+      },
+      {
+        "code": "CS106B",
+        "status": "none_found",
+        "youtube": "none_found",
+        "target_offering": null,
+        "evidence": [
+          "https://see.stanford.edu/Course/CS106B",
+          "https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1172/handouts/overview.html"
+        ],
+        "note": "Public course video exists on Stanford Engineering Everywhere / Stanford video hosting, but no qualifying YouTube course playlist was confirmed in the dedicated search."
+      },
+      {
+        "code": "CS103",
+        "status": "none_found",
+        "youtube": "none_found",
+        "target_offering": null,
+        "evidence": [
+          "https://web.stanford.edu/class/archive/cs/cs103/cs103.1152/"
+        ],
+        "note": "Archived Stanford pages expose lecture-video resources, but no qualifying public YouTube course playlist was confirmed."
+      },
+      {
+        "code": "CS106",
+        "status": "not_in_baseline",
+        "youtube": null,
+        "target_offering": null,
+        "evidence": [],
+        "note": "No CS106 node exists in the v0.1 168-course catalog baseline; not added in v0.2."
+      },
+      {
+        "code": "CS107",
+        "status": "archived",
+        "youtube": "https://www.youtube.com/playlist?list=PLoCMsyE1cvdWivlV-39KKsBKUX-4DvraN",
+        "target_offering": "Spring 2016",
+        "evidence": [
+          "https://github.com/whaleymar/stanford-cs107"
+        ],
+        "note": "Public Stanford CS107 Spring 2016 lecture playlist identified. v0.3: offering predates Autumn 2023, so this binding is archived and excluded from generation_queue."
+      },
+      {
+        "code": "CS109",
+        "status": "archived",
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rOpr_A7B9SriE_iZmkanvUg",
+        "target_offering": "Autumn 2022",
+        "evidence": [
+          "https://web.stanford.edu/class/archive/cs/cs109/cs109.1242/handouts/syllabus.html",
+          "https://www.youtube.com/watch?v=2MuDZIAzBMY"
+        ],
+        "note": "Stanford Online public CS109 playlist; archived Stanford syllabus identifies the reused recordings as Fall/Autumn 2022. v0.3: offering predates Autumn 2023, so this binding is archived and excluded from generation_queue."
+      },
+      {
+        "code": "CS111",
+        "status": "none_found",
+        "youtube": "none_found",
+        "target_offering": null,
+        "evidence": [
+          "https://explorecourses.stanford.edu/"
+        ],
+        "note": "Dedicated search did not confirm a qualifying public YouTube course playlist."
+      },
+      {
+        "code": "CS161",
+        "status": "none_found",
+        "youtube": "none_found",
+        "target_offering": null,
+        "evidence": [
+          "https://cs161-stanford.github.io/lectures/"
+        ],
+        "note": "Official lecture page states lecture videos are on Canvas; no qualifying public YouTube Stanford course playlist confirmed."
+      },
+      {
+        "code": "CS145",
+        "status": "none_found",
+        "youtube": "none_found",
+        "target_offering": null,
+        "evidence": [
+          "https://web.stanford.edu/class/cs145/"
+        ],
+        "note": "Dedicated search did not confirm a qualifying public YouTube course playlist."
+      },
+      {
+        "code": "CS147",
+        "status": "none_found",
+        "youtube": "none_found",
+        "target_offering": null,
+        "evidence": [
+          "https://hci.stanford.edu/courses/cs147/2019/au/videos.html"
+        ],
+        "note": "YouTube contains StanfordHCI course intro/project videos, but no qualifying full course / lecture-series playlist was confirmed."
+      },
+      {
+        "code": "CS148",
+        "status": "none_found",
+        "youtube": "none_found",
+        "target_offering": null,
+        "evidence": [
+          "https://web.stanford.edu/class/cs148/index.html"
+        ],
+        "note": "Official course site points registered students to Canvas recordings; no qualifying public YouTube course playlist confirmed."
+      },
+      {
+        "code": "CS154",
+        "status": "none_found",
+        "youtube": "none_found",
+        "target_offering": null,
+        "evidence": [
+          "https://theory.stanford.edu/~liyang/teaching/computability.html"
+        ],
+        "note": "Course page references video numbers but the dedicated search did not establish a qualifying public YouTube course playlist."
+      },
+      {
+        "code": "CS155",
+        "status": "none_found",
+        "youtube": "none_found",
+        "target_offering": null,
+        "evidence": [
+          "https://cs155.stanford.edu/"
+        ],
+        "note": "Official course site says lecture recordings are available through Canvas; no qualifying public YouTube course playlist confirmed."
+      },
+      {
+        "code": "CS25",
+        "status": "confirmed_recent",
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM",
+        "target_offering": "Cumulative playlist; active subset Autumn 2023–Spring 2026",
+        "uploader_verified": true,
+        "evidence": [
+          "https://web.stanford.edu/class/cs25/",
+          "https://web.stanford.edu/class/cs25/past/cs25-v3/",
+          "https://web.stanford.edu/class/cs25/past/cs25-v4/",
+          "https://web.stanford.edu/class/cs25/past/cs25-v5/",
+          "https://web.stanford.edu/class/cs25/recordings/"
+        ],
+        "note": "Treated as active_recent despite being a cumulative playlist. Official CS25 pages document V3 in Autumn 2023, V4 in Spring 2024, V5 in Spring 2025, and V6 in Spring 2026, and the official Recordings page states that new recordings are added to the course playlist. Thus the majority of documented course iterations represented by the continuing playlist fall inside the v0.3 window. Older V1/V2 items remain in the same playlist and downstream generators must select only lectures whose offering/date is Autumn 2023 or later."
+      },
+      {
+        "code": "CS230",
+        "status": "confirmed_recent",
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X",
+        "target_offering": "Autumn 2025",
+        "uploader_verified": true,
+        "evidence": [
+          "https://cs230.stanford.edu/syllabus/",
+          "https://www.youtube.com/watch?v=_NLHFoVNlbg"
+        ],
+        "note": "Stanford Online (verified channel) publishes CS230 Autumn 2025 lectures; playlist binding retained from v0.2 and uploader verified in v0.3."
+      },
+      {
+        "code": "CS336",
+        "status": "confirmed_recent",
+        "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_",
+        "target_offering": "Spring 2025",
+        "uploader_verified": true,
+        "evidence": [
+          "https://cs336.stanford.edu/spring2025/",
+          "https://www.youtube.com/watch?v=ptFiH_bHnJw"
+        ],
+        "note": "Stanford Online (verified channel) publishes CS336 Spring 2025 lectures; playlist binding retained from v0.2 and uploader verified in v0.3."
+      }
+    ],
+    "active_window_start": "Autumn 2023",
+    "reference_date": "2026-09"
+  },
+  "material_policy": {
+    "reference_date": "2026-09",
+    "active_window_start": "Autumn 2023",
+    "rule": "Only public course materials bound to an offering in Autumn 2023 or later qualify as active_recent. Older confirmed material is retained as archived evidence but MUST NOT enter the generation queue. Unbound or not-yet-qualified material remains pending_verification.",
+    "youtube_rule": "A YouTube binding is accepted as current program material only when the course/lecture series is publicly accessible, attributable to Stanford/the course, and the bound offering is Autumn 2023 or later. Historical playlists remain recorded only under archived material.",
+    "other_video_rule": "SEE.stanford.edu or official Stanford course video/archive pages may be bound in public_materials.other_video only when the usable recording set is from Autumn 2023 or later. Older archives are not accepted as active program material.",
+    "generation_rule": "generation_queue contains active_recent courses only; archived nodes remain in the canonical course registry and dependency DAG for historical/provenance purposes."
+  },
+  "material_layers": {
+    "active_recent": [
+      "CS25",
+      "CS230",
+      "CS336"
+    ],
+    "archive_official": [
+      "CS106A",
+      "CS106B",
+      "CS107",
+      "CS109",
+      "CS221",
+      "CS224N",
+      "CS224W",
+      "CS229"
+    ],
+    "pending_verification": [
+      "CS7",
+      "CS10N",
+      "CS11SI",
+      "CS21SI",
+      "CS22A",
+      "CS24",
+      "CS25N",
+      "CS31N",
+      "CS42SI",
+      "CS44N",
+      "CS47N",
+      "CS51",
+      "CS52",
+      "CS53N",
+      "CS104",
+      "CS105",
+      "CS106AX",
+      "CS106E",
+      "CS106EA",
+      "CS106L",
+      "CS106M",
+      "CS106S",
+      "CS107E",
+      "CS110",
+      "CS112",
+      "CS120",
+      "CS123",
+      "CS124",
+      "CS129",
+      "CS131",
+      "CS137A",
+      "CS140E",
+      "CS140M",
+      "CS141",
+      "CS143",
+      "CS144",
+      "CS145",
+      "CS146J",
+      "CS146S",
+      "CS147L",
+      "CS151",
+      "CS152",
+      "CS153",
+      "CS157",
+      "CS163",
+      "CS166",
+      "CS170",
+      "CS173A",
+      "CS177",
+      "CS180",
+      "CS182",
+      "CS182W",
+      "CS183E",
+      "CS186",
+      "CS193P",
+      "CS193Q",
+      "CS193T",
+      "CS194",
+      "CS194W",
+      "CS202",
+      "CS205L",
+      "CS206",
+      "CS210A",
+      "CS210B",
+      "CS212",
+      "CS217",
+      "CS220",
+      "CS223A",
+      "CS224G",
+      "CS224R",
+      "CS224V",
+      "CS225A",
+      "CS227A",
+      "CS227B",
+      "CS231N",
+      "CS233",
+      "CS234",
+      "CS235",
+      "CS237A",
+      "CS238",
+      "CS238V",
+      "CS240",
+      "CS240LX",
+      "CS241",
+      "CS242",
+      "CS243",
+      "CS244C",
+      "CS246",
+      "CS247A",
+      "CS247B",
+      "CS247G",
+      "CS247S",
+      "CS248A",
+      "CS248B",
+      "CS251",
+      "CS254",
+      "CS254B",
+      "CS255",
+      "CS257",
+      "CS258",
+      "CS259Q",
+      "CS261",
+      "CS265",
+      "CS269I",
+      "CS272",
+      "CS273B",
+      "CS273C",
+      "CS274",
+      "CS275A",
+      "CS277",
+      "CS278",
+      "CS279",
+      "CS281",
+      "CS282",
+      "CS283",
+      "CS286",
+      "CS293",
+      "CS295",
+      "CS309A",
+      "CS312",
+      "CS321M",
+      "CS323",
+      "CS329H",
+      "CS329M",
+      "CS329X",
+      "CS329Z",
+      "CS334",
+      "CS339R",
+      "CS342",
+      "CS343D",
+      "CS347",
+      "CS348C",
+      "CS348K",
+      "CS349D",
+      "CS349E",
+      "CS349F",
+      "CS349H",
+      "CS350S",
+      "CS355",
+      "CS356",
+      "CS357S",
+      "CS360",
+      "CS361",
+      "CS372",
+      "CS375",
+      "CS377G",
+      "CS377P",
+      "CS377Q",
+      "CS377U"
+    ],
+    "searched_not_found": [
+      "CS103",
+      "CS111",
+      "CS146",
+      "CS147",
+      "CS148",
+      "CS154",
+      "CS155",
+      "CS161"
+    ]
+  },
+  "generation_queue": [
+    "CS25",
+    "CS230",
+    "CS336"
+  ],
+  "v04_changes": {
+    "batch1_verified": [
+      "CS103",
+      "CS106B",
+      "CS111",
+      "CS146",
+      "CS147",
+      "CS148",
+      "CS154",
+      "CS155",
+      "CS161"
+    ],
+    "searched_not_found_semantics": "A dedicated 2023+ public-playlist search was completed; no qualifying Stanford Online public playlist exists. Distinct from pending_verification (not yet searched).",
+    "note": "Batch 1/NN — gateway courses. Subsequent batches cover remaining pending by track."
+  },
+  "recency_policy": {
+    "archive_official_semantics": "Official public recordings (Stanford Online playlist, SEE.stanford.edu, or official course-archive video pages) older than Autumn 2023 that constitute the best public version of the course. Generation-ALLOWED with mandatory version labeling of the offering year.",
+    "expanded_sources": [
+      "YouTube Stanford Online playlist",
+      "SEE.stanford.edu official course",
+      "web.stanford.edu class archive video pages"
+    ]
+  },
+  "v05_changes": {
+    "policy": {
+      "archive_official_semantics": "Official public recordings (Stanford Online playlist, SEE.stanford.edu, or official course-archive video pages) older than Autumn 2023 that constitute the best public version of the course. Generation-ALLOWED with mandatory version labeling of the offering year.",
+      "expanded_sources": [
+        "YouTube Stanford Online playlist",
+        "SEE.stanford.edu official course",
+        "web.stanford.edu class archive video pages"
+      ]
+    },
+    "reclassified_archive_official": [
+      "CS106A",
+      "CS107",
+      "CS109",
+      "CS221",
+      "CS224N",
+      "CS224W",
+      "CS229"
+    ],
+    "rationale": "Owner decision 2026-09-24: prefer recency, but allow best-official-version for courses whose recordings predate the line; honest version labeling mandatory."
+  },
+  "v05_batch2": {
+    "verified": [
+      "CS103",
+      "CS106B",
+      "CS111",
+      "CS146",
+      "CS147",
+      "CS148",
+      "CS154",
+      "CS155",
+      "CS161"
+    ],
+    "upgraded": [
+      "CS106B"
+    ],
+    "note": "Expanded-source search (SEE/class-archive/official YouTube) completed for all 9 gateway courses."
+  }
+}

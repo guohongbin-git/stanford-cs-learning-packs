@@ -1,0 +1,641 @@
+{
+  "course": "CS229",
+  "title": "Machine Learning",
+  "term": "Spring 2022",
+  "version": "v0.1",
+  "target_offering": "Spring 2022",
+  "material_status": "archive_official",
+  "weeks": [
+    {
+      "id": "W01",
+      "week": 1,
+      "title": "监督学习与线性模型",
+      "question": "如何用最小二乘与梯度下降从标注数据中学出线性与逻辑回归模型？",
+      "why": "最小二乘与最大似然是后面所有模型优化目标与推导的起点。",
+      "objectives": [
+        "写出线性回归的最小二乘闭式解与梯度更新式",
+        "推导逻辑回归交叉熵损失与最大似然的等价关系",
+        "判断学习率过大或过小时梯度下降训练曲线的症状"
+      ],
+      "concepts": [
+        "Supervised Learning",
+        "Linear Regression",
+        "Logistic Regression",
+        "Classification",
+        "Regression",
+        "Maximum Likelihood",
+        "Gradient Descent",
+        "Optimization",
+        "Gradient"
+      ],
+      "pitfalls": [
+        "未做特征标准化导致梯度下降收敛异常缓慢",
+        "把线性回归直接用于分类使预测值越出0到1区间",
+        "对非凸损失照搬闭式解公式求解参数"
+      ],
+      "quiz": {
+        "q": "正确方法是什么？",
+        "choices": [
+          "结合数据和模型",
+          "只扩大模型",
+          "忽略误差"
+        ],
+        "correct": 0,
+        "explain": "需要结合证据。"
+      },
+      "agent": {
+        "goal": "复习",
+        "inputs": [
+          "concept"
+        ],
+        "actions": [
+          "explain"
+        ],
+        "evidence": [
+          "course"
+        ],
+        "risks": [
+          "version"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 1,
+          "title": "Introduction and Linear Regression",
+          "official": true
+        },
+        {
+          "number": 2,
+          "title": "Gradient Descent and Normal Equations",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS229 Spring 2022 Stanford Online playlist (19 videos)；周与讲次按主题对齐",
+      "model_nodes": [],
+      "example": "使用标注图片训练模型识别物体类别。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "监督学习与线性模型",
+      "part": "Part 1",
+      "label": "Week 1"
+    },
+    {
+      "id": "W02",
+      "week": 2,
+      "title": "生成模型与广义线性模型",
+      "question": "指数族与贝叶斯公式如何导出GDA与朴素贝叶斯的生成式分类器？",
+      "why": "生成式建模用先验与类条件概率把分类转化为概率推断问题。",
+      "objectives": [
+        "把伯努利、高斯与泊松分布统一改写成指数族形式",
+        "用贝叶斯公式推导GDA的后验类别概率表达式",
+        "对朴素贝叶斯的条件概率估计加入拉普拉斯平滑"
+      ],
+      "concepts": [
+        "GLM",
+        "GDA",
+        "Naive Bayes",
+        "Bayes Rule",
+        "Prior",
+        "Posterior",
+        "Likelihood",
+        "Generative Model",
+        "Discriminative Model",
+        "Exponential Family"
+      ],
+      "pitfalls": [
+        "朴素贝叶斯未平滑导致未登录词条件概率为零",
+        "混淆生成式与判别式模型各自的建模对象",
+        "忽略GDA对协方差可逆与特征独立性的前提要求"
+      ],
+      "quiz": {
+        "q": "正确方法是什么？",
+        "choices": [
+          "结合数据和模型",
+          "只扩大模型",
+          "忽略误差"
+        ],
+        "correct": 0,
+        "explain": "需要结合证据。"
+      },
+      "agent": {
+        "goal": "复习",
+        "inputs": [
+          "concept"
+        ],
+        "actions": [
+          "explain"
+        ],
+        "evidence": [
+          "course"
+        ],
+        "risks": [
+          "version"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 4,
+          "title": "Generalized Linear Models",
+          "official": true
+        },
+        {
+          "number": 5,
+          "title": "Gaussian Discriminant Analysis",
+          "official": true
+        },
+        {
+          "number": 6,
+          "title": "Naive Bayes and Laplace Smoothing",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS229 Spring 2022 Stanford Online playlist (19 videos)；周与讲次按主题对齐",
+      "model_nodes": [],
+      "example": "使用泊松回归预测单位时间事件发生次数。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "生成算法与GLM",
+      "part": "Part 1",
+      "label": "Week 2"
+    },
+    {
+      "id": "W03",
+      "week": 3,
+      "title": "核方法与支持向量机",
+      "question": "核技巧如何让SVM在隐式高维空间求最大间隔超平面？",
+      "why": "间隔最大化把凸优化求解与模型泛化能力直接联系起来。",
+      "objectives": [
+        "说明SVM原始问题与对偶问题的目标函数与约束",
+        "用Mercer条件判断给定函数是否为合法核函数",
+        "推导支持向量处KKT互补松弛条件的取值"
+      ],
+      "concepts": [
+        "Kernel Trick",
+        "SVM",
+        "Support Vector",
+        "Margin",
+        "Feature Mapping",
+        "Dual Problem",
+        "Convex Optimization"
+      ],
+      "pitfalls": [
+        "核矩阵非半正定使对偶问题无可行或最优解",
+        "特征映射升维后未调整正则强度而严重过拟合",
+        "把软间隔惩罚系数C设得过大失去容错能力"
+      ],
+      "quiz": {
+        "q": "正确方法是什么？",
+        "choices": [
+          "结合数据和模型",
+          "只扩大模型",
+          "忽略误差"
+        ],
+        "correct": 0,
+        "explain": "需要结合证据。"
+      },
+      "agent": {
+        "goal": "复习",
+        "inputs": [
+          "concept"
+        ],
+        "actions": [
+          "explain"
+        ],
+        "evidence": [
+          "course"
+        ],
+        "risks": [
+          "version"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 3,
+          "title": "Locally Weighted and Logistic Regression",
+          "official": true
+        },
+        {
+          "number": 7,
+          "title": "Kernels",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS229 Spring 2022 Stanford Online playlist (19 videos)；周与讲次按主题对齐",
+      "model_nodes": [],
+      "example": "使用高斯核处理非线性可分数据分类。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "核方法与SVM",
+      "part": "Part 1",
+      "label": "Week 3"
+    },
+    {
+      "id": "W04",
+      "week": 4,
+      "title": "学习理论、正则化与神经网络",
+      "question": "偏差方差分解与正则化如何指导模型选择和泛化评估？",
+      "why": "偏差方差与正则化给出复杂度与验证策略的选择依据。",
+      "objectives": [
+        "画出以模型复杂度为横轴的偏差方差分解曲线",
+        "用k折交叉验证挑选正则化超参数与模型规模",
+        "区分训练误差、验证误差与泛化误差上界的含义"
+      ],
+      "concepts": [
+        "Learning Theory",
+        "Statistical Learning",
+        "Empirical Risk",
+        "Bias Variance Tradeoff",
+        "Regularization",
+        "Regularizer",
+        "Cross Validation",
+        "Model Selection",
+        "Hyperparameter",
+        "Loss Function",
+        "Training Error",
+        "Test Error",
+        "Overfitting",
+        "Underfitting",
+        "Decision Boundary",
+        "Generalization",
+        "Neural Networks"
+      ],
+      "pitfalls": [
+        "在测试集上反复调参造成评估信息泄漏",
+        "以训练误差持续下降误判模型仍在改进",
+        "把偏差与方差权衡当作可同时降到零的目标"
+      ],
+      "quiz": {
+        "q": "正确方法是什么？",
+        "choices": [
+          "结合数据和模型",
+          "只扩大模型",
+          "忽略误差"
+        ],
+        "correct": 0,
+        "explain": "需要结合证据。"
+      },
+      "agent": {
+        "goal": "复习",
+        "inputs": [
+          "concept"
+        ],
+        "actions": [
+          "explain"
+        ],
+        "evidence": [
+          "course"
+        ],
+        "risks": [
+          "version"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 10,
+          "title": "Bias-Variance and Regularization",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS229 Spring 2022 Stanford Online playlist (19 videos)；周与讲次按主题对齐",
+      "model_nodes": [],
+      "example": "分析样本数量对模型泛化误差影响。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "学习理论与泛化",
+      "part": "Part 2",
+      "label": "Week 4"
+    },
+    {
+      "id": "W05",
+      "week": 5,
+      "title": "EM 算法与聚类",
+      "question": "EM算法如何交替迭代求解含隐变量的聚类与密度估计？",
+      "why": "隐变量视角把聚类与密度估计统一成可收敛的交替优化框架。",
+      "objectives": [
+        "说明GMM对数似然的形式与难以直接优化的原因",
+        "推导E步责任度与M步混合参数更新的闭式解",
+        "比较K均值硬分配与GMM软责任度的分配差异"
+      ],
+      "concepts": [
+        "EM Algorithm",
+        "Latent Variable",
+        "GMM",
+        "Clustering",
+        "Density Estimation"
+      ],
+      "pitfalls": [
+        "EM只保证收敛到局部最优，单次初始化结果不可靠",
+        "协方差接近奇异时责任度计算出现数值不稳定",
+        "不借助似然或BIC比较就直接固定簇的数量"
+      ],
+      "quiz": {
+        "q": "正确方法是什么？",
+        "choices": [
+          "结合数据和模型",
+          "只扩大模型",
+          "忽略误差"
+        ],
+        "correct": 0,
+        "explain": "需要结合证据。"
+      },
+      "agent": {
+        "goal": "复习",
+        "inputs": [
+          "concept"
+        ],
+        "actions": [
+          "explain"
+        ],
+        "evidence": [
+          "course"
+        ],
+        "risks": [
+          "version"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 12,
+          "title": "K-Means, GMM and Expectation Maximization",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS229 Spring 2022 Stanford Online playlist (19 videos)；周与讲次按主题对齐",
+      "model_nodes": [],
+      "example": "高斯混合模型中交替估计类别概率和参数。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "正则化与模型选择",
+      "part": "Part 2",
+      "label": "Week 5"
+    },
+    {
+      "id": "W06",
+      "week": 6,
+      "title": "PCA、矩阵分解与决策树",
+      "question": "PCA与SVD如何靠特征方向把高维数据压缩到低维主成分？",
+      "why": "降维揭示数据方差结构，也是特征工程与去噪的常用工具。",
+      "objectives": [
+        "从协方差矩阵的特征向量导出主成分方向",
+        "用SVD分解写出PCA降维与重构的矩阵公式",
+        "按累计方差解释比例确定保留的主成分个数"
+      ],
+      "concepts": [
+        "PCA",
+        "SVD",
+        "Eigenvector",
+        "Feature Engineering",
+        "Error Analysis",
+        "Evaluation Metric"
+      ],
+      "pitfalls": [
+        "未标准化特征使大量纲维度主导主成分方向",
+        "把主成分方向直接解释为有物理意义的原始特征",
+        "对强非线性流形数据仍强行使用线性降维"
+      ],
+      "quiz": {
+        "q": "正确方法是什么？",
+        "choices": [
+          "结合数据和模型",
+          "只扩大模型",
+          "忽略误差"
+        ],
+        "correct": 0,
+        "explain": "需要结合证据。"
+      },
+      "agent": {
+        "goal": "复习",
+        "inputs": [
+          "concept"
+        ],
+        "actions": [
+          "explain"
+        ],
+        "evidence": [
+          "course"
+        ],
+        "risks": [
+          "version"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 14,
+          "title": "Factor Analysis and PCA",
+          "official": true
+        },
+        {
+          "number": 15,
+          "title": "ICA and Matrix Factorization",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS229 Spring 2022 Stanford Online playlist (19 videos)；周与讲次按主题对齐",
+      "model_nodes": [],
+      "example": "将高维人脸图像压缩到主要特征方向。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "无监督学习与EM",
+      "part": "Part 2",
+      "label": "Week 6"
+    },
+    {
+      "id": "W07",
+      "week": 7,
+      "title": "强化学习基础",
+      "question": "MDP中价值迭代与Q学习如何求解最优策略与价值函数？",
+      "why": "序贯决策可写成状态、动作与折扣回报的优化问题。",
+      "objectives": [
+        "写出贝尔曼最优方程与价值迭代的更新规则",
+        "对比策略迭代与价值迭代的收敛过程与代价",
+        "说明有模型规划与无模型Q学习更新依据的差别"
+      ],
+      "concepts": [
+        "MDP",
+        "Value Function",
+        "Policy",
+        "Q Learning",
+        "Reinforcement Learning"
+      ],
+      "pitfalls": [
+        "折扣因子接近1时回报估计的方差明显增大",
+        "探索不足使Q学习收敛到次优的贪心策略",
+        "把离散栅格上验证的更新率直接用于连续状态"
+      ],
+      "quiz": {
+        "q": "正确方法是什么？",
+        "choices": [
+          "结合数据和模型",
+          "只扩大模型",
+          "忽略误差"
+        ],
+        "correct": 0,
+        "explain": "需要结合证据。"
+      },
+      "agent": {
+        "goal": "复习",
+        "inputs": [
+          "concept"
+        ],
+        "actions": [
+          "explain"
+        ],
+        "evidence": [
+          "course"
+        ],
+        "risks": [
+          "version"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 17,
+          "title": "Basic Concepts in RL, Value Iteration and Policy Iteration",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS229 Spring 2022 Stanford Online playlist (19 videos)；周与讲次按主题对齐",
+      "model_nodes": [],
+      "example": "机器人导航中定义状态动作奖励转移关系。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "PCA与矩阵分解",
+      "part": "Part 3",
+      "label": "Week 7"
+    },
+    {
+      "id": "W08",
+      "week": 8,
+      "title": "自监督学习",
+      "question": "自监督学习如何用无标注数据构造可迁移的预训练任务？",
+      "why": "无标签语料上的预训练为下游任务提供可迁移表征。",
+      "objectives": [
+        "设计对比学习的正负样本构造与温度系数取值",
+        "解释掩码重建目标如何生成自监督预训练信号",
+        "用线性探测或下游微调评估表征的迁移质量"
+      ],
+      "concepts": [
+        "Data Distribution Shift",
+        "Self-Supervised Learning"
+      ],
+      "pitfalls": [
+        "预训练与下游数据分布漂移使迁移表征失效",
+        "负样本构造不当使表示塌缩为近常数向量",
+        "代理任务指标上升但下游微调精度并未改善"
+      ],
+      "quiz": {
+        "q": "正确方法是什么？",
+        "choices": [
+          "结合数据和模型",
+          "只扩大模型",
+          "忽略误差"
+        ],
+        "correct": 0,
+        "explain": "需要结合证据。"
+      },
+      "agent": {
+        "goal": "复习",
+        "inputs": [
+          "concept"
+        ],
+        "actions": [
+          "explain"
+        ],
+        "evidence": [
+          "course"
+        ],
+        "risks": [
+          "version"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 16,
+          "title": "Self-Supervised Learning",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS229 Spring 2022 Stanford Online playlist (19 videos)；周与讲次按主题对齐",
+      "model_nodes": [],
+      "example": "监控线上推荐数据变化发现用户行为漂移。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "强化学习入门",
+      "part": "Part 3",
+      "label": "Week 8"
+    },
+    {
+      "id": "W09",
+      "week": 9,
+      "title": "综合与前沿",
+      "question": "怎样把建模、评估与部署串成可复现的机器学习系统？",
+      "why": "综合周检验能否把前八周的方法落地到完整工作流中。",
+      "objectives": [
+        "为给定任务选定模型、损失函数与评估指标",
+        "设计训练验证测试划分与后续误差分析流程",
+        "给出模型上线后数据漂移与性能监控的方案"
+      ],
+      "concepts": [
+        "Supervised Learning",
+        "Statistical Learning",
+        "Optimization",
+        "Model Selection",
+        "Error Analysis"
+      ],
+      "pitfalls": [
+        "只报单一指标而忽略类别不平衡造成的偏差",
+        "训练与服务特征管道不一致引起线上性能退化",
+        "忽略模型部署后的公平性与社会影响审查"
+      ],
+      "quiz": {
+        "q": "正确方法是什么？",
+        "choices": [
+          "结合数据和模型",
+          "只扩大模型",
+          "忽略误差"
+        ],
+        "correct": 0,
+        "explain": "需要结合证据。"
+      },
+      "agent": {
+        "goal": "复习",
+        "inputs": [
+          "concept"
+        ],
+        "actions": [
+          "explain"
+        ],
+        "evidence": [
+          "course"
+        ],
+        "risks": [
+          "version"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 18,
+          "title": "Societal Impact of ML (Guest: James Zou)",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS229 Spring 2022 Stanford Online playlist (19 videos)；周与讲次按主题对齐",
+      "model_nodes": [],
+      "example": "使用标注图片训练模型识别物体类别。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "综合机器学习系统",
+      "part": "Part 3",
+      "label": "Week 9"
+    }
+  ]
+}

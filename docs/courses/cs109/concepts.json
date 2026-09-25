@@ -1,0 +1,1023 @@
+{
+  "Probability": {
+    "id": "Probability",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "度量随机事件发生可能性的数学框架，满足非负性、规范性和可加性公理。",
+    "why": "建立随机现象的数学语言，用于量化不确定性。",
+    "failure_conditions": [
+      "把概率赋值超出[0,1]范围或忽略概率公理，会导致事件计算结果失去一致性。"
+    ],
+    "example": "分析天气预测中比较下雨事件概率与晴天事件概率，判断模型输出是否合理。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Sample Space"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Counting Principle"
+      }
+    ],
+    "weeks": [
+      "w1",
+      "w9"
+    ],
+    "source_weeks": [
+      "w1",
+      "w9"
+    ]
+  },
+  "Sample Space": {
+    "id": "Sample Space",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "随机实验所有可能结果组成的集合，是定义事件和概率的基础空间。",
+    "why": "确定随机实验边界，使事件定义和概率计算有明确对象。",
+    "failure_conditions": [
+      "遗漏随机实验中的可能结果会造成事件集合不完整，使概率计算出现系统偏差。"
+    ],
+    "example": "掷两枚骰子时列出36种有序结果作为样本空间并计算点数和的概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Counting Principle"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Permutation"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Counting Principle": {
+    "id": "Counting Principle",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用分步计数规则计算组合对象数量的方法。",
+    "why": "提供复杂概率问题中计算结果数量的系统方法。",
+    "failure_conditions": [
+      "将多个独立步骤错误相乘或漏算步骤数量，会低估或高估可能结果总数。"
+    ],
+    "example": "统计密码由数字和字母组成时计算不同位置组合数量。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Permutation"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Combination"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Permutation": {
+    "id": "Permutation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "从集合中选择元素并考虑排列顺序的计数方法。",
+    "why": "分析顺序敏感场景中的排列可能性。",
+    "failure_conditions": [
+      "在需要考虑顺序的安排问题中误用组合公式，会丢失排列顺序带来的差异。"
+    ],
+    "example": "安排5名学生依次进行演讲时计算不同出场顺序数量。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Combination"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Conditional Probability"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Combination": {
+    "id": "Combination",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "从集合中选择元素但忽略排列顺序的计数方法。",
+    "why": "解决不考虑顺序选择问题中的计数需求。",
+    "failure_conditions": [
+      "在选取团队或样本时错误区分顺序，会把同一组选项重复计算。"
+    ],
+    "example": "从10名员工中选择3人组成项目小组，计算不同团队数量。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Conditional Probability"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Independence"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Conditional Probability": {
+    "id": "Conditional Probability",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "在已知另一事件发生条件下重新计算事件概率的方法。",
+    "why": "刻画新信息出现后概率如何变化。",
+    "failure_conditions": [
+      "把条件概率误认为独立概率，会忽略已知信息对事件可能性的改变。"
+    ],
+    "example": "医学检测中根据检测阳性结果重新计算患者患病概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Independence"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Random Variable"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Independence": {
+    "id": "Independence",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "两个随机事件发生与否互不改变对方概率的统计关系。",
+    "why": "判断多个随机因素是否可以分离建模。",
+    "failure_conditions": [
+      "将存在关联的事件假设为独立，会错误拆分联合概率并得到偏低或偏高结果。"
+    ],
+    "example": "分析两次考试成绩时判断学生表现是否存在统计关联。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Random Variable"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Bernoulli Distribution"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Random Variable": {
+    "id": "Random Variable",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "将随机结果映射为数值的函数，用于建立概率分布。",
+    "why": "把随机结果转换为可计算的数据表示。",
+    "failure_conditions": [
+      "把随机变量当作固定未知常数，会错误理解随机实验结果的变化范围。"
+    ],
+    "example": "将一次掷骰结果映射为随机变量并研究其分布特征。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bernoulli Distribution"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Binomial Distribution"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Bernoulli Distribution": {
+    "id": "Bernoulli Distribution",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "描述只有成功或失败两种结果的离散概率分布。",
+    "why": "描述二分类随机过程的基本概率结构。",
+    "failure_conditions": [
+      "把多结果实验强行建模为二项结果，会忽略真实事件结构。"
+    ],
+    "example": "建模一次点击广告成功或失败的用户行为概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Binomial Distribution"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Expectation"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Binomial Distribution": {
+    "id": "Binomial Distribution",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "描述固定次数独立伯努利试验成功次数的概率分布。",
+    "why": "分析重复成功失败试验中的累计结果。",
+    "failure_conditions": [
+      "忽略试验独立性或固定次数条件，会使成功次数概率估计失效。"
+    ],
+    "example": "计算100次独立投篮中命中次数超过70次的概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Expectation"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Variance"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Expectation": {
+    "id": "Expectation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "随机变量取值按照概率加权后的平均结果。",
+    "why": "总结随机变量长期平均行为。",
+    "failure_conditions": [
+      "把期望解释为单次实验必然出现的结果，会误解长期平均概念。"
+    ],
+    "example": "计算保险公司每份保单的长期平均赔付金额。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Variance"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Covariance"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Variance": {
+    "id": "Variance",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "衡量随机变量取值围绕均值波动程度的统计量。",
+    "why": "衡量随机结果稳定性和离散程度。",
+    "failure_conditions": [
+      "用方差比较量纲不同的变量，会把尺度差异误认为波动差异。"
+    ],
+    "example": "比较两个投资组合收益率的波动程度以评估风险。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Covariance"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Normal Distribution"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Covariance": {
+    "id": "Covariance",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "描述两个随机变量共同变化方向和程度的统计量。",
+    "why": "发现多个变量共同变化趋势。",
+    "failure_conditions": [
+      "只依据协方差判断变量关系强弱，会受到变量尺度影响产生误判。"
+    ],
+    "example": "分析股票价格和市场指数收益是否共同变化。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Normal Distribution"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Probability Density Function"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Normal Distribution": {
+    "id": "Normal Distribution",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "由均值和方差确定的连续钟形概率分布。",
+    "why": "提供连续变量统计建模中的重要近似形式。",
+    "failure_conditions": [
+      "在明显偏态或离散极端数据中直接套用正态假设，会产生错误概率估计。"
+    ],
+    "example": "用身高样本近似成年人群身高分布并计算区间比例。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Probability Density Function"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Exponential Distribution"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Probability Density Function": {
+    "id": "Probability Density Function",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "描述连续随机变量概率密度变化的函数。",
+    "why": "描述连续变量在不同区域出现可能性的变化。",
+    "failure_conditions": [
+      "把连续分布密度值当作事件概率，会错误解释积分意义。"
+    ],
+    "example": "计算正态分布中某个身高区间出现的概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Exponential Distribution"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Joint Distribution"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Exponential Distribution": {
+    "id": "Exponential Distribution",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "用于描述等待时间等连续随机过程的分布。",
+    "why": "刻画等待时间和事件间隔模型。",
+    "failure_conditions": [
+      "把具有记忆性的等待过程应用于非随机间隔事件，会错误预测时间概率。"
+    ],
+    "example": "模拟客服系统中下一次来电等待时间。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Joint Distribution"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Correlation"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Joint Distribution": {
+    "id": "Joint Distribution",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "同时描述多个随机变量联合取值概率关系的分布。",
+    "why": "研究多个随机变量之间联合行为。",
+    "failure_conditions": [
+      "忽略变量之间联合结构，只分析单变量分布，会丢失变量关联信息。"
+    ],
+    "example": "分析天气温度和湿度共同变化的概率模型。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Correlation"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Central Limit Theorem"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Correlation": {
+    "id": "Correlation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "标准化衡量两个变量线性相关程度的统计指标。",
+    "why": "衡量变量线性关系强弱。",
+    "failure_conditions": [
+      "将相关关系解释为因果关系，会错误推断变量之间的影响方向。"
+    ],
+    "example": "研究冰淇淋销量与溺水事件相关但不存在直接因果关系。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Central Limit Theorem"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Confidence Interval"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Central Limit Theorem": {
+    "id": "Central Limit Theorem",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "说明独立样本均值在条件满足时趋近正态分布的定理。",
+    "why": "解释样本均值为何具有稳定统计规律。",
+    "failure_conditions": [
+      "样本量过小或总体分布极端偏斜时直接使用正态近似，会降低估计可靠性。"
+    ],
+    "example": "用100次抛硬币结果的平均值近似正态分布并构造区间。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Confidence Interval"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Sampling Distribution"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Confidence Interval": {
+    "id": "Confidence Interval",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "根据样本估计总体参数范围的不确定性表达方法。",
+    "why": "表达参数估计中的不确定范围。",
+    "failure_conditions": [
+      "把置信区间解释为参数固定落入该区间的概率，会混淆频率学派含义。"
+    ],
+    "example": "根据抽样数据估计城市平均收入的95%置信区间。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Sampling Distribution"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Estimator"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Sampling Distribution": {
+    "id": "Sampling Distribution",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "统计量在重复抽样过程中的概率分布。",
+    "why": "连接样本统计量与总体参数。",
+    "failure_conditions": [
+      "把单次样本结果当作统计量分布，会错误理解重复抽样变化。"
+    ],
+    "example": "重复抽取多个样本计算均值，观察样本均值分布。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Estimator"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Naive Bayes"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Estimator": {
+    "id": "Estimator",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用样本数据估计未知总体参数的统计规则。",
+    "why": "将有限样本转化为参数推断工具。",
+    "failure_conditions": [
+      "选择有偏估计量却忽略偏差，会导致总体参数推断长期偏离真实值。"
+    ],
+    "example": "利用样本均值估计总体平均考试成绩。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Naive Bayes"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Bayes Rule"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Naive Bayes": {
+    "id": "Naive Bayes",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用条件独立假设计算类别后验概率的概率分类方法。",
+    "why": "提供高效文本分类中的概率决策方法。",
+    "failure_conditions": [
+      "条件独立性假设不成立时后验概率可能过度自信。"
+    ],
+    "example": "垃圾邮件过滤中根据词频估计邮件属于垃圾邮件的概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bayes Rule"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Prior"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Bayes Rule": {
+    "id": "Bayes Rule",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过先验概率和似然更新后验概率的概率推理公式。",
+    "why": "实现证据驱动的概率更新。",
+    "failure_conditions": [
+      "先验概率或似然估计错误时，更新后的后验结果会产生方向性偏差。"
+    ],
+    "example": "疾病筛查中结合患病率和检测准确率更新风险概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Prior"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Posterior"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Prior": {
+    "id": "Prior",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "观察数据前对参数或事件可能性的初始概率描述。",
+    "why": "表示观察数据前已有知识。",
+    "failure_conditions": [
+      "先验选择不合理会使数据较少时的推断结果被错误信念主导。"
+    ],
+    "example": "贝叶斯模型中使用历史疾病发生率作为初始患病概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Posterior"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Likelihood"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Posterior": {
+    "id": "Posterior",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "结合观测证据更新后的条件概率分布。",
+    "why": "表示加入证据后的更新信念。",
+    "failure_conditions": [
+      "忽略观测证据质量直接接受后验分布，会放大错误数据影响。"
+    ],
+    "example": "根据用户点击数据更新推荐系统中用户兴趣概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Likelihood"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Probability"
+      }
+    ],
+    "weeks": [
+      "w8",
+      "w9"
+    ],
+    "source_weeks": [
+      "w8",
+      "w9"
+    ]
+  },
+  "Likelihood": {
+    "id": "Likelihood",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "在给定参数条件下观察数据出现可能性的函数。",
+    "why": "衡量参数解释观测数据的能力。",
+    "failure_conditions": [
+      "把似然函数当作参数本身的概率，会错误理解统计推断过程。"
+    ],
+    "example": "估计硬币正面概率时比较不同参数对观测结果的解释能力。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Probability"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Sample Space"
+      }
+    ],
+    "weeks": [
+      "w2",
+      "w9"
+    ],
+    "source_weeks": [
+      "w2",
+      "w9"
+    ]
+  },
+  "Poisson Distribution": {
+    "id": "Poisson Distribution",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "用于描述单位时间或空间内独立事件发生次数的离散分布，参数λ表示平均发生率",
+    "why": "刻画单位时间/空间内独立事件计数的随机性",
+    "failure_conditions": [
+      "事件之间存在依赖关系时Poisson独立事件假设失效"
+    ],
+    "example": "统计单位时间内网站访问请求次数预测流量峰值",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Joint Distribution"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Sampling Distribution"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Beta Distribution": {
+    "id": "Beta Distribution",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "定义在[0,1]区间上的连续概率分布，常用于表示概率参数的不确定性",
+    "why": "为 [0,1] 上的概率参数提供先验与后验建模",
+    "failure_conditions": [
+      "先验参数选择不合理会导致后验概率偏向错误方向"
+    ],
+    "example": "贝叶斯模型中估计用户点击率真实概率范围",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Naive Bayes"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Posterior"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Maximum Likelihood Estimation": {
+    "id": "Maximum Likelihood Estimation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "选择使观测数据出现概率最大的参数，通过最大化似然函数估计模型",
+    "why": "用数据选择最能解释观测的参数取值",
+    "failure_conditions": [
+      "样本量较小时估计方差较大且容易受异常值影响"
+    ],
+    "example": "根据历史投票数据估计候选人支持率参数",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Normal Distribution"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Probability Density Function"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Maximum A Posteriori": {
+    "id": "Maximum A Posteriori",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "结合先验分布和观测似然，通过最大化后验概率估计参数",
+    "why": "在先验约束下结合数据更新参数信念",
+    "failure_conditions": [
+      "错误先验会压制数据证据导致估计偏差"
+    ],
+    "example": "结合历史知识和新数据估计疾病概率",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Naive Bayes"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Posterior"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Bootstrapping": {
+    "id": "Bootstrapping",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过重复有放回抽样已有数据集估计统计量分布的方法",
+    "why": "用重采样近似统计量的抽样分布",
+    "failure_conditions": [
+      "原始样本太小时重采样无法代表真实总体"
+    ],
+    "example": "利用Bootstrap估计平均收入的置信区间",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Probability"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Posterior"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "P-Value": {
+    "id": "P-Value",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "在原假设成立条件下观察到当前或更极端结果的概率指标",
+    "why": "量化观测结果在原假设下的极端程度",
+    "failure_conditions": [
+      "误将P值当作假设成立概率导致统计误解"
+    ],
+    "example": "医学实验中判断新药效果是否显著",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Probability"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Posterior"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Algorithmic Analysis": {
+    "id": "Algorithmic Analysis",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "使用渐近符号分析算法随输入规模增长的时间和空间消耗",
+    "why": "用渐近记号评估算力与内存的增长代价",
+    "failure_conditions": [
+      "忽略输入规模变化会错误评估算法性能"
+    ],
+    "example": "比较排序算法处理百万条数据的运行成本",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Random Variable"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bernoulli Distribution"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Logistic Regression": {
+    "id": "Logistic Regression",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过sigmoid函数将线性组合映射为类别概率的统计分类模型",
+    "why": "用线性组合加 sigmoid 完成概率化分类",
+    "failure_conditions": [
+      "线性决策边界无法处理复杂非线性分类问题"
+    ],
+    "example": "使用邮件文本特征预测垃圾邮件类别",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Probability"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Posterior"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  }
+}

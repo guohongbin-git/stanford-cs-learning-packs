@@ -1,0 +1,36 @@
+{
+  "package": "CS224W_course_pack_final_v2.2",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3717,
+      "sha256": "622c31b089fd28ef088389704f1ee9ebf995dd0af1e7268b81ef9f16232c3f45"
+    },
+    {
+      "path": "CS224W_interactive_Autumn2021_v0.1.html",
+      "bytes": 647830,
+      "sha256": "a1c78b623f57d7cfe832179d86493edf06d1f3dc572dcdb0414be7a9ecfd0edb"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1817,
+      "sha256": "71bc5488f1244a0ebb07f5ba06ec13ebf8e39e6e5661e387c97672e3f696858c"
+    },
+    {
+      "path": "concepts.json",
+      "bytes": 19699,
+      "sha256": "6c6bb00b0a1d8fefc6d48f572fa28fb93e38e543f5dbc7f48e6c1d961ef701d3"
+    },
+    {
+      "path": "course_ir.json",
+      "bytes": 20600,
+      "sha256": "d2873e649d7a44357ec6489e22d5fbd187e94d3040c7ffffd934f7e972aae86f"
+    },
+    {
+      "path": "index.html",
+      "bytes": 409,
+      "sha256": "b01bbc03d26f293dc756f14af5a58314e6871dbe94a3ba9b790e257366f1962d"
+    }
+  ],
+  "note": "Repo manifest: lists exactly the files shipped in git. Full QA screenshots ship with the Release zip."
+}

@@ -1,0 +1,1214 @@
+{
+  "Karel the Robot": {
+    "id": "Karel the Robot",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "教学环境中的机器人抽象，通过基本指令学习程序控制和问题分解。",
+    "why": "帮助初学者建立命令、状态和执行过程之间的联系。",
+    "failure_conditions": [
+      "忽略机器人初始状态会导致程序在不同世界配置下失败。"
+    ],
+    "example": "用 Karel 在网格世界中完成铺石、爬楼梯与放置网球等任务",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Control Flow"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Method Decomposition"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Control Flow": {
+    "id": "Control Flow",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "程序执行过程中语句、分支和循环的运行顺序。",
+    "why": "理解控制流是分析程序行为和调试错误的基础。",
+    "failure_conditions": [
+      "错误安排条件顺序会导致不可达代码执行。"
+    ],
+    "example": "学生编写if-else程序根据成绩输出等级。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Method Decomposition"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Variable Scope"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Method Decomposition": {
+    "id": "Method Decomposition",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "将复杂程序拆分为多个职责明确的方法的设计方式。",
+    "why": "降低程序复杂度并提高代码复用。",
+    "failure_conditions": [
+      "方法职责混乱会造成重复代码和维护困难。"
+    ],
+    "example": "绘制图形程序时把绘制步骤拆成多个方法。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Variable Scope"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Boolean Logic"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Variable Scope": {
+    "id": "Variable Scope",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "变量可以被访问和修改的程序区域范围。",
+    "why": "控制变量可访问范围，减少状态混乱。",
+    "failure_conditions": [
+      "局部变量覆盖同名变量导致错误结果。"
+    ],
+    "example": "Java方法中使用局部变量保存计算中间值。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Boolean Logic"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Boolean Logic": {
+    "id": "Boolean Logic",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "使用真值、逻辑运算组合条件判断的方法。",
+    "why": "支持程序根据条件做出决策。",
+    "failure_conditions": [
+      "逻辑表达式优先级错误会产生错误分支。"
+    ],
+    "example": "登录系统中组合用户名和密码验证条件。",
+    "relations": [
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Array"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Array": {
+    "id": "Array",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "存储固定数量同类型元素并通过索引访问的数据结构。",
+    "why": "提供顺序数据管理的基础结构。",
+    "failure_conditions": [
+      "访问超过长度范围会产生越界错误。"
+    ],
+    "example": "保存一组学生成绩并按位置读取。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "ArrayList"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "String Manipulation"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "ArrayList": {
+    "id": "ArrayList",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "可动态扩展容量的Java列表数据结构。",
+    "why": "支持长度变化的数据集合操作。",
+    "failure_conditions": [
+      "频繁中间插入导致性能下降。"
+    ],
+    "example": "用动态数组维护待办清单并按下标随机访问。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "String Manipulation"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "File I/O"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "String Manipulation": {
+    "id": "String Manipulation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "对文本进行连接、截取、比较和转换的操作。",
+    "why": "处理文本拼接、搜索和转换操作。",
+    "failure_conditions": [
+      "直接比较字符串引用导致判断错误。"
+    ],
+    "example": "解析用户输入的姓名并生成格式化输出。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "File I/O"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Debugging"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "File I/O": {
+    "id": "File I/O",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "程序读取和写入外部文件数据的机制。",
+    "why": "支持程序读取和写入外部数据资源。",
+    "failure_conditions": [
+      "未关闭文件资源可能造成数据损坏。"
+    ],
+    "example": "读取配置文件加载程序参数。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Debugging"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Object-Oriented Design"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Debugging": {
+    "id": "Debugging",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "定位、分析和修复程序错误的过程。",
+    "why": "提升程序可靠性和开发效率。",
+    "failure_conditions": [
+      "只修改表面现象会留下隐藏错误。"
+    ],
+    "example": "使用调试器追踪循环变量变化。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Object-Oriented Design"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Class"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Object-Oriented Design": {
+    "id": "Object-Oriented Design",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "使用对象、职责和关系组织程序结构的方法。",
+    "why": "支持大型软件模块化设计。",
+    "failure_conditions": [
+      "对象职责划分不合理造成高度耦合。"
+    ],
+    "example": "设计图书管理系统中的Book和Library对象。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Class"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Inheritance"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Class": {
+    "id": "Class",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "定义对象属性和行为的Java结构。",
+    "why": "建立面向对象程序的模板。",
+    "failure_conditions": [
+      "类职责过多导致代码难以维护。"
+    ],
+    "example": "创建Student类保存学生信息。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Inheritance"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Interface"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Inheritance": {
+    "id": "Inheritance",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过继承复用已有类属性和方法的机制。",
+    "why": "表达类之间的层次关系。",
+    "failure_conditions": [
+      "滥用继承会产生紧密耦合。"
+    ],
+    "example": "让Animal子类共享基础行为。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Interface"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Polymorphism"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Interface": {
+    "id": "Interface",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "定义对象必须实现行为契约的Java结构。",
+    "why": "定义对象行为规范，实现模块之间解耦。",
+    "failure_conditions": [
+      "接口设计过大导致实现困难。"
+    ],
+    "example": "定义Drawable接口统一图形对象行为。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Polymorphism"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Graphics Program"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Polymorphism": {
+    "id": "Polymorphism",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "同一接口调用不同对象实现的方法能力。",
+    "why": "支持可扩展的软件设计。",
+    "failure_conditions": [
+      "运行时类型理解错误导致调用异常。"
+    ],
+    "example": "使用Shape接口绘制不同图形。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Graphics Program"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Event Handler"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Graphics Program": {
+    "id": "Graphics Program",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过图形库创建视觉交互程序的应用类型。",
+    "why": "训练事件和对象协作设计。",
+    "failure_conditions": [
+      "坐标计算错误导致图形位置异常。"
+    ],
+    "example": "编写画布程序绘制移动球体。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Event Handler"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Exception Handling"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Event Handler": {
+    "id": "Event Handler",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "响应鼠标键盘等外部事件的程序组件。",
+    "why": "实现交互式应用。",
+    "failure_conditions": [
+      "事件绑定错误导致用户操作无响应。"
+    ],
+    "example": "点击按钮时触发更新界面。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Exception Handling"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Exception Handling": {
+    "id": "Exception Handling",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "处理程序运行异常情况的机制。",
+    "why": "处理运行异常情况，提升程序健壮性。",
+    "failure_conditions": [
+      "捕获过宽异常隐藏真实问题。"
+    ],
+    "example": "读取文件失败时提示用户重新选择。",
+    "relations": [
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Algorithm Analysis"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Algorithm Analysis": {
+    "id": "Algorithm Analysis",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过数学方法评估算法运行时间、空间消耗和输入规模增长关系",
+    "why": "用于判断程序效率与资源消耗，指导算法选择。",
+    "failure_conditions": [
+      "只测试小规模数据会掩盖算法效率问题"
+    ],
+    "example": "比较两种Java排序程序处理大量整数的性能",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Big O Notation"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Testing"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Big O Notation": {
+    "id": "Big O Notation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "描述算法渐近增长速度的符号，用于表示最坏或典型资源复杂度",
+    "why": "描述程序随输入规模增长的渐近复杂度。",
+    "failure_conditions": [
+      "忽略隐藏复杂度会错误判断程序扩展能力"
+    ],
+    "example": "分析Array遍历为O(n)并估计百万数据运行成本",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Testing"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Testing": {
+    "id": "Testing",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过执行程序和检查输出验证代码是否符合预期的方法",
+    "why": "验证程序行为是否符合设计预期。",
+    "failure_conditions": [
+      "测试覆盖不足会遗漏边界输入导致隐藏错误"
+    ],
+    "example": "为Java方法设计不同输入检查返回结果",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Algorithm Analysis"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Big O Notation"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Encapsulation": {
+    "id": "Encapsulation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "将数据状态和操作方法封装在对象内部限制直接访问的设计原则",
+    "why": "限制对象内部状态访问，提高模块独立性。",
+    "failure_conditions": [
+      "暴露内部状态会导致对象被非法修改"
+    ],
+    "example": "设计BankAccount类隐藏余额修改细节",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Constructor"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Static Method"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Constructor": {
+    "id": "Constructor",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "Java类创建对象时自动执行的初始化方法，与类同名且无返回类型",
+    "why": "负责对象创建时初始化状态，保证实例可用。",
+    "failure_conditions": [
+      "构造过程未初始化字段会产生无效对象状态"
+    ],
+    "example": "创建Student对象时设置姓名和学号",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Static Method"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Parameter Passing"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Static Method": {
+    "id": "Static Method",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "属于类而非对象实例的方法，通过类名直接调用",
+    "why": "组织无需对象状态的方法功能。",
+    "failure_conditions": [
+      "误访问实例变量会导致编译错误"
+    ],
+    "example": "使用Math.max调用静态方法比较两个数字",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Parameter Passing"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Return Value"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Parameter Passing": {
+    "id": "Parameter Passing",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "将调用者提供的数据传递给方法参数的过程，Java按值传递引用副本",
+    "why": "明确方法调用时数据传递方式。",
+    "failure_conditions": [
+      "误解引用传递会导致错误修改对象状态判断"
+    ],
+    "example": "调用方法传入数组并修改其中元素",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Return Value"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Reference Type"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Return Value": {
+    "id": "Return Value",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "方法执行完成后返回给调用者的数据结果",
+    "why": "设计方法输出结果，连接程序模块。",
+    "failure_conditions": [
+      "遗漏返回路径会导致编译错误或错误结果"
+    ],
+    "example": "计算方法返回两个整数相加后的结果",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Reference Type"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Primitive Type"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Reference Type": {
+    "id": "Reference Type",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "保存对象引用而非对象本身数据的位置类型",
+    "why": "理解对象引用关系和内存访问方式。",
+    "failure_conditions": [
+      "比较引用地址而非内容会产生判断错误"
+    ],
+    "example": "使用String引用指向文本对象进行处理",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Primitive Type"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Casting"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Primitive Type": {
+    "id": "Primitive Type",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "Java内置基本数据类型，直接存储数值或字符值",
+    "why": "理解Java基础数据存储和计算模型。",
+    "failure_conditions": [
+      "超出表示范围会产生精度或溢出问题"
+    ],
+    "example": "使用int变量保存学生成绩整数",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Casting"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Casting": {
+    "id": "Casting",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "将一种数据类型转换为另一种兼容类型的操作",
+    "why": "处理不同数据类型转换，避免类型使用错误。",
+    "failure_conditions": [
+      "错误强制转换对象会触发ClassCastException"
+    ],
+    "example": "将Object引用转换为String读取文本",
+    "relations": [
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Console Output"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Console Output": {
+    "id": "Console Output",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过标准输出流向控制台显示程序信息的方法",
+    "why": "控制程序文本输出，是调试和交互基础。",
+    "failure_conditions": [
+      "输出格式不一致会影响程序交互效果"
+    ],
+    "example": "使用System.out.println打印计算结果",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Graphics Object"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Coordinate System"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Graphics Object": {
+    "id": "Graphics Object",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "Java图形编程中表示可绘制区域和绘图状态的对象",
+    "why": "提供图形绘制能力，实现可视化程序交互。",
+    "failure_conditions": [
+      "坐标或绘制顺序错误导致图形显示异常"
+    ],
+    "example": "使用Graphics绘制CS106A窗口中的图案",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Coordinate System"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Mouse Listener"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Coordinate System": {
+    "id": "Coordinate System",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "用横纵坐标定位图形元素在二维平面位置的表示方式",
+    "why": "用像素坐标描述图形元素的绝对位置",
+    "failure_conditions": [
+      "混淆坐标原点方向会导致绘制位置偏移"
+    ],
+    "example": "在画布坐标系中绘制圆形和矩形",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Mouse Listener"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Keyboard Listener"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Mouse Listener": {
+    "id": "Mouse Listener",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "监听鼠标点击、移动等事件并触发对应处理逻辑的接口机制",
+    "why": "把鼠标点击与移动事件接入程序逻辑",
+    "failure_conditions": [
+      "事件注册错误导致交互操作没有响应"
+    ],
+    "example": "点击画布时创建新的图形对象",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Keyboard Listener"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Data Abstraction"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Keyboard Listener": {
+    "id": "Keyboard Listener",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "监听键盘按键事件并根据输入执行程序行为的机制",
+    "why": "把键盘输入事件接入程序交互",
+    "failure_conditions": [
+      "未处理按键状态会造成控制延迟或错误"
+    ],
+    "example": "使用方向键控制屏幕中角色移动",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Data Abstraction"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Code Style"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Data Abstraction": {
+    "id": "Data Abstraction",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "隐藏数据具体实现细节，仅通过定义接口操作数据的设计思想",
+    "why": "隐藏实现细节，通过接口组织复杂数据操作。",
+    "failure_conditions": [
+      "暴露实现细节会降低代码可维护性"
+    ],
+    "example": "用List接口操作不同Java集合实现",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Code Style"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Documentation"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Code Style": {
+    "id": "Code Style",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "规定变量命名、缩进和代码组织方式的软件开发规范",
+    "why": "保持代码可读一致，降低协作和维护成本。",
+    "failure_conditions": [
+      "风格混乱会增加阅读和维护成本"
+    ],
+    "example": "按照Java命名规范编写类和方法",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Documentation"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "API Usage"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  },
+  "Documentation": {
+    "id": "Documentation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "记录程序功能、接口和设计意图的说明信息",
+    "why": "记录代码用途和接口约定，支持长期维护。",
+    "failure_conditions": [
+      "缺少说明会增加后续维护理解成本"
+    ],
+    "example": "为Java方法添加Javadoc描述参数和返回值",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "API Usage"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Karel the Robot"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  },
+  "API Usage": {
+    "id": "API Usage",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "按照已有类库提供的接口调用功能的方法",
+    "why": "掌握标准库与第三方 API 的使用方式，复用成熟组件而非重复实现",
+    "failure_conditions": [
+      "错误理解API约定会导致调用失败"
+    ],
+    "example": "使用Java String API完成文本截取处理",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Karel the Robot"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Control Flow"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  },
+  "HashMap and Map Collections": {
+    "id": "HashMap and Map Collections",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "基于哈希表实现键值映射的数据结构，通过键计算位置实现快速查找",
+    "why": "用键值映射实现按 key 的均摊常数时间查找",
+    "failure_conditions": [
+      "哈希冲突处理不当会导致查询退化为线性扫描"
+    ],
+    "example": "用HashMap保存学生ID到姓名的映射关系",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Encapsulation"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Constructor"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Iterator": {
+    "id": "Iterator",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "用于顺序访问集合元素而无需暴露底层存储结构的对象接口",
+    "why": "用统一接口顺序访问集合元素而不暴露内部结构",
+    "failure_conditions": [
+      "遍历期间修改集合可能导致迭代器失效"
+    ],
+    "example": "使用Iterator遍历ArrayList并删除满足条件的元素",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Encapsulation"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Constructor"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Swing Components": {
+    "id": "Swing Components",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "Java桌面图形界面库中的按钮、窗口等可视化控件体系",
+    "why": "用按钮、滑块、文本框等组件构建图形界面交互",
+    "failure_conditions": [
+      "事件绑定错误会导致界面操作无响应"
+    ],
+    "example": "使用JButton和JFrame创建简单计算器界面",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Graphics Object"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Coordinate System"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Threads and Concurrency": {
+    "id": "Threads and Concurrency",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "允许程序同时执行多个任务流的计算模型，通过线程调度共享资源",
+    "why": "让多个执行流共享 CPU 与资源并协调运行",
+    "failure_conditions": [
+      "共享变量缺少同步会产生竞态条件"
+    ],
+    "example": "创建后台线程下载文件并更新界面状态",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Code Style"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Documentation"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  },
+  "Searching and Sorting": {
+    "id": "Searching and Sorting",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "用于在数据集合中定位元素或按规则重新排列元素的算法方法",
+    "why": "掌握常用查找与排序方法及其复杂度取舍",
+    "failure_conditions": [
+      "算法选择错误会导致大规模数据性能下降"
+    ],
+    "example": "比较线性查找和排序后二分查找效率",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Reference Type"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Primitive Type"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  }
+}

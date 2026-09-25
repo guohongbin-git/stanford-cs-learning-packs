@@ -1,0 +1,617 @@
+{
+  "course": "CS221",
+  "title": "Artificial Intelligence: Principles and Techniques",
+  "term": "Autumn 2021",
+  "version": "v1.0",
+  "target_offering": "Autumn 2021",
+  "material_status": "archive_official",
+  "weeks": [
+    {
+      "id": "w1",
+      "week": 1,
+      "label": "Week 1",
+      "title": "AI 导论、智能体与问题形式化",
+      "question": "如何把现实任务形式化为智能体、状态与线性打分模型？",
+      "why": "这一步形式化决定后续搜索、MDP 与学习方法的适用边界。",
+      "objectives": [
+        "能用状态、动作、目标三元组描述一个搜索问题",
+        "区分反射式智能体与规划式智能体各自的适用场景",
+        "用线性回归作出反射式决策的基线模型"
+      ],
+      "concepts": [
+        "Artificial Intelligence",
+        "Intelligent Agent",
+        "State Space",
+        "Linear Regression Basics"
+      ],
+      "pitfalls": [
+        "状态定义漏掉关键变量导致后继状态不完整",
+        "把目标测试塞进动作定义造成搜索无法终止",
+        "对非线性关系硬套线性回归造成系统性偏差"
+      ],
+      "quiz": {
+        "q": "AI方法选择需要考虑什么？",
+        "choices": [
+          "问题结构和假设",
+          "只看名称",
+          "忽略约束"
+        ],
+        "correct": 0,
+        "explain": "方法选择依赖问题结构。"
+      },
+      "agent": {
+        "goal": "辅助CS221学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释概念关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 1,
+          "title": "AI: Introduction and Course Overview",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS221 Autumn 2021 module videos（官方 10 周约 90 个模块视频；本包压缩为 9 教学周，lectures 为模块主题派生标签 official:false）",
+      "model_nodes": [],
+      "example": "自动驾驶系统结合感知、规划和决策模块完成环境交互。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "AI 导论、智能体与问题形式化",
+      "part": "Part 1"
+    },
+    {
+      "id": "w2",
+      "week": 2,
+      "label": "Week 2",
+      "title": "无信息搜索与约束满足问题",
+      "question": "无信息搜索与回溯如何保证完备性并控制求解代价？",
+      "why": "它们给出不带启发信息时的最优性与复杂度基线。",
+      "objectives": [
+        "通过队列与栈的区别判断 BFS 和 DFS 的扩展次序",
+        "说明 UCS 在何种条件下才保证找到最优解",
+        "用回溯与约束传播求解数独这类 CSP 问题"
+      ],
+      "concepts": [
+        "Breadth First Search",
+        "Depth First Search",
+        "Uniform Cost Search",
+        "CSP and Backtracking"
+      ],
+      "pitfalls": [
+        "DFS 不记录已访问集合会在含环图上无限循环",
+        "负权边或零代价动作会让 UCS 的代价序失效",
+        "只做前向检查而放弃约束传播导致搜索爆炸"
+      ],
+      "quiz": {
+        "q": "AI方法选择需要考虑什么？",
+        "choices": [
+          "问题结构和假设",
+          "只看名称",
+          "忽略约束"
+        ],
+        "correct": 0,
+        "explain": "方法选择依赖问题结构。"
+      },
+      "agent": {
+        "goal": "辅助CS221学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释概念关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 2,
+          "title": "Machine Learning I: Linear Regression and Classification",
+          "official": false
+        },
+        {
+          "number": 3,
+          "title": "Machine Learning II: Backprop and Neural Networks",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS221 Autumn 2021 module videos（官方 10 周约 90 个模块视频；本包压缩为 9 教学周，lectures 为模块主题派生标签 official:false）",
+      "model_nodes": [],
+      "example": "社交网络中寻找最少好友跳数连接。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "无信息搜索与约束满足问题",
+      "part": "Part 1"
+    },
+    {
+      "id": "w3",
+      "week": 3,
+      "label": "Week 3",
+      "title": "启发式搜索与马尔可夫决策过程",
+      "question": "启发式估计与马尔可夫决策如何分别处理代价和不确定性？",
+      "why": "该周从确定性最优搜索过渡到随机序贯决策建模。",
+      "objectives": [
+        "构造可采纳启发式并说明它不超过真实代价",
+        "为给定 MDP 写出状态、动作与转移五元组",
+        "手算一次值迭代更新并观察价值收敛"
+      ],
+      "concepts": [
+        "A Star Search",
+        "Heuristic Function",
+        "Markov Decision Process",
+        "Value Iteration"
+      ],
+      "pitfalls": [
+        "启发式高估真实代价使 A* 失去最优性保证",
+        "把非马尔可夫状态塞进 MDP 导致策略失效",
+        "忽略折扣因子造成无限回合价值发散"
+      ],
+      "quiz": {
+        "q": "AI方法选择需要考虑什么？",
+        "choices": [
+          "问题结构和假设",
+          "只看名称",
+          "忽略约束"
+        ],
+        "correct": 0,
+        "explain": "方法选择依赖问题结构。"
+      },
+      "agent": {
+        "goal": "辅助CS221学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释概念关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 4,
+          "title": "Search: State Spaces and Uninformed Search",
+          "official": false
+        },
+        {
+          "number": 5,
+          "title": "Search: A* and Heuristics",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS221 Autumn 2021 module videos（官方 10 周约 90 个模块视频；本包压缩为 9 教学周，lectures 为模块主题派生标签 official:false）",
+      "model_nodes": [],
+      "example": "游戏角色寻路中利用距离估计减少搜索范围。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "启发式搜索与马尔可夫决策过程",
+      "part": "Part 1"
+    },
+    {
+      "id": "w4",
+      "week": 4,
+      "label": "Week 4",
+      "title": "MDP 求解：值迭代与贝尔曼方程",
+      "question": "贝尔曼方程怎样把长期回报拆成可迭代的递推形式？",
+      "why": "它把最优策略的求解转化为价值函数的收敛过程。",
+      "objectives": [
+        "依据贝尔曼最优方程写出状态价值递推式",
+        "从收敛的价值函数提取贪心最优策略",
+        "解释奖励缩放与折扣对策略偏好的影响"
+      ],
+      "concepts": [
+        "Reward",
+        "Value Function",
+        "Bellman Equation"
+      ],
+      "pitfalls": [
+        "价值迭代未收敛就取贪心会得到次优策略",
+        "奖励函数遗漏代价项使智能体学会偷懒",
+        "混用状态价值与动作价值造成更新目标错位"
+      ],
+      "quiz": {
+        "q": "AI方法选择需要考虑什么？",
+        "choices": [
+          "问题结构和假设",
+          "只看名称",
+          "忽略约束"
+        ],
+        "correct": 0,
+        "explain": "方法选择依赖问题结构。"
+      },
+      "agent": {
+        "goal": "辅助CS221学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释概念关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 6,
+          "title": "MDPs I: Modeling and Value Iteration",
+          "official": false
+        },
+        {
+          "number": 7,
+          "title": "MDPs II: Policy Evaluation and RL Basics",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS221 Autumn 2021 module videos（官方 10 周约 90 个模块视频；本包压缩为 9 教学周，lectures 为模块主题派生标签 official:false）",
+      "model_nodes": [],
+      "example": "游戏AI根据得分变化调整行动策略。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "MDP 求解：值迭代与贝尔曼方程",
+      "part": "Part 2"
+    },
+    {
+      "id": "w5",
+      "week": 5,
+      "label": "Week 5",
+      "title": "效用、决策与对抗搜索",
+      "question": "不确定与对抗环境下如何用效用和期望值选择行动？",
+      "why": "决策理论把策略优劣统一为期望效用最大化问题。",
+      "objectives": [
+        "对照效用函数比较两个含风险的行动方案",
+        "分别对期望节点与最大化节点求值",
+        "借助 α-β 剪枝安全裁掉不可能最优的分支"
+      ],
+      "concepts": [
+        "Policy",
+        "Utility Function",
+        "Expected Utility",
+        "Expectimax and Alpha-Beta Pruning"
+      ],
+      "pitfalls": [
+        "把期望节点当最大化节点处理导致乐观偏差",
+        "剪枝条件用错会误裁真正的最优分支",
+        "随意缩放效用尺度改变了风险偏好判断"
+      ],
+      "quiz": {
+        "q": "AI方法选择需要考虑什么？",
+        "choices": [
+          "问题结构和假设",
+          "只看名称",
+          "忽略约束"
+        ],
+        "correct": 0,
+        "explain": "方法选择依赖问题结构。"
+      },
+      "agent": {
+        "goal": "辅助CS221学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释概念关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 8,
+          "title": "Games: Minimax and Expectimax",
+          "official": false
+        },
+        {
+          "number": 9,
+          "title": "Games: Non-Zero-Sum and Nash Equilibria",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS221 Autumn 2021 module videos（官方 10 周约 90 个模块视频；本包压缩为 9 教学周，lectures 为模块主题派生标签 official:false）",
+      "model_nodes": [],
+      "example": "机器人根据位置选择移动动作。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "效用、决策与对抗搜索",
+      "part": "Part 2"
+    },
+    {
+      "id": "w6",
+      "week": 6,
+      "label": "Week 6",
+      "title": "博弈均衡与概率图模型",
+      "question": "多智能体博弈与概率图模型分别刻画何种均衡与依赖？",
+      "why": "在存在对手与随机变量时仍要保持推理一致性。",
+      "objectives": [
+        "对给定收益矩阵判断是否构成纳什均衡",
+        "把贝叶斯网络的联合分布按图结构因式分解",
+        "判断两个变量是否条件独立并给出图依据"
+      ],
+      "concepts": [
+        "Nash Equilibrium",
+        "Minimax",
+        "Bayesian Network",
+        "Factor Graph"
+      ],
+      "pitfalls": [
+        "存在多个均衡时只报告一个却不作说明",
+        "贝叶斯网络的边方向写反使依赖结构错位",
+        "把边缘独立误当成条件独立造成推断错误"
+      ],
+      "quiz": {
+        "q": "AI方法选择需要考虑什么？",
+        "choices": [
+          "问题结构和假设",
+          "只看名称",
+          "忽略约束"
+        ],
+        "correct": 0,
+        "explain": "方法选择依赖问题结构。"
+      },
+      "agent": {
+        "goal": "辅助CS221学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释概念关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 10,
+          "title": "CSPs: Backtracking and Arc Consistency",
+          "official": false
+        },
+        {
+          "number": 11,
+          "title": "Factor Graphs and Markov Networks",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS221 Autumn 2021 module videos（官方 10 周约 90 个模块视频；本包压缩为 9 教学周，lectures 为模块主题派生标签 official:false）",
+      "model_nodes": [],
+      "example": "竞价系统分析多个竞争者策略。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "博弈均衡与概率图模型",
+      "part": "Part 2"
+    },
+    {
+      "id": "w7",
+      "week": 7,
+      "label": "Week 7",
+      "title": "贝叶斯推断、强化学习与粒子滤波",
+      "question": "如何用贝叶斯更新与采样跟踪隐藏状态并学习策略？",
+      "why": "把先验、观测与行动统一到在线信念更新循环中。",
+      "objectives": [
+        "由先验和似然出发用贝叶斯规则算出后验",
+        "用带权粒子近似滤波中的信念分布",
+        "说明 Q 学习不依赖已知转移模型的原因"
+      ],
+      "concepts": [
+        "Conditional Independence",
+        "Bayes Rule",
+        "Posterior",
+        "Q-Learning",
+        "Particle Filtering"
+      ],
+      "pitfalls": [
+        "遗漏似然归一化使后验分布不再合法",
+        "粒子长期不重采样造成样本退化成单一状态",
+        "探索率过高使 Q 值长期无法稳定收敛"
+      ],
+      "quiz": {
+        "q": "AI方法选择需要考虑什么？",
+        "choices": [
+          "问题结构和假设",
+          "只看名称",
+          "忽略约束"
+        ],
+        "correct": 0,
+        "explain": "方法选择依赖问题结构。"
+      },
+      "agent": {
+        "goal": "辅助CS221学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释概念关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 12,
+          "title": "Bayesian Networks and Inference",
+          "official": false
+        },
+        {
+          "number": 13,
+          "title": "Bayesian Inference: Forward-Backward and Particle Filtering",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS221 Autumn 2021 module videos（官方 10 周约 90 个模块视频；本包压缩为 9 教学周，lectures 为模块主题派生标签 official:false）",
+      "model_nodes": [],
+      "example": "贝叶斯网络中判断变量之间依赖关系。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "贝叶斯推断、强化学习与粒子滤波",
+      "part": "Part 3"
+    },
+    {
+      "id": "w8",
+      "week": 8,
+      "label": "Week 8",
+      "title": "先验、似然与一阶逻辑",
+      "question": "先验似然与一阶逻辑如何分别表示统计和符号知识？",
+      "why": "对比概率建模与逻辑推理这两种知识表示范式。",
+      "objectives": [
+        "区分先验、似然与后验在公式中的位置",
+        "把自然语言句子翻译成带量词的逻辑式",
+        "通过构造反例检验逻辑蕴含是否成立"
+      ],
+      "concepts": [
+        "Prior",
+        "Likelihood",
+        "First Order Logic"
+      ],
+      "pitfalls": [
+        "把似然当作概率直接相加造成统计误读",
+        "量词作用域写错使句子含义完全反转",
+        "先验过强导致新证据无法改变后验判断"
+      ],
+      "quiz": {
+        "q": "AI方法选择需要考虑什么？",
+        "choices": [
+          "问题结构和假设",
+          "只看名称",
+          "忽略约束"
+        ],
+        "correct": 0,
+        "explain": "方法选择依赖问题结构。"
+      },
+      "agent": {
+        "goal": "辅助CS221学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释概念关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 14,
+          "title": "Logic: Propositional and First-Order",
+          "official": false
+        },
+        {
+          "number": 15,
+          "title": "Logic: Knowledge Bases and Inference Rules",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS221 Autumn 2021 module videos（官方 10 周约 90 个模块视频；本包压缩为 9 教学周，lectures 为模块主题派生标签 official:false）",
+      "model_nodes": [],
+      "example": "历史疾病率作为诊断模型初始概率。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "先验、似然与一阶逻辑",
+      "part": "Part 3"
+    },
+    {
+      "id": "w9",
+      "week": 9,
+      "label": "Week 9",
+      "title": "知识库与课程综合",
+      "question": "知识库推理如何与课程其他模块的建模方法衔接？",
+      "why": "本周围绕知识库收束全课：把形式化、搜索、决策与推理串成闭环。",
+      "objectives": [
+        "为新问题挑选合适的表示与求解方法",
+        "核查推理结论是否与知识库中的事实一致",
+        "指出所用模型假设在什么情况下会失效"
+      ],
+      "concepts": [
+        "Knowledge Base"
+      ],
+      "pitfalls": [
+        "知识库规则互相矛盾却未做一致性检查",
+        "照搬单一方法而忽略问题的随机性特征",
+        "把训练环境的最优策略直接迁移到新环境"
+      ],
+      "quiz": {
+        "q": "AI方法选择需要考虑什么？",
+        "choices": [
+          "问题结构和假设",
+          "只看名称",
+          "忽略约束"
+        ],
+        "correct": 0,
+        "explain": "方法选择依赖问题结构。"
+      },
+      "agent": {
+        "goal": "辅助CS221学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释概念关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 16,
+          "title": "Conclusion and Course Wrap-up",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS221 Autumn 2021 module videos（官方 10 周约 90 个模块视频；本包压缩为 9 教学周，lectures 为模块主题派生标签 official:false）",
+      "model_nodes": [],
+      "example": "问答系统维护领域事实库回答问题。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "知识库与课程综合",
+      "part": "Part 3"
+    }
+  ]
+}

@@ -1,0 +1,675 @@
+{
+  "course": "CS230",
+  "title": "Deep Learning",
+  "term": "Autumn 2025",
+  "version": "v0.1",
+  "weeks": [
+    {
+      "id": "W01",
+      "week": 1,
+      "title": "深度学习导论与神经网络基础",
+      "question": "如何把监督任务拆成数据、模型与评价闭环？",
+      "why": "建立从数据到预测输出的神经网络工作视角",
+      "objectives": [
+        "能区分训练集、开发集、测试集的职责",
+        "能解释神经元、层与参数如何组成可学习函数",
+        "能记录一个基础深度学习实验的配置与结果"
+      ],
+      "concepts": [
+        "Neural Network",
+        "Activation Function",
+        "Train Dev Test Split"
+      ],
+      "pitfalls": [
+        "只用训练集指标判断模型质量",
+        "在开发集上反复调参后当作未见数据汇报",
+        "忽略数据划分的随机性导致结论不可复现"
+      ],
+      "quiz": {
+        "q": "关于Deep learning problem framing and neural network foundations，以下哪项描述更符合课程目标？",
+        "choices": [
+          "需要结合数据、目标和验证方法分析",
+          "只需要增加模型规模",
+          "训练误差降低即可证明成功"
+        ],
+        "correct": 0,
+        "explain": "深度学习系统需要同时考虑数据、模型、优化与评价证据。"
+      },
+      "agent": {
+        "goal": "帮助学习者完成该周概念诊断与复习规划",
+        "inputs": [
+          "课程概念",
+          "学习进度",
+          "测验结果"
+        ],
+        "actions": [
+          "解释概念关系",
+          "定位薄弱知识点",
+          "生成复习建议"
+        ],
+        "evidence": [
+          "概念定义",
+          "测验记录",
+          "章节覆盖"
+        ],
+        "risks": [
+          "把教学重构误认为官方讲义",
+          "忽略实际实验验证"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 1,
+          "title": "Introduction to Deep Learning",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS230 Autumn 2025 Stanford Online playlist (9 recorded lectures)",
+      "model_nodes": [],
+      "label": "Week 1",
+      "part": "Part 1",
+      "model_title": "深度学习导论与神经网络基础",
+      "assignment_ties": [
+        "CS230 作业 / 练习"
+      ],
+      "example": "使用多层感知机预测用户点击概率"
+    },
+    {
+      "id": "W02",
+      "week": 2,
+      "title": "优化算法与反向传播",
+      "question": "反向传播与优化器如何让深层网络真正学起来？",
+      "why": "训练能否收敛取决于梯度传播与更新规则的配合",
+      "objectives": [
+        "能推导反向传播的链式法则路径",
+        "能对比 SGD、动量与 Adam 的更新差异",
+        "能诊断学习率过大或过小造成的训练症状"
+      ],
+      "concepts": [
+        "Backpropagation",
+        "Gradient Descent",
+        "Adam Optimizer",
+        "Loss Function",
+        "Cross Entropy",
+        "Learning Rate",
+        "Mini Batch",
+        "SGD",
+        "Momentum",
+        "Gradient Clipping"
+      ],
+      "pitfalls": [
+        "学习率过大导致损失发散却归因于数据",
+        "忽略梯度裁剪在深层 RNN 上的必要性",
+        "把权重衰减与学习率调度混为一谈"
+      ],
+      "quiz": {
+        "q": "关于Optimization and backpropagation，以下哪项描述更符合课程目标？",
+        "choices": [
+          "需要结合数据、目标和验证方法分析",
+          "只需要增加模型规模",
+          "训练误差降低即可证明成功"
+        ],
+        "correct": 0,
+        "explain": "深度学习系统需要同时考虑数据、模型、优化与评价证据。"
+      },
+      "agent": {
+        "goal": "帮助学习者完成该周概念诊断与复习规划",
+        "inputs": [
+          "课程概念",
+          "学习进度",
+          "测验结果"
+        ],
+        "actions": [
+          "解释概念关系",
+          "定位薄弱知识点",
+          "生成复习建议"
+        ],
+        "evidence": [
+          "概念定义",
+          "测验记录",
+          "章节覆盖"
+        ],
+        "risks": [
+          "把教学重构误认为官方讲义",
+          "忽略实际实验验证"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 2,
+          "title": "Neural Network Basics",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS230 Autumn 2025 Stanford Online playlist (9 recorded lectures)",
+      "model_nodes": [],
+      "label": "Week 2",
+      "part": "Part 1",
+      "model_title": "优化算法与反向传播",
+      "assignment_ties": [
+        "CS230 作业 / 练习"
+      ],
+      "example": "训练CNN时反向传播更新卷积核权重"
+    },
+    {
+      "id": "W03",
+      "week": 3,
+      "title": "泛化、正则化与训练诊断",
+      "question": "怎样判断模型是真泛化还是在背诵训练集？",
+      "why": "泛化能力决定模型能否用于未见数据",
+      "objectives": [
+        "能区分过拟合与欠拟合的训练曲线特征",
+        "能选择正则化、Dropout 与早停等抑制手段",
+        "能解释批归一化对训练稳定性与正则化的双重作用"
+      ],
+      "concepts": [
+        "Regularization",
+        "Dropout",
+        "Batch Normalization",
+        "Overfitting",
+        "Underfitting",
+        "Bias Variance Tradeoff",
+        "Early Stopping",
+        "Data Augmentation",
+        "Vanishing Gradient",
+        "Exploding Gradient",
+        "Activation Saturation"
+      ],
+      "pitfalls": [
+        "用训练损失下降证明泛化改善",
+        "Dropout 推理阶段忘记缩放导致输出偏移",
+        "批归一化的统计量在训练/推理不一致"
+      ],
+      "quiz": {
+        "q": "关于Generalization and regularization，以下哪项描述更符合课程目标？",
+        "choices": [
+          "需要结合数据、目标和验证方法分析",
+          "只需要增加模型规模",
+          "训练误差降低即可证明成功"
+        ],
+        "correct": 0,
+        "explain": "深度学习系统需要同时考虑数据、模型、优化与评价证据。"
+      },
+      "agent": {
+        "goal": "帮助学习者完成该周概念诊断与复习规划",
+        "inputs": [
+          "课程概念",
+          "学习进度",
+          "测验结果"
+        ],
+        "actions": [
+          "解释概念关系",
+          "定位薄弱知识点",
+          "生成复习建议"
+        ],
+        "evidence": [
+          "概念定义",
+          "测验记录",
+          "章节覆盖"
+        ],
+        "risks": [
+          "把教学重构误认为官方讲义",
+          "忽略实际实验验证"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 3,
+          "title": "Practical Aspects: Regularization and Optimization",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS230 Autumn 2025 Stanford Online playlist (9 recorded lectures)",
+      "model_nodes": [],
+      "label": "Week 3",
+      "part": "Part 1",
+      "model_title": "泛化、正则化与训练诊断",
+      "assignment_ties": [
+        "CS230 作业 / 练习"
+      ],
+      "example": "在线性模型中加入L2权重惩罚"
+    },
+    {
+      "id": "W04",
+      "week": 4,
+      "title": "卷积网络与对抗鲁棒性",
+      "question": "卷积结构为什么适合图像，又如何被攻击？",
+      "why": "理解局部性与权重共享同时认识对抗风险",
+      "objectives": [
+        "能解释卷积核、步长、填充与特征图尺寸的关系",
+        "能说明池化对平移不变性与信息损失的影响",
+        "能描述对抗扰动为何肉眼不可见却改变预测"
+      ],
+      "concepts": [
+        "CNN",
+        "Convolution",
+        "Pooling",
+        "Feature Map",
+        "Kernel",
+        "Stride",
+        "Padding"
+      ],
+      "pitfalls": [
+        "把卷积核尺寸与感受野等同",
+        "池化过大导致小目标信息丢失",
+        "只在干净数据上评估鲁棒性就宣称安全"
+      ],
+      "quiz": {
+        "q": "关于Convolutional neural networks，以下哪项描述更符合课程目标？",
+        "choices": [
+          "需要结合数据、目标和验证方法分析",
+          "只需要增加模型规模",
+          "训练误差降低即可证明成功"
+        ],
+        "correct": 0,
+        "explain": "深度学习系统需要同时考虑数据、模型、优化与评价证据。"
+      },
+      "agent": {
+        "goal": "帮助学习者完成该周概念诊断与复习规划",
+        "inputs": [
+          "课程概念",
+          "学习进度",
+          "测验结果"
+        ],
+        "actions": [
+          "解释概念关系",
+          "定位薄弱知识点",
+          "生成复习建议"
+        ],
+        "evidence": [
+          "概念定义",
+          "测验记录",
+          "章节覆盖"
+        ],
+        "risks": [
+          "把教学重构误认为官方讲义",
+          "忽略实际实验验证"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 4,
+          "title": "Adversarial Robustness",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS230 Autumn 2025 Stanford Online playlist (9 recorded lectures)",
+      "model_nodes": [],
+      "label": "Week 4",
+      "part": "Part 2",
+      "model_title": "卷积网络与对抗鲁棒性",
+      "assignment_ties": [
+        "CS230 作业 / 练习"
+      ],
+      "example": "用多层卷积与池化搭建图像分类器识别手写数字"
+    },
+    {
+      "id": "W05",
+      "week": 5,
+      "title": "序列建模与深度强化学习",
+      "question": "序列建模中隐藏状态与强化学习如何协同？",
+      "why": "时序依赖与序贯决策共用状态与回报的思想",
+      "objectives": [
+        "能解释 RNN 隐状态如何携带历史信息",
+        "能说明 LSTM 门控缓解梯度消失的机制",
+        "能用深度 Q 学习描述值函数逼近与探索"
+      ],
+      "concepts": [
+        "RNN",
+        "LSTM",
+        "Sequence Modeling",
+        "Hidden State"
+      ],
+      "pitfalls": [
+        "把隐状态当成无限容量记忆",
+        "Q 学习探索不足收敛到次优策略",
+        "折扣因子设置不当导致回报估计方差过大"
+      ],
+      "quiz": {
+        "q": "关于Sequence models and recurrent networks，以下哪项描述更符合课程目标？",
+        "choices": [
+          "需要结合数据、目标和验证方法分析",
+          "只需要增加模型规模",
+          "训练误差降低即可证明成功"
+        ],
+        "correct": 0,
+        "explain": "深度学习系统需要同时考虑数据、模型、优化与评价证据。"
+      },
+      "agent": {
+        "goal": "帮助学习者完成该周概念诊断与复习规划",
+        "inputs": [
+          "课程概念",
+          "学习进度",
+          "测验结果"
+        ],
+        "actions": [
+          "解释概念关系",
+          "定位薄弱知识点",
+          "生成复习建议"
+        ],
+        "evidence": [
+          "概念定义",
+          "测验记录",
+          "章节覆盖"
+        ],
+        "risks": [
+          "把教学重构误认为官方讲义",
+          "忽略实际实验验证"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 5,
+          "title": "Deep Reinforcement Learning",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS230 Autumn 2025 Stanford Online playlist (9 recorded lectures)",
+      "model_nodes": [],
+      "label": "Week 5",
+      "part": "Part 2",
+      "model_title": "序列建模与深度强化学习",
+      "assignment_ties": [
+        "CS230 作业 / 练习"
+      ],
+      "example": "文本分类中使用RNN编码句子顺序信息"
+    },
+    {
+      "id": "W06",
+      "week": 6,
+      "title": "注意力、Transformer 与视觉应用",
+      "question": "注意力与 Transformer 如何改变视觉与序列任务？",
+      "why": "注意力把关系建模从固定窗口扩展到全局",
+      "objectives": [
+        "能画出缩放点积自注意力的计算路径",
+        "能说明多头注意力为何比单头表达更强",
+        "能解释 Transformer 在视觉任务中的适配方式"
+      ],
+      "concepts": [
+        "Attention",
+        "Transformer",
+        "Self Attention",
+        "Query Key Value"
+      ],
+      "pitfalls": [
+        "忽略位置编码导致序列顺序信息丢失",
+        "注意力矩阵随序列长度平方增长造成显存暴涨",
+        "把自注意力与交叉注意力混用造成信息泄漏"
+      ],
+      "quiz": {
+        "q": "关于Attention and Transformer architectures，以下哪项描述更符合课程目标？",
+        "choices": [
+          "需要结合数据、目标和验证方法分析",
+          "只需要增加模型规模",
+          "训练误差降低即可证明成功"
+        ],
+        "correct": 0,
+        "explain": "深度学习系统需要同时考虑数据、模型、优化与评价证据。"
+      },
+      "agent": {
+        "goal": "帮助学习者完成该周概念诊断与复习规划",
+        "inputs": [
+          "课程概念",
+          "学习进度",
+          "测验结果"
+        ],
+        "actions": [
+          "解释概念关系",
+          "定位薄弱知识点",
+          "生成复习建议"
+        ],
+        "evidence": [
+          "概念定义",
+          "测验记录",
+          "章节覆盖"
+        ],
+        "risks": [
+          "把教学重构误认为官方讲义",
+          "忽略实际实验验证"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 6,
+          "title": "Convolutional Networks and Vision Applications",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS230 Autumn 2025 Stanford Online playlist (9 recorded lectures)",
+      "model_nodes": [],
+      "label": "Week 6",
+      "part": "Part 2",
+      "model_title": "注意力、Transformer 与视觉应用",
+      "assignment_ties": [
+        "CS230 作业 / 练习"
+      ],
+      "example": "Attention variants"
+    },
+    {
+      "id": "W07",
+      "week": 7,
+      "title": "预训练、迁移学习与序列实践",
+      "question": "预训练与迁移学习如何降低下游任务成本？",
+      "why": "复用大规模表示是小样本任务的关键手段",
+      "objectives": [
+        "能区分特征提取与微调的适用场景",
+        "能说明冻结层数与学习率设置对微调的影响",
+        "能评估领域差异导致的迁移失效风险"
+      ],
+      "concepts": [
+        "Transfer Learning",
+        "Fine Tuning",
+        "Pretrained Model",
+        "Sequence Modeling",
+        "RNN",
+        "LSTM",
+        "Embedding",
+        "Word Representation",
+        "Encoder Decoder",
+        "Inference",
+        "Natural Language Processing"
+      ],
+      "pitfalls": [
+        "在极小数据集上全量微调导致灾难性遗忘",
+        "微调学习率沿用预训练设置造成发散",
+        "忽略领域分布差异直接迁移导致性能骤降"
+      ],
+      "quiz": {
+        "q": "关于Transfer learning and practical systems，以下哪项描述更符合课程目标？",
+        "choices": [
+          "需要结合数据、目标和验证方法分析",
+          "只需要增加模型规模",
+          "训练误差降低即可证明成功"
+        ],
+        "correct": 0,
+        "explain": "深度学习系统需要同时考虑数据、模型、优化与评价证据。"
+      },
+      "agent": {
+        "goal": "帮助学习者完成该周概念诊断与复习规划",
+        "inputs": [
+          "课程概念",
+          "学习进度",
+          "测验结果"
+        ],
+        "actions": [
+          "解释概念关系",
+          "定位薄弱知识点",
+          "生成复习建议"
+        ],
+        "evidence": [
+          "概念定义",
+          "测验记录",
+          "章节覆盖"
+        ],
+        "risks": [
+          "把教学重构误认为官方讲义",
+          "忽略实际实验验证"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 7,
+          "title": "Sequence Models and Attention",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS230 Autumn 2025 Stanford Online playlist (9 recorded lectures)",
+      "model_nodes": [],
+      "label": "Week 7",
+      "part": "Part 3",
+      "model_title": "预训练、迁移学习与序列实践",
+      "assignment_ties": [
+        "CS230 作业 / 练习"
+      ],
+      "example": "利用ImageNet模型初始化医疗图像分类器"
+    },
+    {
+      "id": "W08",
+      "week": 8,
+      "title": "智能体、提示工程与检索增强生成",
+      "question": "智能体、提示与检索如何把模型接入真实任务？",
+      "why": "2025 年的系统能力来自工具与知识的外部化",
+      "objectives": [
+        "能描述智能体调用工具完成任务的控制流",
+        "能写出结构化提示以约束输出格式与边界",
+        "能设计检索增强流程以减少事实性错误"
+      ],
+      "concepts": [
+        "Inference",
+        "Agent and Tool Use",
+        "Prompt Engineering",
+        "Retrieval Augmented Generation",
+        "Adversarial Robustness",
+        "Deep Q-Learning"
+      ],
+      "pitfalls": [
+        "工具调用失败后不校验结果继续推理",
+        "提示缺少输出约束导致解析失败",
+        "检索到无关文档却直接拼入上下文"
+      ],
+      "quiz": {
+        "q": "关于Deep learning applications and deployment，以下哪项描述更符合课程目标？",
+        "choices": [
+          "需要结合数据、目标和验证方法分析",
+          "只需要增加模型规模",
+          "训练误差降低即可证明成功"
+        ],
+        "correct": 0,
+        "explain": "深度学习系统需要同时考虑数据、模型、优化与评价证据。"
+      },
+      "agent": {
+        "goal": "帮助学习者完成该周概念诊断与复习规划",
+        "inputs": [
+          "课程概念",
+          "学习进度",
+          "测验结果"
+        ],
+        "actions": [
+          "解释概念关系",
+          "定位薄弱知识点",
+          "生成复习建议"
+        ],
+        "evidence": [
+          "概念定义",
+          "测验记录",
+          "章节覆盖"
+        ],
+        "risks": [
+          "把教学重构误认为官方讲义",
+          "忽略实际实验验证"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 8,
+          "title": "Agents, Prompts and RAG",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS230 Autumn 2025 Stanford Online playlist (9 recorded lectures)",
+      "model_nodes": [],
+      "label": "Week 8",
+      "part": "Part 3",
+      "model_title": "智能体、提示工程与检索增强生成",
+      "assignment_ties": [
+        "CS230 作业 / 练习"
+      ],
+      "example": "部署分类模型预测用户上传图片类别"
+    },
+    {
+      "id": "W09",
+      "week": 9,
+      "title": "可解释性与课程综合项目",
+      "question": "如何解释模型决策并把系统交付到生产？",
+      "why": "可解释性与工程化决定模型能否被信任与运维",
+      "objectives": [
+        "能用归因或注意力可视化定位关键输入区域",
+        "能设计监控指标以发现线上分布漂移",
+        "能说明回滚与降级策略在模型上线中的作用"
+      ],
+      "concepts": [
+        "Error Analysis",
+        "Generative Model",
+        "Autoencoder",
+        "GAN",
+        "Reinforcement Learning",
+        "Evaluation Metric",
+        "Model Interpretability",
+        "Hyperparameter Tuning"
+      ],
+      "pitfalls": [
+        "把可视化当作因果解释的证据",
+        "只监控请求量而不监控预测分布变化",
+        "缺少回滚方案导致故障无法快速止损"
+      ],
+      "quiz": {
+        "q": "关于Deep learning project synthesis，以下哪项描述更符合课程目标？",
+        "choices": [
+          "需要结合数据、目标和验证方法分析",
+          "只需要增加模型规模",
+          "训练误差降低即可证明成功"
+        ],
+        "correct": 0,
+        "explain": "深度学习系统需要同时考虑数据、模型、优化与评价证据。"
+      },
+      "agent": {
+        "goal": "帮助学习者完成该周概念诊断与复习规划",
+        "inputs": [
+          "课程概念",
+          "学习进度",
+          "测验结果"
+        ],
+        "actions": [
+          "解释概念关系",
+          "定位薄弱知识点",
+          "生成复习建议"
+        ],
+        "evidence": [
+          "概念定义",
+          "测验记录",
+          "章节覆盖"
+        ],
+        "risks": [
+          "把教学重构误认为官方讲义",
+          "忽略实际实验验证"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 9,
+          "title": "What is Going On Inside My Model? (Interpretability) and Class Wrap-up",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS230 Autumn 2025 Stanford Online playlist (9 recorded lectures)",
+      "model_nodes": [],
+      "label": "Week 9",
+      "part": "Part 3",
+      "model_title": "可解释性与课程综合项目",
+      "assignment_ties": [
+        "CS230 作业 / 练习"
+      ],
+      "example": "检查NLP模型错误分类句子改进数据"
+    }
+  ]
+}

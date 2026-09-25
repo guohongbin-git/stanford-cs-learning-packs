@@ -1,0 +1,36 @@
+{
+  "package": "CS221_course_pack_final_v2.2",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3761,
+      "sha256": "92deeec6bc4181cea4da9471aa6c0b0e0c8292f5b0d6f1cc212a01420b186ad2"
+    },
+    {
+      "path": "CS221_interactive_Autumn2021_v0.1.html",
+      "bytes": 651119,
+      "sha256": "d5a09a17c2be2afa4a842db0339eeafde8364e79f17f3db336a49ff3e9683a46"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1888,
+      "sha256": "ab6c27a1b20ba5c88e41eab5f7f700e27298f945b04c7fe5e36dbefa65c51373"
+    },
+    {
+      "path": "concepts.json",
+      "bytes": 24271,
+      "sha256": "2c4c49972407470d588fb9891145fe2adfcccb9247980a4f977d7696b8ef9efe"
+    },
+    {
+      "path": "course_ir.json",
+      "bytes": 19708,
+      "sha256": "fb3b35f283c598a2ea610e0d01ff771684efef000faf9fd50941c230dca00f84"
+    },
+    {
+      "path": "index.html",
+      "bytes": 450,
+      "sha256": "3e1c64734dd5a1ba6762701b99d98ca90f84c5649392c13371b4589a62c7e621"
+    }
+  ],
+  "note": "Repo manifest: lists exactly the files shipped in git. Full QA screenshots ship with the Release zip."
+}

@@ -1,0 +1,36 @@
+{
+  "package": "CS107_course_pack_final_v2.3",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3580,
+      "sha256": "e9c0c9aeaa0b9d0899398d4826316cc028824e6bc57c56d31053d598c7cf1fb2"
+    },
+    {
+      "path": "CS107_interactive_SEE_v0.1.html",
+      "bytes": 647919,
+      "sha256": "d456613aebdb198ec05bac0de3c16912f23d716a9cf3400d332be4bd688b03f8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2103,
+      "sha256": "ee7d6784c87c3341fbd342e7427eea3c57051f6c66018332bbd755aeaec2a06e"
+    },
+    {
+      "path": "concepts.json",
+      "bytes": 22555,
+      "sha256": "45d5dfed4dcc4959c433c868675ee37d78e0f3a2f9cdca10380c3a7039c201db"
+    },
+    {
+      "path": "course_ir.json",
+      "bytes": 18280,
+      "sha256": "428fba35fb86db0b34825b1010c3d7b4263942fb710825fd53d80167bd9070f5"
+    },
+    {
+      "path": "index.html",
+      "bytes": 371,
+      "sha256": "9e9b8b2cfcfb0c705b00b991859d7c6e89dd8d28f66d688947df4bb4d99c78c6"
+    }
+  ],
+  "note": "Repo manifest: lists exactly the files shipped in git. Full QA screenshots ship with the Release zip."
+}

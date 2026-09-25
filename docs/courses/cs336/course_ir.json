@@ -1,0 +1,992 @@
+{
+  "course": "CS336",
+  "title": "Language Modeling from Scratch",
+  "term": "Spring 2025",
+  "version": "v0.1",
+  "evidence_status": "TEACHING_RECONSTRUCTION",
+  "version_boundary": {
+    "locked_to": "Spring 2025",
+    "core_recorded_lectures": 17,
+    "schedule_meetings": 19,
+    "guest_lectures_not_in_core_playlist": 2
+  },
+  "public_materials": {
+    "course_site": "https://cs336.stanford.edu/spring2025/",
+    "syllabus_url": "https://cs336.stanford.edu/spring2025/",
+    "youtube": "https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_",
+    "youtube_uploader": "Stanford Online",
+    "youtube_uploader_verified": true,
+    "lecture_repo": "https://github.com/stanford-cs336/spring2025-lectures",
+    "assignments_public": true,
+    "assignment_repos": [
+      {
+        "id": "a1",
+        "title": "Assignment 1: Basics",
+        "repo": "https://github.com/stanford-cs336/assignment1-basics",
+        "scope": "tokenizer, Transformer components, optimizer, minimal LM training",
+        "source_status": "SOURCE_CONFIRMED"
+      },
+      {
+        "id": "a2",
+        "title": "Assignment 2: Systems",
+        "repo": "https://github.com/stanford-cs336/assignment2-systems",
+        "scope": "profiling, Triton/FlashAttention2, memory-efficient distributed training",
+        "source_status": "SOURCE_CONFIRMED"
+      },
+      {
+        "id": "a3",
+        "title": "Assignment 3: Scaling",
+        "repo": "https://github.com/stanford-cs336/assignment3-scaling",
+        "scope": "Transformer component analysis and fitting scaling laws using a training API",
+        "source_status": "SOURCE_CONFIRMED"
+      },
+      {
+        "id": "a4",
+        "title": "Assignment 4: Data",
+        "repo": "https://github.com/stanford-cs336/assignment4-data",
+        "scope": "Common Crawl conversion, filtering, deduplication, data-quality experiments",
+        "source_status": "SOURCE_CONFIRMED"
+      },
+      {
+        "id": "a5",
+        "title": "Assignment 5: Alignment and Reasoning RL",
+        "repo": "https://github.com/stanford-cs336/assignment5-alignment",
+        "scope": "SFT and reinforcement learning for mathematical reasoning; optional safety alignment",
+        "source_status": "SOURCE_CONFIRMED"
+      }
+    ],
+    "note": "The archived Spring 2025 course site is the semantic version anchor. Official assignment repositories are live repositories and may now default to newer offerings; use the archived course page to bind assignment scope to Spring 2025."
+  },
+  "prerequisites_from_course_site": [
+    "Python proficiency",
+    "Deep learning and systems optimization experience",
+    "College calculus and linear algebra",
+    "Basic probability and statistics (e.g. CS109)",
+    "Machine learning basics (e.g. CS221/229/230/124/224N)"
+  ],
+  "weeks": [
+    {
+      "id": "w1",
+      "label": "Week 1",
+      "title": "From Text to a Trainable Language Model",
+      "part": "A · Build the model",
+      "lectures": [
+        {
+          "number": 1,
+          "date": "2025-04-01",
+          "title": "Overview, tokenization",
+          "official": true
+        },
+        {
+          "number": 2,
+          "date": "2025-04-03",
+          "title": "PyTorch, resource accounting",
+          "official": true
+        }
+      ],
+      "question": "一段原始文本，怎样变成可以真正训练、计量成本的语言模型？",
+      "why": "CS336 的“from scratch”从这里开始：先把文本变成 token，再把 token 放进可微分的训练循环，同时学会用 FLOPs、显存和时间给每个设计决定定价。",
+      "objectives": [
+        "理解 tokenization 为什么是模型边界的一部分，而不是纯预处理",
+        "能解释 PyTorch autograd、参数、梯度与 optimizer 如何组成最小训练闭环",
+        "会用参数量、token 数、FLOPs 和内存占用粗算一次训练实验的资源需求"
+      ],
+      "concepts": [
+        "Language Model",
+        "Tokenization",
+        "Byte Pair Encoding",
+        "Vocabulary",
+        "PyTorch",
+        "Autograd",
+        "Training Loop",
+        "Cross Entropy",
+        "AdamW",
+        "Resource Accounting",
+        "FLOPs",
+        "Compute Budget"
+      ],
+      "model_title": "Text → Tokens → Loss → Gradient → Update",
+      "model_nodes": [
+        "Transformer",
+        "Language Model",
+        "Tokenization",
+        "Byte Pair Encoding"
+      ],
+      "example": "你准备训练一个 100M 参数小模型。先比较 32K 与 50K vocabulary 对序列长度和 embedding 参数量的影响，再估算一个 batch 的 token 数、前向/反向 FLOPs 和可接受的 GPU 预算。",
+      "pitfalls": [
+        "把 tokenizer 当成“无损分词器”，忽略压缩率与长尾字符",
+        "只看参数量，不看激活、optimizer state 与 batch/sequence length",
+        "训练 loss 下降就当作系统正确，忽略数据、实现和评测泄漏"
+      ],
+      "quiz": {
+        "q": "为什么 tokenizer 设计会同时影响模型质量和训练成本？",
+        "choices": [
+          "只因为 vocabulary 越大模型越聪明",
+          "因为 token 边界决定序列长度、词表参数与模型看到的基本符号单位",
+          "因为 tokenizer 只影响数据下载速度"
+        ],
+        "correct": 1,
+        "explain": "tokenization 同时改变表示粒度、序列长度和部分参数/计算结构，因此是模型设计的一部分。"
+      },
+      "agent": {
+        "goal": "construct and budget a minimal LM training pipeline",
+        "inputs": [
+          "raw_text",
+          "tokenizer_design",
+          "model_config",
+          "hardware_budget"
+        ],
+        "actions": [
+          "tokenize",
+          "instantiate_model",
+          "compute_loss",
+          "backpropagate",
+          "estimate_resources"
+        ],
+        "evidence": [
+          "tokenizer statistics",
+          "parameter count",
+          "loss curve",
+          "FLOP estimate",
+          "memory measurements"
+        ],
+        "risks": [
+          "silent tokenizer mismatch",
+          "OOM",
+          "incorrect loss shifting",
+          "underestimated compute"
+        ]
+      },
+      "assignment_ties": [
+        "a1"
+      ],
+      "evidence_status": "TEACHING_RECONSTRUCTION"
+    },
+    {
+      "id": "w2",
+      "label": "Week 2",
+      "title": "Transformer Architecture, Hyperparameters & Mixture of Experts",
+      "part": "A · Build the model",
+      "lectures": [
+        {
+          "number": 3,
+          "date": "2025-04-08",
+          "title": "Architectures, hyperparameters",
+          "official": true
+        },
+        {
+          "number": 4,
+          "date": "2025-04-10",
+          "title": "Mixture of experts",
+          "official": true
+        }
+      ],
+      "question": "Transformer 的能力究竟来自哪里？哪些结构选择是在“买表达能力”，哪些是在“买效率”？",
+      "why": "现代语言模型不是一个抽象的 Transformer 名字，而是一组具体结构与超参数取舍。理解 attention、MLP、normalization、position encoding 和 MoE，才能判断参数、计算和路由之间的交换。",
+      "objectives": [
+        "能从数据流解释一层 decoder-only Transformer 的主要组件",
+        "理解 depth / width / heads / context length 等超参数如何改变容量与成本",
+        "理解 MoE 为什么可以增加参数容量而不按同等比例增加每 token 计算量"
+      ],
+      "concepts": [
+        "Transformer",
+        "Self-Attention",
+        "Causal Masking",
+        "RoPE",
+        "Normalization",
+        "SwiGLU",
+        "Hyperparameter",
+        "Mixture of Experts",
+        "Router",
+        "Sparse Activation",
+        "Load Balancing",
+        "Parameter Count"
+      ],
+      "model_title": "Dense Transformer vs Sparse MoE",
+      "model_nodes": [
+        "Normalization",
+        "Transformer",
+        "Self-Attention",
+        "Causal Masking"
+      ],
+      "example": "在固定 FLOP 预算下比较一个 dense 1B 模型与一个含多个专家、每 token 只激活少量专家的 MoE：参数容量可以上升，但你必须重新计算路由、通信和负载均衡成本。",
+      "pitfalls": [
+        "把“参数更多”直接等价成“每 token 计算更多”",
+        "只追求更长 context，却忽略 attention / memory 成本",
+        "MoE 只看稀疏计算优势，不看专家负载不均和跨设备通信"
+      ],
+      "quiz": {
+        "q": "MoE 的核心效率直觉是什么？",
+        "choices": [
+          "所有专家每个 token 都执行，所以精度更高",
+          "模型拥有更多总参数，但每个 token 通常只路由到少数专家",
+          "MoE 不需要 attention"
+        ],
+        "correct": 1,
+        "explain": "MoE 用稀疏激活把总参数容量和每 token 的激活计算部分解耦，但会引入路由与通信问题。"
+      },
+      "agent": {
+        "goal": "reason about architecture/capacity/compute tradeoffs",
+        "inputs": [
+          "model_config",
+          "parameter_budget",
+          "compute_budget",
+          "sequence_length"
+        ],
+        "actions": [
+          "trace_forward_path",
+          "count_parameters",
+          "compare_dense_vs_moe",
+          "identify_bottlenecks"
+        ],
+        "evidence": [
+          "parameter formulas",
+          "activation shapes",
+          "routing statistics",
+          "measured throughput"
+        ],
+        "risks": [
+          "shape mismatch",
+          "capacity-compute conflation",
+          "router collapse",
+          "unbalanced experts"
+        ]
+      },
+      "assignment_ties": [
+        "a1"
+      ],
+      "evidence_status": "TEACHING_RECONSTRUCTION"
+    },
+    {
+      "id": "w3",
+      "label": "Week 3",
+      "title": "GPU Execution, Kernels & Triton",
+      "part": "B · Make training fast",
+      "lectures": [
+        {
+          "number": 5,
+          "date": "2025-04-15",
+          "title": "GPUs",
+          "official": true
+        },
+        {
+          "number": 6,
+          "date": "2025-04-17",
+          "title": "Kernels, Triton",
+          "official": true
+        }
+      ],
+      "question": "为什么数学公式一样，GPU 上的速度却能差一个数量级？",
+      "why": "语言模型训练的真实瓶颈常常不是“算法复杂度”四个字，而是数据移动、并行度和 kernel 实现。CS336 强制你从硬件执行路径理解性能。",
+      "objectives": [
+        "理解 GPU 计算单元与内存层次为何决定 kernel 性能",
+        "能用 arithmetic intensity / roofline 直觉判断 compute-bound 还是 memory-bound",
+        "理解 kernel fusion、Triton 与 FlashAttention 类优化为什么有效"
+      ],
+      "concepts": [
+        "GPU",
+        "Memory Hierarchy",
+        "HBM",
+        "Kernel",
+        "Arithmetic Intensity",
+        "Roofline Model",
+        "Triton",
+        "Kernel Fusion",
+        "FlashAttention",
+        "Profiling",
+        "Throughput",
+        "Latency"
+      ],
+      "model_title": "Math → Kernel → Memory Traffic → Throughput",
+      "model_nodes": [
+        "GPU",
+        "Memory Hierarchy",
+        "HBM",
+        "Kernel"
+      ],
+      "example": "同样计算 attention，如果中间矩阵频繁落到 HBM，速度和显存都会恶化；通过 tiling / fusion 让中间状态尽量停留在更快的片上存储，可以显著改变性能。",
+      "pitfalls": [
+        "只看 GPU 利用率百分比，不看具体瓶颈",
+        "用 Python wall-clock 猜性能，不做 profiler 分解",
+        "优化单 kernel，却让端到端通信或数据加载成为新瓶颈"
+      ],
+      "quiz": {
+        "q": "如果一个 kernel 主要受 HBM 带宽限制，最直接的优化方向通常是什么？",
+        "choices": [
+          "无限增加 FLOPs",
+          "减少不必要的数据搬运、提高数据复用",
+          "把 batch size 改成 1 一定更快"
+        ],
+        "correct": 1,
+        "explain": "memory-bound kernel 的关键通常是减少高成本内存流量、提高片上复用，而不是增加计算。"
+      },
+      "agent": {
+        "goal": "diagnose and optimize GPU execution bottlenecks",
+        "inputs": [
+          "kernel_trace",
+          "tensor_shapes",
+          "hardware_specs",
+          "profiler_output"
+        ],
+        "actions": [
+          "classify_bottleneck",
+          "estimate_arithmetic_intensity",
+          "fuse_or_tile",
+          "benchmark"
+        ],
+        "evidence": [
+          "profiler counters",
+          "kernel runtime",
+          "memory traffic",
+          "end-to-end throughput"
+        ],
+        "risks": [
+          "microbenchmark overfitting",
+          "numerical mismatch",
+          "hidden synchronization",
+          "regression elsewhere"
+        ]
+      },
+      "assignment_ties": [
+        "a2"
+      ],
+      "evidence_status": "TEACHING_RECONSTRUCTION"
+    },
+    {
+      "id": "w4",
+      "label": "Week 4",
+      "title": "Distributed Training & Parallelism",
+      "part": "B · Make training fast",
+      "lectures": [
+        {
+          "number": 7,
+          "date": "2025-04-22",
+          "title": "Parallelism",
+          "official": true
+        },
+        {
+          "number": 8,
+          "date": "2025-04-24",
+          "title": "Parallelism",
+          "official": true
+        }
+      ],
+      "question": "当一个模型或一个 batch 放不进单卡时，应该“切什么”：数据、参数、层，还是流水线？",
+      "why": "多 GPU 训练不是“多开几张卡”。真正的设计问题是把计算和状态切分到设备，同时控制通信、同步和显存开销。",
+      "objectives": [
+        "理解 data parallel、parameter sharding 与 model/pipeline parallel 的基本差异",
+        "能解释 DDP 与 FSDP 在复制/分片参数、梯度和 optimizer state 上的不同",
+        "能够根据模型大小、网络带宽与 batch 结构选择并行策略"
+      ],
+      "concepts": [
+        "Data Parallelism",
+        "DDP",
+        "FSDP",
+        "Parameter Sharding",
+        "Tensor Parallelism",
+        "Pipeline Parallelism",
+        "Gradient Synchronization",
+        "Communication Overhead",
+        "All-Reduce",
+        "Distributed Training",
+        "Compute Budget"
+      ],
+      "model_title": "Partition Compute, State and Communication",
+      "model_nodes": [
+        "Data Parallelism",
+        "DDP",
+        "FSDP",
+        "Parameter Sharding"
+      ],
+      "example": "模型参数能放进单卡但 global batch 很大，可先用 data parallel；如果 optimizer state 和参数本身也撑爆显存，则需要进一步 sharding。若单层矩阵本身过大，再考虑 tensor parallel。",
+      "pitfalls": [
+        "把“GPU 数翻倍”当成吞吐必然翻倍",
+        "忽略通信拓扑和 collective latency",
+        "并行策略改变后不重新验证数值等价与 checkpoint 恢复"
+      ],
+      "quiz": {
+        "q": "FSDP 相比普通 DDP 的主要动机是什么？",
+        "choices": [
+          "把 tokenizer 分片",
+          "通过分片参数/梯度/optimizer state 降低单卡内存压力",
+          "避免任何跨卡通信"
+        ],
+        "correct": 1,
+        "explain": "FSDP 用状态分片换取更低的单卡内存占用，但仍需要精心处理通信与重建。"
+      },
+      "agent": {
+        "goal": "select and validate a distributed training strategy",
+        "inputs": [
+          "model_size",
+          "optimizer_state_size",
+          "batch_size",
+          "gpu_memory",
+          "interconnect"
+        ],
+        "actions": [
+          "estimate_memory",
+          "choose_parallelism",
+          "plan_collectives",
+          "benchmark_scaling"
+        ],
+        "evidence": [
+          "peak_memory",
+          "tokens_per_second",
+          "scaling_efficiency",
+          "numerical_checks"
+        ],
+        "risks": [
+          "communication_dominance",
+          "deadlock",
+          "checkpoint incompatibility",
+          "silent divergence"
+        ]
+      },
+      "assignment_ties": [
+        "a2"
+      ],
+      "evidence_status": "TEACHING_RECONSTRUCTION"
+    },
+    {
+      "id": "w5",
+      "label": "Week 5",
+      "title": "Scaling Laws & Inference",
+      "part": "C · Spend compute wisely",
+      "lectures": [
+        {
+          "number": 9,
+          "date": "2025-04-29",
+          "title": "Scaling laws",
+          "official": true
+        },
+        {
+          "number": 10,
+          "date": "2025-05-01",
+          "title": "Inference",
+          "official": true
+        }
+      ],
+      "question": "训练时怎样花 compute，部署时怎样花 memory 和 latency，才能把同一个模型做成“可用系统”？",
+      "why": "Scaling laws 解决“资源应该投到模型、数据还是训练时长”；Inference 解决“训练好的模型如何在服务阶段高效地产生 token”。两者共同决定总成本。",
+      "objectives": [
+        "理解经验 scaling law 与 power-law 拟合的用途和限制",
+        "理解 compute-optimal 训练背后的预算分配思想",
+        "区分 prefill 与 decode，并解释 KV cache 对推理内存和吞吐的影响"
+      ],
+      "concepts": [
+        "Scaling Law",
+        "Power Law",
+        "Compute-Optimal Training",
+        "IsoFLOP",
+        "Inference",
+        "Prefill",
+        "Decode",
+        "KV Cache",
+        "Sampling",
+        "Throughput",
+        "Latency",
+        "Batching",
+        "Compute Budget"
+      ],
+      "model_title": "Train-time Scaling ↔ Serve-time Cost",
+      "model_nodes": [
+        "Compute Budget",
+        "Prefill",
+        "Decode",
+        "Scaling Law"
+      ],
+      "example": "你有固定训练预算，先用多个小规模 run 拟合趋势，再选择模型规模与 token 数；上线后又要根据 prompt 长度、生成长度和并发请求决定 KV cache 与 batching 策略。",
+      "pitfalls": [
+        "把小规模拟合外推得过远",
+        "只看训练 loss 的 scaling，不看下游能力或数据变化",
+        "推理只看单请求 latency，不看并发吞吐与显存占用"
+      ],
+      "quiz": {
+        "q": "为什么 prefill 和 decode 通常要分开分析？",
+        "choices": [
+          "因为它们使用不同 tokenizer",
+          "因为 prefill 一次处理输入序列，而 decode 逐 token 生成，计算/内存瓶颈不同",
+          "因为 decode 不需要模型参数"
+        ],
+        "correct": 1,
+        "explain": "两阶段的工作形态不同，因此优化策略、batching 与瓶颈也不同。"
+      },
+      "agent": {
+        "goal": "allocate training compute and reason about inference cost",
+        "inputs": [
+          "pilot_results",
+          "compute_budget",
+          "prompt_length",
+          "generation_length",
+          "concurrency"
+        ],
+        "actions": [
+          "fit_scaling_curve",
+          "select_training_scale",
+          "estimate_kv_cache",
+          "analyze_prefill_decode"
+        ],
+        "evidence": [
+          "held-out loss",
+          "fit residuals",
+          "latency",
+          "throughput",
+          "memory"
+        ],
+        "risks": [
+          "bad_extrapolation",
+          "distribution_shift",
+          "OOM_at_service",
+          "throughput_latency_tradeoff"
+        ]
+      },
+      "assignment_ties": [
+        "a3"
+      ],
+      "evidence_status": "TEACHING_RECONSTRUCTION"
+    },
+    {
+      "id": "w6",
+      "label": "Week 6",
+      "title": "Scaling Decisions & Evaluation",
+      "part": "C · Spend compute wisely",
+      "lectures": [
+        {
+          "number": 11,
+          "date": "2025-05-06",
+          "title": "Scaling laws",
+          "official": true
+        },
+        {
+          "number": 12,
+          "date": "2025-05-08",
+          "title": "Evaluation",
+          "official": true
+        }
+      ],
+      "question": "如果 scaling curve 告诉你模型“更强了”，你怎么证明它真的在你关心的任务上更好？",
+      "why": "训练 loss、perplexity 和 benchmark 分数是不同层次的证据。CS336 把 scaling 与 evaluation 连在一起，要求你知道指标究竟测到了什么，以及哪里可能被污染或误导。",
+      "objectives": [
+        "能区分训练目标指标与下游能力指标",
+        "理解 benchmark、perplexity、数据污染与评测方差的关系",
+        "能把 scaling experiment 设计成可比较、可复现而不是只看单点结果"
+      ],
+      "concepts": [
+        "Scaling Law",
+        "Evaluation",
+        "Perplexity",
+        "Benchmark",
+        "Data Contamination",
+        "Capability Evaluation",
+        "Statistical Uncertainty",
+        "Ablation",
+        "Reproducibility",
+        "Compute Budget"
+      ],
+      "model_title": "Claim → Metric → Dataset → Measurement → Decision",
+      "model_nodes": [
+        "Scaling Law",
+        "Evaluation",
+        "Perplexity",
+        "Benchmark"
+      ],
+      "example": "两个模型 validation loss 只差一点，但下游 benchmark 差异很大。你需要检查 tokenization、数据污染、评测 prompt、随机性和样本量，而不是直接用一个总分宣布赢家。",
+      "pitfalls": [
+        "把 benchmark 总分当作模型的单一“智力”指标",
+        "在看过测试集后反复调 prompt / checkpoint",
+        "没有记录版本、seed、prompt 和数据切分，导致结果不可复现"
+      ],
+      "quiz": {
+        "q": "为什么 benchmark 分数不能脱离数据与评测协议单独解释？",
+        "choices": [
+          "因为分数一定是随机数",
+          "因为 benchmark 结果依赖任务分布、prompt、数据污染、样本量与执行协议",
+          "因为 benchmark 只能测速度"
+        ],
+        "correct": 1,
+        "explain": "评测是一个测量系统；离开具体 protocol，单个分数的含义非常有限。"
+      },
+      "agent": {
+        "goal": "design evidence for model quality claims",
+        "inputs": [
+          "claim",
+          "candidate_models",
+          "eval_sets",
+          "protocol"
+        ],
+        "actions": [
+          "choose_metrics",
+          "run_evals",
+          "estimate_uncertainty",
+          "check_contamination",
+          "compare"
+        ],
+        "evidence": [
+          "raw_predictions",
+          "metric_results",
+          "confidence_intervals",
+          "provenance"
+        ],
+        "risks": [
+          "benchmark_overfitting",
+          "contamination",
+          "metric_mismatch",
+          "unreproducible_protocol"
+        ]
+      },
+      "assignment_ties": [
+        "a3"
+      ],
+      "evidence_status": "TEACHING_RECONSTRUCTION"
+    },
+    {
+      "id": "w7",
+      "label": "Week 7",
+      "title": "Pretraining Data: Collection, Filtering & Deduplication",
+      "part": "D · Build the data engine",
+      "lectures": [
+        {
+          "number": 13,
+          "date": "2025-05-13",
+          "title": "Data",
+          "official": true
+        },
+        {
+          "number": 14,
+          "date": "2025-05-15",
+          "title": "Data",
+          "official": true
+        }
+      ],
+      "question": "模型看到什么世界，不是由参数量决定，而是由数据管线决定。怎样从网页垃圾变成可训练语料？",
+      "why": "数据不是“下载一个数据集”。从 Common Crawl 到可训练 corpus，要经过抽取、语言/质量过滤、去重、PII/有害内容处理和 mixture 设计；每一步都会改变模型行为。",
+      "objectives": [
+        "理解网页原始数据到 pretraining corpus 的处理链",
+        "能解释过滤、去重和质量分类如何改变数据分布",
+        "知道 data pipeline 自身也需要可评估、可复现和版本化"
+      ],
+      "concepts": [
+        "Pretraining Data",
+        "Common Crawl",
+        "Text Extraction",
+        "Data Filtering",
+        "Deduplication",
+        "PII Filtering",
+        "Quality Classifier",
+        "Data Mixture",
+        "Dataset Bias",
+        "Data Provenance",
+        "Training Loop",
+        "Evaluation"
+      ],
+      "model_title": "Raw Web → Curated Corpus → Model Behavior",
+      "model_nodes": [
+        "Pretraining Data",
+        "Common Crawl",
+        "Text Extraction",
+        "Data Filtering"
+      ],
+      "example": "两个团队用同一个 Transformer 配置训练，差别只在 data filtering。即使 token 数相同，质量阈值、去重策略和 domain mixture 也可能显著改变 loss 与下游行为。",
+      "pitfalls": [
+        "把更多 token 自动等价为更好数据",
+        "去重只做 exact hash，忽略近重复",
+        "过滤器本身偏差很大却不做审计，最终把某些领域/语言系统性删掉"
+      ],
+      "quiz": {
+        "q": "为什么 deduplication 不只是“节省存储空间”？",
+        "choices": [
+          "因为重复样本会改变训练分布并可能造成记忆/评测污染",
+          "因为 dedup 会自动增加模型参数",
+          "因为去重后 tokenizer 不再需要"
+        ],
+        "correct": 0,
+        "explain": "重复数据会改变样本权重、记忆风险和 contamination，因此是训练分布问题，而不只是存储问题。"
+      },
+      "agent": {
+        "goal": "construct an auditable pretraining-data pipeline",
+        "inputs": [
+          "raw_web_data",
+          "filter_rules",
+          "dedup_strategy",
+          "target_mixture"
+        ],
+        "actions": [
+          "extract",
+          "classify",
+          "filter",
+          "deduplicate",
+          "sample",
+          "audit"
+        ],
+        "evidence": [
+          "retention_rates",
+          "duplicate_rates",
+          "quality_samples",
+          "domain_distribution",
+          "PII_checks"
+        ],
+        "risks": [
+          "filter_bias",
+          "contamination",
+          "data_leakage",
+          "distribution_collapse"
+        ]
+      },
+      "assignment_ties": [
+        "a4"
+      ],
+      "evidence_status": "TEACHING_RECONSTRUCTION"
+    },
+    {
+      "id": "w8",
+      "label": "Week 8",
+      "title": "Alignment: SFT, Preferences & RL Foundations",
+      "part": "E · Shape model behavior",
+      "lectures": [
+        {
+          "number": 15,
+          "date": "2025-05-20",
+          "title": "Alignment - SFT/RLHF",
+          "official": true
+        },
+        {
+          "number": 16,
+          "date": "2025-05-22",
+          "title": "Alignment - RL",
+          "official": true
+        }
+      ],
+      "question": "预训练模型会续写文本，但怎样把它变成会按人类目标完成任务的系统？",
+      "why": "Alignment 把“预测下一个 token”的预训练目标转化成任务行为。SFT、偏好数据、奖励信号和 RL 各自解决不同问题，也引入新的偏差与失效模式。",
+      "objectives": [
+        "区分 pretraining、SFT、preference learning 和 RL 的训练信号",
+        "理解 reward model / verifiable reward 与 policy update 的基本角色",
+        "理解 KL 约束、reward hacking 与分布漂移为什么会限制 RL"
+      ],
+      "concepts": [
+        "Supervised Fine-Tuning",
+        "Instruction Data",
+        "Preference Data",
+        "Reward Model",
+        "RLHF",
+        "Policy",
+        "Reinforcement Learning",
+        "KL Regularization",
+        "Reward Hacking",
+        "On-Policy Data",
+        "Alignment Evaluation",
+        "Training Loop"
+      ],
+      "model_title": "Base Model → SFT → Reward Signal → Policy Optimization",
+      "model_nodes": [
+        "Supervised Fine-Tuning",
+        "Instruction Data",
+        "Preference Data",
+        "Reward Model"
+      ],
+      "example": "数学推理任务中，先用高质量 reasoning traces 做 SFT，再用可验证答案作为 reward 改进策略。SFT 与 RL 的数据分布、探索方式和稳定性完全不同。",
+      "pitfalls": [
+        "把“对齐”理解成一个单一算法",
+        "reward 高就认为目标被满足，忽略 reward hacking",
+        "只看训练 reward，不看独立能力、安全和行为评测"
+      ],
+      "quiz": {
+        "q": "SFT 和 RL 的关键区别之一是什么？",
+        "choices": [
+          "SFT 从示范目标学习，而 RL 根据策略产生的数据和 reward 更新",
+          "SFT 不需要数据",
+          "RL 不需要模型输出"
+        ],
+        "correct": 0,
+        "explain": "SFT 更像监督模仿；RL 的训练数据与更新取决于当前 policy 的行为和奖励信号。"
+      },
+      "agent": {
+        "goal": "choose and reason about post-training signals",
+        "inputs": [
+          "base_model",
+          "demonstrations",
+          "preferences_or_rewards",
+          "evaluation_targets"
+        ],
+        "actions": [
+          "sft",
+          "collect_feedback",
+          "estimate_reward",
+          "optimize_policy",
+          "evaluate"
+        ],
+        "evidence": [
+          "held-out task accuracy",
+          "reward statistics",
+          "KL drift",
+          "behavioral evals"
+        ],
+        "risks": [
+          "reward_hacking",
+          "overoptimization",
+          "distribution_shift",
+          "mode_collapse"
+        ]
+      },
+      "assignment_ties": [
+        "a5"
+      ],
+      "evidence_status": "TEACHING_RECONSTRUCTION"
+    },
+    {
+      "id": "w9",
+      "label": "Week 9",
+      "title": "Reasoning RL & End-to-End Language Model Engineering",
+      "part": "E · Shape model behavior",
+      "lectures": [
+        {
+          "number": 17,
+          "date": "2025-05-27",
+          "title": "Alignment - RL",
+          "official": true
+        }
+      ],
+      "question": "当 reward 可以验证时，怎样让模型自己探索更好的推理策略，又不把系统训练坏？",
+      "why": "最后一周把课程从“造一个能训练的 LM”闭环到“用 RL 改变复杂行为”。它也是整门课的整合点：模型、系统、数据、scaling、evaluation 和 alignment 必须一起工作。",
+      "objectives": [
+        "理解 verifiable reward、expert iteration 与 group-relative policy optimization 的基本直觉",
+        "知道 reasoning RL 为什么高度依赖采样、奖励设计与稳定的评测",
+        "能把 CS336 全栈看成一个连续工程系统而不是 9 个孤立主题"
+      ],
+      "concepts": [
+        "Reasoning RL",
+        "Verifiable Reward",
+        "Expert Iteration",
+        "GRPO",
+        "Policy",
+        "On-Policy Data",
+        "Reward Hacking",
+        "Alignment Evaluation",
+        "End-to-End LM Stack",
+        "Reproducibility",
+        "Compute Budget",
+        "Evaluation"
+      ],
+      "model_title": "Sample → Verify → Learn → Re-sample",
+      "model_nodes": [
+        "Reasoning RL",
+        "Verifiable Reward",
+        "Expert Iteration",
+        "GRPO"
+      ],
+      "example": "对可自动判分的数学题，模型为同一题采样多条推理轨迹；用可验证答案给 reward，再根据组内相对表现更新 policy，并用独立集检查是否真的获得可迁移的推理提升。",
+      "pitfalls": [
+        "把训练 reward 上升直接当成 reasoning 能力上升",
+        "同一个 verifier 同时训练和评测，形成循环自证",
+        "忽略生成长度、采样温度、KL 与 rollout 成本对结果的影响"
+      ],
+      "quiz": {
+        "q": "为什么 verifiable reward 特别适合 reasoning RL？",
+        "choices": [
+          "因为它可以给模型参数直接设答案",
+          "因为结果可自动判定，为大量 sampled trajectories 提供相对可靠的反馈",
+          "因为它完全消除了 reward hacking"
+        ],
+        "correct": 1,
+        "explain": "可验证结果让大规模 rollout 能获得自动反馈，但仍需防止捷径、污染与指标错配。"
+      },
+      "agent": {
+        "goal": "reason about a stable reasoning-RL loop and integrate the full LM stack",
+        "inputs": [
+          "policy",
+          "prompts",
+          "verifier",
+          "sampling_config",
+          "compute_budget"
+        ],
+        "actions": [
+          "sample_rollouts",
+          "score",
+          "group_compare",
+          "update_policy",
+          "run_independent_eval"
+        ],
+        "evidence": [
+          "verified_accuracy",
+          "reward_distribution",
+          "KL",
+          "length_stats",
+          "held-out_eval"
+        ],
+        "risks": [
+          "reward_hacking",
+          "verifier_leakage",
+          "unstable_updates",
+          "excessive_rollout_cost"
+        ]
+      },
+      "assignment_ties": [
+        "a5"
+      ],
+      "evidence_status": "TEACHING_RECONSTRUCTION",
+      "supplemental_schedule_events": [
+        {
+          "date": "2025-05-29",
+          "title": "Guest Lecture by Junyang Lin",
+          "core_playlist": false
+        },
+        {
+          "date": "2025-06-03",
+          "title": "Guest lecture by Mike Lewis",
+          "core_playlist": false
+        }
+      ]
+    }
+  ],
+  "assignments": [
+    {
+      "id": "a1",
+      "title": "Assignment 1: Basics",
+      "repo": "https://github.com/stanford-cs336/assignment1-basics",
+      "scope": "tokenizer, Transformer components, optimizer, minimal LM training",
+      "source_status": "SOURCE_CONFIRMED"
+    },
+    {
+      "id": "a2",
+      "title": "Assignment 2: Systems",
+      "repo": "https://github.com/stanford-cs336/assignment2-systems",
+      "scope": "profiling, Triton/FlashAttention2, memory-efficient distributed training",
+      "source_status": "SOURCE_CONFIRMED"
+    },
+    {
+      "id": "a3",
+      "title": "Assignment 3: Scaling",
+      "repo": "https://github.com/stanford-cs336/assignment3-scaling",
+      "scope": "Transformer component analysis and fitting scaling laws using a training API",
+      "source_status": "SOURCE_CONFIRMED"
+    },
+    {
+      "id": "a4",
+      "title": "Assignment 4: Data",
+      "repo": "https://github.com/stanford-cs336/assignment4-data",
+      "scope": "Common Crawl conversion, filtering, deduplication, data-quality experiments",
+      "source_status": "SOURCE_CONFIRMED"
+    },
+    {
+      "id": "a5",
+      "title": "Assignment 5: Alignment and Reasoning RL",
+      "repo": "https://github.com/stanford-cs336/assignment5-alignment",
+      "scope": "SFT and reinforcement learning for mathematical reasoning; optional safety alignment",
+      "source_status": "SOURCE_CONFIRMED"
+    }
+  ],
+  "guest_lectures": [
+    {
+      "date": "2025-05-29",
+      "title": "Guest Lecture by Junyang Lin",
+      "source": "course schedule",
+      "included_as_core_module": false
+    },
+    {
+      "date": "2025-06-03",
+      "title": "Guest lecture by Mike Lewis",
+      "source": "course schedule",
+      "included_as_core_module": false
+    }
+  ]
+}

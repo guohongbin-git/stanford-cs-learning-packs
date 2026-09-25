@@ -1,0 +1,700 @@
+{
+  "course": "CS109",
+  "title": "Probability for Computer Scientists",
+  "term": "Autumn 2022",
+  "version": "v1.0",
+  "target_offering": "Autumn 2022",
+  "material_status": "archive_official",
+  "weeks": [
+    {
+      "id": "w1",
+      "week": 1,
+      "label": "Week 1",
+      "title": "计数与概率基础",
+      "question": "如何从计数和公理建立概率模型？",
+      "why": "概率基础决定后续统计推断的数学语言。",
+      "objectives": [
+        "掌握样本空间定义",
+        "计算组合排列数量",
+        "应用概率公理"
+      ],
+      "concepts": [
+        "Probability",
+        "Sample Space",
+        "Counting Principle",
+        "Permutation",
+        "Combination"
+      ],
+      "pitfalls": [
+        "遗漏样本空间",
+        "组合重复计数",
+        "概率和超过一"
+      ],
+      "quiz": {
+        "q": "计数与概率基础中最重要的分析原则是什么？",
+        "choices": [
+          "明确随机变量和假设",
+          "只增加计算复杂度",
+          "忽略样本来源"
+        ],
+        "correct": 0,
+        "explain": "概率分析依赖正确建模和假设。"
+      },
+      "agent": {
+        "goal": "辅助概率课程学习",
+        "inputs": [
+          "课程结构",
+          "概念定义"
+        ],
+        "actions": [
+          "解释公式",
+          "分析概念关系"
+        ],
+        "evidence": [
+          "CS109公开课程材料"
+        ],
+        "risks": [
+          "混淆统计结论与因果结论"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 1,
+          "title": "Counting",
+          "official": false
+        },
+        {
+          "number": 2,
+          "title": "Permutations and Combinations",
+          "official": false
+        },
+        {
+          "number": 3,
+          "title": "Probability Definitions and Axioms",
+          "official": false
+        }
+      ],
+      "model_title": "Probability Modeling",
+      "model_nodes": [
+        "Probability",
+        "Sample Space",
+        "Counting Principle",
+        "Permutation",
+        "Combination"
+      ],
+      "part": "Part 1",
+      "assignment_ties": [
+        "CS109 assignment 1"
+      ],
+      "evidence_status": "archive_official · CS109 Autumn 2022 (cs109.1232): 官方 28 讲/10 周，本包压缩为 9 个教学周并重新编号，lectures 为目标派生标签（official: false）",
+      "example": "分析天气预测中比较下雨事件概率与晴天事件概率，判断模型输出是否合理。"
+    },
+    {
+      "id": "w2",
+      "week": 2,
+      "label": "Week 2",
+      "title": "条件概率与独立性",
+      "question": "条件信息如何改变事件概率？",
+      "why": "条件概率和独立性支撑贝叶斯推理。",
+      "objectives": [
+        "计算条件概率",
+        "判断事件独立性",
+        "应用Bayes Rule更新概率"
+      ],
+      "concepts": [
+        "Conditional Probability",
+        "Independence",
+        "Bayes Rule",
+        "Prior",
+        "Likelihood"
+      ],
+      "pitfalls": [
+        "误判独立关系",
+        "条件方向混淆",
+        "忽略条件限制"
+      ],
+      "quiz": {
+        "q": "条件概率与独立性中最重要的分析原则是什么？",
+        "choices": [
+          "明确随机变量和假设",
+          "只增加计算复杂度",
+          "忽略样本来源"
+        ],
+        "correct": 0,
+        "explain": "概率分析依赖正确建模和假设。"
+      },
+      "agent": {
+        "goal": "辅助概率课程学习",
+        "inputs": [
+          "课程结构",
+          "概念定义"
+        ],
+        "actions": [
+          "解释公式",
+          "分析概念关系"
+        ],
+        "evidence": [
+          "CS109公开课程材料"
+        ],
+        "risks": [
+          "混淆统计结论与因果结论"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 4,
+          "title": "Conditional Probability",
+          "official": false
+        },
+        {
+          "number": 5,
+          "title": "Independence and Bayes Rule",
+          "official": false
+        }
+      ],
+      "model_title": "Probability Modeling",
+      "model_nodes": [
+        "Conditional Probability",
+        "Independence",
+        "Bayes Rule",
+        "Prior",
+        "Likelihood"
+      ],
+      "part": "Part 2",
+      "assignment_ties": [
+        "CS109 assignment 2"
+      ],
+      "evidence_status": "archive_official · CS109 Autumn 2022 (cs109.1232): 官方 28 讲/10 周，本包压缩为 9 个教学周并重新编号，lectures 为目标派生标签（official: false）",
+      "example": "医学检测中根据检测阳性结果重新计算患者患病概率。"
+    },
+    {
+      "id": "w3",
+      "week": 3,
+      "label": "Week 3",
+      "title": "随机变量、离散分布与计数过程",
+      "question": "随机变量如何描述不确定现象？",
+      "why": "随机变量连接现实事件和数学分布。",
+      "objectives": [
+        "区分离散连续变量",
+        "建立分布模型",
+        "计算随机变量概率"
+      ],
+      "concepts": [
+        "Random Variable",
+        "Bernoulli Distribution",
+        "Binomial Distribution",
+        "Poisson Distribution"
+      ],
+      "pitfalls": [
+        "混淆变量类型",
+        "分布定义错误",
+        "忽略取值范围"
+      ],
+      "quiz": {
+        "q": "随机变量与离散分布中最重要的分析原则是什么？",
+        "choices": [
+          "明确随机变量和假设",
+          "只增加计算复杂度",
+          "忽略样本来源"
+        ],
+        "correct": 0,
+        "explain": "概率分析依赖正确建模和假设。"
+      },
+      "agent": {
+        "goal": "辅助概率课程学习",
+        "inputs": [
+          "课程结构",
+          "概念定义"
+        ],
+        "actions": [
+          "解释公式",
+          "分析概念关系"
+        ],
+        "evidence": [
+          "CS109公开课程材料"
+        ],
+        "risks": [
+          "混淆统计结论与因果结论"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 6,
+          "title": "Random Variables",
+          "official": false
+        },
+        {
+          "number": 7,
+          "title": "Bernoulli and Binomial Distributions",
+          "official": false
+        }
+      ],
+      "model_title": "Probability Modeling",
+      "model_nodes": [
+        "Random Variable",
+        "Bernoulli Distribution",
+        "Binomial Distribution"
+      ],
+      "part": "Part 3",
+      "assignment_ties": [
+        "CS109 assignment 3"
+      ],
+      "evidence_status": "archive_official · CS109 Autumn 2022 (cs109.1232): 官方 28 讲/10 周，本包压缩为 9 个教学周并重新编号，lectures 为目标派生标签（official: false）",
+      "example": "将一次掷骰结果映射为随机变量并研究其分布特征。"
+    },
+    {
+      "id": "w4",
+      "week": 4,
+      "label": "Week 4",
+      "title": "期望方差与统计量",
+      "question": "如何利用期望和方差描述随机结果？",
+      "why": "统计量刻画数据中心和波动特征。",
+      "objectives": [
+        "计算期望方差",
+        "理解协方差关系",
+        "分析随机变化程度"
+      ],
+      "concepts": [
+        "Expectation",
+        "Variance",
+        "Covariance",
+        "Correlation"
+      ],
+      "pitfalls": [
+        "忽略量纲差异",
+        "方差公式误用",
+        "协方差方向误判"
+      ],
+      "quiz": {
+        "q": "期望方差与统计量中最重要的分析原则是什么？",
+        "choices": [
+          "明确随机变量和假设",
+          "只增加计算复杂度",
+          "忽略样本来源"
+        ],
+        "correct": 0,
+        "explain": "概率分析依赖正确建模和假设。"
+      },
+      "agent": {
+        "goal": "辅助概率课程学习",
+        "inputs": [
+          "课程结构",
+          "概念定义"
+        ],
+        "actions": [
+          "解释公式",
+          "分析概念关系"
+        ],
+        "evidence": [
+          "CS109公开课程材料"
+        ],
+        "risks": [
+          "混淆统计结论与因果结论"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 8,
+          "title": "Expectation and Variance",
+          "official": false
+        },
+        {
+          "number": 9,
+          "title": "Continuous Distributions and PDFs",
+          "official": false
+        },
+        {
+          "number": 10,
+          "title": "Normal Distribution",
+          "official": false
+        }
+      ],
+      "model_title": "Probability Modeling",
+      "model_nodes": [
+        "Expectation",
+        "Variance",
+        "Covariance",
+        "Correlation"
+      ],
+      "part": "Part 4",
+      "assignment_ties": [
+        "CS109 assignment 4"
+      ],
+      "evidence_status": "archive_official · CS109 Autumn 2022 (cs109.1232): 官方 28 讲/10 周，本包压缩为 9 个教学周并重新编号，lectures 为目标派生标签（official: false）",
+      "example": "计算保险公司每份保单的长期平均赔付金额。"
+    },
+    {
+      "id": "w5",
+      "week": 5,
+      "label": "Week 5",
+      "title": "连续分布",
+      "question": "连续随机变量如何建模？",
+      "why": "连续分布扩展概率分析到真实测量数据。",
+      "objectives": [
+        "理解PDF概念",
+        "使用Normal分布",
+        "分析Exponential过程"
+      ],
+      "concepts": [
+        "Normal Distribution",
+        "Probability Density Function",
+        "Exponential Distribution"
+      ],
+      "pitfalls": [
+        "把密度当概率",
+        "积分范围错误",
+        "忽略参数影响"
+      ],
+      "quiz": {
+        "q": "连续分布中最重要的分析原则是什么？",
+        "choices": [
+          "明确随机变量和假设",
+          "只增加计算复杂度",
+          "忽略样本来源"
+        ],
+        "correct": 0,
+        "explain": "概率分析依赖正确建模和假设。"
+      },
+      "agent": {
+        "goal": "辅助概率课程学习",
+        "inputs": [
+          "课程结构",
+          "概念定义"
+        ],
+        "actions": [
+          "解释公式",
+          "分析概念关系"
+        ],
+        "evidence": [
+          "CS109公开课程材料"
+        ],
+        "risks": [
+          "混淆统计结论与因果结论"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 11,
+          "title": "Joint Distributions",
+          "official": false
+        },
+        {
+          "number": 12,
+          "title": "Marginalization and Inference",
+          "official": false
+        }
+      ],
+      "model_title": "Probability Modeling",
+      "model_nodes": [
+        "Normal Distribution",
+        "Probability Density Function",
+        "Exponential Distribution"
+      ],
+      "part": "Part 5",
+      "assignment_ties": [
+        "CS109 assignment 5"
+      ],
+      "evidence_status": "archive_official · CS109 Autumn 2022 (cs109.1232): 官方 28 讲/10 周，本包压缩为 9 个教学周并重新编号，lectures 为目标派生标签（official: false）",
+      "example": "用身高样本近似成年人群身高分布并计算区间比例。"
+    },
+    {
+      "id": "w6",
+      "week": 6,
+      "label": "Week 6",
+      "title": "联合分布、Beta 分布与估计",
+      "question": "多个变量共同变化如何分析？",
+      "why": "联合分布揭示变量间依赖结构。",
+      "objectives": [
+        "建立联合概率模型",
+        "分析相关性",
+        "使用Beta分布建模"
+      ],
+      "concepts": [
+        "Joint Distribution",
+        "Sampling Distribution",
+        "Estimator",
+        "Beta Distribution"
+      ],
+      "pitfalls": [
+        "误把相关当因果",
+        "忽略联合关系",
+        "参数估计错误"
+      ],
+      "quiz": {
+        "q": "联合分布与估计中最重要的分析原则是什么？",
+        "choices": [
+          "明确随机变量和假设",
+          "只增加计算复杂度",
+          "忽略样本来源"
+        ],
+        "correct": 0,
+        "explain": "概率分析依赖正确建模和假设。"
+      },
+      "agent": {
+        "goal": "辅助概率课程学习",
+        "inputs": [
+          "课程结构",
+          "概念定义"
+        ],
+        "actions": [
+          "解释公式",
+          "分析概念关系"
+        ],
+        "evidence": [
+          "CS109公开课程材料"
+        ],
+        "risks": [
+          "混淆统计结论与因果结论"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 13,
+          "title": "Beta Distribution and Conditional Expectation",
+          "official": false
+        },
+        {
+          "number": 14,
+          "title": "Adding Random Variables and CLT",
+          "official": false
+        }
+      ],
+      "model_title": "Probability Modeling",
+      "model_nodes": [
+        "Joint Distribution",
+        "Sampling Distribution",
+        "Estimator"
+      ],
+      "part": "Part 6",
+      "assignment_ties": [
+        "CS109 assignment 6"
+      ],
+      "evidence_status": "archive_official · CS109 Autumn 2022 (cs109.1232): 官方 28 讲/10 周，本包压缩为 9 个教学周并重新编号，lectures 为目标派生标签（official: false）",
+      "example": "分析天气温度和湿度共同变化的概率模型。"
+    },
+    {
+      "id": "w7",
+      "week": 7,
+      "label": "Week 7",
+      "title": "极限定理、自助法与 P 值",
+      "question": "大量样本为何趋近稳定规律？",
+      "why": "极限定理解释统计推断可靠性。",
+      "objectives": [
+        "应用Central Limit Theorem",
+        "构造Confidence Interval",
+        "使用Bootstrap估计"
+      ],
+      "concepts": [
+        "Central Limit Theorem",
+        "Confidence Interval",
+        "Bootstrapping",
+        "P-Value",
+        "Algorithmic Analysis"
+      ],
+      "pitfalls": [
+        "样本不足套用CLT",
+        "置信区间解释错误",
+        "重采样偏差"
+      ],
+      "quiz": {
+        "q": "极限定理与区间估计中最重要的分析原则是什么？",
+        "choices": [
+          "明确随机变量和假设",
+          "只增加计算复杂度",
+          "忽略样本来源"
+        ],
+        "correct": 0,
+        "explain": "概率分析依赖正确建模和假设。"
+      },
+      "agent": {
+        "goal": "辅助概率课程学习",
+        "inputs": [
+          "课程结构",
+          "概念定义"
+        ],
+        "actions": [
+          "解释公式",
+          "分析概念关系"
+        ],
+        "evidence": [
+          "CS109公开课程材料"
+        ],
+        "risks": [
+          "混淆统计结论与因果结论"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 15,
+          "title": "Sampling and Confidence Intervals",
+          "official": false
+        },
+        {
+          "number": 16,
+          "title": "Bootstrapping and P-Values",
+          "official": false
+        }
+      ],
+      "model_title": "Probability Modeling",
+      "model_nodes": [
+        "Central Limit Theorem",
+        "Confidence Interval"
+      ],
+      "part": "Part 7",
+      "assignment_ties": [
+        "CS109 assignment 7"
+      ],
+      "evidence_status": "archive_official · CS109 Autumn 2022 (cs109.1232): 官方 28 讲/10 周，本包压缩为 9 个教学周并重新编号，lectures 为目标派生标签（official: false）",
+      "example": "用100次抛硬币结果的平均值近似正态分布并构造区间。"
+    },
+    {
+      "id": "w8",
+      "week": 8,
+      "label": "Week 8",
+      "title": "最大似然与最大后验估计",
+      "question": "如何从数据估计未知参数？",
+      "why": "估计方法连接样本和总体推断。",
+      "objectives": [
+        "计算MLE",
+        "理解MAP",
+        "比较Estimator性质"
+      ],
+      "concepts": [
+        "Naive Bayes",
+        "Posterior",
+        "Maximum A Posteriori",
+        "Maximum Likelihood Estimation"
+      ],
+      "pitfalls": [
+        "似然函数设置错误",
+        "先验选择不当",
+        "忽略估计方差"
+      ],
+      "quiz": {
+        "q": "概率分类与贝叶斯推理中最重要的分析原则是什么？",
+        "choices": [
+          "明确随机变量和假设",
+          "只增加计算复杂度",
+          "忽略样本来源"
+        ],
+        "correct": 0,
+        "explain": "概率分析依赖正确建模和假设。"
+      },
+      "agent": {
+        "goal": "辅助概率课程学习",
+        "inputs": [
+          "课程结构",
+          "概念定义"
+        ],
+        "actions": [
+          "解释公式",
+          "分析概念关系"
+        ],
+        "evidence": [
+          "CS109公开课程材料"
+        ],
+        "risks": [
+          "混淆统计结论与因果结论"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 17,
+          "title": "Maximum Likelihood Estimation",
+          "official": false
+        },
+        {
+          "number": 18,
+          "title": "Maximum A Posteriori and Naive Bayes",
+          "official": false
+        }
+      ],
+      "model_title": "Probability Modeling",
+      "model_nodes": [
+        "Naive Bayes",
+        "Posterior"
+      ],
+      "part": "Part 8",
+      "assignment_ties": [
+        "CS109 assignment 8"
+      ],
+      "evidence_status": "archive_official · CS109 Autumn 2022 (cs109.1232): 官方 28 讲/10 周，本包压缩为 9 个教学周并重新编号，lectures 为目标派生标签（official: false）",
+      "example": "垃圾邮件过滤中根据词频估计邮件属于垃圾邮件的概率。"
+    },
+    {
+      "id": "w9",
+      "week": 9,
+      "label": "Week 9",
+      "title": "概率计算总结",
+      "question": "如何使用概率模型完成推断任务？",
+      "why": "贝叶斯方法连接统计理论和机器学习。",
+      "objectives": [
+        "应用Naive Bayes分类",
+        "理解Prior Posterior",
+        "建立Logistic Regression模型"
+      ],
+      "concepts": [
+        "Probability",
+        "Posterior",
+        "Likelihood",
+        "Logistic Regression"
+      ],
+      "pitfalls": [
+        "条件独立假设失效",
+        "概率输出误解",
+        "模型假设过强"
+      ],
+      "quiz": {
+        "q": "概率计算总结中最重要的分析原则是什么？",
+        "choices": [
+          "明确随机变量和假设",
+          "只增加计算复杂度",
+          "忽略样本来源"
+        ],
+        "correct": 0,
+        "explain": "概率分析依赖正确建模和假设。"
+      },
+      "agent": {
+        "goal": "辅助概率课程学习",
+        "inputs": [
+          "课程结构",
+          "概念定义"
+        ],
+        "actions": [
+          "解释公式",
+          "分析概念关系"
+        ],
+        "evidence": [
+          "CS109公开课程材料"
+        ],
+        "risks": [
+          "混淆统计结论与因果结论"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 19,
+          "title": "Logistic Regression and Course Wrap-up",
+          "official": false
+        },
+        {
+          "number": 20,
+          "title": "Fairness and Advanced Probability",
+          "official": false
+        }
+      ],
+      "model_title": "Probability Modeling",
+      "model_nodes": [
+        "Probability",
+        "Posterior",
+        "Likelihood"
+      ],
+      "part": "Part 9",
+      "assignment_ties": [
+        "CS109 assignment 9"
+      ],
+      "evidence_status": "archive_official · CS109 Autumn 2022 (cs109.1232): 官方 28 讲/10 周，本包压缩为 9 个教学周并重新编号，lectures 为目标派生标签（official: false）",
+      "example": "分析天气预测中比较下雨事件概率与晴天事件概率，判断模型输出是否合理。"
+    }
+  ]
+}

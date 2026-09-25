@@ -1,0 +1,528 @@
+{
+  "course": "CS25",
+  "title": "Transformers United",
+  "version": "v0.3",
+  "organization": "theme_cluster",
+  "themes": [
+    {
+      "id": "Attention variants",
+      "concepts": [
+        "Attention",
+        "Self Attention",
+        "Multi Head Attention",
+        "Transformer",
+        "Encoder Decoder",
+        "Decoder Only Model",
+        "Sparse Attention"
+      ]
+    },
+    {
+      "id": "Scaling & LLM Systems",
+      "concepts": [
+        "Large Language Model",
+        "Foundation Model",
+        "Scaling Laws",
+        "Pretraining",
+        "Mixture of Experts",
+        "Long Context",
+        "KV Cache",
+        "Emergent Ability",
+        "Benchmark Evaluation",
+        "Embedding",
+        "Representation Learning",
+        "Data Curation",
+        "Synthetic Data",
+        "Parameter Efficient Fine Tuning",
+        "LoRA",
+        "Open Source Model",
+        "Inference Optimization",
+        "Distributed Training",
+        "GPU Scaling",
+        "Model Serving",
+        "Model Evaluation"
+      ]
+    },
+    {
+      "id": "Reasoning",
+      "concepts": [
+        "Instruction Tuning",
+        "RLHF",
+        "Alignment",
+        "Chain of Thought",
+        "Reasoning",
+        "Inference Scaling",
+        "In Context Learning",
+        "Hallucination",
+        "Safety Evaluation",
+        "Interpretability",
+        "Mechanistic Interpretability",
+        "Code Generation",
+        "Preference Optimization",
+        "Induction Heads and ICL",
+        "Sparse Autoencoder",
+        "RLAIF"
+      ]
+    },
+    {
+      "id": "Agents",
+      "concepts": [
+        "Agent",
+        "Tool Use",
+        "Planning",
+        "Memory",
+        "Retrieval Augmented Generation",
+        "World Model",
+        "Robotics Transformer",
+        "Code Agent"
+      ]
+    },
+    {
+      "id": "Multimodality",
+      "concepts": [
+        "Multimodal Model",
+        "Vision Language Model",
+        "Image Tokenization",
+        "Audio Language Model",
+        "Video Transformer",
+        "Diffusion Transformer",
+        "Diffusion Models"
+      ]
+    }
+  ],
+  "talks": [
+    {
+      "title": "Introduction to Transformers",
+      "speaker": "Instructors (Div Garg, Chetanya Rastogi, Advay Pal)",
+      "edition": "V1 Fall 2021",
+      "theme": "Attention variants",
+      "status": "supplemental",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Transformers in Language: GPT-3, Codex",
+      "speaker": "Mark Chen (OpenAI)",
+      "edition": "V1 Fall 2021",
+      "theme": "Scaling & LLM Systems",
+      "status": "supplemental",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Applications in Vision (Vision Transformer)",
+      "speaker": "Lucas Beyer (Google Brain)",
+      "edition": "V1 Fall 2021",
+      "theme": "Multimodality",
+      "status": "supplemental",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Transformers in RL & Universal Compute Engines",
+      "speaker": "Aditya Grover (FAIR)",
+      "edition": "V1 Fall 2021",
+      "theme": "Reasoning",
+      "status": "supplemental",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Scaling Transformers (Switch/ST-MoE)",
+      "speaker": "Barret Zoph, Irwan Bello, Liam Fedus (Google Brain)",
+      "edition": "V1 Fall 2021",
+      "theme": "Scaling & LLM Systems",
+      "status": "supplemental",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Perceiver: Arbitrary IO with Transformers",
+      "speaker": "Andrew Jaegle (DeepMind)",
+      "edition": "V1 Fall 2021",
+      "theme": "Multimodality",
+      "status": "supplemental",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Self-Attention & Non-Parametric Transformers",
+      "speaker": "Aidan Gomez (University of Oxford)",
+      "edition": "V1 Fall 2021",
+      "theme": "Attention variants",
+      "status": "supplemental",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "GLOM: Representing Part-Whole Hierarchies",
+      "speaker": "Geoffrey Hinton (University of Toronto)",
+      "edition": "V1 Fall 2021",
+      "theme": "Attention variants",
+      "status": "supplemental",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Interpretability with Transformers",
+      "speaker": "Chris Olah (Anthropic)",
+      "edition": "V1 Fall 2021",
+      "theme": "Attention variants",
+      "status": "supplemental",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Transformers for Audio, Speech and Music",
+      "speaker": "Prateek Verma (Stanford)",
+      "edition": "V1 Fall 2021",
+      "theme": "Multimodality",
+      "status": "supplemental",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Introduction to Transformers",
+      "speaker": "Andrej Karpathy",
+      "edition": "V2 Winter 2023",
+      "theme": "Attention variants",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Language and Human Alignment",
+      "speaker": "Jan Leike (OpenAI)",
+      "edition": "V2 Winter 2023",
+      "theme": "Reasoning",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Emergent Abilities and Scaling in LLMs",
+      "speaker": "Jason Wei (Google Brain)",
+      "edition": "V2 Winter 2023",
+      "theme": "Reasoning",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Strategic Games",
+      "speaker": "Noam Brown (FAIR)",
+      "edition": "V2 Winter 2023",
+      "theme": "Reasoning",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Robotics and Imitation Learning (RT-1)",
+      "speaker": "Ted Xiao (Google Brain)",
+      "edition": "V2 Winter 2023",
+      "theme": "Multimodality",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Common Sense Reasoning",
+      "speaker": "Yejin Choi (U. Washington / AI2)",
+      "edition": "V2 Winter 2023",
+      "theme": "Reasoning",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Biomedical Transformers",
+      "speaker": "Vivek Natarajan (Google Health AI)",
+      "edition": "V2 Winter 2023",
+      "theme": "Multimodality",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "In-Context Learning & Faithful Reasoning",
+      "speaker": "Stephanie Chan, Antonia Creswell (DeepMind)",
+      "edition": "V2 Winter 2023",
+      "theme": "Reasoning",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Neuroscience-Inspired Artificial Intelligence",
+      "speaker": "Trenton Bricken (Anthropic), Will Dorrell (UCL/Stanford)",
+      "edition": "V2 Winter 2023",
+      "theme": "Attention variants",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Wrap Up",
+      "speaker": "Instructors",
+      "edition": "V2 Winter 2023",
+      "theme": "Scaling & LLM Systems",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+      "speaker": "Sharan Narang (Meta AI)",
+      "edition": "V3 Autumn 2023",
+      "theme": "Scaling & LLM Systems",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Low-level Embodied Intelligence with Foundation Models (RT-2)",
+      "speaker": "Fei Xia (Google DeepMind)",
+      "edition": "V3 Autumn 2023",
+      "theme": "Multimodality",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Generalist Agents in Open-Ended Worlds",
+      "speaker": "Jim Fan (NVIDIA AI)",
+      "edition": "V3 Autumn 2023",
+      "theme": "Agents",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Recipe for Training Helpful Chatbots",
+      "speaker": "Nazneen Rajani (HuggingFace)",
+      "edition": "V3 Autumn 2023",
+      "theme": "Scaling & LLM Systems",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "How I Learned to Stop Worrying and Love the Transformer",
+      "speaker": "Ashish Vaswani",
+      "edition": "V3 Autumn 2023",
+      "theme": "Attention variants",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "No Language Left Behind: Scaling Human-Centered MT",
+      "speaker": "Angela Fan (Meta AI)",
+      "edition": "V3 Autumn 2023",
+      "theme": "Multimodality",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Going Beyond LLMs: Agents, Emergent Abilities, BabyLM",
+      "speaker": "Instructors",
+      "edition": "V3 Autumn 2023",
+      "theme": "Agents",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Retrieval Augmented Language Models",
+      "speaker": "Douwe Kiela (Contextual AI)",
+      "edition": "V3 Autumn 2023",
+      "theme": "Agents",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Instructor Lecture: Overview of Transformers",
+      "speaker": "Steven Feng, Div Garg, Emily Bunnapradist, Seonghee Lee",
+      "edition": "V4 Spring 2024",
+      "theme": "Attention variants",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Intuitions on Language Models / Shaping the Future of AI",
+      "speaker": "Jason Wei, Hyung Won Chung (OpenAI)",
+      "edition": "V4 Spring 2024",
+      "theme": "Scaling & LLM Systems",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Aligning Open Language Models",
+      "speaker": "Nathan Lambert (AI2)",
+      "edition": "V4 Spring 2024",
+      "theme": "Scaling & LLM Systems",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Demystifying Mixtral of Experts",
+      "speaker": "Albert Jiang (Mistral AI / Cambridge)",
+      "edition": "V4 Spring 2024",
+      "theme": "Scaling & LLM Systems",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Transformers for Near-Shallow Architectures (PLMs)",
+      "speaker": "Jake Williams (Drexel University)",
+      "edition": "V4 Spring 2024",
+      "theme": "Attention variants",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "From Large Language Models to Large Multimodal Models (CogVLM)",
+      "speaker": "Ming Ding (Zhipu AI)",
+      "edition": "V4 Spring 2024",
+      "theme": "Multimodality",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "New Training Objective for LLMs",
+      "speaker": "Edward Hu (prev. OpenAI)",
+      "edition": "V4 Spring 2024",
+      "theme": "Reasoning",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Behind the Scenes of LLM Pre-training: StarCoder",
+      "speaker": "Loubna Ben Allal (Hugging Face)",
+      "edition": "V4 Spring 2024",
+      "theme": "Scaling & LLM Systems",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Overview of Transformers",
+      "speaker": "Steven Feng, Karan Singh, Jenny Duan, Chelsea Zou",
+      "edition": "V5 Spring 2025",
+      "theme": "Attention variants",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "RL as a Co-Design of Product and Research",
+      "speaker": "Karina Nguyen (OpenAI)",
+      "edition": "V5 Spring 2025",
+      "theme": "Scaling & LLM Systems",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "The Advent of AGI",
+      "speaker": "Div Garg (AGI Inc)",
+      "edition": "V5 Spring 2025",
+      "theme": "Agents",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Human Agency in an Era of Artificial Agents",
+      "speaker": "Eric Zelikman (xAI)",
+      "edition": "V5 Spring 2025",
+      "theme": "Agents",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Large Language Model Reasoning",
+      "speaker": "Denny Zhou (Google DeepMind)",
+      "edition": "V5 Spring 2025",
+      "theme": "Reasoning",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Reasoning Models as Agents: Deliberative Alignment and Tool Use",
+      "speaker": "Hongyu Ren (OpenAI)",
+      "edition": "V5 Spring 2025",
+      "theme": "Agents",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "On the Biology of a Large Language Model",
+      "speaker": "Josh Batson (Anthropic)",
+      "edition": "V5 Spring 2025",
+      "theme": "Attention variants",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Multimodal World Models for Drug Discovery",
+      "speaker": "Eshed Margalit (Noetik.ai)",
+      "edition": "V5 Spring 2025",
+      "theme": "Multimodality",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Transformers in Diffusion Models for Image Generation",
+      "speaker": "Sayak Paul (Hugging Face)",
+      "edition": "V5 Spring 2025",
+      "theme": "Multimodality",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "Transformers for Video Generation (Movie Gen)",
+      "speaker": "Andrew Brown (Meta)",
+      "edition": "V5 Spring 2025",
+      "theme": "Multimodality",
+      "status": "active",
+      "title_source": "official_schedule"
+    },
+    {
+      "title": "JEPA: Joint Embedding Predictive Architectures and World Models",
+      "speaker": "Yann LeCun / JEPA team",
+      "edition": "V6 Spring 2026",
+      "theme": "Multimodality",
+      "status": "active",
+      "title_source": "derived_label"
+    },
+    {
+      "title": "Long Context and Subquadratic Architectures",
+      "speaker": "Albert Gu",
+      "edition": "V6 Spring 2026",
+      "theme": "Attention variants",
+      "status": "active",
+      "title_source": "derived_label"
+    },
+    {
+      "title": "Distributed Training of Mixture-of-Experts at Scale",
+      "speaker": "Zoltan Tazi",
+      "edition": "V6 Spring 2026",
+      "theme": "Scaling & LLM Systems",
+      "status": "active",
+      "title_source": "derived_label"
+    },
+    {
+      "title": "Pretraining Data Ordering",
+      "speaker": "Swabha Prabhumoye",
+      "edition": "V6 Spring 2026",
+      "theme": "Scaling & LLM Systems",
+      "status": "active",
+      "title_source": "derived_label"
+    },
+    {
+      "title": "In-Context vs Parametric Generalization",
+      "speaker": "Andrew Lampinen",
+      "edition": "V6 Spring 2026",
+      "theme": "Reasoning",
+      "status": "active",
+      "title_source": "derived_label"
+    },
+    {
+      "title": "Agents in Production",
+      "speaker": "Nikhil Natarajan",
+      "edition": "V6 Spring 2026",
+      "theme": "Agents",
+      "status": "active",
+      "title_source": "derived_label"
+    },
+    {
+      "title": "Multimodality Frontiers",
+      "speaker": "Victoria Lin",
+      "edition": "V6 Spring 2026",
+      "theme": "Multimodality",
+      "status": "active",
+      "title_source": "derived_label"
+    },
+    {
+      "title": "Model Serving and Inference Systems",
+      "speaker": "Cameron Frye",
+      "edition": "V6 Spring 2026",
+      "theme": "Scaling & LLM Systems",
+      "status": "active",
+      "title_source": "derived_label"
+    }
+  ],
+  "talk_count": 54,
+  "talk_title_sources": "V1 Fall 2021–V5 Spring 2025 titles are verbatim from the official CS25 schedule pages (web.stanford.edu/class/cs25/past/cs25-v1..v5); V6 Spring 2026 entries are derived topic labels (no archived schedule page reachable)."
+}

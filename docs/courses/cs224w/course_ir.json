@@ -1,0 +1,664 @@
+{
+  "course": "CS224W",
+  "title": "Machine Learning with Graphs",
+  "term": "Autumn 2021",
+  "target_offering": "Autumn 2021",
+  "material_status": "archive_official",
+  "weeks": [
+    {
+      "id": "w1",
+      "week": 1,
+      "label": "Week 1",
+      "title": "图基础与表示",
+      "question": "图数据如何用节点、边与随机游走转化为可学习的结构表示？",
+      "why": "掌握图为机器学习提供关系建模的基本语言与任务分类框架。",
+      "objectives": [
+        "能用节点、边、有向与加权等要素描述一个真实图数据",
+        "能区分节点级、边级、图级三类图机器学习任务",
+        "能用随机游走为图生成可训练的结构样本序列"
+      ],
+      "concepts": [
+        "Graph",
+        "Node Embedding",
+        "Random Walk"
+      ],
+      "pitfalls": [
+        "把边方向或权重随意设定，导致图结构语义被改变",
+        "只堆叠节点自身特征，忽略邻域与拓扑关系信息",
+        "在图上直接套用独立同分布假设，忽略节点相互依赖"
+      ],
+      "quiz": {
+        "q": "图学习核心对象是什么？",
+        "choices": [
+          "节点和关系",
+          "只有文本",
+          "只有图片"
+        ],
+        "correct": 0,
+        "explain": "图模型处理关系结构。"
+      },
+      "agent": {
+        "goal": "辅助CS224W学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释图算法"
+        ],
+        "evidence": [
+          "Stanford Online"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 1,
+          "title": "Introduction to Machine Learning with Graphs",
+          "official": false
+        },
+        {
+          "number": 2,
+          "title": "Traditional Methods for ML on Graphs",
+          "official": false
+        }
+      ],
+      "model_title": "Machine Learning with Graphs",
+      "model_nodes": [
+        "Graph",
+        "Node Embedding",
+        "Random Walk"
+      ],
+      "part": "Part 1",
+      "assignment_ties": [
+        "Homework 1"
+      ],
+      "evidence_status": "archive_official · CS224W Autumn 2021（官方 19 讲；本包 9 教学周，讲座主题标签 official:false，作业绑定为 Homework/Colab/project 真实条目）",
+      "example": "社交网络中用用户作为节点、关注关系作为边建模。"
+    },
+    {
+      "id": "w2",
+      "week": 2,
+      "label": "Week 2",
+      "title": "节点嵌入",
+      "question": "如何用随机游走和链接分析把节点编码成低维向量并衡量其重要性？",
+      "why": "节点嵌入是后续GNN与各类图任务共享的表示学习基础。",
+      "objectives": [
+        "能用游走序列构造DeepWalk的skip-gram训练目标",
+        "能用返回参数p与探索参数q解释Node2Vec的游走偏置",
+        "能用幂迭代求解PageRank并解释阻尼系数的作用"
+      ],
+      "concepts": [
+        "Node2Vec",
+        "DeepWalk",
+        "Graph Neural Network",
+        "PageRank"
+      ],
+      "pitfalls": [
+        "把Node2Vec的p、q设反，使游走只偏向同质或只偏向结构",
+        "游走序列过少导致低频节点嵌入几乎未受充分训练",
+        "存在悬挂节点且未做无向化时PageRank分值无法收敛"
+      ],
+      "quiz": {
+        "q": "图学习核心对象是什么？",
+        "choices": [
+          "节点和关系",
+          "只有文本",
+          "只有图片"
+        ],
+        "correct": 0,
+        "explain": "图模型处理关系结构。"
+      },
+      "agent": {
+        "goal": "辅助CS224W学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释图算法"
+        ],
+        "evidence": [
+          "Stanford Online"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 3,
+          "title": "Node Embeddings",
+          "official": false
+        },
+        {
+          "number": 4,
+          "title": "PageRank and Link Analysis",
+          "official": false
+        }
+      ],
+      "model_title": "Machine Learning with Graphs",
+      "model_nodes": [
+        "Node2Vec",
+        "DeepWalk",
+        "Graph Neural Network"
+      ],
+      "part": "Part 2",
+      "assignment_ties": [
+        "Homework 1",
+        "Colab 0"
+      ],
+      "evidence_status": "archive_official · CS224W Autumn 2021（官方 19 讲；本包 9 教学周，讲座主题标签 official:false，作业绑定为 Homework/Colab/project 真实条目）",
+      "example": "社交图上用有偏随机游走生成节点序列训练嵌入。"
+    },
+    {
+      "id": "w3",
+      "week": 3,
+      "label": "Week 3",
+      "title": "随机游走方法",
+      "question": "从标签传播到图卷积，邻域信息是如何被逐层聚合与传递的？",
+      "why": "消息传递是理解GCN等图神经网络计算范式的核心机制。",
+      "objectives": [
+        "能按消息、聚合、更新三步描述一层消息传递计算",
+        "能写出GCN归一化邻接矩阵的传播公式并解释其作用",
+        "能对比手工图特征与图卷积在节点分类上的表现差异"
+      ],
+      "concepts": [
+        "Message Passing",
+        "Graph Convolution",
+        "GCN",
+        "Traditional Graph ML Methods"
+      ],
+      "pitfalls": [
+        "聚合函数只用平均，抹平邻居差异而损失区分能力",
+        "归一化方式写错，使高度节点在传播中主导全部表示",
+        "把标签传播的迭代结果当作GNN输出，混淆两者机制"
+      ],
+      "quiz": {
+        "q": "图学习核心对象是什么？",
+        "choices": [
+          "节点和关系",
+          "只有文本",
+          "只有图片"
+        ],
+        "correct": 0,
+        "explain": "图模型处理关系结构。"
+      },
+      "agent": {
+        "goal": "辅助CS224W学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释图算法"
+        ],
+        "evidence": [
+          "Stanford Online"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 5,
+          "title": "Label Propagation for Node Classification",
+          "official": false
+        },
+        {
+          "number": 6,
+          "title": "Graph Neural Networks 1: Message Passing",
+          "official": false
+        }
+      ],
+      "model_title": "Machine Learning with Graphs",
+      "model_nodes": [
+        "Message Passing",
+        "Graph Convolution",
+        "GCN"
+      ],
+      "part": "Part 3",
+      "assignment_ties": [
+        "Colab 1"
+      ],
+      "evidence_status": "archive_official · CS224W Autumn 2021（官方 19 讲；本包 9 教学周，讲座主题标签 official:false，作业绑定为 Homework/Colab/project 真实条目）",
+      "example": "GCN层中节点接收相邻节点特征。"
+    },
+    {
+      "id": "w4",
+      "week": 4,
+      "label": "Week 4",
+      "title": "图神经网络",
+      "question": "面对大规模图，GraphSAGE与GAT如何采样并加权聚合邻居？",
+      "why": "邻居采样与注意力是GNN走向可扩展与自适应的关键设计。",
+      "objectives": [
+        "能实现GraphSAGE固定邻居采样并比较三种聚合函数",
+        "能写出GAT注意力系数的计算与多头拼接的公式",
+        "能说明归纳式与直推式节点分类的适用场景差别"
+      ],
+      "concepts": [
+        "GraphSAGE",
+        "Attention in Graphs",
+        "GAT",
+        "Label Propagation"
+      ],
+      "pitfalls": [
+        "采样邻居数量过少，使聚合结果方差过大且不稳定",
+        "注意力权重在训练早期塌缩到少数邻居，忽略其余边",
+        "把GraphSAGE误当作直推式方法，新节点无法推理"
+      ],
+      "quiz": {
+        "q": "图学习核心对象是什么？",
+        "choices": [
+          "节点和关系",
+          "只有文本",
+          "只有图片"
+        ],
+        "correct": 0,
+        "explain": "图模型处理关系结构。"
+      },
+      "agent": {
+        "goal": "辅助CS224W学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释图算法"
+        ],
+        "evidence": [
+          "Stanford Online"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 7,
+          "title": "Graph Neural Networks 2: Design Space",
+          "official": false
+        },
+        {
+          "number": 8,
+          "title": "Applications of Graph Neural Networks",
+          "official": false
+        }
+      ],
+      "model_title": "Machine Learning with Graphs",
+      "model_nodes": [
+        "GraphSAGE",
+        "Attention in Graphs",
+        "GAT"
+      ],
+      "part": "Part 4",
+      "assignment_ties": [
+        "Homework 2",
+        "Colab 2"
+      ],
+      "evidence_status": "archive_official · CS224W Autumn 2021（官方 19 讲；本包 9 教学周，讲座主题标签 official:false，作业绑定为 Homework/Colab/project 真实条目）",
+      "example": "电商图中预测新用户兴趣。"
+    },
+    {
+      "id": "w5",
+      "week": 5,
+      "label": "Week 5",
+      "title": "消息传递与卷积",
+      "question": "深层消息传递为何退化，图池化与异质结构又该如何设计？",
+      "why": "理解池化与过平滑是设计图级任务与深层GNN的前提。",
+      "objectives": [
+        "能说明过平滑的成因并用跳跃连接或残差缓解",
+        "能实现DiffPool或TopKPool等可学习的图池化层",
+        "能为多类型节点与边构造基于元路径的异质图聚合"
+      ],
+      "concepts": [
+        "Graph Pooling",
+        "Over-smoothing",
+        "Heterogeneous Graph"
+      ],
+      "pitfalls": [
+        "盲目加深层数，节点表示趋同导致分类指标下降",
+        "池化层丢弃关键子结构，图级预测的精度随之降低",
+        "异质图忽略节点类型标签，混同了语义不同的邻居"
+      ],
+      "quiz": {
+        "q": "图学习核心对象是什么？",
+        "choices": [
+          "节点和关系",
+          "只有文本",
+          "只有图片"
+        ],
+        "correct": 0,
+        "explain": "图模型处理关系结构。"
+      },
+      "agent": {
+        "goal": "辅助CS224W学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释图算法"
+        ],
+        "evidence": [
+          "Stanford Online"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 9,
+          "title": "Theory of Graph Neural Networks",
+          "official": false
+        },
+        {
+          "number": 10,
+          "title": "Knowledge Graph Embeddings",
+          "official": false
+        }
+      ],
+      "model_title": "Machine Learning with Graphs",
+      "model_nodes": [
+        "Graph Pooling",
+        "Over-smoothing",
+        "Heterogeneous Graph"
+      ],
+      "part": "Part 5",
+      "assignment_ties": [
+        "Colab 3"
+      ],
+      "evidence_status": "archive_official · CS224W Autumn 2021（官方 19 讲；本包 9 教学周，讲座主题标签 official:false，作业绑定为 Homework/Colab/project 真实条目）",
+      "example": "分子性质预测中压缩分子图表示。"
+    },
+    {
+      "id": "w6",
+      "week": 6,
+      "label": "Week 6",
+      "title": "高级GNN结构",
+      "question": "知识图谱上如何进行链接预测与多跳关系推理？",
+      "why": "KG嵌入与推理是图方法落地搜索与问答的关键环节。",
+      "objectives": [
+        "能用TransE、DistMult打分函数评价三元组合理性",
+        "能区分直推式与归纳式知识图谱补全的任务设定",
+        "能用多跳子图推理模型回答路径类的推理查询"
+      ],
+      "concepts": [
+        "Knowledge Graph",
+        "Link Prediction",
+        "KG Reasoning"
+      ],
+      "pitfalls": [
+        "负采样只用随机替换实体，模型轻易区分而高估效果",
+        "构造负样本时泄漏测试集逆关系，使链接预测指标虚高",
+        "忽略关系类型约束，推理链中出现语义矛盾的三元组"
+      ],
+      "quiz": {
+        "q": "图学习核心对象是什么？",
+        "choices": [
+          "节点和关系",
+          "只有文本",
+          "只有图片"
+        ],
+        "correct": 0,
+        "explain": "图模型处理关系结构。"
+      },
+      "agent": {
+        "goal": "辅助CS224W学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释图算法"
+        ],
+        "evidence": [
+          "Stanford Online"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 11,
+          "title": "Reasoning over Knowledge Graphs",
+          "official": false
+        },
+        {
+          "number": 12,
+          "title": "Frequent Subgraph Mining with GNNs",
+          "official": false
+        }
+      ],
+      "model_title": "Machine Learning with Graphs",
+      "model_nodes": [
+        "Knowledge Graph",
+        "Link Prediction",
+        "KG Reasoning"
+      ],
+      "part": "Part 6",
+      "assignment_ties": [
+        "Homework 3",
+        "Colab 4"
+      ],
+      "evidence_status": "archive_official · CS224W Autumn 2021（官方 19 讲；本包 9 教学周，讲座主题标签 official:false，作业绑定为 Homework/Colab/project 真实条目）",
+      "example": "搜索系统中存储人物与事件关系。"
+    },
+    {
+      "id": "w7",
+      "week": 7,
+      "label": "Week 7",
+      "title": "图级任务",
+      "question": "如何在图上发现社区结构并用GNN提升推荐系统效果？",
+      "why": "社区发现与图推荐是图结构分析最具代表性的落地任务。",
+      "objectives": [
+        "能用模块度衡量并比较不同社区划分的质量",
+        "能说明Louvain等凝聚算法逐层合并社区的过程",
+        "能把用户与物品交互图建模为推荐的双部图学习任务"
+      ],
+      "concepts": [
+        "Community Detection"
+      ],
+      "pitfalls": [
+        "只看模块度而忽略分辨率极限，遗漏小规模社区",
+        "交互数据过于稀疏时硬上GNN，节点表示严重欠拟合",
+        "推荐评测按随机切分，混入未来交互造成数据泄漏"
+      ],
+      "quiz": {
+        "q": "图学习核心对象是什么？",
+        "choices": [
+          "节点和关系",
+          "只有文本",
+          "只有图片"
+        ],
+        "correct": 0,
+        "explain": "图模型处理关系结构。"
+      },
+      "agent": {
+        "goal": "辅助CS224W学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释图算法"
+        ],
+        "evidence": [
+          "Stanford Online"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 13,
+          "title": "GNNs for Recommender Systems",
+          "official": false
+        },
+        {
+          "number": 14,
+          "title": "Community Structure in Networks",
+          "official": false
+        }
+      ],
+      "model_title": "Machine Learning with Graphs",
+      "model_nodes": [
+        "Community Detection"
+      ],
+      "part": "Part 7",
+      "assignment_ties": [
+        "Colab 5"
+      ],
+      "evidence_status": "archive_official · CS224W Autumn 2021（官方 19 讲；本包 9 教学周，讲座主题标签 official:false，作业绑定为 Homework/Colab/project 真实条目）",
+      "example": "社交网络中发现兴趣群体。"
+    },
+    {
+      "id": "w8",
+      "week": 8,
+      "label": "Week 8",
+      "title": "图结构分析",
+      "question": "如何用模体与子图刻画图结构，并生成与扩展大规模图学习？",
+      "why": "结构分析与生成模型支撑分子设计与工业级大图训练。",
+      "objectives": [
+        "能统计三角形等模体并计算其显著性指标",
+        "能用GraphRNN或变分模型生成具目标统计特征的新图",
+        "能用邻居采样或图分区实现大图上的GNN训练"
+      ],
+      "concepts": [
+        "Motif",
+        "Subgraph",
+        "Graph Generation",
+        "Scaling Up GNNs"
+      ],
+      "pitfalls": [
+        "子图采样存在偏差，使模体统计无法代表原图",
+        "生成模型只拟合度分布，忽视聚类等结构特征",
+        "逐层邻居展开造成邻居爆炸，显存与训练耗时不可控"
+      ],
+      "quiz": {
+        "q": "图学习核心对象是什么？",
+        "choices": [
+          "节点和关系",
+          "只有文本",
+          "只有图片"
+        ],
+        "correct": 0,
+        "explain": "图模型处理关系结构。"
+      },
+      "agent": {
+        "goal": "辅助CS224W学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释图算法"
+        ],
+        "evidence": [
+          "Stanford Online"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 15,
+          "title": "Deep Generative Models for Graphs",
+          "official": false
+        },
+        {
+          "number": 16,
+          "title": "Advanced Topics in Graph Learning",
+          "official": false
+        },
+        {
+          "number": 17,
+          "title": "Scaling Up GNNs",
+          "official": true
+        }
+      ],
+      "model_title": "Machine Learning with Graphs",
+      "model_nodes": [
+        "Motif",
+        "Subgraph",
+        "Graph Generation"
+      ],
+      "part": "Part 8",
+      "assignment_ties": [
+        "Project proposal"
+      ],
+      "evidence_status": "archive_official · CS224W Autumn 2021（官方 19 讲；本包 9 教学周，讲座主题标签 official:false，作业绑定为 Homework/Colab/project 真实条目）",
+      "example": "生物网络中寻找重复调控结构。"
+    },
+    {
+      "id": "w9",
+      "week": 9,
+      "label": "Week 9",
+      "title": "总结与应用",
+      "question": "如何用Weisfeiler-Lehman测试判断GNN的表达能力边界？",
+      "why": "表达能力分析帮助判断GNN能否区分目标任务所需的图结构。",
+      "objectives": [
+        "能执行1-WL颜色细化并判断两个图是否可区分",
+        "能说明消息传递GNN表达力不超过1-WL的根本原因",
+        "能比较不同邻居聚合函数表达能力的强弱次序"
+      ],
+      "concepts": [
+        "Expressiveness",
+        "Weisfeiler-Lehman Test"
+      ],
+      "pitfalls": [
+        "高估GNN能力，认为其能区分1-WL无法分辨的图",
+        "只拿单层GCN下结论，忽略层数与表达力的关系",
+        "只比较节点分类精度，未直接检验结构区分能力"
+      ],
+      "quiz": {
+        "q": "图学习核心对象是什么？",
+        "choices": [
+          "节点和关系",
+          "只有文本",
+          "只有图片"
+        ],
+        "correct": 0,
+        "explain": "图模型处理关系结构。"
+      },
+      "agent": {
+        "goal": "辅助CS224W学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释图算法"
+        ],
+        "evidence": [
+          "Stanford Online"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 18,
+          "title": "Guest Lecture (Petar Veličković)",
+          "official": true
+        },
+        {
+          "number": 19,
+          "title": "Design Space of Graph Neural Networks and Course Conclusion",
+          "official": true
+        }
+      ],
+      "model_title": "Machine Learning with Graphs",
+      "model_nodes": [
+        "Expressiveness",
+        "Weisfeiler-Lehman Test"
+      ],
+      "part": "Part 9",
+      "assignment_ties": [
+        "Project report",
+        "Final exam"
+      ],
+      "evidence_status": "archive_official · CS224W Autumn 2021（官方 19 讲；本包 9 教学周，讲座主题标签 official:false，作业绑定为 Homework/Colab/project 真实条目）",
+      "example": "分析GNN能否区分不同图结构。"
+    }
+  ]
+}

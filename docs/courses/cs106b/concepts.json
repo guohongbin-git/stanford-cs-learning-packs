@@ -1,0 +1,796 @@
+{
+  "Recursion": {
+    "id": "Recursion",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过函数调用自身解决规模递减子问题的程序设计方法。",
+    "why": "帮助程序员表达具有重复结构的问题并构造清晰算法。",
+    "failure_conditions": [
+      "缺少基线条件或基线不可达会导致调用无限增长造成栈溢出。"
+    ],
+    "example": "计算阶乘函数时递归调用处理n到n-1的规模变化。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Recursion Tree"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Backtracking"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Recursion Tree": {
+    "id": "Recursion Tree",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "展示递归调用展开结构及子问题关系的树形表示。",
+    "why": "用于分析递归算法复杂度和调用过程。",
+    "failure_conditions": [
+      "忽略重复子问题会低估递归算法实际开销。"
+    ],
+    "example": "分析归并排序时绘制递归树估计运行层数。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Backtracking"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Backtracking": {
+    "id": "Backtracking",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过试探选择、递归深入和失败回退搜索解空间的方法。",
+    "why": "解决组合搜索和约束满足问题。",
+    "failure_conditions": [
+      "剪枝条件错误会遗漏有效答案或增加无效搜索。"
+    ],
+    "example": "数独求解中尝试数字并在冲突后撤销选择。",
+    "relations": [
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Big-O Notation"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Big-O Notation": {
+    "id": "Big-O Notation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "描述算法输入规模增长时渐近运行时间或空间复杂度的方法。",
+    "why": "比较不同算法在大规模数据下的效率。",
+    "failure_conditions": [
+      "忽略隐藏常数或输入特征会错误选择算法。"
+    ],
+    "example": "分析排序算法随数组长度增加的时间变化。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Algorithm Analysis"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Vector"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Algorithm Analysis": {
+    "id": "Algorithm Analysis",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过数学方法评估算法资源消耗和性能的方法。",
+    "why": "支持程序设计中的效率决策。",
+    "failure_conditions": [
+      "只测试小规模数据可能掩盖复杂度问题。"
+    ],
+    "example": "比较两种搜索算法处理百万数据的耗时。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Vector"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Stack"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Vector": {
+    "id": "Vector",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "提供连续存储和动态扩展能力的C++序列容器。",
+    "why": "方便管理可变长度数据集合。",
+    "failure_conditions": [
+      "频繁中间插入可能导致大量元素移动。"
+    ],
+    "example": "用vector保存课程成绩并按索引访问。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Stack"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Queue"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Stack": {
+    "id": "Stack",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "遵循后进先出原则的数据结构。",
+    "why": "支持递归模拟、表达式计算等操作。",
+    "failure_conditions": [
+      "错误使用出栈顺序会导致状态恢复失败。"
+    ],
+    "example": "编译器利用栈保存函数调用信息。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Queue"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Linked List"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Queue": {
+    "id": "Queue",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "遵循先进先出原则的数据结构。",
+    "why": "模拟任务排队和层次遍历过程。",
+    "failure_conditions": [
+      "错误维护队首队尾会造成数据丢失。"
+    ],
+    "example": "打印任务系统按提交顺序处理请求。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Linked List"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Binary Search Tree"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Linked List": {
+    "id": "Linked List",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "由节点和链接组成的动态线性数据结构。",
+    "why": "支持高效插入删除操作。",
+    "failure_conditions": [
+      "指针连接错误会导致节点丢失。"
+    ],
+    "example": "实现音乐播放列表中的动态节点管理。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Binary Search Tree"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Hash Table"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Binary Search Tree": {
+    "id": "Binary Search Tree",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "节点按排序规则组织的二叉树结构。",
+    "why": "支持有序查找和数据维护。",
+    "failure_conditions": [
+      "树退化成链表时搜索性能下降。"
+    ],
+    "example": "实现联系人查询的有序索引结构。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Hash Table"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Map"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Hash Table": {
+    "id": "Hash Table",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用哈希函数映射键到存储位置的数据结构。",
+    "why": "提供平均常数时间查找能力。",
+    "failure_conditions": [
+      "哈希函数分布差导致冲突集中、退化为线性查找。"
+    ],
+    "example": "字典程序中通过姓名快速查找电话号码。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Map"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Set"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Map": {
+    "id": "Map",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "存储键值映射关系的抽象数据结构。",
+    "why": "表示关联数据查询关系。",
+    "failure_conditions": [
+      "键管理错误会覆盖已有映射。"
+    ],
+    "example": "保存学生姓名到成绩的对应关系。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Set"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Priority Queue"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Set": {
+    "id": "Set",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "存储不重复元素集合的数据结构。",
+    "why": "快速判断元素是否存在。",
+    "failure_conditions": [
+      "忽略元素唯一性需求会导致错误设计。"
+    ],
+    "example": "统计文本中出现过的不同单词。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Priority Queue"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Graph"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Priority Queue": {
+    "id": "Priority Queue",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "根据优先级而非进入顺序取出元素的数据结构。",
+    "why": "支持调度和最优选择算法。",
+    "failure_conditions": [
+      "优先级定义错误会影响处理顺序。"
+    ],
+    "example": "任务调度系统优先处理紧急任务。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Graph"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Graph Search"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Graph": {
+    "id": "Graph",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "由顶点和边组成表示关系的数据结构。",
+    "why": "建模网络连接和复杂关系。",
+    "failure_conditions": [
+      "错误表示边方向会改变问题含义。"
+    ],
+    "example": "社交网络中表示用户关系。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Graph Search"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "BFS"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Graph Search": {
+    "id": "Graph Search",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "在图结构中系统探索节点的方法。",
+    "why": "解决路径发现和可达性问题。",
+    "failure_conditions": [
+      "访问标记错误会造成重复遍历。"
+    ],
+    "example": "地图系统搜索两个地点之间路径。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "BFS"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "DFS"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "BFS": {
+    "id": "BFS",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "按层次扩展节点的图搜索算法。",
+    "why": "寻找无权图最短路径。",
+    "failure_conditions": [
+      "图规模过大时队列空间增长明显。"
+    ],
+    "example": "社交网络中寻找最少好友跳数。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "DFS"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Dijkstra"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "DFS": {
+    "id": "DFS",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "沿路径深入探索后回溯的图遍历算法。",
+    "why": "适合连通性和深度探索问题。",
+    "failure_conditions": [
+      "没有访问记录会导致循环遍历。"
+    ],
+    "example": "文件系统遍历目录结构。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Dijkstra"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Dijkstra": {
+    "id": "Dijkstra",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用非负边权逐步确定最短路径的算法。",
+    "why": "解决加权图路径优化问题。",
+    "failure_conditions": [
+      "存在负权边时无法保证正确结果。"
+    ],
+    "example": "地图导航计算最低距离路线。",
+    "relations": [
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Sorting Algorithm"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Sorting Algorithm": {
+    "id": "Sorting Algorithm",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "按照比较规则重新排列数据元素的方法。",
+    "why": "提高数据检索和处理效率。",
+    "failure_conditions": [
+      "排序稳定性要求未考虑会改变相等元素顺序。"
+    ],
+    "example": "整理学生成绩生成排名列表。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Merge Sort"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Quick Sort"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Merge Sort": {
+    "id": "Merge Sort",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过分割数组并合并有序部分完成排序的算法。",
+    "why": "提供稳定的O(n log n)排序方案。",
+    "failure_conditions": [
+      "合并过程实现错误会丢失元素。"
+    ],
+    "example": "大型文件排序中采用归并排序。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Quick Sort"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Pointer"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Quick Sort": {
+    "id": "Quick Sort",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "选择基准元素划分数据并递归排序的算法。",
+    "why": "平均情况下快速完成排序。",
+    "failure_conditions": [
+      "选择差的pivot会退化到平方复杂度。"
+    ],
+    "example": "数据库内部排序中使用快速排序思想。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Pointer"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Dynamic Memory"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Pointer": {
+    "id": "Pointer",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "保存内存地址并间接访问对象的C++变量类型。",
+    "why": "支持动态数据结构实现。",
+    "failure_conditions": [
+      "悬空指针访问已释放内存导致错误。"
+    ],
+    "example": "链表节点通过指针连接。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Dynamic Memory"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Templated Class"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  },
+  "Dynamic Memory": {
+    "id": "Dynamic Memory",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "程序运行期间申请和释放堆内存的机制。",
+    "why": "支持未知规模数据结构。",
+    "failure_conditions": [
+      "忘记释放内存造成泄漏。"
+    ],
+    "example": "创建动态数组存储用户输入数量。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Templated Class"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Iterator"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  },
+  "Templated Class": {
+    "id": "Templated Class",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用类型参数生成通用类实现的C++机制。",
+    "why": "减少重复代码并支持泛型编程。",
+    "failure_conditions": [
+      "类型约束不足导致编译错误。"
+    ],
+    "example": "实现适用于不同类型的Stack模板。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Iterator"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Abstract Data Type"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  },
+  "Iterator": {
+    "id": "Iterator",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "用于遍历容器元素的抽象访问对象。",
+    "why": "统一访问不同数据结构。",
+    "failure_conditions": [
+      "迭代过程中修改容器可能使迭代器失效。"
+    ],
+    "example": "遍历vector中的所有元素。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Abstract Data Type"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Lexicon"
+      }
+    ],
+    "weeks": [
+      "w1",
+      "w5"
+    ],
+    "source_weeks": [
+      "w1",
+      "w5"
+    ]
+  },
+  "Abstract Data Type": {
+    "id": "Abstract Data Type",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "定义数据行为而隐藏具体实现的数据抽象。",
+    "why": "帮助分离接口和实现。",
+    "failure_conditions": [
+      "接口设计不完整会限制使用方式。"
+    ],
+    "example": "Stack接口隐藏底层数组实现。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Lexicon"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Recursion"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Lexicon": {
+    "id": "Lexicon",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "支持高效字符串集合操作的词典数据结构。",
+    "why": "用于文本处理和单词查询。",
+    "failure_conditions": [
+      "大小写处理不一致会造成匹配错误。"
+    ],
+    "example": "拼写检查程序查询合法单词。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Recursion"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Recursion Tree"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  }
+}

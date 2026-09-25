@@ -1,0 +1,46 @@
+{
+  "package": "CS25_course_pack_final_v2.2",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 8778,
+      "sha256": "6843af3e947791fafaaf142ee17cc5ab1a261140ec4fa456fcbb77f62d19b2e2"
+    },
+    {
+      "path": "CS25_interactive_v0.4.html",
+      "bytes": 49978,
+      "sha256": "9f60ed376cc68ddae3eeb9e0df120e18c807e9e9460eedc3c13c0664c837eb52"
+    },
+    {
+      "path": "concepts.json",
+      "bytes": 43241,
+      "sha256": "1710e2be339eecef72970b43396ccdd038aeb332271d388208e098176683ff42"
+    },
+    {
+      "path": "course_ir.json",
+      "bytes": 16085,
+      "sha256": "0386b9d9542d38ba01d9111f36e4fd5af5b40d5691565b2fc9414bf8bd401123"
+    },
+    {
+      "path": "index.html",
+      "bytes": 352,
+      "sha256": "b94250b066ab5129a6d08eedeacf143f53a128d0f1dc91466baa9dca312c0f9a"
+    },
+    {
+      "path": "qa/contact_sheet.jpg",
+      "bytes": 37597,
+      "sha256": "b8bed176e31d36fb629473450aff17cd5d80054526086a43d7e7b7a3d103e845"
+    },
+    {
+      "path": "qa/render_report.json",
+      "bytes": 44,
+      "sha256": "e2cdc99725bddf6e3514d2a124cfb2c282fa18119c1de6135e2896c089e2c168"
+    },
+    {
+      "path": "qa/schema.md",
+      "bytes": 27,
+      "sha256": "7f6606f7cf0c50b434b71b83a3461614063e0d1416bce15753872125513728de"
+    }
+  ],
+  "note": "Repo manifest: lists exactly the files shipped in git. Full QA screenshots ship with the Release zip."
+}

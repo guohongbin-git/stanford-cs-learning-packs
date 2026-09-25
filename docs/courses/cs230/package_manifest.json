@@ -1,0 +1,41 @@
+{
+  "package": "CS230_course_pack_final_v2.2",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 10678,
+      "sha256": "6b72df5e8e7334bec198c9505bb847d0e67e87423a7d879d607d19f9e001986d"
+    },
+    {
+      "path": "CS230_interactive_Autumn2025_v0.1.html",
+      "bytes": 665560,
+      "sha256": "94ccfd2b22c5d5c11102049fd2698ae99d310408343bf9707dc2dd0123882c0d"
+    },
+    {
+      "path": "concepts.json",
+      "bytes": 39601,
+      "sha256": "7159e4229e96427b8d91ad5d90ad24b9499acad8b3dff2f919fdfde49dca0e42"
+    },
+    {
+      "path": "course_ir.json",
+      "bytes": 22037,
+      "sha256": "060fff60e1445938c95eb2f8c5678d70c73b8e4eb667c18ccf7128a976b162d2"
+    },
+    {
+      "path": "index.html",
+      "bytes": 376,
+      "sha256": "b93e2df97b2c74adfae4dbf5e73386948608dbcecd1b3f3c5f49aa12b06b8a4b"
+    },
+    {
+      "path": "qa/render_report.json",
+      "bytes": 61,
+      "sha256": "b598ecd7fbea40e6c861b53b759ebe264f6c66dfe9e747843f0d2ddfdb9fb746"
+    },
+    {
+      "path": "qa/schema.md",
+      "bytes": 6200,
+      "sha256": "b5031c2fedbbff3e1f565fdf8b6448a304bc5e444004cd783aa93b558434c12c"
+    }
+  ],
+  "note": "Repo manifest: lists exactly the files shipped in git. Full QA screenshots ship with the Release zip."
+}

@@ -1,0 +1,51 @@
+{
+  "package": "CS336_course_pack_final_v2.2",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 7872,
+      "sha256": "e653deee91e082320c333d32d5e525efc2eca1c91cf2216cd7c76141f2135681"
+    },
+    {
+      "path": "CS336_interactive_Spring2025_v0.1.html",
+      "bytes": 704426,
+      "sha256": "b508110c1b259c5281ce8ca209ff5850f79e07065f294ab68ab24f9185fdd1f9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7342,
+      "sha256": "652860a2c4ef37c092b16f901c78e92cd378a3b015775938ecb0a691d3d48c12"
+    },
+    {
+      "path": "concepts.json",
+      "bytes": 72948,
+      "sha256": "9d990d165f915cf795a8093c03f036f5d91c1cfb6d36fed1f00c95f1a7b9cbf1"
+    },
+    {
+      "path": "course_ir.json",
+      "bytes": 35145,
+      "sha256": "4bd3243417428d388d95b06e0c0cfbe6fa4ff8100edbeef0755068a1ef4e59ea"
+    },
+    {
+      "path": "index.html",
+      "bytes": 410,
+      "sha256": "b7f347716ef4353994c08ee944a5dbfd3154bd45f3b0bc417ca5bd784a862a03"
+    },
+    {
+      "path": "qa/contact_sheet.jpg",
+      "bytes": 216132,
+      "sha256": "da2be5113d8e08168c3b11068bcd33c20998e9d3efb118dceb3df0e78d33f809"
+    },
+    {
+      "path": "qa/render_report.json",
+      "bytes": 3946,
+      "sha256": "3d0d1ab03a0575de55924fba6ee2ea6b7a1c4f51a340163383220cc07b3c8567"
+    },
+    {
+      "path": "qa/schema.md",
+      "bytes": 1706,
+      "sha256": "56de54ac16dbe5ffb432633707cbd892ddb6ca99b8376a919a9430aef4a6301b"
+    }
+  ],
+  "note": "Repo manifest: lists exactly the files shipped in git. Full QA screenshots ship with the Release zip."
+}

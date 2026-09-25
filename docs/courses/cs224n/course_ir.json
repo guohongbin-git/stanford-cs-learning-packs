@@ -1,0 +1,629 @@
+{
+  "course": "CS224N",
+  "title": "NLP with Deep Learning",
+  "term": "Winter 2021",
+  "version": "v1.0",
+  "target_offering": "Winter 2021",
+  "material_status": "archive_official",
+  "weeks": [
+    {
+      "id": "w1",
+      "week": 1,
+      "label": "Week 1",
+      "title": "词向量",
+      "question": "离散词符如何映射为能表达语义相似度的稠密向量？",
+      "why": "词向量把语言变成可计算的向量，是全部神经NLP任务的起点。",
+      "objectives": [
+        "从共现统计解释分布式假设为何能表达语义",
+        "画出word2vec从输入层到输出层的预测路径",
+        "以余弦相似度验证king与queen之间的向量关系"
+      ],
+      "concepts": [
+        "Natural Language Processing",
+        "Word Embedding",
+        "Word2Vec"
+      ],
+      "pitfalls": [
+        "仅凭余弦相似度就断定两词同义属于误判",
+        "窗口过小只学到句法近邻而丢掉主题语义",
+        "语料分词或大小写归一不一致导致词表混乱"
+      ],
+      "quiz": {
+        "q": "该主题核心目标是什么？",
+        "choices": [
+          "学习语言表示",
+          "增加参数数量",
+          "忽略数据"
+        ],
+        "correct": 0,
+        "explain": "语言模型需要结合数据和结构学习。"
+      },
+      "agent": {
+        "goal": "辅助CS224N学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 1,
+          "title": "Word Vectors",
+          "official": false
+        },
+        {
+          "number": 2,
+          "title": "Word Vectors 2 and Word Window Classification",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS224N Winter 2021（官方 18 讲/10 周；本包 9 教学周，讲座标题按官方日程核对后标 official:false，L2 采用官方标题）",
+      "model_nodes": [],
+      "example": "搜索引擎利用NLP分析用户查询并匹配相关文档。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "词向量",
+      "part": "Part 1"
+    },
+    {
+      "id": "w2",
+      "week": 2,
+      "label": "Week 2",
+      "title": "词袋模型与文本分类基线",
+      "question": "给定中心词预测上下文与用上下文预测中心词有何差别？",
+      "why": "负采样把昂贵的softmax近似成可扩展的二分类训练目标。",
+      "objectives": [
+        "比较Skip-gram与CBOW两者在预测目标上的方向差异",
+        "基于词袋特征搭建文本分类的线性基线",
+        "推导负采样损失并说明噪声分布作用"
+      ],
+      "concepts": [
+        "Skip Gram",
+        "CBOW",
+        "Bag of Words",
+        "Negative Sampling"
+      ],
+      "pitfalls": [
+        "误以为词袋表示能保留否定与词序",
+        "负采样分布失衡使高频词主导训练信号",
+        "用训练集词汇覆盖度评估分类基线泛化"
+      ],
+      "quiz": {
+        "q": "该主题核心目标是什么？",
+        "choices": [
+          "学习语言表示",
+          "增加参数数量",
+          "忽略数据"
+        ],
+        "correct": 0,
+        "explain": "语言模型需要结合数据和结构学习。"
+      },
+      "agent": {
+        "goal": "辅助CS224N学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 3,
+          "title": "Backprop and Neural Networks",
+          "official": true
+        },
+        {
+          "number": 4,
+          "title": "Dependency Parsing",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS224N Winter 2021（官方 18 讲/10 周；本包 9 教学周，讲座标题按官方日程核对后标 official:false，L2 采用官方标题）",
+      "model_nodes": [],
+      "example": "训练词向量时根据king预测queen等上下文关系。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "词袋模型与文本分类基线",
+      "part": "Part 1"
+    },
+    {
+      "id": "w3",
+      "week": 3,
+      "label": "Week 3",
+      "title": "神经网络基础",
+      "question": "非线性层与激活函数如何让网络拟合语言任务？",
+      "why": "依存分析展示如何把句法结构转化为可微打分模型。",
+      "objectives": [
+        "手推两层网络的矩阵维度与梯度形状",
+        "指出激活函数对梯度消失的影响差异",
+        "将依存弧打分写成句法分析的分类目标"
+      ],
+      "concepts": [
+        "Neural Network",
+        "Activation Function",
+        "Dependency Parsing"
+      ],
+      "pitfalls": [
+        "忘记激活函数导致多层网络退化成线性模型",
+        "用sigmoid堆深网络造成梯度消失训练停滞",
+        "依存句法弧被当成无语义的句法标签"
+      ],
+      "quiz": {
+        "q": "该主题核心目标是什么？",
+        "choices": [
+          "学习语言表示",
+          "增加参数数量",
+          "忽略数据"
+        ],
+        "correct": 0,
+        "explain": "语言模型需要结合数据和结构学习。"
+      },
+      "agent": {
+        "goal": "辅助CS224N学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 5,
+          "title": "Language Models and RNNs",
+          "official": false
+        },
+        {
+          "number": 6,
+          "title": "Simple and LSTM RNNs",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS224N Winter 2021（官方 18 讲/10 周；本包 9 教学周，讲座标题按官方日程核对后标 official:false，L2 采用官方标题）",
+      "model_nodes": [],
+      "example": "文本情感分析模型使用神经网络预测情感类别。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "神经网络基础",
+      "part": "Part 1"
+    },
+    {
+      "id": "w4",
+      "week": 4,
+      "label": "Week 4",
+      "title": "RNN与语言模型",
+      "question": "循环网络如何按时间步反向传播并预测下一个词？",
+      "why": "困惑度把语言模型的好坏变成一个可直接比较的数字。",
+      "objectives": [
+        "按时间步展开RNN并手写出BPTT的梯度回传链",
+        "用困惑度比较两个语言模型的预测质量",
+        "解释梯度裁剪对长序列训练的必要性"
+      ],
+      "concepts": [
+        "Backpropagation",
+        "Gradient Descent",
+        "Language Model",
+        "Perplexity"
+      ],
+      "pitfalls": [
+        "在长序列上不裁剪梯度导致参数爆炸",
+        "混淆困惑度与准确率，用不同词表直接比较",
+        "学习率选得太大使梯度下降在损失面上震荡"
+      ],
+      "quiz": {
+        "q": "该主题核心目标是什么？",
+        "choices": [
+          "学习语言表示",
+          "增加参数数量",
+          "忽略数据"
+        ],
+        "correct": 0,
+        "explain": "语言模型需要结合数据和结构学习。"
+      },
+      "agent": {
+        "goal": "辅助CS224N学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 7,
+          "title": "Translation, Seq2Seq and Attention",
+          "official": false
+        },
+        {
+          "number": 8,
+          "title": "Final Project Tips / Practical Advice",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS224N Winter 2021（官方 18 讲/10 周；本包 9 教学周，讲座标题按官方日程核对后标 official:false，L2 采用官方标题）",
+      "model_nodes": [],
+      "example": "训练语言模型时反向传播更新词嵌入参数。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "RNN与语言模型",
+      "part": "Part 2"
+    },
+    {
+      "id": "w5",
+      "week": 5,
+      "label": "Week 5",
+      "title": "GRU与LSTM",
+      "question": "门控结构如何在长序列中保住隐藏状态的远距离信息？",
+      "why": "LSTM的遗忘门用可学习门控缓解了简单RNN的梯度消失。",
+      "objectives": [
+        "画出LSTM输入门遗忘门输出门的信息流",
+        "对比GRU更新门重置门与LSTM在记忆上的取舍",
+        "说明隐藏状态的容量上界如何限制长期记忆"
+      ],
+      "concepts": [
+        "RNN",
+        "Hidden State",
+        "LSTM"
+      ],
+      "pitfalls": [
+        "假设隐藏状态能无限保存历史信息",
+        "门控初始值设置不当使模型直接丢弃历史",
+        "只调层数不改学习率，误判门控无效"
+      ],
+      "quiz": {
+        "q": "该主题核心目标是什么？",
+        "choices": [
+          "学习语言表示",
+          "增加参数数量",
+          "忽略数据"
+        ],
+        "correct": 0,
+        "explain": "语言模型需要结合数据和结构学习。"
+      },
+      "agent": {
+        "goal": "辅助CS224N学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 9,
+          "title": "Self-Attention and Transformers",
+          "official": true
+        },
+        {
+          "number": 10,
+          "title": "Transformers and Pretraining",
+          "official": true
+        }
+      ],
+      "evidence_status": "archive_official · CS224N Winter 2021（官方 18 讲/10 周；本包 9 教学周，讲座标题按官方日程核对后标 official:false，L2 采用官方标题）",
+      "model_nodes": [],
+      "example": "语音识别系统使用RNN处理连续声音特征。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "GRU与LSTM",
+      "part": "Part 2"
+    },
+    {
+      "id": "w6",
+      "week": 6,
+      "label": "Week 6",
+      "title": "Seq2Seq机器翻译",
+      "question": "编码器解码器如何把源语句逐词改写为目标译句？",
+      "why": "BLEU让机器翻译质量的自动评分变得可复现可比较。",
+      "objectives": [
+        "描述编码器压缩源句与解码器生成译句流程",
+        "手动计算BLEU的n-gram匹配精度与长度惩罚项",
+        "解释门控机制在解码器中的信息保留作用"
+      ],
+      "concepts": [
+        "GRU",
+        "Gate Mechanism",
+        "Seq2Seq",
+        "BLEU"
+      ],
+      "pitfalls": [
+        "只用单参考译文算BLEU会让评分明显虚高",
+        "BLEU长度惩罚常被误读为单纯偏爱长句",
+        "固定向量瓶颈使长句译文信息明显丢失"
+      ],
+      "quiz": {
+        "q": "该主题核心目标是什么？",
+        "choices": [
+          "学习语言表示",
+          "增加参数数量",
+          "忽略数据"
+        ],
+        "correct": 0,
+        "explain": "语言模型需要结合数据和结构学习。"
+      },
+      "agent": {
+        "goal": "辅助CS224N学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 11,
+          "title": "Question Answering",
+          "official": false
+        },
+        {
+          "number": 12,
+          "title": "Natural Language Generation",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS224N Winter 2021（官方 18 讲/10 周；本包 9 教学周，讲座标题按官方日程核对后标 official:false，L2 采用官方标题）",
+      "model_nodes": [],
+      "example": "移动端语音模型使用GRU减少计算开销。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "Seq2Seq机器翻译",
+      "part": "Part 2"
+    },
+    {
+      "id": "w7",
+      "week": 7,
+      "label": "Week 7",
+      "title": "Attention与Transformer",
+      "question": "多头注意力如何让句中每个词直接读到其他词的信息？",
+      "why": "位置编码补上词序，残差与层归一化撑起深层堆叠。",
+      "objectives": [
+        "写出多头注意力中QKV的计算与拼接步骤",
+        "说明正弦位置编码怎样编码相对位置",
+        "用束搜索在解码时同时保留多条候选译句"
+      ],
+      "concepts": [
+        "Encoder",
+        "Decoder",
+        "Beam Search",
+        "Multi-Head Attention",
+        "Positional Encoding",
+        "LayerNorm and Residual Connections"
+      ],
+      "pitfalls": [
+        "多头注意力各头学到重复的表示造成浪费",
+        "去掉残差连接后深层网络梯度难以回传",
+        "束宽过大徒增解码开销却不见得更好"
+      ],
+      "quiz": {
+        "q": "该主题核心目标是什么？",
+        "choices": [
+          "学习语言表示",
+          "增加参数数量",
+          "忽略数据"
+        ],
+        "correct": 0,
+        "explain": "语言模型需要结合数据和结构学习。"
+      },
+      "agent": {
+        "goal": "辅助CS224N学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 13,
+          "title": "Coreference Resolution",
+          "official": false
+        },
+        {
+          "number": 14,
+          "title": "T5 and Large Language Models",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS224N Winter 2021（官方 18 讲/10 周；本包 9 教学周，讲座标题按官方日程核对后标 official:false，L2 采用官方标题）",
+      "model_nodes": [],
+      "example": "翻译模型编码英文句子的语义表示。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "Attention与Transformer",
+      "part": "Part 3"
+    },
+    {
+      "id": "w8",
+      "week": 8,
+      "label": "Week 8",
+      "title": "预训练与BERT",
+      "question": "子词切分与自注意力怎样共同支撑大规模预训练？",
+      "why": "BPE用子词切分在词表规模与未登录词覆盖间取得平衡。",
+      "objectives": [
+        "对比词级词表与BPE子词词表的覆盖差异",
+        "指出自注意力相对循环网络的并行优势",
+        "分辨注意力权重与词间依存的对齐现象"
+      ],
+      "concepts": [
+        "Attention",
+        "Self Attention",
+        "Transformer",
+        "Subword and BPE"
+      ],
+      "pitfalls": [
+        "子词切分与预训练词表不一致造成错切",
+        "直接把注意力权重当作语法解释容易过度解读",
+        "词表过小使常见词被切成大量碎片"
+      ],
+      "quiz": {
+        "q": "该主题核心目标是什么？",
+        "choices": [
+          "学习语言表示",
+          "增加参数数量",
+          "忽略数据"
+        ],
+        "correct": 0,
+        "explain": "语言模型需要结合数据和结构学习。"
+      },
+      "agent": {
+        "goal": "辅助CS224N学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 15,
+          "title": "Integrating Knowledge in Language Models",
+          "official": false
+        },
+        {
+          "number": 16,
+          "title": "Ethics and NLP",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS224N Winter 2021（官方 18 讲/10 周；本包 9 教学周，讲座标题按官方日程核对后标 official:false，L2 采用官方标题）",
+      "model_nodes": [],
+      "example": "翻译模型生成目标词时关注对应源词。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "预训练与BERT",
+      "part": "Part 3"
+    },
+    {
+      "id": "w9",
+      "week": 9,
+      "label": "Week 9",
+      "title": "问答与总结",
+      "question": "掩码语言建模如何让预训练模型学到双向上下文表示？",
+      "why": "微调把预训练语言知识迁移到具体下游问答任务。",
+      "objectives": [
+        "区分QKV三向量在问答匹配中的不同作用",
+        "描述BERT预训练加下游微调的两个阶段",
+        "调整遮蔽比例观察MLM训练信号的变化"
+      ],
+      "concepts": [
+        "Query Key Value",
+        "BERT",
+        "Masked Language Model"
+      ],
+      "pitfalls": [
+        "微调学习率过大破坏已学到的双向表示",
+        "遮蔽比例过高使可见上下文过少难预测",
+        "QKV维度设计不当会让匹配分数整体失真"
+      ],
+      "quiz": {
+        "q": "该主题核心目标是什么？",
+        "choices": [
+          "学习语言表示",
+          "增加参数数量",
+          "忽略数据"
+        ],
+        "correct": 0,
+        "explain": "语言模型需要结合数据和结构学习。"
+      },
+      "agent": {
+        "goal": "辅助CS224N学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释关系"
+        ],
+        "evidence": [
+          "official course"
+        ],
+        "risks": [
+          "版本混淆"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 17,
+          "title": "Model Analysis and Interpretability",
+          "official": false
+        },
+        {
+          "number": 18,
+          "title": "The Future of NLP (Frontiers)",
+          "official": false
+        }
+      ],
+      "evidence_status": "archive_official · CS224N Winter 2021（官方 18 讲/10 周；本包 9 教学周，讲座标题按官方日程核对后标 official:false，L2 采用官方标题）",
+      "model_nodes": [],
+      "example": "Transformer通过QKV计算词之间注意力分数。",
+      "assignment_ties": [
+        "课程作业 / 练习"
+      ],
+      "model_title": "问答与总结",
+      "part": "Part 3"
+    }
+  ]
+}

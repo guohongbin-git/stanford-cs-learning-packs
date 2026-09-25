@@ -1,0 +1,920 @@
+{
+  "Artificial Intelligence": {
+    "id": "Artificial Intelligence",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "研究能够感知环境、推理、学习并采取行动的计算系统领域。",
+    "why": "提供构建智能系统时的问题抽象和方法选择框架。",
+    "failure_conditions": [
+      "把所有智能行为简化为固定规则会忽略学习和不确定性因素。"
+    ],
+    "example": "自动驾驶系统结合感知、规划和决策模块完成环境交互。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Intelligent Agent"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "State Space"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Intelligent Agent": {
+    "id": "Intelligent Agent",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "能够观察环境状态并根据目标选择行动的自主计算实体。",
+    "why": "用于描述AI系统如何连接感知、推理和行动。",
+    "failure_conditions": [
+      "目标函数设计错误会导致代理优化错误行为。"
+    ],
+    "example": "机器人根据传感器信息选择移动路径完成任务。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "State Space"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Breadth First Search"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "State Space": {
+    "id": "State Space",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "表示问题所有可能状态以及状态之间转换关系的集合。",
+    "why": "帮助搜索算法明确探索范围和可达结果。",
+    "failure_conditions": [
+      "状态表示遗漏关键变量会导致无法找到有效方案。"
+    ],
+    "example": "拼图游戏将每种棋盘布局作为搜索状态。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Breadth First Search"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Depth First Search"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Breadth First Search": {
+    "id": "Breadth First Search",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "按距离起点层级扩展节点的图搜索算法。",
+    "why": "适合寻找无权图中的最短路径。",
+    "failure_conditions": [
+      "图规模过大时内存消耗会快速增加。"
+    ],
+    "example": "社交网络中寻找最少好友跳数连接。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Depth First Search"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Uniform Cost Search"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Depth First Search": {
+    "id": "Depth First Search",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "沿单一路径深入探索直到无法继续再回溯的搜索方法。",
+    "why": "用于遍历状态空间和探索可能路径。",
+    "failure_conditions": [
+      "深度过大可能陷入无效分支。"
+    ],
+    "example": "迷宫求解程序使用DFS探索可能路线。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Uniform Cost Search"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "A Star Search"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Uniform Cost Search": {
+    "id": "Uniform Cost Search",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "按照累计路径代价最低节点优先扩展的搜索算法。",
+    "why": "处理不同动作成本的最优路径问题。",
+    "failure_conditions": [
+      "路径代价定义错误会选择错误方案。"
+    ],
+    "example": "地图导航中根据道路费用寻找最低成本路线。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "A Star Search"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Heuristic Function"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "A Star Search": {
+    "id": "A Star Search",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "结合实际路径代价和启发式估计选择节点的搜索算法。",
+    "why": "在保证条件满足时高效寻找最优路径。",
+    "failure_conditions": [
+      "启发式函数不可采纳时失去最优性保证。"
+    ],
+    "example": "游戏角色寻路中利用距离估计减少搜索范围。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Heuristic Function"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Markov Decision Process"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Heuristic Function": {
+    "id": "Heuristic Function",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "在搜索中估计从当前状态到目标剩余代价的函数。",
+    "why": "提高搜索算法发现目标的效率。",
+    "failure_conditions": [
+      "启发式高估真实代价会破坏 A* 的最优性，低估过多则退化为无信息搜索"
+    ],
+    "example": "八数码问题中使用曼哈顿距离估计剩余步骤。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Markov Decision Process"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Reward"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Markov Decision Process": {
+    "id": "Markov Decision Process",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "由状态、动作、转移概率和奖励组成的随机决策模型。",
+    "why": "为序列决策问题提供数学表示。",
+    "failure_conditions": [
+      "状态无法满足马尔可夫性质会影响策略学习。"
+    ],
+    "example": "机器人控制中根据奖励学习移动策略。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Reward"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Value Function"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Reward": {
+    "id": "Reward",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "衡量智能体行动结果价值的反馈信号。",
+    "why": "定义强化学习系统优化方向。",
+    "failure_conditions": [
+      "奖励设计偏差会诱导代理产生错误行为。"
+    ],
+    "example": "游戏AI根据得分变化调整行动策略。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Value Function"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Bellman Equation"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Value Function": {
+    "id": "Value Function",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "表示某状态或策略未来累计收益期望的函数。",
+    "why": "帮助智能体评价长期决策效果。",
+    "failure_conditions": [
+      "折扣因子设置错误会改变策略偏好。"
+    ],
+    "example": "强化学习估计棋局状态未来胜率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bellman Equation"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Policy"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Bellman Equation": {
+    "id": "Bellman Equation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "用最优性条件把状态价值表示为「对动作取最优、对后续状态取期望」的递归等式。",
+    "why": "提供动态规划求解决策问题的方法。",
+    "failure_conditions": [
+      "写成只对当前动作取最大而忽略转移期望，会得到与真实最优价值不符的固定点"
+    ],
+    "example": "MDP求解中通过递推计算最优价值。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Policy"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Utility Function"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Policy": {
+    "id": "Policy",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "定义状态到行动映射规则的策略函数。",
+    "why": "描述智能体如何根据状态选择行为。",
+    "failure_conditions": [
+      "策略过度拟合训练环境会降低泛化能力。"
+    ],
+    "example": "机器人根据位置选择移动动作。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Utility Function"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Expected Utility"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Utility Function": {
+    "id": "Utility Function",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "衡量结果偏好程度并支持决策选择的函数。",
+    "why": "表达不同结果之间的价值权衡。",
+    "failure_conditions": [
+      "效用尺度设计不合理会改变选择结果。"
+    ],
+    "example": "经济决策模型比较不同投资收益偏好。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Expected Utility"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Nash Equilibrium"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Expected Utility": {
+    "id": "Expected Utility",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "根据结果概率和效用计算期望价值的方法。",
+    "why": "处理不确定环境中的理性选择。",
+    "failure_conditions": [
+      "忽略概率估计误差会导致错误决策。"
+    ],
+    "example": "保险产品设计中比较风险收益组合。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Nash Equilibrium"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Minimax"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Nash Equilibrium": {
+    "id": "Nash Equilibrium",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "所有参与者在其他策略固定时无法单方面改善收益的策略组合。",
+    "why": "分析多智能体竞争中的稳定状态。",
+    "failure_conditions": [
+      "假设参与者完全理性可能不符合真实行为。"
+    ],
+    "example": "竞价系统分析多个竞争者策略。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Minimax"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Bayesian Network"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Minimax": {
+    "id": "Minimax",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "在对抗环境中最大化自身最小收益的决策方法。",
+    "why": "用于双人零和博弈中的最优选择。",
+    "failure_conditions": [
+      "搜索深度不足会导致错误判断。"
+    ],
+    "example": "井字棋中枚举对手应对选择最优落子。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bayesian Network"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Conditional Independence"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Bayesian Network": {
+    "id": "Bayesian Network",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用有向无环图表示变量概率依赖关系的模型。",
+    "why": "表达复杂不确定因素之间的结构关系。",
+    "failure_conditions": [
+      "错误边结构会导致概率推断偏差。"
+    ],
+    "example": "医疗诊断模型表示症状和疾病关系。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Conditional Independence"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Bayes Rule"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Conditional Independence": {
+    "id": "Conditional Independence",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "描述在给定条件下两个变量相互独立的关系。",
+    "why": "简化概率模型计算复杂度。",
+    "failure_conditions": [
+      "错误假设独立会产生错误推断。"
+    ],
+    "example": "贝叶斯网络中判断变量之间依赖关系。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bayes Rule"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Posterior"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Bayes Rule": {
+    "id": "Bayes Rule",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用先验和似然计算后验概率的更新公式。",
+    "why": "支持基于证据修正信念。",
+    "failure_conditions": [
+      "先验选择错误会影响最终判断。"
+    ],
+    "example": "垃圾邮件过滤根据词语证据更新类别概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Posterior"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Prior"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Posterior": {
+    "id": "Posterior",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "结合观测数据更新后的概率分布。",
+    "why": "表示加入新证据后的信念状态。",
+    "failure_conditions": [
+      "数据质量低会导致后验偏移。"
+    ],
+    "example": "医学检测后更新患者患病概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Prior"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Likelihood"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Prior": {
+    "id": "Prior",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "观察数据前对事件概率的初始信念。",
+    "why": "提供贝叶斯推断中的初始信息。",
+    "failure_conditions": [
+      "先验过强会压制有效新证据。"
+    ],
+    "example": "历史疾病率作为诊断模型初始概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Likelihood"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "First Order Logic"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Likelihood": {
+    "id": "Likelihood",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "在参数给定时观察数据出现可能性的函数。",
+    "why": "衡量模型解释数据能力。",
+    "failure_conditions": [
+      "把似然误认为概率会造成统计误解。"
+    ],
+    "example": "估计硬币偏置时比较不同参数解释结果。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "First Order Logic"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Knowledge Base"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "First Order Logic": {
+    "id": "First Order Logic",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "使用对象、关系和量词表达知识的逻辑系统。",
+    "why": "支持形式化表示复杂知识。",
+    "failure_conditions": [
+      "知识规则不完整会限制推理结果。"
+    ],
+    "example": "专家系统用逻辑规则描述实体关系。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Knowledge Base"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Knowledge Base": {
+    "id": "Knowledge Base",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "存储事实和规则并支持推理的信息集合。",
+    "why": "让智能系统利用已有知识进行判断。",
+    "failure_conditions": [
+      "知识过时会导致错误推理。"
+    ],
+    "example": "问答系统维护领域事实库回答问题。",
+    "relations": [
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Artificial Intelligence"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  },
+  "CSP and Backtracking": {
+    "id": "CSP and Backtracking",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "约束满足问题将变量、取值域和约束定义为搜索空间，通过回溯寻找解",
+    "why": "用变量、取值域与约束描述组合问题并求解",
+    "failure_conditions": [
+      "约束传播不足会导致搜索空间爆炸"
+    ],
+    "example": "数独求解中使用回溯检查候选数字",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Breadth First Search"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Depth First Search"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Value Iteration": {
+    "id": "Value Iteration",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用Bellman方程反复更新状态价值直到策略收敛的方法",
+    "why": "用贝尔曼更新迭代逼近 MDP 的最优价值函数",
+    "failure_conditions": [
+      "折扣因子设置错误会导致价值估计偏移"
+    ],
+    "example": "MDP环境中迭代计算最优状态价值",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "A Star Search"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Heuristic Function"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Q-Learning": {
+    "id": "Q-Learning",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过更新状态动作价值函数Q学习无需模型的最优策略",
+    "why": "在未知模型中通过采样估计动作价值并改进策略",
+    "failure_conditions": [
+      "探索不足会导致无法发现高价值动作"
+    ],
+    "example": "机器人控制中学习不同动作奖励",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Conditional Independence"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bayes Rule"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Expectimax and Alpha-Beta Pruning": {
+    "id": "Expectimax and Alpha-Beta Pruning",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "用于博弈搜索的期望节点计算和无关分支剪枝优化方法",
+    "why": "在含随机或对抗因素的游戏树中高效搜索",
+    "failure_conditions": [
+      "错误评估随机节点会导致选择错误行动"
+    ],
+    "example": "游戏AI中搜索棋局最佳移动方案",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Policy"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Utility Function"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Factor Graph": {
+    "id": "Factor Graph",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "用变量节点和因子节点表示复杂概率分布分解结构",
+    "why": "用因子分解描述变量间依赖并进行概率推断",
+    "failure_conditions": [
+      "图结构设计错误会造成错误概率推断"
+    ],
+    "example": "机器人定位中表示传感器概率关系",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Nash Equilibrium"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Minimax"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Particle Filtering": {
+    "id": "Particle Filtering",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "用带权样本序列近似动态系统后验分布的序贯蒙特卡洛方法。",
+    "why": "用带权样本序列近似动态系统的后验分布",
+    "failure_conditions": [
+      "长期不重采样导致权重集中到少数粒子（权重退化），后验近似失真"
+    ],
+    "example": "机器人导航中追踪自身位置变化",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Conditional Independence"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bayes Rule"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Linear Regression Basics": {
+    "id": "Linear Regression Basics",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用线性函数拟合输入变量与连续输出关系的方法",
+    "why": "建立输入到连续输出的线性映射作为监督学习基线",
+    "failure_conditions": [
+      "线性假设无法表达复杂非线性关系"
+    ],
+    "example": "预测房价时使用面积和价格线性关系",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Artificial Intelligence"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Intelligent Agent"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  }
+}

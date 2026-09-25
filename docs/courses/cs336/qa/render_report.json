@@ -1,0 +1,174 @@
+{
+  "package": "CS336_course_pack_Spring2025_v0.1",
+  "viewport": [
+    1600,
+    900
+  ],
+  "semantic_checks": {
+    "weeks_count": 9,
+    "core_lectures_count": 17,
+    "concept_count": 90,
+    "all_week_concepts_resolve": true,
+    "all_relation_targets_resolve": true,
+    "all_concepts_have_weeks": true,
+    "all_concepts_have_source_weeks": true,
+    "concept_statuses": [
+      "TEACHING_RECONSTRUCTION"
+    ],
+    "quiz_count": 9,
+    "embedded_course_ir_equal": true,
+    "embedded_concepts_equal": true
+  },
+  "browser_checks": {
+    "rendered_sections": 13,
+    "horizontal_overflow_count": 0,
+    "human_agent_toggle": true,
+    "concept_drawer": true,
+    "quiz_progress_linkage": true,
+    "visual_snapshots": 13
+  },
+  "sections": [
+    {
+      "id": "overview",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 686,
+        "clientH": 686
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "method",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 540,
+        "clientH": 540
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "knowledge-map",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 606,
+        "clientH": 606
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "w1",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 1274,
+        "clientH": 1274
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "w2",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 1312,
+        "clientH": 1312
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "w3",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 1187,
+        "clientH": 1187
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "w4",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 1258,
+        "clientH": 1258
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "w5",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 1210,
+        "clientH": 1210
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "w6",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 1187,
+        "clientH": 1187
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "w7",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 1231,
+        "clientH": 1231
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "w8",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 1254,
+        "clientH": 1254
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "w9",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 1253,
+        "clientH": 1253
+      },
+      "horizontal_overflow": false
+    },
+    {
+      "id": "synthesis",
+      "overflow": {
+        "scrollW": 940,
+        "clientW": 940,
+        "scrollH": 592,
+        "clientH": 592
+      },
+      "horizontal_overflow": false
+    }
+  ],
+  "interaction": {
+    "concept_title": "Tokenization",
+    "human_definition_present": true,
+    "agent_json_present": true,
+    "agent_source_weeks_present": true,
+    "quiz_feedback": "✓ 正确。tokenization 同时改变表示粒度、序列长度和部分参数/计算结构，因此是模型设计的一部分。",
+    "week1_status": "已通过小测",
+    "progress": "1 / 9 周通过小测 · 11%",
+    "quiz_derived_from_course_ir": true
+  },
+  "issues": [],
+  "visual_qa_note": "All 13 release sections were browser-rendered at 1600x900, measured for horizontal overflow, and retained as section screenshots; contact_sheet.jpg summarizes them for visual review."
+}

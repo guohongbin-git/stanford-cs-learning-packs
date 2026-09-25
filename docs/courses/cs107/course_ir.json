@@ -1,0 +1,659 @@
+{
+  "course": "CS107",
+  "title": "Programming Paradigms",
+  "term": "archive_official",
+  "target_offering": "SEE CS107",
+  "material_status": "archive_official",
+  "weeks": [
+    {
+      "id": "w1",
+      "week": 1,
+      "label": "Week 1",
+      "title": "机器表示与整数",
+      "question": "机器如何表示程序中的整数和数据？",
+      "why": "位级表示决定程序对内存和计算结果的理解方式。",
+      "objectives": [
+        "掌握二进制与十六进制表示",
+        "理解补码编码规则",
+        "分析整数溢出行为"
+      ],
+      "concepts": [
+        "Bits and Bytes",
+        "Two's Complement",
+        "Integer Overflow"
+      ],
+      "pitfalls": [
+        "忽略符号位影响",
+        "混淆有符号无符号",
+        "错误判断溢出结果"
+      ],
+      "quiz": {
+        "q": "系统程序设计需要关注什么？",
+        "choices": [
+          "数据表示和执行模型",
+          "只看语法",
+          "忽略资源"
+        ],
+        "correct": 0,
+        "explain": "系统程序需要理解机器行为。"
+      },
+      "agent": {
+        "goal": "辅助CS107学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释系统机制"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 2,
+          "title": "Bits, Bytes, Two's Complement and Negative Numbers",
+          "official": true
+        },
+        {
+          "number": 2,
+          "title": "Floats and Converting Between Integers and Floats",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Paradigms",
+      "model_nodes": [
+        "Bits and Bytes",
+        "Two's Complement",
+        "Integer Overflow"
+      ],
+      "part": "Part 1",
+      "assignment_ties": [
+        "CS107 assignment 1"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "分析文件大小时将1024字节转换为KB。"
+    },
+    {
+      "id": "w2",
+      "week": 2,
+      "label": "Week 2",
+      "title": "浮点和内存模型",
+      "question": "浮点数为何无法精确表示所有实数？",
+      "why": "浮点模型解释数值计算中的精度限制。",
+      "objectives": [
+        "理解IEEE浮点结构",
+        "分析舍入误差",
+        "处理特殊浮点值"
+      ],
+      "concepts": [
+        "Floating Point Representation",
+        "Machine Code",
+        "Assembly"
+      ],
+      "pitfalls": [
+        "误认为浮点精确",
+        "忽略精度损失",
+        "比较浮点值直接相等"
+      ],
+      "quiz": {
+        "q": "系统程序设计需要关注什么？",
+        "choices": [
+          "数据表示和执行模型",
+          "只看语法",
+          "忽略资源"
+        ],
+        "correct": 0,
+        "explain": "系统程序需要理解机器行为。"
+      },
+      "agent": {
+        "goal": "辅助CS107学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释系统机制"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 8,
+          "title": "RAM, Registers, the ALU and the Code Segment",
+          "official": true
+        },
+        {
+          "number": 9,
+          "title": "Translating Code into Assembly: Loads, Stores, ALU and Branches",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Paradigms",
+      "model_nodes": [
+        "Floating Point Representation",
+        "Machine Code",
+        "Assembly"
+      ],
+      "part": "Part 2",
+      "assignment_ties": [
+        "CS107 assignment 2"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "金融计算中观察0.1加法产生精度误差。"
+    },
+    {
+      "id": "w3",
+      "week": 3,
+      "label": "Week 3",
+      "title": "栈帧与函数调用",
+      "question": "程序运行时如何组织栈和调用过程？",
+      "why": "栈帧揭示函数调用和局部变量生命周期。",
+      "objectives": [
+        "分析调用栈结构",
+        "理解寄存器保存规则",
+        "追踪函数参数传递"
+      ],
+      "concepts": [
+        "Register",
+        "Stack Frame",
+        "Call Stack",
+        "Activation Record Layout"
+      ],
+      "pitfalls": [
+        "栈空间耗尽",
+        "错误理解生命周期",
+        "破坏调用约定"
+      ],
+      "quiz": {
+        "q": "系统程序设计需要关注什么？",
+        "choices": [
+          "数据表示和执行模型",
+          "只看语法",
+          "忽略资源"
+        ],
+        "correct": 0,
+        "explain": "系统程序需要理解机器行为。"
+      },
+      "agent": {
+        "goal": "辅助CS107学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释系统机制"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 8,
+          "title": "Stack Segment Layout and Activation Records",
+          "official": true
+        },
+        {
+          "number": 10,
+          "title": "Function Call and Return: Return Address, Factorial Trace",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Paradigms",
+      "model_nodes": [
+        "Register",
+        "Stack Frame",
+        "Call Stack"
+      ],
+      "part": "Part 3",
+      "assignment_ties": [
+        "CS107 assignment 3"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "汇编函数使用rax寄存器保存返回值。"
+    },
+    {
+      "id": "w4",
+      "week": 4,
+      "label": "Week 4",
+      "title": "指针、堆与动态内存",
+      "question": "堆内存如何分配和释放？",
+      "why": "动态内存管理影响系统稳定性和性能。",
+      "objectives": [
+        "掌握malloc/free机制",
+        "分析内存布局",
+        "检测泄漏问题"
+      ],
+      "concepts": [
+        "Pointer Arithmetic",
+        "Heap Allocation",
+        "malloc and free",
+        "Void Pointer and Generic Functions"
+      ],
+      "pitfalls": [
+        "重复释放",
+        "访问已释放内存",
+        "忘记释放资源"
+      ],
+      "quiz": {
+        "q": "系统程序设计需要关注什么？",
+        "choices": [
+          "数据表示和执行模型",
+          "只看语法",
+          "忽略资源"
+        ],
+        "correct": 0,
+        "explain": "系统程序需要理解机器行为。"
+      },
+      "agent": {
+        "goal": "辅助CS107学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释系统机制"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 3,
+          "title": "Endianness, Structs, Pointer Arithmetic and Memory Layout",
+          "official": true
+        },
+        {
+          "number": 6,
+          "title": "Generic Stack: Realloc and Memory Copying",
+          "official": true
+        },
+        {
+          "number": 7,
+          "title": "Heap Manager: Free List, Fragmentation, Ownership",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Paradigms",
+      "model_nodes": [
+        "Pointer Arithmetic",
+        "Heap Allocation",
+        "malloc and free"
+      ],
+      "part": "Part 4",
+      "assignment_ties": [
+        "CS107 assignment 4"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "遍历字符数组时递增char指针。"
+    },
+    {
+      "id": "w5",
+      "week": 5,
+      "label": "Week 5",
+      "title": "C语言运行时",
+      "question": "C代码如何变成机器可以执行的程序？",
+      "why": "编译链接流程连接高级语言和硬件执行。",
+      "objectives": [
+        "理解机器码生成",
+        "分析汇编指令",
+        "掌握链接过程"
+      ],
+      "concepts": [
+        "Memory Layout",
+        "Endianness",
+        "Buffer Overflow",
+        "memcpy and memmove"
+      ],
+      "pitfalls": [
+        "混淆编译链接阶段",
+        "符号解析失败",
+        "错误理解优化结果"
+      ],
+      "quiz": {
+        "q": "系统程序设计需要关注什么？",
+        "choices": [
+          "数据表示和执行模型",
+          "只看语法",
+          "忽略资源"
+        ],
+        "correct": 0,
+        "explain": "系统程序需要理解机器行为。"
+      },
+      "agent": {
+        "goal": "辅助CS107学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释系统机制"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 11,
+          "title": "Code Generation for C++: References and the this Pointer",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Paradigms",
+      "model_nodes": [
+        "Memory Layout",
+        "Endianness",
+        "Buffer Overflow"
+      ],
+      "part": "Part 5",
+      "assignment_ties": [
+        "CS107 assignment 5"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "分析程序查看全局变量与局部变量地址差异。"
+    },
+    {
+      "id": "w6",
+      "week": 6,
+      "label": "Week 6",
+      "title": "编译与链接",
+      "question": "如何利用系统工具定位低级程序错误？",
+      "why": "调试工具帮助发现隐藏系统问题。",
+      "objectives": [
+        "使用Debugger观察状态",
+        "分析Undefined Behavior",
+        "阅读错误信息"
+      ],
+      "concepts": [
+        "Undefined Behavior",
+        "Compiler Optimization",
+        "Linking",
+        "Generic Linear Search"
+      ],
+      "pitfalls": [
+        "忽略未定义行为",
+        "只看表面输出",
+        "错误修改根因"
+      ],
+      "quiz": {
+        "q": "系统程序设计需要关注什么？",
+        "choices": [
+          "数据表示和执行模型",
+          "只看语法",
+          "忽略资源"
+        ],
+        "correct": 0,
+        "explain": "系统程序需要理解机器行为。"
+      },
+      "agent": {
+        "goal": "辅助CS107学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释系统机制"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 12,
+          "title": "Preprocessing: #define, Macros, #include and Translation Units",
+          "official": true
+        },
+        {
+          "number": 13,
+          "title": "Compilation, .O Files, Linking and Debugging Information",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Paradigms",
+      "model_nodes": [
+        "Undefined Behavior",
+        "Compiler Optimization",
+        "Linking"
+      ],
+      "part": "Part 6",
+      "assignment_ties": [
+        "CS107 assignment 6"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "访问释放后的指针产生不可预测结果。"
+    },
+    {
+      "id": "w7",
+      "week": 7,
+      "label": "Week 7",
+      "title": "编译、链接与构建",
+      "question": "缓存和虚拟内存如何提升系统效率？",
+      "why": "硬件资源管理决定程序运行性能。",
+      "objectives": [
+        "理解Cache层次结构",
+        "分析局部性原理",
+        "掌握页表映射"
+      ],
+      "concepts": [
+        "Object File"
+      ],
+      "pitfalls": [
+        "忽略缓存影响",
+        "混淆虚拟地址",
+        "错误估计访问成本"
+      ],
+      "quiz": {
+        "q": "系统程序设计需要关注什么？",
+        "choices": [
+          "数据表示和执行模型",
+          "只看语法",
+          "忽略资源"
+        ],
+        "correct": 0,
+        "explain": "系统程序需要理解机器行为。"
+      },
+      "agent": {
+        "goal": "辅助CS107学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释系统机制"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 13,
+          "title": "Seg Faults vs Bus Errors, Array Overflow and Saved PC Corruption",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Paradigms",
+      "model_nodes": [
+        "Object File"
+      ],
+      "part": "Part 7",
+      "assignment_ties": [
+        "CS107 assignment 7"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "使用objdump查看.o文件内容。"
+    },
+    {
+      "id": "w8",
+      "week": 8,
+      "label": "Week 8",
+      "title": "虚拟内存与系统",
+      "question": "多个执行流如何安全共享资源？",
+      "why": "并发模型解决现代系统中的同时执行问题。",
+      "objectives": [
+        "理解线程模型",
+        "使用同步机制",
+        "分析竞态条件"
+      ],
+      "concepts": [
+        "Virtual Memory",
+        "Process Address Space",
+        "Threads and Concurrency"
+      ],
+      "pitfalls": [
+        "数据竞争",
+        "死锁发生",
+        "锁粒度设计不当"
+      ],
+      "quiz": {
+        "q": "系统程序设计需要关注什么？",
+        "choices": [
+          "数据表示和执行模型",
+          "只看语法",
+          "忽略资源"
+        ],
+        "correct": 0,
+        "explain": "系统程序需要理解机器行为。"
+      },
+      "agent": {
+        "goal": "辅助CS107学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释系统机制"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 14,
+          "title": "Sequential vs Concurrent Programming: Processes, MMU and Threads",
+          "official": true
+        },
+        {
+          "number": 15,
+          "title": "Threading Interface, Race Conditions and Semaphores",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Paradigms",
+      "model_nodes": [
+        "Virtual Memory",
+        "Process Address Space",
+        "Threads and Concurrency"
+      ],
+      "part": "Part 8",
+      "assignment_ties": [
+        "CS107 assignment 8"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "进程访问虚拟地址由页表转换。"
+    },
+    {
+      "id": "w9",
+      "week": 9,
+      "label": "Week 9",
+      "title": "调试、并发与多范式",
+      "question": "不同编程范式如何影响程序设计？",
+      "why": "范式转换训练抽象和系统思维。",
+      "objectives": [
+        "使用Scheme函数式思想",
+        "理解Python互操作",
+        "比较不同语言模型"
+      ],
+      "concepts": [
+        "Makefile",
+        "Debugger",
+        "Scheme and Functional Programming",
+        "Python Interop"
+      ],
+      "pitfalls": [
+        "混淆语言语义",
+        "接口转换错误",
+        "忽略运行环境差异"
+      ],
+      "quiz": {
+        "q": "系统程序设计需要关注什么？",
+        "choices": [
+          "数据表示和执行模型",
+          "只看语法",
+          "忽略资源"
+        ],
+        "correct": 0,
+        "explain": "系统程序需要理解机器行为。"
+      },
+      "agent": {
+        "goal": "辅助CS107学习",
+        "inputs": [
+          "concepts"
+        ],
+        "actions": [
+          "解释系统机制"
+        ],
+        "evidence": [
+          "SEE Stanford"
+        ],
+        "risks": [
+          "版本差异"
+        ]
+      },
+      "lectures": [
+        {
+          "number": 19,
+          "title": "Functional Paradigm: Scheme Lists, Car/Cdr, Cons and Append",
+          "official": true
+        },
+        {
+          "number": 21,
+          "title": "Map, Apply, Eval and Lambda in Scheme",
+          "official": true
+        },
+        {
+          "number": 24,
+          "title": "Python Basics: Types, Lists, Dictionaries and Modules",
+          "official": true
+        }
+      ],
+      "model_title": "Programming Paradigms",
+      "model_nodes": [
+        "Makefile",
+        "Debugger",
+        "Scheme and Functional Programming",
+        "Python Interop"
+      ],
+      "part": "Part 9",
+      "assignment_ties": [
+        "CS107 assignment 9"
+      ],
+      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "example": "使用Makefile管理多个C源文件编译。"
+    }
+  ]
+}

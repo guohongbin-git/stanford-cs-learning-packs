@@ -1,0 +1,778 @@
+{
+  "Graph": {
+    "id": "Graph",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "由节点和边组成的结构，用于表示实体及其关系。",
+    "why": "提供表示复杂关系数据的统一数学结构。",
+    "failure_conditions": [
+      "边方向或权重定义错误会改变图结构含义。"
+    ],
+    "example": "社交网络中用用户作为节点、关注关系作为边建模。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Node Embedding"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Random Walk"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Node Embedding": {
+    "id": "Node Embedding",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "将图中节点映射到低维向量空间的方法。",
+    "why": "让图结构信息能够被机器学习模型处理。",
+    "failure_conditions": [
+      "忽略邻域结构会产生缺乏语义的节点向量。"
+    ],
+    "example": "社交图中学习用户向量用于推荐相似用户。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Random Walk"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Node2Vec"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Random Walk": {
+    "id": "Random Walk",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "在图上按照转移概率逐步移动生成节点序列的方法。",
+    "why": "用于探索图结构和生成训练样本。",
+    "failure_conditions": [
+      "游走偏置设计错误会遗漏重要区域。"
+    ],
+    "example": "网页图中随机游走采样页面访问路径。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Node2Vec"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "DeepWalk"
+      }
+    ],
+    "weeks": [
+      "w1"
+    ],
+    "source_weeks": [
+      "w1"
+    ]
+  },
+  "Node2Vec": {
+    "id": "Node2Vec",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "结合返回参数和探索参数控制随机游走偏好的节点嵌入算法。",
+    "why": "同时捕获节点同质性和结构角色。",
+    "failure_conditions": [
+      "参数设置不当会导致局部或全局信息不足。"
+    ],
+    "example": "社交图上用有偏随机游走生成节点序列训练嵌入。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "DeepWalk"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Graph Neural Network"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "DeepWalk": {
+    "id": "DeepWalk",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用随机游走产生节点序列并使用语言模型思想学习节点表示的方法。",
+    "why": "连接图表示学习和自然语言处理技术。",
+    "failure_conditions": [
+      "游走样本不足会降低嵌入质量。"
+    ],
+    "example": "论文引用网络中学习相近研究主题节点表示。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Graph Neural Network"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Message Passing"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Graph Neural Network": {
+    "id": "Graph Neural Network",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过邻居信息聚合学习图结构表示的神经网络模型。",
+    "why": "处理非欧式结构数据。",
+    "failure_conditions": [
+      "忽略节点关系会退化为普通特征模型。"
+    ],
+    "example": "分子图预测任务中学习原子之间关系。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Message Passing"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Graph Convolution"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Message Passing": {
+    "id": "Message Passing",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "节点通过邻居交换并聚合信息更新表示的过程。",
+    "why": "描述多数GNN模型的计算机制。",
+    "failure_conditions": [
+      "聚合函数过弱会丢失邻域差异。"
+    ],
+    "example": "GCN层中节点接收相邻节点特征。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Graph Convolution"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "GCN"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "Graph Convolution": {
+    "id": "Graph Convolution",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "在图结构上定义邻域聚合操作的卷积形式。",
+    "why": "扩展卷积思想到图数据。",
+    "failure_conditions": [
+      "邻居采样错误会影响表示学习。"
+    ],
+    "example": "交通网络预测中聚合相邻道路状态。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "GCN"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "GraphSAGE"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "GCN": {
+    "id": "GCN",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "基于归一化邻接矩阵进行图卷积传播的神经网络模型。",
+    "why": "提供经典节点分类方法。",
+    "failure_conditions": [
+      "层数过深会产生表示过度平滑。"
+    ],
+    "example": "引用网络中预测论文类别。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "GraphSAGE"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Attention in Graphs"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "GraphSAGE": {
+    "id": "GraphSAGE",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过采样固定数量邻居并聚合生成节点表示的方法。",
+    "why": "支持大规模动态图学习。",
+    "failure_conditions": [
+      "采样策略偏差会损失重要邻居信息。"
+    ],
+    "example": "电商图中预测新用户兴趣。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Attention in Graphs"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "GAT"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Attention in Graphs": {
+    "id": "Attention in Graphs",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "根据邻居重要性动态分配聚合权重的方法。",
+    "why": "提高图模型选择关键关系能力。",
+    "failure_conditions": [
+      "注意力权重错误会放大噪声边。"
+    ],
+    "example": "知识图谱中突出重要关系路径。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "GAT"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Graph Pooling"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "GAT": {
+    "id": "GAT",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "使用图注意力机制计算邻居权重的图神经网络。",
+    "why": "增强节点邻域表示能力。",
+    "failure_conditions": [
+      "注意力头数量不足可能限制表达。"
+    ],
+    "example": "引文网络节点分类中使用GAT。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Graph Pooling"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Over-smoothing"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Graph Pooling": {
+    "id": "Graph Pooling",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "将大规模图压缩为更小表示的方法。",
+    "why": "支持图级预测任务。",
+    "failure_conditions": [
+      "池化丢失关键结构会降低准确率。"
+    ],
+    "example": "分子性质预测中压缩分子图表示。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Over-smoothing"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Heterogeneous Graph"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Over-smoothing": {
+    "id": "Over-smoothing",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "深层GNN中节点表示趋同导致区分能力下降的现象。",
+    "why": "帮助理解GNN深度限制。",
+    "failure_conditions": [
+      "深层传播导致节点特征无法区分。"
+    ],
+    "example": "增加GCN层数后节点分类性能下降。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Heterogeneous Graph"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Knowledge Graph"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Heterogeneous Graph": {
+    "id": "Heterogeneous Graph",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "包含多种节点或边类型的图结构。",
+    "why": "表示复杂多实体关系。",
+    "failure_conditions": [
+      "忽略类型信息会损失语义关系。"
+    ],
+    "example": "学术图中同时表示作者、论文和机构。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Knowledge Graph"
+      }
+    ],
+    "weeks": [
+      "w5"
+    ],
+    "source_weeks": [
+      "w5"
+    ]
+  },
+  "Knowledge Graph": {
+    "id": "Knowledge Graph",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "以实体和关系三元组组织知识的图结构。",
+    "why": "支持知识推理和搜索。",
+    "failure_conditions": [
+      "实体对齐错误会传播错误知识。"
+    ],
+    "example": "搜索系统中存储人物与事件关系。",
+    "relations": [
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Link Prediction"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Link Prediction": {
+    "id": "Link Prediction",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "预测图中潜在边存在可能性的任务。",
+    "why": "发现隐藏关系。",
+    "failure_conditions": [
+      "训练边负采样不合理会造成偏差。"
+    ],
+    "example": "社交平台预测用户可能认识的人。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Community Detection"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Community Detection": {
+    "id": "Community Detection",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "发现图中节点群组结构的方法。",
+    "why": "分析网络中的组织模式。",
+    "failure_conditions": [
+      "评价指标选择错误会产生无意义社区。"
+    ],
+    "example": "社交网络中发现兴趣群体。",
+    "relations": [],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Motif": {
+    "id": "Motif",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "图中频繁出现的小规模结构模式。",
+    "why": "分析局部关系规律。",
+    "failure_conditions": [
+      "忽略高阶结构会遗漏网络模式。"
+    ],
+    "example": "生物网络中寻找重复调控结构。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Subgraph"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Graph Generation"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Subgraph": {
+    "id": "Subgraph",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "由原图部分节点和边组成的结构。",
+    "why": "支持局部模式分析。",
+    "failure_conditions": [
+      "采样偏差会影响子图统计。"
+    ],
+    "example": "搜索社交网络中的三角关系。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Graph Generation"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Expressiveness"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Graph Generation": {
+    "id": "Graph Generation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "生成具有目标结构特征的新图的方法。",
+    "why": "模拟复杂网络。",
+    "failure_conditions": [
+      "生成模型不能保持统计特征会失真。"
+    ],
+    "example": "生成分子结构用于药物探索。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Expressiveness"
+      },
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Weisfeiler-Lehman Test"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "Expressiveness": {
+    "id": "Expressiveness",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "衡量图模型区分不同结构能力的性质。",
+    "why": "比较不同GNN架构能力。",
+    "failure_conditions": [
+      "忽略表达限制会高估模型能力。"
+    ],
+    "example": "分析GNN能否区分不同图结构。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Weisfeiler-Lehman Test"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  },
+  "Weisfeiler-Lehman Test": {
+    "id": "Weisfeiler-Lehman Test",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过颜色细化迭代判断图结构差异的测试方法。",
+    "why": "作为GNN表达能力比较基准。",
+    "failure_conditions": [
+      "GNN表达能力不超过1-WL时无法区分某些同构不变结构。"
+    ],
+    "example": "比较两个图模型能否区分结构差异。",
+    "relations": [
+      {
+        "relation": "enables",
+        "kind": "enables",
+        "target": "Graph"
+      }
+    ],
+    "weeks": [
+      "w9"
+    ],
+    "source_weeks": [
+      "w9"
+    ]
+  },
+  "PageRank": {
+    "id": "PageRank",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "根据网页之间链接关系迭代计算节点重要性的图排序算法",
+    "why": "用链接结构迭代衡量节点在图中的全局重要性",
+    "failure_conditions": [
+      "链接结构偏置会导致重要性估计失真"
+    ],
+    "example": "搜索引擎根据网页链接计算排名",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Node2Vec"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "DeepWalk"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w2"
+    ]
+  },
+  "Label Propagation": {
+    "id": "Label Propagation",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "利用图中邻居标签信息迭代扩散进行节点分类的方法",
+    "why": "利用邻域标签在图上传播以完成节点分类",
+    "failure_conditions": [
+      "错误标签会沿图结构传播造成污染"
+    ],
+    "example": "社交网络中预测用户兴趣类别",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "GraphSAGE"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Attention in Graphs"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w4"
+    ]
+  },
+  "Traditional Graph ML Methods": {
+    "id": "Traditional Graph ML Methods",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "基于人工设计图特征和传统模型完成图任务的方法",
+    "why": "在图结构上使用特征工程与经典算法的基线方法",
+    "failure_conditions": [
+      "特征工程不足会限制复杂关系表达"
+    ],
+    "example": "利用节点度和聚类系数预测链接",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Message Passing"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Graph Convolution"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
+    ]
+  },
+  "KG Reasoning": {
+    "id": "KG Reasoning",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "根据实体关系图中的已有事实推断未知关系的方法",
+    "why": "在知识图谱上推断缺失关系与多跳事实",
+    "failure_conditions": [
+      "错误实体关系会产生错误推理链"
+    ],
+    "example": "知识库中推断人物合作关系",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Knowledge Graph"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Link Prediction"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Scaling Up GNNs": {
+    "id": "Scaling Up GNNs",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "通过采样、分布式训练等方法扩展GNN处理大规模图",
+    "why": "在大图上通过采样与分区实现可扩展训练",
+    "failure_conditions": [
+      "邻居爆炸导致计算和存储成本过高"
+    ],
+    "example": "大规模社交图训练节点分类模型",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Motif"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Subgraph"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  }
+}
