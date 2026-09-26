@@ -11,14 +11,12 @@
     "example": "分析文件大小时将1024字节转换为KB。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Two's Complement"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Integer Overflow"
+        "kind": "related_to",
+        "target": "Two's Complement"
       }
     ],
     "weeks": [
@@ -40,14 +38,12 @@
     "example": "计算机使用补码表示-5并参与整数加法。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Integer Overflow"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Floating Point Representation"
+        "kind": "related_to",
+        "target": "Integer Overflow"
       }
     ],
     "weeks": [
@@ -69,14 +65,8 @@
     "example": "C程序中int计数器达到最大值后发生回绕。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Floating Point Representation"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Machine Code"
+        "target": "Floating Point Representation"
       }
     ],
     "weeks": [
@@ -98,14 +88,12 @@
     "example": "金融计算中观察0.1加法产生精度误差。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Machine Code"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Assembly"
+        "kind": "related_to",
+        "target": "Machine Code"
       }
     ],
     "weeks": [
@@ -127,14 +115,12 @@
     "example": "查看编译器生成的目标指令分析程序行为。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Assembly"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Register"
+        "kind": "related_to",
+        "target": "Assembly"
       }
     ],
     "weeks": [
@@ -156,14 +142,8 @@
     "example": "阅读x86汇编追踪函数调用过程。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Register"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Stack Frame"
+        "target": "Register"
       }
     ],
     "weeks": [
@@ -185,14 +165,12 @@
     "example": "汇编函数使用rax寄存器保存返回值。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Stack Frame"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Call Stack"
+        "kind": "related_to",
+        "target": "Stack Frame"
       }
     ],
     "weeks": [
@@ -214,14 +192,12 @@
     "example": "调试程序时查看每个函数的栈帧内容。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Call Stack"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Pointer Arithmetic"
+        "kind": "related_to",
+        "target": "Call Stack"
       }
     ],
     "weeks": [
@@ -243,14 +219,12 @@
     "example": "调试器显示main调用链中的函数层级。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Pointer Arithmetic"
+        "kind": "enables",
+        "target": "Activation Record Layout"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Heap Allocation"
+        "kind": "related_to",
+        "target": "Activation Record Layout"
       }
     ],
     "weeks": [
@@ -272,14 +246,12 @@
     "example": "遍历字符数组时递增char指针。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Heap Allocation"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "malloc and free"
+        "kind": "related_to",
+        "target": "Heap Allocation"
       }
     ],
     "weeks": [
@@ -301,14 +273,12 @@
     "example": "程序根据用户数量动态创建记录数组。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "malloc and free"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Memory Layout"
+        "kind": "related_to",
+        "target": "malloc and free"
       }
     ],
     "weeks": [
@@ -330,14 +300,12 @@
     "example": "创建链表节点后使用free释放节点内存。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Memory Layout"
+        "kind": "enables",
+        "target": "Void Pointer and Generic Functions"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Endianness"
+        "kind": "related_to",
+        "target": "Void Pointer and Generic Functions"
       }
     ],
     "weeks": [
@@ -359,14 +327,12 @@
     "example": "分析程序查看全局变量与局部变量地址差异。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Endianness"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Buffer Overflow"
+        "kind": "related_to",
+        "target": "Endianness"
       }
     ],
     "weeks": [
@@ -388,14 +354,12 @@
     "example": "网络字节序与主机字节序转换时调整字节排列。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Buffer Overflow"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Undefined Behavior"
+        "kind": "related_to",
+        "target": "Buffer Overflow"
       }
     ],
     "weeks": [
@@ -417,14 +381,12 @@
     "example": "解析网络请求时攻击者发送超长字符串。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Undefined Behavior"
+        "kind": "enables",
+        "target": "memcpy and memmove"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Compiler Optimization"
+        "kind": "related_to",
+        "target": "memcpy and memmove"
       }
     ],
     "weeks": [
@@ -446,14 +408,12 @@
     "example": "访问释放后的指针产生不可预测结果。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Compiler Optimization"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Linking"
+        "kind": "related_to",
+        "target": "Compiler Optimization"
       }
     ],
     "weeks": [
@@ -475,14 +435,12 @@
     "example": "开启-O2优化观察生成代码变化。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Linking"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Object File"
+        "kind": "related_to",
+        "target": "Linking"
       }
     ],
     "weeks": [
@@ -504,9 +462,12 @@
     "example": "链接多个C文件生成最终程序。",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Generic Linear Search"
+      },
+      {
         "kind": "related_to",
-        "target": "Object File"
+        "target": "Generic Linear Search"
       }
     ],
     "weeks": [
@@ -526,7 +487,12 @@
       "错误理解符号表会阻碍调试。"
     ],
     "example": "使用objdump查看.o文件内容。",
-    "relations": [],
+    "relations": [
+      {
+        "kind": "enables",
+        "target": "Virtual Memory"
+      }
+    ],
     "weeks": [
       "w7"
     ],
@@ -546,8 +512,11 @@
     "example": "进程访问虚拟地址由页表转换。",
     "relations": [
       {
-        "relation": "enables",
         "kind": "enables",
+        "target": "Process Address Space"
+      },
+      {
+        "kind": "related_to",
         "target": "Process Address Space"
       }
     ],
@@ -570,9 +539,12 @@
     "example": "分析程序代码段堆栈在地址空间的位置。",
     "relations": [
       {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Makefile"
+        "target": "Threads and Concurrency"
+      },
+      {
+        "kind": "related_to",
+        "target": "Threads and Concurrency"
       }
     ],
     "weeks": [
@@ -594,14 +566,12 @@
     "example": "使用Makefile管理多个C源文件编译。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Debugger"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Bits and Bytes"
+        "kind": "related_to",
+        "target": "Debugger"
       }
     ],
     "weeks": [
@@ -623,14 +593,12 @@
     "example": "使用gdb设置断点查看寄存器值。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Bits and Bytes"
+        "kind": "enables",
+        "target": "Scheme and Functional Programming"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Two's Complement"
+        "kind": "related_to",
+        "target": "Scheme and Functional Programming"
       }
     ],
     "weeks": [
@@ -652,14 +620,8 @@
     "example": "编写多线程程序并用锁保护共享计数器",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Virtual Memory"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Process Address Space"
+        "kind": "enables",
+        "target": "Makefile"
       }
     ],
     "weeks": [
@@ -681,14 +643,12 @@
     "example": "使用Scheme递归处理列表结构",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Makefile"
+        "kind": "enables",
+        "target": "Python Interop"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
-        "target": "Debugger"
+        "target": "Python Interop"
       }
     ],
     "weeks": [
@@ -708,18 +668,7 @@
       "类型转换错误会导致接口调用失败"
     ],
     "example": "用Python脚本调用C实现的数据处理函数",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Makefile"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Debugger"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "w9"
     ],
@@ -739,14 +688,8 @@
     "example": "实现可交换任意大小元素的泛型 swap，并按字节长度调用 memcpy",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Pointer Arithmetic"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Heap Allocation"
+        "kind": "enables",
+        "target": "Memory Layout"
       }
     ],
     "weeks": [
@@ -768,14 +711,8 @@
     "example": "在数组中间插入元素时用 memmove 右移尾部区间",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Memory Layout"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Endianness"
+        "kind": "enables",
+        "target": "Undefined Behavior"
       }
     ],
     "weeks": [
@@ -797,14 +734,8 @@
     "example": "lsearch 遍历整型数组找出目标值并返回指向该元素的指针",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Undefined Behavior"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Compiler Optimization"
+        "kind": "enables",
+        "target": "Object File"
       }
     ],
     "weeks": [
@@ -826,14 +757,8 @@
     "example": "按 C 调用约定推演 factorial 递归调用时的栈帧变化",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Register"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Stack Frame"
+        "kind": "enables",
+        "target": "Pointer Arithmetic"
       }
     ],
     "weeks": [
