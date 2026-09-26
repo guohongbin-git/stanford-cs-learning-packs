@@ -11,14 +11,12 @@
     "example": "搜索引擎利用NLP分析用户查询并匹配相关文档。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Word Embedding"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Word2Vec"
+        "kind": "related_to",
+        "target": "Word Embedding"
       }
     ],
     "weeks": [
@@ -40,14 +38,12 @@
     "example": "推荐系统使用词向量计算商品描述之间的语义接近程度。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Word2Vec"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Skip Gram"
+        "kind": "related_to",
+        "target": "Word2Vec"
       }
     ],
     "weeks": [
@@ -69,14 +65,8 @@
     "example": "新闻分类任务中使用Word2Vec生成文章词表示。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Skip Gram"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "CBOW"
+        "target": "Skip Gram"
       }
     ],
     "weeks": [
@@ -98,14 +88,12 @@
     "example": "训练词向量时根据king预测queen等上下文关系。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "CBOW"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Bag of Words"
+        "kind": "related_to",
+        "target": "CBOW"
       }
     ],
     "weeks": [
@@ -127,7 +115,10 @@
     "example": "语言模型预训练中根据周围词预测缺失词。",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Bag of Words"
+      },
+      {
         "kind": "related_to",
         "target": "Bag of Words"
       }
@@ -151,9 +142,12 @@
     "example": "垃圾邮件分类中统计邮件词频作为分类特征。",
     "relations": [
       {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Neural Network"
+        "target": "Negative Sampling"
+      },
+      {
+        "kind": "related_to",
+        "target": "Negative Sampling"
       }
     ],
     "weeks": [
@@ -175,14 +169,12 @@
     "example": "文本情感分析模型使用神经网络预测情感类别。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Activation Function"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Backpropagation"
+        "kind": "related_to",
+        "target": "Activation Function"
       }
     ],
     "weeks": [
@@ -204,14 +196,12 @@
     "example": "Transformer前馈层使用非线性激活函数处理表示。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Backpropagation"
+        "kind": "enables",
+        "target": "Dependency Parsing"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Gradient Descent"
+        "kind": "related_to",
+        "target": "Dependency Parsing"
       }
     ],
     "weeks": [
@@ -233,14 +223,12 @@
     "example": "训练语言模型时反向传播更新词嵌入参数。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Gradient Descent"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Language Model"
+        "kind": "related_to",
+        "target": "Gradient Descent"
       }
     ],
     "weeks": [
@@ -262,14 +250,12 @@
     "example": "训练分类模型时使用梯度下降降低交叉熵损失。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Language Model"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "RNN"
+        "kind": "related_to",
+        "target": "Language Model"
       }
     ],
     "weeks": [
@@ -291,14 +277,12 @@
     "example": "自动补全输入法预测用户下一字符。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "RNN"
+        "kind": "enables",
+        "target": "Perplexity"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Hidden State"
+        "kind": "related_to",
+        "target": "Perplexity"
       }
     ],
     "weeks": [
@@ -320,14 +304,12 @@
     "example": "语音识别系统使用RNN处理连续声音特征。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Hidden State"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "LSTM"
+        "kind": "related_to",
+        "target": "Hidden State"
       }
     ],
     "weeks": [
@@ -349,14 +331,12 @@
     "example": "RNN生成句子时利用隐藏状态保存前文信息。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "LSTM"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "GRU"
+        "kind": "related_to",
+        "target": "LSTM"
       }
     ],
     "weeks": [
@@ -378,14 +358,8 @@
     "example": "机器翻译模型使用LSTM编码长句信息。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "GRU"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Gate Mechanism"
+        "target": "GRU"
       }
     ],
     "weeks": [
@@ -407,14 +381,12 @@
     "example": "移动端语音模型使用GRU减少计算开销。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Gate Mechanism"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Seq2Seq"
+        "kind": "related_to",
+        "target": "Gate Mechanism"
       }
     ],
     "weeks": [
@@ -436,14 +408,12 @@
     "example": "LSTM利用遗忘门决定保留哪些历史信息。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Seq2Seq"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Encoder"
+        "kind": "related_to",
+        "target": "Seq2Seq"
       }
     ],
     "weeks": [
@@ -465,14 +435,12 @@
     "example": "神经机器翻译将英文句子转换为中文句子。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Encoder"
+        "kind": "enables",
+        "target": "BLEU"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Decoder"
+        "kind": "related_to",
+        "target": "BLEU"
       }
     ],
     "weeks": [
@@ -494,14 +462,12 @@
     "example": "翻译模型编码英文句子的语义表示。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Decoder"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Beam Search"
+        "kind": "related_to",
+        "target": "Decoder"
       }
     ],
     "weeks": [
@@ -523,14 +489,12 @@
     "example": "聊天机器人使用Decoder生成回复内容。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Beam Search"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Attention"
+        "kind": "related_to",
+        "target": "Beam Search"
       }
     ],
     "weeks": [
@@ -552,14 +516,12 @@
     "example": "机器翻译生成阶段使用beam search选择译文。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Attention"
+        "kind": "enables",
+        "target": "Multi-Head Attention"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Self Attention"
+        "kind": "related_to",
+        "target": "Multi-Head Attention"
       }
     ],
     "weeks": [
@@ -581,14 +543,12 @@
     "example": "翻译模型生成目标词时关注对应源词。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Self Attention"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Transformer"
+        "kind": "related_to",
+        "target": "Self Attention"
       }
     ],
     "weeks": [
@@ -610,14 +570,12 @@
     "example": "Transformer编码句子时计算词之间关系。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Transformer"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Query Key Value"
+        "kind": "related_to",
+        "target": "Transformer"
       }
     ],
     "weeks": [
@@ -639,14 +597,12 @@
     "example": "BERT使用Transformer编码器学习文本表示。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Query Key Value"
+        "kind": "enables",
+        "target": "Subword and BPE"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "BERT"
+        "kind": "related_to",
+        "target": "Subword and BPE"
       }
     ],
     "weeks": [
@@ -668,14 +624,12 @@
     "example": "Transformer通过QKV计算词之间注意力分数。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "BERT"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Masked Language Model"
+        "kind": "related_to",
+        "target": "BERT"
       }
     ],
     "weeks": [
@@ -697,14 +651,12 @@
     "example": "问答系统使用BERT理解问题和文章语义。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Masked Language Model"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Natural Language Processing"
+        "kind": "related_to",
+        "target": "Masked Language Model"
       }
     ],
     "weeks": [
@@ -724,18 +676,7 @@
       "遮盖比例不合适会影响训练信号质量。"
     ],
     "example": "BERT训练时预测句子中的[MASK]词。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Natural Language Processing"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Word Embedding"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "w9"
     ],
@@ -755,14 +696,8 @@
     "example": "Word2Vec训练中随机采样非目标词优化嵌入",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Skip Gram"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "CBOW"
+        "kind": "enables",
+        "target": "Neural Network"
       }
     ],
     "weeks": [
@@ -784,14 +719,8 @@
     "example": "BERT使用BPE编码罕见英文词",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Attention"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Self Attention"
+        "kind": "enables",
+        "target": "Query Key Value"
       }
     ],
     "weeks": [
@@ -813,14 +742,8 @@
     "example": "分析英文句子主谓宾依存关系",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Neural Network"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Activation Function"
+        "kind": "enables",
+        "target": "Backpropagation"
       }
     ],
     "weeks": [
@@ -842,14 +765,12 @@
     "example": "Transformer编码器通过多头注意力理解句子",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Encoder"
+        "kind": "enables",
+        "target": "Positional Encoding"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
-        "target": "Decoder"
+        "target": "Positional Encoding"
       }
     ],
     "weeks": [
@@ -871,14 +792,12 @@
     "example": "为句子token加入正弦位置编码",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Encoder"
+        "kind": "enables",
+        "target": "LayerNorm and Residual Connections"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
-        "target": "Decoder"
+        "target": "LayerNorm and Residual Connections"
       }
     ],
     "weeks": [
@@ -900,14 +819,8 @@
     "example": "Transformer层使用LayerNorm和残差结构",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Encoder"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Decoder"
+        "kind": "enables",
+        "target": "Attention"
       }
     ],
     "weeks": [
@@ -929,14 +842,8 @@
     "example": "比较两个语言模型预测句子的困惑度",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Backpropagation"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Gradient Descent"
+        "kind": "enables",
+        "target": "RNN"
       }
     ],
     "weeks": [
@@ -958,14 +865,8 @@
     "example": "评价英法机器翻译生成结果",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "GRU"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Gate Mechanism"
+        "kind": "enables",
+        "target": "Encoder"
       }
     ],
     "weeks": [
