@@ -11,7 +11,10 @@
     "example": "使用多层感知机预测用户点击概率",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Activation Function"
+      },
+      {
         "kind": "related_to",
         "target": "Activation Function"
       }
@@ -35,7 +38,10 @@
     "example": "隐藏层使用ReLU学习非线性图像特征",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Train Dev Test Split"
+      },
+      {
         "kind": "related_to",
         "target": "Train Dev Test Split"
       }
@@ -59,8 +65,7 @@
     "example": "图像分类任务划分数据集评估模型泛化",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Backpropagation"
       }
     ],
@@ -83,7 +88,10 @@
     "example": "训练CNN时反向传播更新卷积核权重",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Gradient Descent"
+      },
+      {
         "kind": "related_to",
         "target": "Gradient Descent"
       }
@@ -107,7 +115,10 @@
     "example": "训练线性分类模型降低交叉熵损失",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Adam Optimizer"
+      },
+      {
         "kind": "related_to",
         "target": "Adam Optimizer"
       }
@@ -131,9 +142,12 @@
     "example": "训练Transformer时使用Adam更新模型权重",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Loss Function"
+      },
+      {
         "kind": "related_to",
-        "target": "Regularization"
+        "target": "Loss Function"
       }
     ],
     "weeks": [
@@ -155,7 +169,10 @@
     "example": "在线性模型中加入L2权重惩罚",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Dropout"
+      },
+      {
         "kind": "related_to",
         "target": "Dropout"
       }
@@ -179,7 +196,10 @@
     "example": "图像分类全连接层使用0.5失活率抑制过拟合",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Batch Normalization"
+      },
+      {
         "kind": "related_to",
         "target": "Batch Normalization"
       }
@@ -203,9 +223,12 @@
     "example": "ResNet训练中使用BN加速收敛",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Overfitting"
+      },
+      {
         "kind": "related_to",
-        "target": "CNN"
+        "target": "Overfitting"
       }
     ],
     "weeks": [
@@ -227,7 +250,10 @@
     "example": "用多层卷积与池化搭建图像分类器识别手写数字",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Convolution"
+      },
+      {
         "kind": "related_to",
         "target": "Convolution"
       }
@@ -251,7 +277,10 @@
     "example": "图像处理中使用3×3卷积检测边缘特征",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Pooling"
+      },
+      {
         "kind": "related_to",
         "target": "Pooling"
       }
@@ -275,7 +304,10 @@
     "example": "CNN中使用最大池化降低特征图尺寸",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Feature Map"
+      },
+      {
         "kind": "related_to",
         "target": "Feature Map"
       }
@@ -299,7 +331,10 @@
     "example": "卷积网络生成边缘和纹理特征图",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Kernel"
+      },
+      {
         "kind": "related_to",
         "target": "Kernel"
       }
@@ -323,7 +358,10 @@
     "example": "CNN利用多个3×3核学习图像纹理",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Stride"
+      },
+      {
         "kind": "related_to",
         "target": "Stride"
       }
@@ -347,7 +385,10 @@
     "example": "卷积层设置stride=2降低图像分辨率",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Padding"
+      },
+      {
         "kind": "related_to",
         "target": "Padding"
       }
@@ -371,8 +412,7 @@
     "example": "CNN使用zero padding保持特征图尺寸",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "RNN"
       }
     ],
@@ -395,7 +435,10 @@
     "example": "文本分类中使用RNN编码句子顺序信息",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "LSTM"
+      },
+      {
         "kind": "related_to",
         "target": "LSTM"
       }
@@ -421,7 +464,10 @@
     "example": "机器翻译模型使用LSTM处理长句",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Sequence Modeling"
+      },
+      {
         "kind": "related_to",
         "target": "Sequence Modeling"
       }
@@ -447,7 +493,10 @@
     "example": "语言模型根据历史词预测下一个词",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Hidden State"
+      },
+      {
         "kind": "related_to",
         "target": "Hidden State"
       }
@@ -473,8 +522,7 @@
     "example": "RNN隐藏状态编码前文信息生成文本",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Attention"
       }
     ],
@@ -497,7 +545,10 @@
     "example": "机器翻译中用查询与键的相似度对值向量加权，聚合源句信息",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Transformer"
+      },
+      {
         "kind": "related_to",
         "target": "Transformer"
       }
@@ -521,7 +572,10 @@
     "example": "文本生成模型利用注意力预测后续token。",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Self Attention"
+      },
+      {
         "kind": "related_to",
         "target": "Self Attention"
       }
@@ -545,7 +599,10 @@
     "example": "Transformer计算句子内部词语关联权重。",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Query Key Value"
+      },
+      {
         "kind": "related_to",
         "target": "Query Key Value"
       }
@@ -569,8 +626,7 @@
     "example": "多头注意力利用QKV计算词间关联",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Transfer Learning"
       }
     ],
@@ -593,7 +649,10 @@
     "example": "利用ImageNet模型初始化医疗图像分类器",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Fine Tuning"
+      },
+      {
         "kind": "related_to",
         "target": "Fine Tuning"
       }
@@ -617,7 +676,10 @@
     "example": "微调BERT完成情感分类任务",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Pretrained Model"
+      },
+      {
         "kind": "related_to",
         "target": "Pretrained Model"
       }
@@ -641,7 +703,10 @@
     "example": "使用GPT预训练权重进行文本生成",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Inference"
+      },
+      {
         "kind": "related_to",
         "target": "Inference"
       }
@@ -665,14 +730,12 @@
     "example": "部署分类模型预测用户上传图片类别",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Transfer Learning"
+        "kind": "enables",
+        "target": "Embedding"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
-        "target": "Fine Tuning"
+        "target": "Embedding"
       }
     ],
     "weeks": [
@@ -696,14 +759,12 @@
     "example": "检查NLP模型错误分类句子改进数据",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Generative Model"
+        "kind": "enables",
+        "target": "Hyperparameter Tuning"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
-        "target": "Autoencoder"
+        "target": "Hyperparameter Tuning"
       }
     ],
     "weeks": [
@@ -725,7 +786,10 @@
     "example": "训练分类网络使用交叉熵衡量预测误差",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Cross Entropy"
+      },
+      {
         "kind": "related_to",
         "target": "Cross Entropy"
       }
@@ -749,7 +813,10 @@
     "example": "多分类模型使用交叉熵优化类别概率输出",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Learning Rate"
+      },
+      {
         "kind": "related_to",
         "target": "Learning Rate"
       }
@@ -773,7 +840,10 @@
     "example": "训练神经网络设置0.001学习率更新权重",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Mini Batch"
+      },
+      {
         "kind": "related_to",
         "target": "Mini Batch"
       }
@@ -797,7 +867,10 @@
     "example": "使用32张图片组成批次训练CNN",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "SGD"
+      },
+      {
         "kind": "related_to",
         "target": "SGD"
       }
@@ -821,7 +894,10 @@
     "example": "图像识别任务使用SGD训练深度网络",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Momentum"
+      },
+      {
         "kind": "related_to",
         "target": "Momentum"
       }
@@ -845,7 +921,10 @@
     "example": "深层网络训练中使用Momentum加速收敛",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Gradient Clipping"
+      },
+      {
         "kind": "related_to",
         "target": "Gradient Clipping"
       }
@@ -869,9 +948,8 @@
     "example": "训练RNN时裁剪梯度防止数值爆炸",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Overfitting"
+        "kind": "enables",
+        "target": "Regularization"
       }
     ],
     "weeks": [
@@ -893,7 +971,10 @@
     "example": "深度分类器记忆训练图片背景导致测试失败",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Underfitting"
+      },
+      {
         "kind": "related_to",
         "target": "Underfitting"
       }
@@ -917,7 +998,10 @@
     "example": "简单线性模型预测复杂图像类别",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Bias Variance Tradeoff"
+      },
+      {
         "kind": "related_to",
         "target": "Bias Variance Tradeoff"
       }
@@ -941,7 +1025,10 @@
     "example": "比较浅层和深层网络测试误差变化",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Data Augmentation"
+      },
+      {
         "kind": "related_to",
         "target": "Data Augmentation"
       }
@@ -965,9 +1052,12 @@
     "example": "图像分类中随机旋转图片扩充数据",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Early Stopping"
+      },
+      {
         "kind": "related_to",
-        "target": "Hyperparameter Tuning"
+        "target": "Early Stopping"
       }
     ],
     "weeks": [
@@ -989,9 +1079,12 @@
     "example": "调整CNN层数和学习率选择最佳配置",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Generative Model"
+      },
+      {
         "kind": "related_to",
-        "target": "Early Stopping"
+        "target": "Generative Model"
       }
     ],
     "weeks": [
@@ -1013,9 +1106,12 @@
     "example": "训练神经网络验证损失升高时提前结束",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Activation Saturation"
+      },
+      {
         "kind": "related_to",
-        "target": "Embedding"
+        "target": "Activation Saturation"
       }
     ],
     "weeks": [
@@ -1037,7 +1133,10 @@
     "example": "用 word2vec 把词汇映射为稠密向量供分类与检索模型使用",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Word Representation"
+      },
+      {
         "kind": "related_to",
         "target": "Word Representation"
       }
@@ -1061,7 +1160,10 @@
     "example": "NLP模型使用词表示理解句子含义",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Encoder Decoder"
+      },
+      {
         "kind": "related_to",
         "target": "Encoder Decoder"
       }
@@ -1085,9 +1187,12 @@
     "example": "机器翻译模型编码英文句子生成中文序列。",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Natural Language Processing"
+      },
+      {
         "kind": "related_to",
-        "target": "Generative Model"
+        "target": "Natural Language Processing"
       }
     ],
     "weeks": [
@@ -1109,7 +1214,10 @@
     "example": "GAN模型生成逼真的人脸图像",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Autoencoder"
+      },
+      {
         "kind": "related_to",
         "target": "Autoencoder"
       }
@@ -1133,7 +1241,10 @@
     "example": "使用自编码器进行图像降噪",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "GAN"
+      },
+      {
         "kind": "related_to",
         "target": "GAN"
       }
@@ -1157,7 +1268,10 @@
     "example": "GAN生成不存在于训练集的新图像",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Reinforcement Learning"
+      },
+      {
         "kind": "related_to",
         "target": "Reinforcement Learning"
       }
@@ -1181,14 +1295,12 @@
     "example": "游戏AI通过奖励学习最佳行动方式",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Error Analysis"
+        "kind": "enables",
+        "target": "Evaluation Metric"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
-        "target": "Generative Model"
+        "target": "Evaluation Metric"
       }
     ],
     "weeks": [
@@ -1210,14 +1322,8 @@
     "example": "用词嵌入与注意力模型完成情感分类与文本摘要任务",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Transfer Learning"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Fine Tuning"
+        "kind": "enables",
+        "target": "Agent and Tool Use"
       }
     ],
     "weeks": [
@@ -1239,7 +1345,10 @@
     "example": "诊断深层 MLP 训练停滞时检查 sigmoid 层的激活分布",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Vanishing Gradient"
+      },
+      {
         "kind": "related_to",
         "target": "Vanishing Gradient"
       }
@@ -1263,7 +1372,10 @@
     "example": "深层RNN训练时出现梯度消失",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Exploding Gradient"
+      },
+      {
         "kind": "related_to",
         "target": "Exploding Gradient"
       }
@@ -1287,14 +1399,8 @@
     "example": "长序列RNN训练时限制梯度范数",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Regularization"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Dropout"
+        "kind": "enables",
+        "target": "CNN"
       }
     ],
     "weeks": [
@@ -1316,9 +1422,12 @@
     "example": "医疗分类使用召回率评价漏诊风险",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Model Interpretability"
+      },
+      {
         "kind": "related_to",
-        "target": "Neural Network"
+        "target": "Model Interpretability"
       }
     ],
     "weeks": [
@@ -1340,12 +1449,10 @@
     "example": "语言模型调用搜索工具回答实时问题",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Inference"
+        "kind": "enables",
+        "target": "Prompt Engineering"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
         "target": "Prompt Engineering"
       }
@@ -1369,14 +1476,12 @@
     "example": "设计角色提示控制文本生成风格",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Inference"
+        "kind": "enables",
+        "target": "Retrieval Augmented Generation"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
-        "target": "Agent and Tool Use"
+        "target": "Retrieval Augmented Generation"
       }
     ],
     "weeks": [
@@ -1398,14 +1503,12 @@
     "example": "客服系统检索知识库后生成回复",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Inference"
+        "kind": "enables",
+        "target": "Adversarial Robustness"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
-        "target": "Agent and Tool Use"
+        "target": "Adversarial Robustness"
       }
     ],
     "weeks": [
@@ -1427,14 +1530,12 @@
     "example": "图像分类中加入对抗噪声测试模型稳定性",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Inference"
+        "kind": "enables",
+        "target": "Deep Q-Learning"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
-        "target": "Agent and Tool Use"
+        "target": "Deep Q-Learning"
       }
     ],
     "weeks": [
@@ -1456,14 +1557,8 @@
     "example": "游戏智能体使用DQN学习操作策略",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Inference"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Agent and Tool Use"
+        "kind": "enables",
+        "target": "Error Analysis"
       }
     ],
     "weeks": [
@@ -1483,18 +1578,7 @@
       "解释结果可能只反映相关性而非真实机制"
     ],
     "example": "分析图像模型关注区域解释分类结果",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Error Analysis"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Generative Model"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "W09"
     ],
