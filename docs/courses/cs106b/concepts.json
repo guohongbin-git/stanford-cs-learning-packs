@@ -11,14 +11,12 @@
     "example": "计算阶乘函数时递归调用处理n到n-1的规模变化。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Recursion Tree"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Backtracking"
+        "kind": "related_to",
+        "target": "Recursion Tree"
       }
     ],
     "weeks": [
@@ -40,7 +38,10 @@
     "example": "分析归并排序时绘制递归树估计运行层数。",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Backtracking"
+      },
+      {
         "kind": "related_to",
         "target": "Backtracking"
       }
@@ -64,9 +65,12 @@
     "example": "数独求解中尝试数字并在冲突后撤销选择。",
     "relations": [
       {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Big-O Notation"
+        "target": "Iterator"
+      },
+      {
+        "kind": "related_to",
+        "target": "Iterator"
       }
     ],
     "weeks": [
@@ -88,14 +92,12 @@
     "example": "分析排序算法随数组长度增加的时间变化。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Algorithm Analysis"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Vector"
+        "kind": "related_to",
+        "target": "Algorithm Analysis"
       }
     ],
     "weeks": [
@@ -117,14 +119,8 @@
     "example": "比较两种搜索算法处理百万数据的耗时。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Vector"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Stack"
+        "target": "Vector"
       }
     ],
     "weeks": [
@@ -146,14 +142,12 @@
     "example": "用vector保存课程成绩并按索引访问。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Stack"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Queue"
+        "kind": "related_to",
+        "target": "Stack"
       }
     ],
     "weeks": [
@@ -175,14 +169,12 @@
     "example": "编译器利用栈保存函数调用信息。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Queue"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Linked List"
+        "kind": "related_to",
+        "target": "Queue"
       }
     ],
     "weeks": [
@@ -204,14 +196,8 @@
     "example": "打印任务系统按提交顺序处理请求。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Linked List"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Binary Search Tree"
+        "target": "Linked List"
       }
     ],
     "weeks": [
@@ -233,14 +219,12 @@
     "example": "实现音乐播放列表中的动态节点管理。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Binary Search Tree"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Hash Table"
+        "kind": "related_to",
+        "target": "Binary Search Tree"
       }
     ],
     "weeks": [
@@ -262,14 +246,12 @@
     "example": "实现联系人查询的有序索引结构。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Hash Table"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Map"
+        "kind": "related_to",
+        "target": "Hash Table"
       }
     ],
     "weeks": [
@@ -291,14 +273,8 @@
     "example": "字典程序中通过姓名快速查找电话号码。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Map"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Set"
+        "target": "Map"
       }
     ],
     "weeks": [
@@ -320,14 +296,12 @@
     "example": "保存学生姓名到成绩的对应关系。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Set"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Priority Queue"
+        "kind": "related_to",
+        "target": "Set"
       }
     ],
     "weeks": [
@@ -349,14 +323,12 @@
     "example": "统计文本中出现过的不同单词。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Priority Queue"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Graph"
+        "kind": "related_to",
+        "target": "Priority Queue"
       }
     ],
     "weeks": [
@@ -378,14 +350,8 @@
     "example": "任务调度系统优先处理紧急任务。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Graph"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Graph Search"
+        "target": "Graph"
       }
     ],
     "weeks": [
@@ -407,14 +373,12 @@
     "example": "社交网络中表示用户关系。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Graph Search"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "BFS"
+        "kind": "related_to",
+        "target": "Graph Search"
       }
     ],
     "weeks": [
@@ -436,14 +400,12 @@
     "example": "地图系统搜索两个地点之间路径。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "BFS"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "DFS"
+        "kind": "related_to",
+        "target": "BFS"
       }
     ],
     "weeks": [
@@ -465,14 +427,8 @@
     "example": "社交网络中寻找最少好友跳数。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "DFS"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Dijkstra"
+        "target": "DFS"
       }
     ],
     "weeks": [
@@ -494,7 +450,10 @@
     "example": "文件系统遍历目录结构。",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Dijkstra"
+      },
+      {
         "kind": "related_to",
         "target": "Dijkstra"
       }
@@ -518,7 +477,6 @@
     "example": "地图导航计算最低距离路线。",
     "relations": [
       {
-        "relation": "enables",
         "kind": "enables",
         "target": "Sorting Algorithm"
       }
@@ -542,14 +500,12 @@
     "example": "整理学生成绩生成排名列表。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Merge Sort"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Quick Sort"
+        "kind": "related_to",
+        "target": "Merge Sort"
       }
     ],
     "weeks": [
@@ -571,14 +527,12 @@
     "example": "大型文件排序中采用归并排序。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Quick Sort"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Pointer"
+        "kind": "related_to",
+        "target": "Quick Sort"
       }
     ],
     "weeks": [
@@ -600,14 +554,8 @@
     "example": "数据库内部排序中使用快速排序思想。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Pointer"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Dynamic Memory"
+        "target": "Pointer"
       }
     ],
     "weeks": [
@@ -629,14 +577,12 @@
     "example": "链表节点通过指针连接。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Dynamic Memory"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Templated Class"
+        "kind": "related_to",
+        "target": "Dynamic Memory"
       }
     ],
     "weeks": [
@@ -658,14 +604,12 @@
     "example": "创建动态数组存储用户输入数量。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Templated Class"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Iterator"
+        "kind": "related_to",
+        "target": "Templated Class"
       }
     ],
     "weeks": [
@@ -687,14 +631,12 @@
     "example": "实现适用于不同类型的Stack模板。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Iterator"
+        "kind": "enables",
+        "target": "Lexicon"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Abstract Data Type"
+        "kind": "related_to",
+        "target": "Lexicon"
       }
     ],
     "weeks": [
@@ -716,14 +658,12 @@
     "example": "遍历vector中的所有元素。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Abstract Data Type"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Lexicon"
+        "kind": "related_to",
+        "target": "Abstract Data Type"
       }
     ],
     "weeks": [
@@ -747,14 +687,8 @@
     "example": "Stack接口隐藏底层数组实现。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Lexicon"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Recursion"
+        "target": "Big-O Notation"
       }
     ],
     "weeks": [
@@ -774,18 +708,7 @@
       "大小写处理不一致会造成匹配错误。"
     ],
     "example": "拼写检查程序查询合法单词。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Recursion"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Recursion Tree"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "w9"
     ],
