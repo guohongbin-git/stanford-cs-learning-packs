@@ -750,11 +750,6 @@
         "relation": "related_to",
         "kind": "related_to",
         "target": "Lexicon"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Recursion"
       }
     ],
     "weeks": [
@@ -774,18 +769,7 @@
       "大小写处理不一致会造成匹配错误。"
     ],
     "example": "拼写检查程序查询合法单词。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Recursion"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Recursion Tree"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "w9"
     ],

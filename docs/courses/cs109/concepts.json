@@ -741,11 +741,6 @@
         "relation": "related_to",
         "kind": "related_to",
         "target": "Likelihood"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Probability"
       }
     ],
     "weeks": [
@@ -767,18 +762,7 @@
       "把似然函数当作参数本身的概率，会错误理解统计推断过程。"
     ],
     "example": "估计硬币正面概率时比较不同参数对观测结果的解释能力。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Probability"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Sample Space"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "w2",
       "w9"

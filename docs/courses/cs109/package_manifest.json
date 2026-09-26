@@ -8,8 +8,8 @@
     },
     {
       "path": "CS109_interactive_Autumn2022_v0.1.html",
-      "bytes": 654461,
-      "sha256": "12dd5ecaf8f36796ead76d3747040cdd0a9f43a71f2f8fa20427ff74b04d5020"
+      "bytes": 653988,
+      "sha256": "c4af7be48c886932dab2382ed23f671b0c6c0a4245b86c6a15d30bd9f4cc923b"
     },
     {
       "path": "README.md",
@@ -18,13 +18,13 @@
     },
     {
       "path": "concepts.json",
-      "bytes": 28480,
-      "sha256": "cd10f4f190e190aee20cd273be9c5338770e91f0b51024cd31d1b6bc92291d39"
+      "bytes": 28148,
+      "sha256": "8352ef3483dab9fb49b825fdc7057efba49631b76a718ac550e3d00dd1765be6"
     },
     {
       "path": "course_ir.json",
-      "bytes": 20096,
-      "sha256": "bd9f5155c1b1289ff6f739b47c30f1e0c87aee77298ca0dfe896b4df615d987d"
+      "bytes": 19835,
+      "sha256": "da5be696edc91cb675ce84d193b6d09e27957e4d55986111c2de76269b59f3e5"
     },
     {
       "path": "index.html",

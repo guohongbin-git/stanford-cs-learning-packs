@@ -700,13 +700,7 @@
       "知识过时会导致错误推理。"
     ],
     "example": "问答系统维护领域事实库回答问题。",
-    "relations": [
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Artificial Intelligence"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "w9"
     ],

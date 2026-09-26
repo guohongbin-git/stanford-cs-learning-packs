@@ -8,8 +8,8 @@
     },
     {
       "path": "CS336_interactive_Spring2025_v0.1.html",
-      "bytes": 704426,
-      "sha256": "b508110c1b259c5281ce8ca209ff5850f79e07065f294ab68ab24f9185fdd1f9"
+      "bytes": 699064,
+      "sha256": "fa8e536b3c9d3eaa9b54eff806ec7db0b21ca90c7b1af296fa70d35b7d675a43"
     },
     {
       "path": "README.md",
@@ -18,13 +18,13 @@
     },
     {
       "path": "concepts.json",
-      "bytes": 72948,
-      "sha256": "9d990d165f915cf795a8093c03f036f5d91c1cfb6d36fed1f00c95f1a7b9cbf1"
+      "bytes": 65800,
+      "sha256": "f412521ba1199eadfca03e62cd6d3b150f11321162a9193a8acb30b1998c056d"
     },
     {
       "path": "course_ir.json",
-      "bytes": 35145,
-      "sha256": "4bd3243417428d388d95b06e0c0cfbe6fa4ff8100edbeef0755068a1ef4e59ea"
+      "bytes": 35153,
+      "sha256": "2782ef56a923703c055e54e445e4a3021741b1a44f921b3ae7519b284d9f1919"
     },
     {
       "path": "index.html",

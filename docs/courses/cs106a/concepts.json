@@ -564,18 +564,7 @@
       "测试覆盖不足会遗漏边界输入导致隐藏错误"
     ],
     "example": "为Java方法设计不同输入检查返回结果",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Algorithm Analysis"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Big O Notation"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "w5"
     ],

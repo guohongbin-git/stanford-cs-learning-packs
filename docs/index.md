@@ -4,7 +4,7 @@
 
 ## 课程包一览（11 门，全部通过多轮独立核验）
 
-| 课程 | 标题 | 方向 | 教学周 | 概念 | 证据绑定 |
+| 课程 | 标题 | 方向 | 教学周 | 概念 | 绑定讲次(派生)/talk |
 |---|---|---|---|---|---|
 | [CS106A](courses/cs106a/) | Programming Methodology（SEE Java 版） | 编程基础 | 9 | 43 | 26 讲 / 0 talk |
 | [CS106B](courses/cs106b/) | Programming Abstractions（SEE C++ 版） | 编程基础 | 9 | 28 | 20 讲 / 0 talk |
@@ -17,6 +17,8 @@
 | [CS230](courses/cs230/) | Deep Learning（Autumn 2025） | 深度学习 | 9 | 60 | 9 讲 / 0 talk |
 | [CS336](courses/cs336/) | Language Modeling from Scratch（Spring 2025） | 大模型工程 | 9 | 90 | 17 讲 / 0 talk |
 | [CS25](courses/cs25/) | Transformers United（seminar） | 前沿研讨 | 主题聚类 | 59 | 54 讲 / 54 talk |
+
+**讲次数字说明**：「绑定讲次」指该包绑定的官方讲次门数（SEE 课为讲次编号+主题派生标签，非逐字讲次名；CS336/CS224W 为逐字官方讲次名）。`talk` 为 CS25 研讨会讲次。全部可在 `course_ir.json` 的 `lectures`/`talks` 字段核验。
 
 **打开方式**：点击课程代码，或在仓库 `docs/courses/<code>/` 下直接打开 HTML（Pages 会自动打开 index.html）。
 

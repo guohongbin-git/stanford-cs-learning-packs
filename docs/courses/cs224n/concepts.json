@@ -700,11 +700,6 @@
         "relation": "related_to",
         "kind": "related_to",
         "target": "Masked Language Model"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Natural Language Processing"
       }
     ],
     "weeks": [
@@ -724,18 +719,7 @@
       "遮盖比例不合适会影响训练信号质量。"
     ],
     "example": "BERT训练时预测句子中的[MASK]词。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Natural Language Processing"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Word Embedding"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "w9"
     ],

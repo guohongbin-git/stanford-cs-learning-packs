@@ -30,14 +30,14 @@
         "重复计算过多"
       ],
       "quiz": {
-        "q": "算法设计关键是什么？",
+        "q": "递归函数必须包含什么才能终止？",
         "choices": [
-          "选择合适抽象",
-          "只写更多代码",
-          "忽略测试"
+          "可达的基线条件",
+          "尽可能多的递归调用",
+          "全局变量"
         ],
         "correct": 0,
-        "explain": "抽象和验证是程序设计基础。"
+        "explain": "无基线或基线不可达会栈溢出。"
       },
       "agent": {
         "goal": "辅助CS106B学习",
@@ -58,27 +58,27 @@
         {
           "number": 6,
           "title": "Map and Set Classes, Iterator Operation",
-          "official": true
+          "official": false
         },
         {
           "number": 7,
           "title": "Recursion and Recursive Decomposition",
-          "official": true
+          "official": false
         },
         {
           "number": 8,
           "title": "Solving Problems Recursively, Binary Search",
-          "official": true
+          "official": false
         },
         {
           "number": 9,
           "title": "Thinking Recursively, Tree of Recursive Calls",
-          "official": true
+          "official": false
         },
         {
           "number": 10,
           "title": "Recursive Backtracking and N-Queens",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Abstractions",
@@ -91,7 +91,7 @@
       "assignment_ties": [
         "CS106B assignment 1"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106B 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "计算阶乘函数时递归调用处理n到n-1的规模变化。"
     },
     {
@@ -116,14 +116,14 @@
         "内存管理错误"
       ],
       "quiz": {
-        "q": "算法设计关键是什么？",
+        "q": "Big-O 分析关注的是？",
         "choices": [
-          "选择合适抽象",
-          "只写更多代码",
-          "忽略测试"
+          "输入规模增长时操作数的增长趋势",
+          "精确运行秒数",
+          "代码风格"
         ],
         "correct": 0,
-        "explain": "抽象和验证是程序设计基础。"
+        "explain": "Big-O 是渐近增长而非绝对时间。"
       },
       "agent": {
         "goal": "辅助CS106B学习",
@@ -144,7 +144,7 @@
         {
           "number": 14,
           "title": "Algorithm Analysis and Big-O Notation",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Abstractions",
@@ -156,7 +156,7 @@
       "assignment_ties": [
         "CS106B assignment 2"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106B 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "分析排序算法随数组长度增加的时间变化。"
     },
     {
@@ -182,14 +182,14 @@
         "哈希冲突严重"
       ],
       "quiz": {
-        "q": "算法设计关键是什么？",
+        "q": "栈与队列的核心区别是？",
         "choices": [
-          "选择合适抽象",
-          "只写更多代码",
-          "忽略测试"
+          "LIFO 与 FIFO 的存取顺序",
+          "元素类型不同",
+          "是否动态扩容"
         ],
         "correct": 0,
-        "explain": "抽象和验证是程序设计基础。"
+        "explain": "栈后进先出，队列先进先出。"
       },
       "agent": {
         "goal": "辅助CS106B学习",
@@ -210,7 +210,7 @@
         {
           "number": 5,
           "title": "Vector, Grid, Stack and Queue Classes",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Abstractions",
@@ -223,7 +223,7 @@
       "assignment_ties": [
         "CS106B assignment 3"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106B 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "用vector保存课程成绩并按索引访问。"
     },
     {
@@ -249,14 +249,14 @@
         "优先级更新错误"
       ],
       "quiz": {
-        "q": "算法设计关键是什么？",
+        "q": "链表相比数组的主要代价是？",
         "choices": [
-          "选择合适抽象",
-          "只写更多代码",
-          "忽略测试"
+          "随机访问为 O(n)",
+          "不能存指针",
+          "无法遍历"
         ],
         "correct": 0,
-        "explain": "抽象和验证是程序设计基础。"
+        "explain": "链表需顺序遍历到目标位置。"
       },
       "agent": {
         "goal": "辅助CS106B学习",
@@ -277,22 +277,22 @@
         {
           "number": 11,
           "title": "Introduction to Pointers",
-          "official": true
+          "official": false
         },
         {
           "number": 12,
           "title": "Pointers, Dynamic Arrays and Linked Lists",
-          "official": true
+          "official": false
         },
         {
           "number": 13,
           "title": "Linked List Operations and Memory Deallocation",
-          "official": true
+          "official": false
         },
         {
           "number": 18,
           "title": "Abstract Data Types and the Vector Class",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Abstractions",
@@ -305,7 +305,7 @@
       "assignment_ties": [
         "CS106B assignment 4"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106B 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "实现音乐播放列表中的动态节点管理。"
     },
     {
@@ -332,14 +332,14 @@
         "邻接关系错误"
       ],
       "quiz": {
-        "q": "算法设计关键是什么？",
+        "q": "实现 Map 时，二叉搜索树相比向量在查找上的优势是？",
         "choices": [
-          "选择合适抽象",
-          "只写更多代码",
-          "忽略测试"
+          "O(log n) 查找（平衡时）",
+          "O(1) 查找",
+          "不需要比较"
         ],
         "correct": 0,
-        "explain": "抽象和验证是程序设计基础。"
+        "explain": "BST 利用有序性二分查找。"
       },
       "agent": {
         "goal": "辅助CS106B学习",
@@ -360,12 +360,12 @@
         {
           "number": 6,
           "title": "Map and Set Client Interfaces",
-          "official": true
+          "official": false
         },
         {
           "number": 19,
           "title": "Template Implementation and the Stack Class",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Abstractions",
@@ -378,7 +378,7 @@
       "assignment_ties": [
         "CS106B assignment 5"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106B 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "保存学生姓名到成绩的对应关系。"
     },
     {
@@ -404,14 +404,14 @@
         "优先队列维护失败"
       ],
       "quiz": {
-        "q": "算法设计关键是什么？",
+        "q": "图遍历中 DFS 与 BFS 的典型差异是？",
         "choices": [
-          "选择合适抽象",
-          "只写更多代码",
-          "忽略测试"
+          "DFS 用栈/递归深入，BFS 用队列逐层",
+          "结果一定相同",
+          "BFS 不能用于有向图"
         ],
         "correct": 0,
-        "explain": "抽象和验证是程序设计基础。"
+        "explain": "数据结构决定遍历顺序。"
       },
       "agent": {
         "goal": "辅助CS106B学习",
@@ -432,7 +432,7 @@
         {
           "number": 23,
           "title": "Graphs: Representation, DFS and BFS",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Abstractions",
@@ -445,7 +445,7 @@
       "assignment_ties": [
         "CS106B assignment 6"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106B 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "社交网络中表示用户关系。"
     },
     {
@@ -470,14 +470,14 @@
         "稳定性要求忽略"
       ],
       "quiz": {
-        "q": "算法设计关键是什么？",
+        "q": "Dijkstra 算法不适用于哪种图？",
         "choices": [
-          "选择合适抽象",
-          "只写更多代码",
-          "忽略测试"
+          "含负权边的图",
+          "无向图",
+          "稀疏图"
         ],
         "correct": 0,
-        "explain": "抽象和验证是程序设计基础。"
+        "explain": "负权边会破坏贪心选择性质。"
       },
       "agent": {
         "goal": "辅助CS106B学习",
@@ -498,7 +498,7 @@
         {
           "number": 23,
           "title": "Graph Search Algorithms and Weighted Arcs",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Abstractions",
@@ -510,7 +510,7 @@
       "assignment_ties": [
         "CS106B assignment 7"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106B 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "文件系统遍历目录结构。"
     },
     {
@@ -536,14 +536,14 @@
         "越界写入"
       ],
       "quiz": {
-        "q": "算法设计关键是什么？",
+        "q": "快速排序最坏情况的时间复杂度是？",
         "choices": [
-          "选择合适抽象",
-          "只写更多代码",
-          "忽略测试"
+          "O(n²)",
+          "O(n log n)",
+          "O(n)"
         ],
         "correct": 0,
-        "explain": "抽象和验证是程序设计基础。"
+        "explain": "枢轴选择不当退化为平方。"
       },
       "agent": {
         "goal": "辅助CS106B学习",
@@ -564,12 +564,12 @@
         {
           "number": 15,
           "title": "Selection, Insertion and Merge Sort",
-          "official": true
+          "official": false
         },
         {
           "number": 16,
           "title": "Quicksort: Partitioning and Worst Case",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Abstractions",
@@ -582,7 +582,7 @@
       "assignment_ties": [
         "CS106B assignment 8"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106B 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "整理学生成绩生成排名列表。"
     },
     {
@@ -609,14 +609,14 @@
         "接口不兼容"
       ],
       "quiz": {
-        "q": "算法设计关键是什么？",
+        "q": "模板类（template class）的主要价值是？",
         "choices": [
-          "选择合适抽象",
-          "只写更多代码",
-          "忽略测试"
+          "类型无关地复用数据结构实现",
+          "减少内存占用",
+          "加快编译"
         ],
         "correct": 0,
-        "explain": "抽象和验证是程序设计基础。"
+        "explain": "模板让一份实现服务多种元素类型。"
       },
       "agent": {
         "goal": "辅助CS106B学习",
@@ -637,17 +637,17 @@
         {
           "number": 17,
           "title": "Object-Oriented Design and ADTs",
-          "official": true
+          "official": false
         },
         {
           "number": 24,
           "title": "Hash Tables, Hash Functions and Collisions",
-          "official": true
+          "official": false
         },
         {
           "number": 25,
           "title": "Lexicon Case Study: Sorted Vector, BST, Hash Table, Trie, DAWG",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Abstractions",
@@ -660,7 +660,7 @@
       "assignment_ties": [
         "CS106B assignment 9"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS106B 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "链表节点通过指针连接。"
     }
   ]

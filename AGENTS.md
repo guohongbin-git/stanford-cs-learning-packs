@@ -41,6 +41,16 @@ verification: [...]
 escalation: [...]
 ```
 
+## 3b. Concept status 三态语义
+
+概念 `status` 枚举为三态，按证据强度使用，不要一律填同一值：
+
+- `SOURCE_CONFIRMED` — 定义逐字/直接取自绑定官方课程的讲义/笔记/课表，可逐条溯源。仅当确有官方原文支撑时使用（如 CS336 的逐字课表投影）。
+- `TEACHING_RECONSTRUCTION` — 由公开课程主题 + 标准领域知识综合而成的教学重构（本仓库绝大多数概念的正确状态）。
+- `HYPOTHESIS` — 未经官方来源核实、仅为合理推测的概念或关系，必须显式标注，不得当作已确认知识。
+
+当前 11 包概念均为 `TEACHING_RECONSTRUCTION`（诚实默认）。若后续为某概念补上逐字官方依据，应升级为 `SOURCE_CONFIRMED`；无法核实的推测应降为 `HYPOTHESIS`。
+
 ## 4. Concept usage rules
 
 Before applying a concept, read its `definition`, `why`, `failure_conditions`, `example`, `relations` and `weeks`. A concept is a decision aid, not a label: if the failure conditions hold, do not apply it.

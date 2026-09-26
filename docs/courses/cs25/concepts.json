@@ -509,13 +509,7 @@
       "检索结果错误会导致生成内容失真"
     ],
     "example": "问答系统检索知识库后生成答案。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Large Language Model"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "Agents"
     ],

@@ -8,18 +8,18 @@
     },
     {
       "path": "CS230_interactive_Autumn2025_v0.1.html",
-      "bytes": 665560,
-      "sha256": "94ccfd2b22c5d5c11102049fd2698ae99d310408343bf9707dc2dd0123882c0d"
+      "bytes": 665238,
+      "sha256": "92dcc05cf1d2b817048f712b9d4bf3457d76cc76fb085582724039ab7502e739"
     },
     {
       "path": "concepts.json",
-      "bytes": 39601,
-      "sha256": "7159e4229e96427b8d91ad5d90ad24b9499acad8b3dff2f919fdfde49dca0e42"
+      "bytes": 39049,
+      "sha256": "95af20e9491baa9163957f57b1d258e21333b2eda144e467221b9a35106db649"
     },
     {
       "path": "course_ir.json",
-      "bytes": 22037,
-      "sha256": "060fff60e1445938c95eb2f8c5678d70c73b8e4eb667c18ccf7128a976b162d2"
+      "bytes": 22051,
+      "sha256": "1ae6d3bfc47c797970985fd3b84f1cb16d4bd510748e3cfb446c94152a1a12c9"
     },
     {
       "path": "index.html",

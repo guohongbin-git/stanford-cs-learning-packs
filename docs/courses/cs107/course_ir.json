@@ -28,14 +28,14 @@
         "错误判断溢出结果"
       ],
       "quiz": {
-        "q": "系统程序设计需要关注什么？",
+        "q": "负数在内存中通常用什么表示？",
         "choices": [
-          "数据表示和执行模型",
-          "只看语法",
-          "忽略资源"
+          "二进制补码",
+          "原码加符号位单独存储",
+          "ASCII 码"
         ],
         "correct": 0,
-        "explain": "系统程序需要理解机器行为。"
+        "explain": "补码统一加减法硬件。"
       },
       "agent": {
         "goal": "辅助CS107学习",
@@ -56,12 +56,12 @@
         {
           "number": 2,
           "title": "Bits, Bytes, Two's Complement and Negative Numbers",
-          "official": true
+          "official": false
         },
         {
           "number": 2,
           "title": "Floats and Converting Between Integers and Floats",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Paradigms",
@@ -74,7 +74,7 @@
       "assignment_ties": [
         "CS107 assignment 1"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "分析文件大小时将1024字节转换为KB。"
     },
     {
@@ -100,14 +100,14 @@
         "比较浮点值直接相等"
       ],
       "quiz": {
-        "q": "系统程序设计需要关注什么？",
+        "q": "指针算术 p+1 实际移动多少字节？",
         "choices": [
-          "数据表示和执行模型",
-          "只看语法",
-          "忽略资源"
+          "sizeof(所指类型) 字节",
+          "固定 1 字节",
+          "固定 4 字节"
         ],
         "correct": 0,
-        "explain": "系统程序需要理解机器行为。"
+        "explain": "指针算术按所指类型大小缩放。"
       },
       "agent": {
         "goal": "辅助CS107学习",
@@ -128,12 +128,12 @@
         {
           "number": 8,
           "title": "RAM, Registers, the ALU and the Code Segment",
-          "official": true
+          "official": false
         },
         {
           "number": 9,
           "title": "Translating Code into Assembly: Loads, Stores, ALU and Branches",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Paradigms",
@@ -146,7 +146,7 @@
       "assignment_ties": [
         "CS107 assignment 2"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "金融计算中观察0.1加法产生精度误差。"
     },
     {
@@ -173,14 +173,14 @@
         "破坏调用约定"
       ],
       "quiz": {
-        "q": "系统程序设计需要关注什么？",
+        "q": "栈帧（activation record）保存的内容不包括？",
         "choices": [
-          "数据表示和执行模型",
-          "只看语法",
-          "忽略资源"
+          "堆上动态分配的对象",
+          "返回地址",
+          "局部变量与参数"
         ],
         "correct": 0,
-        "explain": "系统程序需要理解机器行为。"
+        "explain": "堆对象不在栈帧内。"
       },
       "agent": {
         "goal": "辅助CS107学习",
@@ -201,12 +201,12 @@
         {
           "number": 8,
           "title": "Stack Segment Layout and Activation Records",
-          "official": true
+          "official": false
         },
         {
           "number": 10,
           "title": "Function Call and Return: Return Address, Factorial Trace",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Paradigms",
@@ -219,7 +219,7 @@
       "assignment_ties": [
         "CS107 assignment 3"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "汇编函数使用rax寄存器保存返回值。"
     },
     {
@@ -246,14 +246,14 @@
         "忘记释放资源"
       ],
       "quiz": {
-        "q": "系统程序设计需要关注什么？",
+        "q": "malloc 后忘记 free 会导致？",
         "choices": [
-          "数据表示和执行模型",
-          "只看语法",
-          "忽略资源"
+          "内存泄漏",
+          "编译错误",
+          "程序立即崩溃"
         ],
         "correct": 0,
-        "explain": "系统程序需要理解机器行为。"
+        "explain": "未释放的堆内存无法再被使用。"
       },
       "agent": {
         "goal": "辅助CS107学习",
@@ -274,17 +274,17 @@
         {
           "number": 3,
           "title": "Endianness, Structs, Pointer Arithmetic and Memory Layout",
-          "official": true
+          "official": false
         },
         {
           "number": 6,
           "title": "Generic Stack: Realloc and Memory Copying",
-          "official": true
+          "official": false
         },
         {
           "number": 7,
           "title": "Heap Manager: Free List, Fragmentation, Ownership",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Paradigms",
@@ -297,7 +297,7 @@
       "assignment_ties": [
         "CS107 assignment 4"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "遍历字符数组时递增char指针。"
     },
     {
@@ -324,14 +324,14 @@
         "错误理解优化结果"
       ],
       "quiz": {
-        "q": "系统程序设计需要关注什么？",
+        "q": "memcpy 与 memmove 的关键区别是？",
         "choices": [
-          "数据表示和执行模型",
-          "只看语法",
-          "忽略资源"
+          "memmove 保证重叠区间正确",
+          "memcpy 更快一定正确",
+          "两者完全相同"
         ],
         "correct": 0,
-        "explain": "系统程序需要理解机器行为。"
+        "explain": "重叠时用 memcpy 结果未定义。"
       },
       "agent": {
         "goal": "辅助CS107学习",
@@ -352,7 +352,7 @@
         {
           "number": 11,
           "title": "Code Generation for C++: References and the this Pointer",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Paradigms",
@@ -365,7 +365,7 @@
       "assignment_ties": [
         "CS107 assignment 5"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "分析程序查看全局变量与局部变量地址差异。"
     },
     {
@@ -392,14 +392,14 @@
         "错误修改根因"
       ],
       "quiz": {
-        "q": "系统程序设计需要关注什么？",
+        "q": "链接器的作用是？",
         "choices": [
-          "数据表示和执行模型",
-          "只看语法",
-          "忽略资源"
+          "把多个目标文件与库合并成可执行文件",
+          "把源码翻译成汇编",
+          "分配运行时内存"
         ],
         "correct": 0,
-        "explain": "系统程序需要理解机器行为。"
+        "explain": "链接解析符号引用并合并 .o。"
       },
       "agent": {
         "goal": "辅助CS107学习",
@@ -420,12 +420,12 @@
         {
           "number": 12,
           "title": "Preprocessing: #define, Macros, #include and Translation Units",
-          "official": true
+          "official": false
         },
         {
           "number": 13,
           "title": "Compilation, .O Files, Linking and Debugging Information",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Paradigms",
@@ -438,7 +438,7 @@
       "assignment_ties": [
         "CS107 assignment 6"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "访问释放后的指针产生不可预测结果。"
     },
     {
@@ -462,14 +462,14 @@
         "错误估计访问成本"
       ],
       "quiz": {
-        "q": "系统程序设计需要关注什么？",
+        "q": "缓冲区溢出最危险的后果是？",
         "choices": [
-          "数据表示和执行模型",
-          "只看语法",
-          "忽略资源"
+          "覆盖保存的返回地址导致控制流劫持",
+          "只是数组越界报错",
+          "降低运行速度"
         ],
         "correct": 0,
-        "explain": "系统程序需要理解机器行为。"
+        "explain": "越界写可改写返回地址。"
       },
       "agent": {
         "goal": "辅助CS107学习",
@@ -490,7 +490,7 @@
         {
           "number": 13,
           "title": "Seg Faults vs Bus Errors, Array Overflow and Saved PC Corruption",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Paradigms",
@@ -501,7 +501,7 @@
       "assignment_ties": [
         "CS107 assignment 7"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "使用objdump查看.o文件内容。"
     },
     {
@@ -527,14 +527,14 @@
         "锁粒度设计不当"
       ],
       "quiz": {
-        "q": "系统程序设计需要关注什么？",
+        "q": "多线程中保护临界区通常用？",
         "choices": [
-          "数据表示和执行模型",
-          "只看语法",
-          "忽略资源"
+          "信号量/互斥锁",
+          "全局变量计数",
+          "printf 调试"
         ],
         "correct": 0,
-        "explain": "系统程序需要理解机器行为。"
+        "explain": "同步原语保证互斥访问。"
       },
       "agent": {
         "goal": "辅助CS107学习",
@@ -555,12 +555,12 @@
         {
           "number": 14,
           "title": "Sequential vs Concurrent Programming: Processes, MMU and Threads",
-          "official": true
+          "official": false
         },
         {
           "number": 15,
           "title": "Threading Interface, Race Conditions and Semaphores",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Paradigms",
@@ -573,7 +573,7 @@
       "assignment_ties": [
         "CS107 assignment 8"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "进程访问虚拟地址由页表转换。"
     },
     {
@@ -600,14 +600,14 @@
         "忽略运行环境差异"
       ],
       "quiz": {
-        "q": "系统程序设计需要关注什么？",
+        "q": "Scheme 作为函数式语言的特点是？",
         "choices": [
-          "数据表示和执行模型",
-          "只看语法",
-          "忽略资源"
+          "以函数求值合成为核心、数据不可变倾向",
+          "强制面向对象",
+          "静态类型检查"
         ],
         "correct": 0,
-        "explain": "系统程序需要理解机器行为。"
+        "explain": "函数式范式强调函数组合与不可变。"
       },
       "agent": {
         "goal": "辅助CS107学习",
@@ -628,17 +628,17 @@
         {
           "number": 19,
           "title": "Functional Paradigm: Scheme Lists, Car/Cdr, Cons and Append",
-          "official": true
+          "official": false
         },
         {
           "number": 21,
           "title": "Map, Apply, Eval and Lambda in Scheme",
-          "official": true
+          "official": false
         },
         {
           "number": 24,
           "title": "Python Basics: Types, Lists, Dictionaries and Modules",
-          "official": true
+          "official": false
         }
       ],
       "model_title": "Programming Paradigms",
@@ -652,7 +652,7 @@
       "assignment_ties": [
         "CS107 assignment 9"
       ],
-      "evidence_status": "archive_official · SEE 官方课程（官方讲次标题取自 see.stanford.edu/Course/CS107 的 Topics 列表；本包 9 教学周为分组）",
+      "evidence_status": "archive_official · SEE 官方课程（SEE 仅发布讲次编号+主题列表，标题为主题派生标签 official:false；讲次号取自官方课程页）",
       "example": "使用Makefile管理多个C源文件编译。"
     }
   ]

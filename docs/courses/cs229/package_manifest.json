@@ -8,8 +8,8 @@
     },
     {
       "path": "CS229_interactive_Spring2022_v0.1_r4.html",
-      "bytes": 668246,
-      "sha256": "117dff9aa6b55455f9db476c7f45e6478cfd5b9b015cb2526bcdfb29b7c5e802"
+      "bytes": 671895,
+      "sha256": "20c2f08e5c322ce9913b2816dbc2ec362d8a63a922984f17c3979ef021413509"
     },
     {
       "path": "README.md",
@@ -18,13 +18,13 @@
     },
     {
       "path": "concepts.json",
-      "bytes": 46995,
-      "sha256": "d75b19afc7e81992b9c0460f5ca51c6b894345d81448f7301b548d99ccc4e493"
+      "bytes": 46752,
+      "sha256": "7be539788565f69f407552b15fcc0329920e017f929917877557568572ace273"
     },
     {
       "path": "course_ir.json",
-      "bytes": 19074,
-      "sha256": "d691695841b8e2a2125bc2868c2e8f4eb8a6508be142f15195e00731a6c47223"
+      "bytes": 23222,
+      "sha256": "cc2bf8e2a3aaf9ea14f42743e2c68411abcc2d2bb5c95466412f76537110887d"
     },
     {
       "path": "index.html",

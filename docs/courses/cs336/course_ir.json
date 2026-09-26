@@ -287,7 +287,7 @@
         "GPU",
         "Memory Hierarchy",
         "HBM",
-        "Kernel",
+        "GPU Kernel",
         "Arithmetic Intensity",
         "Roofline Model",
         "Triton",
@@ -302,7 +302,7 @@
         "GPU",
         "Memory Hierarchy",
         "HBM",
-        "Kernel"
+        "GPU Kernel"
       ],
       "example": "同样计算 attention，如果中间矩阵频繁落到 HBM，速度和显存都会恶化；通过 tiling / fusion 让中间状态尽量停留在更快的片上存储，可以显著改变性能。",
       "pitfalls": [

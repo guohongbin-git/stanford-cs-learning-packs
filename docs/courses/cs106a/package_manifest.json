@@ -8,8 +8,8 @@
     },
     {
       "path": "CS106A_interactive_SEE_v0.1.html",
-      "bytes": 655724,
-      "sha256": "9624e4a5f21c7184a3ea1428361db5f0aab56054e59b80ef6f30e46a748c79d6"
+      "bytes": 656227,
+      "sha256": "03f46ba76bbec06163ce16eef12bb8a03b41ae05c20ee4e9b4db4df6c5a924ab"
     },
     {
       "path": "README.md",
@@ -18,13 +18,13 @@
     },
     {
       "path": "concepts.json",
-      "bytes": 31581,
-      "sha256": "65edd421e8a796a9d042e0e9dc69512ba21b426d62506ec6ac7eac951e0de511"
+      "bytes": 31341,
+      "sha256": "fe2ee8e5b57ce53ef0efca5d1ebaaf68fc11ced9e8942d51703efc89ee2c73d1"
     },
     {
       "path": "course_ir.json",
-      "bytes": 19872,
-      "sha256": "ca92225e0ff04235ad1db9e234572017cbbe0127e7b59720641c2be82879aaa2"
+      "bytes": 20533,
+      "sha256": "6d67ba5af506a291329ce7300e4ab26e71afa8161e83f9e17528cb325caf25ed"
     },
     {
       "path": "index.html",

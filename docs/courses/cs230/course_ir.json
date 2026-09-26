@@ -245,7 +245,7 @@
         "Convolution",
         "Pooling",
         "Feature Map",
-        "Kernel",
+        "Convolutional Kernel",
         "Stride",
         "Padding"
       ],

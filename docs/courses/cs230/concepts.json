@@ -301,31 +301,7 @@
       {
         "relation": "related_to",
         "kind": "related_to",
-        "target": "Kernel"
-      }
-    ],
-    "weeks": [
-      "W04"
-    ],
-    "source_weeks": [
-      "W04"
-    ]
-  },
-  "Kernel": {
-    "id": "Kernel",
-    "type": "Concept",
-    "status": "TEACHING_RECONSTRUCTION",
-    "definition": "卷积操作中学习局部模式的权重矩阵",
-    "why": "控制卷积局部特征提取。",
-    "failure_conditions": [
-      "卷积核尺寸选择错误影响特征提取范围"
-    ],
-    "example": "CNN利用多个3×3核学习图像纹理",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Stride"
+        "target": "Convolutional Kernel"
       }
     ],
     "weeks": [
@@ -663,18 +639,7 @@
       "训练和推理流程不一致会导致性能下降"
     ],
     "example": "部署分类模型预测用户上传图片类别",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Transfer Learning"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Fine Tuning"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "W07",
       "W08"
@@ -1179,18 +1144,7 @@
       "奖励设计错误会诱导无效行为策略"
     ],
     "example": "游戏AI通过奖励学习最佳行动方式",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Error Analysis"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Generative Model"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "W09"
     ],
@@ -1372,11 +1326,6 @@
         "relation": "related_to",
         "kind": "related_to",
         "target": "Inference"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Agent and Tool Use"
       }
     ],
     "weeks": [
@@ -1500,6 +1449,30 @@
     ],
     "source_weeks": [
       "W09"
+    ]
+  },
+  "Convolutional Kernel": {
+    "id": "Convolutional Kernel",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "卷积操作中学习局部模式的权重矩阵",
+    "why": "控制卷积局部特征提取。",
+    "failure_conditions": [
+      "卷积核尺寸选择错误影响特征提取范围"
+    ],
+    "example": "CNN利用多个3×3核学习图像纹理",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Stride"
+      }
+    ],
+    "weeks": [
+      "W04"
+    ],
+    "source_weeks": [
+      "W04"
     ]
   }
 }

@@ -26,7 +26,7 @@
       "title": "Personal Finance for Engineers",
       "level": "CS100_below_intro",
       "track": "Interdisciplinary",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%207",
       "public_materials": {
         "youtube": "unverified",
@@ -46,7 +46,7 @@
       "title": "Computer Play: An Unconventional Introduction to CS and EE",
       "level": "CS100_below_intro",
       "track": "Foundations",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2010N",
       "public_materials": {
         "youtube": "unverified",
@@ -66,7 +66,7 @@
       "title": "How to Make VR: Introduction to Virtual Reality Design and Development",
       "level": "CS100_below_intro",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2011SI",
       "public_materials": {
         "youtube": "unverified",
@@ -86,7 +86,7 @@
       "title": "AI for Social Good",
       "level": "CS100_below_intro",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2021SI",
       "public_materials": {
         "youtube": "unverified",
@@ -106,7 +106,7 @@
       "title": "The Social & Economic Impact of Artificial Intelligence",
       "level": "CS100_below_intro",
       "track": "AI & Society",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2022A",
       "public_materials": {
         "youtube": "unverified",
@@ -126,7 +126,7 @@
       "title": "Minds and Machines",
       "level": "CS100_below_intro",
       "track": "Foundations",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2024",
       "public_materials": {
         "youtube": "unverified",
@@ -166,7 +166,7 @@
       "title": "Big Ideas in Cryptography",
       "level": "CS100_below_intro",
       "track": "Security",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2025N",
       "public_materials": {
         "youtube": "unverified",
@@ -186,7 +186,7 @@
       "title": "Counterfactuals: The Science of What Ifs?",
       "level": "CS100_below_intro",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2031N",
       "public_materials": {
         "youtube": "unverified",
@@ -206,7 +206,7 @@
       "title": "2D Engine-Based Game Development",
       "level": "CS100_below_intro",
       "track": "Graphics & Games",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2042SI",
       "public_materials": {
         "youtube": "unverified",
@@ -226,7 +226,7 @@
       "title": "Great Ideas in Graphics",
       "level": "CS100_below_intro",
       "track": "Graphics & Vision",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2044N",
       "public_materials": {
         "youtube": "unverified",
@@ -246,7 +246,7 @@
       "title": "Data Analytics and Sports",
       "level": "CS100_below_intro",
       "track": "Data Science",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2047N",
       "public_materials": {
         "youtube": "unverified",
@@ -266,7 +266,7 @@
       "title": "CS + Social Good Studio",
       "level": "CS100_below_intro",
       "track": "Social Computing",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2051",
       "public_materials": {
         "youtube": "unverified",
@@ -286,7 +286,7 @@
       "title": "CS+Social Good: Implementing Social Good Projects",
       "level": "CS100_below_intro",
       "track": "Social Computing",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2052",
       "public_materials": {
         "youtube": "unverified",
@@ -306,7 +306,7 @@
       "title": "How Can Generative AI Help Us Learn?",
       "level": "CS100_below_intro",
       "track": "AI & Education",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%2053N",
       "public_materials": {
         "youtube": "unverified",
@@ -326,7 +326,7 @@
       "title": "Mathematical Foundations of Computing",
       "level": "CS100_intermediate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "VERIFIED_ABSENT",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20103",
       "public_materials": {
         "youtube": "none_found",
@@ -356,7 +356,7 @@
       "title": "Introduction to Essential Software Systems and Tools",
       "level": "CS100_intermediate",
       "track": "Software Engineering",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20104",
       "public_materials": {
         "youtube": "unverified",
@@ -382,7 +382,7 @@
       "title": "Introduction to Computers",
       "level": "CS100_intermediate",
       "track": "Foundations",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20105",
       "public_materials": {
         "youtube": "unverified",
@@ -425,7 +425,7 @@
       "title": "Programming Methodology in JavaScript and Python (Accelerated)",
       "level": "CS100_intermediate",
       "track": "Programming",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106AX",
       "public_materials": {
         "youtube": "unverified",
@@ -475,7 +475,7 @@
       "title": "Exploring Computing",
       "level": "CS100_intermediate",
       "track": "Foundations",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106E",
       "public_materials": {
         "youtube": "unverified",
@@ -495,7 +495,7 @@
       "title": "Exploring Artificial Intelligence",
       "level": "CS100_intermediate",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106EA",
       "public_materials": {
         "youtube": "unverified",
@@ -515,7 +515,7 @@
       "title": "Standard C++ Programming Laboratory",
       "level": "CS100_intermediate",
       "track": "Programming",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106L",
       "public_materials": {
         "youtube": "unverified",
@@ -542,7 +542,7 @@
       "title": "Enrichment Adventures in Programming Abstractions",
       "level": "CS100_intermediate",
       "track": "Programming",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106M",
       "public_materials": {
         "youtube": "unverified",
@@ -569,7 +569,7 @@
       "title": "Coding for Social Good",
       "level": "CS100_intermediate",
       "track": "Social Computing",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20106S",
       "public_materials": {
         "youtube": "unverified",
@@ -623,7 +623,7 @@
       "title": "Computer Systems from the Ground Up",
       "level": "CS100_intermediate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20107E",
       "public_materials": {
         "youtube": "unverified",
@@ -676,7 +676,7 @@
       "title": "Principles of Computer Systems",
       "level": "CS100_intermediate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20110",
       "public_materials": {
         "youtube": "unverified",
@@ -702,7 +702,7 @@
       "title": "Operating Systems Principles",
       "level": "CS100_intermediate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "VERIFIED_ABSENT",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20111",
       "public_materials": {
         "youtube": "none_found",
@@ -731,7 +731,7 @@
       "title": "Operating Systems Kernel Implementation Project",
       "level": "CS100_intermediate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20112",
       "public_materials": {
         "youtube": "unverified",
@@ -757,7 +757,7 @@
       "title": "Introduction to AI Safety",
       "level": "CS100_intermediate",
       "track": "AI Safety",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20120",
       "public_materials": {
         "youtube": "unverified",
@@ -783,7 +783,7 @@
       "title": "Building AI-Enabled Robots",
       "level": "CS100_intermediate",
       "track": "Robotics",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20123",
       "public_materials": {
         "youtube": "unverified",
@@ -809,7 +809,7 @@
       "title": "From Languages to Information",
       "level": "CS100_intermediate",
       "track": "NLP",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20124",
       "public_materials": {
         "youtube": "unverified",
@@ -846,7 +846,7 @@
       "title": "Applied Machine Learning",
       "level": "CS100_intermediate",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20129",
       "public_materials": {
         "youtube": "unverified",
@@ -877,7 +877,7 @@
       "title": "Computer Vision: Foundations and Applications",
       "level": "CS100_intermediate",
       "track": "Graphics & Vision",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20131",
       "public_materials": {
         "youtube": "unverified",
@@ -908,7 +908,7 @@
       "title": "Principles of Robot Autonomy I",
       "level": "CS100_intermediate",
       "track": "Robotics",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20137A",
       "public_materials": {
         "youtube": "unverified",
@@ -939,7 +939,7 @@
       "title": "Operating Systems Design and Implementation",
       "level": "CS100_intermediate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20140E",
       "public_materials": {
         "youtube": "unverified",
@@ -965,7 +965,7 @@
       "title": "Introduction to Embedded Systems",
       "level": "CS100_intermediate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20140M",
       "public_materials": {
         "youtube": "unverified",
@@ -991,7 +991,7 @@
       "title": "Sports and Data",
       "level": "CS100_intermediate",
       "track": "Data Science",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20141",
       "public_materials": {
         "youtube": "unverified",
@@ -1022,7 +1022,7 @@
       "title": "Compilers",
       "level": "CS100_intermediate",
       "track": "Programming Languages",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20143",
       "public_materials": {
         "youtube": "unverified",
@@ -1053,7 +1053,7 @@
       "title": "Introduction to Computer Networking",
       "level": "CS100_intermediate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20144",
       "public_materials": {
         "youtube": "unverified",
@@ -1079,7 +1079,7 @@
       "title": "Introduction to Modern Data Systems",
       "level": "CS100_intermediate",
       "track": "Data Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20145",
       "public_materials": {
         "youtube": "none_found",
@@ -1110,7 +1110,7 @@
       "title": "Game Development",
       "level": "CS100_intermediate",
       "track": "Graphics & Games",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "VERIFIED_ABSENT",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20146",
       "public_materials": {
         "youtube": "unverified",
@@ -1139,7 +1139,7 @@
       "title": "Full-Stack Web Programming",
       "level": "CS100_intermediate",
       "track": "Software Engineering",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20146J",
       "public_materials": {
         "youtube": "unverified",
@@ -1165,7 +1165,7 @@
       "title": "The Modern Software Developer",
       "level": "CS100_intermediate",
       "track": "Software Engineering",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20146S",
       "public_materials": {
         "youtube": "unverified",
@@ -1196,7 +1196,7 @@
       "title": "Introduction to Human-Computer Interaction Design",
       "level": "CS100_intermediate",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "VERIFIED_ABSENT",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20147",
       "public_materials": {
         "youtube": "none_found",
@@ -1225,7 +1225,7 @@
       "title": "Cross-platform Mobile App Development",
       "level": "CS100_intermediate",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20147L",
       "public_materials": {
         "youtube": "unverified",
@@ -1251,7 +1251,7 @@
       "title": "Introduction to Computer Graphics and Imaging",
       "level": "CS100_intermediate",
       "track": "Graphics & Vision",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "VERIFIED_ABSENT",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20148",
       "public_materials": {
         "youtube": "none_found",
@@ -1280,7 +1280,7 @@
       "title": "Logic Programming",
       "level": "CS100_intermediate",
       "track": "Programming Languages",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20151",
       "public_materials": {
         "youtube": "unverified",
@@ -1306,7 +1306,7 @@
       "title": "Trust and Safety Engineering",
       "level": "CS100_intermediate",
       "track": "Security",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20152",
       "public_materials": {
         "youtube": "unverified",
@@ -1332,7 +1332,7 @@
       "title": "Frontier Systems",
       "level": "CS100_intermediate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20153",
       "public_materials": {
         "youtube": "unverified",
@@ -1352,7 +1352,7 @@
       "title": "Introduction to the Theory of Computation",
       "level": "CS100_intermediate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "VERIFIED_ABSENT",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20154",
       "public_materials": {
         "youtube": "none_found",
@@ -1381,7 +1381,7 @@
       "title": "Computer and Network Security",
       "level": "CS100_intermediate",
       "track": "Security",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "VERIFIED_ABSENT",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20155",
       "public_materials": {
         "youtube": "none_found",
@@ -1415,7 +1415,7 @@
       "title": "Computational Logic",
       "level": "CS100_intermediate",
       "track": "Logic & Verification",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20157",
       "public_materials": {
         "youtube": "unverified",
@@ -1441,7 +1441,7 @@
       "title": "Design and Analysis of Algorithms",
       "level": "CS100_intermediate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "VERIFIED_ABSENT",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20161",
       "public_materials": {
         "youtube": "none_found",
@@ -1480,7 +1480,7 @@
       "title": "The Practice of Theory Research",
       "level": "CS100_intermediate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20163",
       "public_materials": {
         "youtube": "unverified",
@@ -1511,7 +1511,7 @@
       "title": "Advanced Data Structures",
       "level": "CS100_intermediate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20166",
       "public_materials": {
         "youtube": "unverified",
@@ -1537,7 +1537,7 @@
       "title": "Stanford Laptop Orchestra: Composition, Coding, Performance",
       "level": "CS100_intermediate",
       "track": "Computational Media",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20170",
       "public_materials": {
         "youtube": "unverified",
@@ -1557,7 +1557,7 @@
       "title": "Foundations of Computation Human Genomics",
       "level": "CS100_intermediate",
       "track": "Computational Biology",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20173A",
       "public_materials": {
         "youtube": "unverified",
@@ -1583,7 +1583,7 @@
       "title": "Human Centered Product Management",
       "level": "CS100_intermediate",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20177",
       "public_materials": {
         "youtube": "unverified",
@@ -1609,7 +1609,7 @@
       "title": "Digital Systems Architecture",
       "level": "CS100_intermediate",
       "track": "Architecture & Hardware",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20180",
       "public_materials": {
         "youtube": "unverified",
@@ -1635,7 +1635,7 @@
       "title": "Ethics, Public Policy, and Technological Change",
       "level": "CS100_intermediate",
       "track": "AI & Society",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20182",
       "public_materials": {
         "youtube": "unverified",
@@ -1661,7 +1661,7 @@
       "title": "Ethics, Public Policy, and Technological Change (WIM)",
       "level": "CS100_intermediate",
       "track": "AI & Society",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20182W",
       "public_materials": {
         "youtube": "unverified",
@@ -1687,7 +1687,7 @@
       "title": "Effective Leadership in High-Tech",
       "level": "CS100_intermediate",
       "track": "Leadership",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20183E",
       "public_materials": {
         "youtube": "unverified",
@@ -1707,7 +1707,7 @@
       "title": "How To Make a Moral Agent",
       "level": "CS100_intermediate",
       "track": "AI & Society",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20186",
       "public_materials": {
         "youtube": "unverified",
@@ -1733,7 +1733,7 @@
       "title": "iOS Application Development",
       "level": "CS100_intermediate",
       "track": "Software Engineering",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20193P",
       "public_materials": {
         "youtube": "unverified",
@@ -1769,7 +1769,7 @@
       "title": "Introduction to Python Programming",
       "level": "CS100_intermediate",
       "track": "Programming",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20193Q",
       "public_materials": {
         "youtube": "unverified",
@@ -1789,7 +1789,7 @@
       "title": "Thinking with AI: Strategies for Effective and Ethical Human-AI Collaboration",
       "level": "CS100_intermediate",
       "track": "AI & Society",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20193T",
       "public_materials": {
         "youtube": "unverified",
@@ -1815,7 +1815,7 @@
       "title": "Software Project",
       "level": "CS100_intermediate",
       "track": "Software Engineering",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20194",
       "public_materials": {
         "youtube": "unverified",
@@ -1846,7 +1846,7 @@
       "title": "Software Project (WIM)",
       "level": "CS100_intermediate",
       "track": "Software Engineering",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20194W",
       "public_materials": {
         "youtube": "unverified",
@@ -1877,7 +1877,7 @@
       "title": "Law for Computer Science Professionals",
       "level": "CS200_advanced_graduate",
       "track": "Law & Policy",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20202",
       "public_materials": {
         "youtube": "unverified",
@@ -1897,7 +1897,7 @@
       "title": "Continuous Mathematical Methods with an Emphasis on Machine Learning",
       "level": "CS200_advanced_graduate",
       "track": "Math & ML",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20205L",
       "public_materials": {
         "youtube": "unverified",
@@ -1923,7 +1923,7 @@
       "title": "Exploring Computational Journalism",
       "level": "CS200_advanced_graduate",
       "track": "Data Science",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20206",
       "public_materials": {
         "youtube": "unverified",
@@ -1943,7 +1943,7 @@
       "title": "Software Project Experience with Corporate Partner",
       "level": "CS200_advanced_graduate",
       "track": "Software Engineering",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20210A",
       "public_materials": {
         "youtube": "unverified",
@@ -1969,7 +1969,7 @@
       "title": "Software Project Experience with Corporate Partner",
       "level": "CS200_advanced_graduate",
       "track": "Software Engineering",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20210B",
       "public_materials": {
         "youtube": "unverified",
@@ -1995,7 +1995,7 @@
       "title": "Operating Systems Kernel Implementation Project",
       "level": "CS200_advanced_graduate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20212",
       "public_materials": {
         "youtube": "unverified",
@@ -2021,7 +2021,7 @@
       "title": "Hardware Accelerators for Machine Learning",
       "level": "CS200_advanced_graduate",
       "track": "Architecture & Hardware",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20217",
       "public_materials": {
         "youtube": "unverified",
@@ -2047,7 +2047,7 @@
       "title": "Researching, Presenting and Publishing Work in AI & Education",
       "level": "CS200_advanced_graduate",
       "track": "AI & Education",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20220",
       "public_materials": {
         "youtube": "unverified",
@@ -2115,7 +2115,7 @@
       "title": "Introduction to Robotics",
       "level": "CS200_advanced_graduate",
       "track": "Robotics",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20223A",
       "public_materials": {
         "youtube": "unverified",
@@ -2141,7 +2141,7 @@
       "title": "Apps With LLMs Inside",
       "level": "CS200_advanced_graduate",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20224G",
       "public_materials": {
         "youtube": "unverified",
@@ -2207,7 +2207,7 @@
       "title": "Deep Reinforcement Learning",
       "level": "CS200_advanced_graduate",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20224R",
       "public_materials": {
         "youtube": "unverified",
@@ -2233,7 +2233,7 @@
       "title": "Agentic AI",
       "level": "CS200_advanced_graduate",
       "track": "AI Agents",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20224V",
       "public_materials": {
         "youtube": "unverified",
@@ -2292,7 +2292,7 @@
       "title": "Experimental Robotics",
       "level": "CS200_advanced_graduate",
       "track": "Robotics",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20225A",
       "public_materials": {
         "youtube": "unverified",
@@ -2318,7 +2318,7 @@
       "title": "Robot Perception",
       "level": "CS200_advanced_graduate",
       "track": "Robotics",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20227A",
       "public_materials": {
         "youtube": "unverified",
@@ -2344,7 +2344,7 @@
       "title": "General Game Playing",
       "level": "CS200_advanced_graduate",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20227B",
       "public_materials": {
         "youtube": "unverified",
@@ -2430,7 +2430,7 @@
       "title": "Deep Learning for Computer Vision",
       "level": "CS200_advanced_graduate",
       "track": "Graphics & Vision",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20231N",
       "public_materials": {
         "youtube": "unverified",
@@ -2456,7 +2456,7 @@
       "title": "Geometric and Topological Data Analysis",
       "level": "CS200_advanced_graduate",
       "track": "Graphics & Vision",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20233",
       "public_materials": {
         "youtube": "unverified",
@@ -2482,7 +2482,7 @@
       "title": "Reinforcement Learning",
       "level": "CS200_advanced_graduate",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20234",
       "public_materials": {
         "youtube": "unverified",
@@ -2508,7 +2508,7 @@
       "title": "Computational Methods for Biomedical Image Analysis and Interpretation",
       "level": "CS200_advanced_graduate",
       "track": "Computational Biology",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20235",
       "public_materials": {
         "youtube": "unverified",
@@ -2534,7 +2534,7 @@
       "title": "Principles of Robot Autonomy I",
       "level": "CS200_advanced_graduate",
       "track": "Robotics",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20237A",
       "public_materials": {
         "youtube": "unverified",
@@ -2560,7 +2560,7 @@
       "title": "Decision Making under Uncertainty",
       "level": "CS200_advanced_graduate",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20238",
       "public_materials": {
         "youtube": "unverified",
@@ -2586,7 +2586,7 @@
       "title": "Validation of Safety Critical Systems",
       "level": "CS200_advanced_graduate",
       "track": "Safety & Verification",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20238V",
       "public_materials": {
         "youtube": "unverified",
@@ -2612,7 +2612,7 @@
       "title": "Advanced Topics in Operating Systems",
       "level": "CS200_advanced_graduate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20240",
       "public_materials": {
         "youtube": "unverified",
@@ -2638,7 +2638,7 @@
       "title": "Advanced Systems Laboratory, Accelerated",
       "level": "CS200_advanced_graduate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20240LX",
       "public_materials": {
         "youtube": "unverified",
@@ -2664,7 +2664,7 @@
       "title": "Embedded Systems Workshop",
       "level": "CS200_advanced_graduate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20241",
       "public_materials": {
         "youtube": "unverified",
@@ -2690,7 +2690,7 @@
       "title": "Programming Languages",
       "level": "CS200_advanced_graduate",
       "track": "Programming Languages",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20242",
       "public_materials": {
         "youtube": "unverified",
@@ -2721,7 +2721,7 @@
       "title": "Program Analysis and Optimizations",
       "level": "CS200_advanced_graduate",
       "track": "Compilers & PL",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20243",
       "public_materials": {
         "youtube": "unverified",
@@ -2747,7 +2747,7 @@
       "title": "Advanced Networking and Distributed Systems",
       "level": "CS200_advanced_graduate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20244C",
       "public_materials": {
         "youtube": "unverified",
@@ -2773,7 +2773,7 @@
       "title": "Mining Massive Data Sets",
       "level": "CS200_advanced_graduate",
       "track": "Data Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20246",
       "public_materials": {
         "youtube": "unverified",
@@ -2804,7 +2804,7 @@
       "title": "Design for Artificial Intelligence",
       "level": "CS200_advanced_graduate",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20247A",
       "public_materials": {
         "youtube": "unverified",
@@ -2830,7 +2830,7 @@
       "title": "Design for Behavior Change",
       "level": "CS200_advanced_graduate",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20247B",
       "public_materials": {
         "youtube": "unverified",
@@ -2856,7 +2856,7 @@
       "title": "Design for Play",
       "level": "CS200_advanced_graduate",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20247G",
       "public_materials": {
         "youtube": "unverified",
@@ -2882,7 +2882,7 @@
       "title": "Service Design",
       "level": "CS200_advanced_graduate",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20247S",
       "public_materials": {
         "youtube": "unverified",
@@ -2908,7 +2908,7 @@
       "title": "Computer Graphics: Rendering, Geometry, Image Manipulation",
       "level": "CS200_advanced_graduate",
       "track": "Graphics & Vision",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20248A",
       "public_materials": {
         "youtube": "unverified",
@@ -2934,7 +2934,7 @@
       "title": "Graphics: Animation and Simulation",
       "level": "CS200_advanced_graduate",
       "track": "Graphics & Vision",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20248B",
       "public_materials": {
         "youtube": "unverified",
@@ -2960,7 +2960,7 @@
       "title": "Cryptocurrencies and Blockchain Technologies",
       "level": "CS200_advanced_graduate",
       "track": "Security",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20251",
       "public_materials": {
         "youtube": "unverified",
@@ -2986,7 +2986,7 @@
       "title": "Computational Complexity",
       "level": "CS200_advanced_graduate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20254",
       "public_materials": {
         "youtube": "unverified",
@@ -3017,7 +3017,7 @@
       "title": "Computational Complexity II",
       "level": "CS200_advanced_graduate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20254B",
       "public_materials": {
         "youtube": "unverified",
@@ -3043,7 +3043,7 @@
       "title": "Introduction to Cryptography",
       "level": "CS200_advanced_graduate",
       "track": "Security",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20255",
       "public_materials": {
         "youtube": "unverified",
@@ -3069,7 +3069,7 @@
       "title": "Introduction to Automated Reasoning",
       "level": "CS200_advanced_graduate",
       "track": "Logic & Verification",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20257",
       "public_materials": {
         "youtube": "unverified",
@@ -3095,7 +3095,7 @@
       "title": "Quantum Cryptography",
       "level": "CS200_advanced_graduate",
       "track": "Security",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20258",
       "public_materials": {
         "youtube": "unverified",
@@ -3121,7 +3121,7 @@
       "title": "Quantum Computing",
       "level": "CS200_advanced_graduate",
       "track": "Quantum Computing",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20259Q",
       "public_materials": {
         "youtube": "unverified",
@@ -3147,7 +3147,7 @@
       "title": "Combinatorial Optimization",
       "level": "CS200_advanced_graduate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20261",
       "public_materials": {
         "youtube": "unverified",
@@ -3173,7 +3173,7 @@
       "title": "Randomized Algorithms and Probabilistic Analysis",
       "level": "CS200_advanced_graduate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20265",
       "public_materials": {
         "youtube": "unverified",
@@ -3199,7 +3199,7 @@
       "title": "Incentives in Computer Science",
       "level": "CS200_advanced_graduate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20269I",
       "public_materials": {
         "youtube": "unverified",
@@ -3225,7 +3225,7 @@
       "title": "Introduction to Biomedical Informatics Research Methodology",
       "level": "CS200_advanced_graduate",
       "track": "Computational Biology",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20272",
       "public_materials": {
         "youtube": "unverified",
@@ -3245,7 +3245,7 @@
       "title": "Deep Learning in Genomics and Biomedicine",
       "level": "CS200_advanced_graduate",
       "track": "Computational Biology",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20273B",
       "public_materials": {
         "youtube": "unverified",
@@ -3271,7 +3271,7 @@
       "title": "Cloud Computing for Biology and Healthcare",
       "level": "CS200_advanced_graduate",
       "track": "Computational Biology",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20273C",
       "public_materials": {
         "youtube": "unverified",
@@ -3297,7 +3297,7 @@
       "title": "Representations and Algorithms for Computational Molecular Biology",
       "level": "CS200_advanced_graduate",
       "track": "Computational Biology",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20274",
       "public_materials": {
         "youtube": "unverified",
@@ -3323,7 +3323,7 @@
       "title": "Symbolic Musical Information",
       "level": "CS200_advanced_graduate",
       "track": "Computational Media",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20275A",
       "public_materials": {
         "youtube": "unverified",
@@ -3343,7 +3343,7 @@
       "title": "Symbolic Musical Information",
       "level": "CS200_advanced_graduate",
       "track": "Computational Media",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20277",
       "public_materials": {
         "youtube": "unverified",
@@ -3363,7 +3363,7 @@
       "title": "Social Computing",
       "level": "CS200_advanced_graduate",
       "track": "Social Computing",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20278",
       "public_materials": {
         "youtube": "unverified",
@@ -3389,7 +3389,7 @@
       "title": "Computational Biology: Structure and Organization of Biomolecules and Cells",
       "level": "CS200_advanced_graduate",
       "track": "Computational Biology",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20279",
       "public_materials": {
         "youtube": "unverified",
@@ -3415,7 +3415,7 @@
       "title": "Ethics of AI",
       "level": "CS200_advanced_graduate",
       "track": "AI & Society",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20281",
       "public_materials": {
         "youtube": "unverified",
@@ -3441,7 +3441,7 @@
       "title": "Computer Systems Architecture",
       "level": "CS200_advanced_graduate",
       "track": "Architecture & Hardware",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20282",
       "public_materials": {
         "youtube": "unverified",
@@ -3472,7 +3472,7 @@
       "title": "Governing AI: Law, Policy, and Institutions",
       "level": "CS200_advanced_graduate",
       "track": "AI & Society",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20283",
       "public_materials": {
         "youtube": "unverified",
@@ -3498,7 +3498,7 @@
       "title": "Advanced Topics in Computer Vision and Biomedicine",
       "level": "CS200_advanced_graduate",
       "track": "Graphics & Vision",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20286",
       "public_materials": {
         "youtube": "unverified",
@@ -3524,7 +3524,7 @@
       "title": "Empowering Educators via Language Technology",
       "level": "CS200_advanced_graduate",
       "track": "AI & Education",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20293",
       "public_materials": {
         "youtube": "unverified",
@@ -3550,7 +3550,7 @@
       "title": "Software Engineering",
       "level": "CS200_advanced_graduate",
       "track": "Software Engineering",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20295",
       "public_materials": {
         "youtube": "unverified",
@@ -3576,7 +3576,7 @@
       "title": "Cloud Computing Seminar",
       "level": "CS300_special_topics",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20309A",
       "public_materials": {
         "youtube": "unverified",
@@ -3602,7 +3602,7 @@
       "title": "Deep Learning Alchemy",
       "level": "CS300_special_topics",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20312",
       "public_materials": {
         "youtube": "unverified",
@@ -3628,7 +3628,7 @@
       "title": "AI Measurement Science",
       "level": "CS300_special_topics",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20321M",
       "public_materials": {
         "youtube": "unverified",
@@ -3654,7 +3654,7 @@
       "title": "The AI Awakening",
       "level": "CS300_special_topics",
       "track": "AI & Society",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20323",
       "public_materials": {
         "youtube": "unverified",
@@ -3680,7 +3680,7 @@
       "title": "Machine Learning from Human Preferences",
       "level": "CS300_special_topics",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20329H",
       "public_materials": {
         "youtube": "unverified",
@@ -3706,7 +3706,7 @@
       "title": "Introduction to Machine Programming",
       "level": "CS300_special_topics",
       "track": "AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20329M",
       "public_materials": {
         "youtube": "unverified",
@@ -3732,7 +3732,7 @@
       "title": "Human Centered NLP",
       "level": "CS300_special_topics",
       "track": "NLP",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20329X",
       "public_materials": {
         "youtube": "unverified",
@@ -3758,7 +3758,7 @@
       "title": "Engineering AI Agents",
       "level": "CS300_special_topics",
       "track": "AI Agents",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20329Z",
       "public_materials": {
         "youtube": "unverified",
@@ -3784,7 +3784,7 @@
       "title": "Robots and Arts: Creative Applications and Projects",
       "level": "CS300_special_topics",
       "track": "Robotics",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20334",
       "public_materials": {
         "youtube": "unverified",
@@ -3836,7 +3836,7 @@
       "title": "Collaborative Robotics",
       "level": "CS300_special_topics",
       "track": "Robotics",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20339R",
       "public_materials": {
         "youtube": "unverified",
@@ -3862,7 +3862,7 @@
       "title": "Building for Digital Health",
       "level": "CS300_special_topics",
       "track": "Health Computing",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20342",
       "public_materials": {
         "youtube": "unverified",
@@ -3888,7 +3888,7 @@
       "title": "Domain-Specific Programming Models and Compilers",
       "level": "CS300_special_topics",
       "track": "Compilers & PL",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20343D",
       "public_materials": {
         "youtube": "unverified",
@@ -3914,7 +3914,7 @@
       "title": "Human-Computer Interaction: Foundations and Frontiers",
       "level": "CS300_special_topics",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20347",
       "public_materials": {
         "youtube": "unverified",
@@ -3940,7 +3940,7 @@
       "title": "Computer Graphics: Animation and Simulation",
       "level": "CS300_special_topics",
       "track": "Graphics & Vision",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20348C",
       "public_materials": {
         "youtube": "unverified",
@@ -3966,7 +3966,7 @@
       "title": "Visual Computing Systems",
       "level": "CS300_special_topics",
       "track": "Graphics & Vision",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20348K",
       "public_materials": {
         "youtube": "unverified",
@@ -3992,7 +3992,7 @@
       "title": "Cloud Computing Technology",
       "level": "CS300_special_topics",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20349D",
       "public_materials": {
         "youtube": "unverified",
@@ -4018,7 +4018,7 @@
       "title": "Efficient ML Infrastructure at Scale",
       "level": "CS300_special_topics",
       "track": "Systems for AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20349E",
       "public_materials": {
         "youtube": "unverified",
@@ -4044,7 +4044,7 @@
       "title": "Fabric Architectures for AI Systems",
       "level": "CS300_special_topics",
       "track": "Architecture & Hardware",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20349F",
       "public_materials": {
         "youtube": "unverified",
@@ -4070,7 +4070,7 @@
       "title": "Software Techniques for Emerging Hardware Platforms",
       "level": "CS300_special_topics",
       "track": "Architecture & Hardware",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20349H",
       "public_materials": {
         "youtube": "unverified",
@@ -4096,7 +4096,7 @@
       "title": "Privacy-Preserving Systems",
       "level": "CS300_special_topics",
       "track": "Security",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20350S",
       "public_materials": {
         "youtube": "unverified",
@@ -4122,7 +4122,7 @@
       "title": "Advanced Topics in Cryptography",
       "level": "CS300_special_topics",
       "track": "Security",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20355",
       "public_materials": {
         "youtube": "unverified",
@@ -4148,7 +4148,7 @@
       "title": "Topics in Computer and Network Security",
       "level": "CS300_special_topics",
       "track": "Security",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20356",
       "public_materials": {
         "youtube": "unverified",
@@ -4174,7 +4174,7 @@
       "title": "Formal Methods for Computer Systems",
       "level": "CS300_special_topics",
       "track": "Logic & Verification",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20357S",
       "public_materials": {
         "youtube": "unverified",
@@ -4200,7 +4200,7 @@
       "title": "Simplicity and Complexity in Economic Theory",
       "level": "CS300_special_topics",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20360",
       "public_materials": {
         "youtube": "unverified",
@@ -4220,7 +4220,7 @@
       "title": "Engineering Design Optimization",
       "level": "CS300_special_topics",
       "track": "Optimization",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20361",
       "public_materials": {
         "youtube": "unverified",
@@ -4246,7 +4246,7 @@
       "title": "AI for Precision Medicine and Psychiatric Disorders",
       "level": "CS300_special_topics",
       "track": "Health AI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20372",
       "public_materials": {
         "youtube": "unverified",
@@ -4272,7 +4272,7 @@
       "title": "Large-Scale Neural Net Modeling for Neuroscience",
       "level": "CS300_special_topics",
       "track": "AI & Neuroscience",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20375",
       "public_materials": {
         "youtube": "unverified",
@@ -4298,7 +4298,7 @@
       "title": "Designing Serious Games",
       "level": "CS300_special_topics",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20377G",
       "public_materials": {
         "youtube": "unverified",
@@ -4324,7 +4324,7 @@
       "title": "Read, Write, Play",
       "level": "CS300_special_topics",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20377P",
       "public_materials": {
         "youtube": "unverified",
@@ -4350,7 +4350,7 @@
       "title": "Designing for Accessibility",
       "level": "CS300_special_topics",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20377Q",
       "public_materials": {
         "youtube": "unverified",
@@ -4376,7 +4376,7 @@
       "title": "Understanding Users",
       "level": "CS300_special_topics",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "NOT_YET_VERIFIED",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20377U",
       "public_materials": {
         "youtube": "unverified",

@@ -3,18 +3,18 @@
   "files": [
     {
       "path": "AGENTS.md",
-      "bytes": 8778,
-      "sha256": "6843af3e947791fafaaf142ee17cc5ab1a261140ec4fa456fcbb77f62d19b2e2"
+      "bytes": 9245,
+      "sha256": "438aa1c7a49a1077c39288111ba7648dc629e90a3359df566b472140d71a3afa"
     },
     {
       "path": "CS25_interactive_v0.4.html",
-      "bytes": 49978,
-      "sha256": "9f60ed376cc68ddae3eeb9e0df120e18c807e9e9460eedc3c13c0664c837eb52"
+      "bytes": 49896,
+      "sha256": "ee1ee515147f812ee48672b027eb896c3270ab3900452741bbf4e724b4a4996b"
     },
     {
       "path": "concepts.json",
-      "bytes": 43241,
-      "sha256": "1710e2be339eecef72970b43396ccdd038aeb332271d388208e098176683ff42"
+      "bytes": 43115,
+      "sha256": "f39bf2dc08780718b7e174c98487a3e529ad295e2731bcc534d3e1fb94eab62c"
     },
     {
       "path": "course_ir.json",

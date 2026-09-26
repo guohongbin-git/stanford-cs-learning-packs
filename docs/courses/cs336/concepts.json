@@ -5,7 +5,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "对 token 序列建模并预测其概率分布的模型；在本课中主要指 autoregressive Transformer LM。",
     "why": "它是整门课从数据、训练、系统、评测到对齐的共同对象。",
-    "failure_conditions": "把“语言模型”当成纯 API，会掩盖 tokenizer、数据、训练和推理系统的真实约束。",
+    "failure_conditions": [
+      "把“语言模型”当成纯 API，会掩盖 tokenizer、数据、训练和推理系统的真实约束。"
+    ],
     "example": "从文本 token 序列预测下一个 token，并用同一模型做生成。",
     "relations": [
       {
@@ -37,7 +39,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "把原始文本编码成离散 token id 序列的过程。",
     "why": "它决定模型看到的基本符号单位、序列长度和部分参数/计算成本。",
-    "failure_conditions": "不同 tokenizer/normalization 不一致会造成训练与推理错位。",
+    "failure_conditions": [
+      "不同 tokenizer/normalization 不一致会造成训练与推理错位。"
+    ],
     "example": "比较两个词表在中文、代码和 emoji 上的 token 长度。",
     "relations": [
       {
@@ -69,14 +73,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "一种迭代合并高频符号对以构建子词词表的 tokenization 方法。",
     "why": "它提供可实现的压缩率与开放词表折中。",
-    "failure_conditions": "训练语料偏差会让合并规则对某些语言/领域效率很差。",
+    "failure_conditions": [
+      "训练语料偏差会让合并规则对某些语言/领域效率很差。"
+    ],
     "example": "从 byte 序列开始逐步合并高频 pair。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Tokenization"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -96,14 +97,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "tokenizer 可输出的离散符号集合。",
     "why": "词表大小同时影响序列压缩率、embedding/output 参数和长尾表示。",
-    "failure_conditions": "盲目增大词表可能增加参数而没有带来有效压缩。",
+    "failure_conditions": [
+      "盲目增大词表可能增加参数而没有带来有效压缩。"
+    ],
     "example": "32K 与 50K vocab 在同一 corpus 上比较 tokens/character。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Tokenization"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -123,20 +121,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "本课用于张量计算、自动微分与模型训练的主要深度学习框架。",
     "why": "是从数学定义走到可执行训练代码的基础工具。",
-    "failure_conditions": "依赖隐式 broadcasting、dtype/device 或 graph 行为可能产生静默错误。",
-    "example": "用 nn.Module 定义一层 Transformer 并运行 forward/backward。",
-    "relations": [
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Autograd"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Training Loop"
-      }
+    "failure_conditions": [
+      "依赖隐式 broadcasting、dtype/device 或 graph 行为可能产生静默错误。"
     ],
+    "example": "用 nn.Module 定义一层 Transformer 并运行 forward/backward。",
+    "relations": [],
     "weeks": [
       "w1"
     ],
@@ -150,18 +139,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "根据计算图自动计算梯度的机制。",
     "why": "让训练代码能够从 loss 自动获得参数梯度。",
-    "failure_conditions": "in-place 操作、detach 或错误的 reduction 可破坏梯度。",
+    "failure_conditions": [
+      "in-place 操作、detach 或错误的 reduction 可破坏梯度。"
+    ],
     "example": "loss.backward() 后检查关键参数 gradient shape 与 norm。",
     "relations": [
       {
         "relation": "prerequisite",
         "kind": "prerequisite",
         "target": "PyTorch"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Training Loop"
       }
     ],
     "weeks": [
@@ -177,7 +163,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "重复执行 batch 读取、forward、loss、backward、optimizer update 与 logging 的训练闭环。",
     "why": "是从模型定义到可学习系统的核心程序结构。",
-    "failure_conditions": "数据/label shift、梯度累积、mixed precision 或 checkpoint 错误都可能让 loss 看似正常但训练错误。",
+    "failure_conditions": [
+      "数据/label shift、梯度累积、mixed precision 或 checkpoint 错误都可能让 loss 看似正常但训练错误。"
+    ],
     "example": "每 N step 记录 loss、tokens/s、grad norm 与 checkpoint。",
     "relations": [
       {
@@ -213,7 +201,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "语言模型常用的 token-level negative log-likelihood 训练目标。",
     "why": "把模型概率分布和目标 token 连接为可优化的标量 loss。",
-    "failure_conditions": "target shift 或 masking 错误会让模型优化错误任务。",
+    "failure_conditions": [
+      "target shift 或 masking 错误会让模型优化错误任务。"
+    ],
     "example": "预测位置 t+1 时只用位置 ≤t 的上下文并计算目标 token 的 log probability。",
     "relations": [
       {
@@ -240,14 +230,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "常用的自适应一阶优化器，带 decoupled weight decay。",
     "why": "它决定参数更新动态，是最小 LM 训练实现的一部分。",
-    "failure_conditions": "学习率、betas、weight decay 与参数分组不当会导致不稳定或欠拟合。",
+    "failure_conditions": [
+      "学习率、betas、weight decay 与参数分组不当会导致不稳定或欠拟合。"
+    ],
     "example": "对 normalization/bias 与 weight matrix 使用不同 decay 策略。",
     "relations": [
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Training Loop"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -267,7 +254,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "用参数量、token 数、FLOPs、显存和 wall-clock 对训练设计进行成本核算。",
     "why": "让“能不能训、要多少钱、哪里贵”变成可计算问题。",
-    "failure_conditions": "只数参数不数 activation/optimizer state；只算理论 FLOPs 不看利用率。",
+    "failure_conditions": [
+      "只数参数不数 activation/optimizer state；只算理论 FLOPs 不看利用率。"
+    ],
     "example": "预估 100M 模型在给定 batch/sequence 下单 step 资源。",
     "relations": [
       {
@@ -279,11 +268,6 @@
         "relation": "related_to",
         "kind": "related_to",
         "target": "Compute Budget"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Profiling"
       }
     ],
     "weeks": [
@@ -299,14 +283,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "浮点运算次数的近似计算量指标。",
     "why": "是跨模型规模估算训练成本和 scaling experiment 的共同货币。",
-    "failure_conditions": "FLOPs 相同不代表 wall-clock 相同；memory/communication 可主导。",
+    "failure_conditions": [
+      "FLOPs 相同不代表 wall-clock 相同；memory/communication 可主导。"
+    ],
     "example": "估算 dense Transformer 一次 forward/backward 的数量级。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Resource Accounting"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -326,20 +307,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "可用于训练、实验或 rollout 的总计算资源约束。",
     "why": "课程大量决策本质上是在预算下分配模型、数据、并行和实验。",
-    "failure_conditions": "忽略失败实验、评测、数据处理和推理 rollout 会低估真实预算。",
-    "example": "固定 H100-hours 下选择 pilot run 和最终训练规模。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "FLOPs"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Compute-Optimal Training"
-      }
+    "failure_conditions": [
+      "忽略失败实验、评测、数据处理和推理 rollout 会低估真实预算。"
     ],
+    "example": "固定 H100-hours 下选择 pilot run 和最终训练规模。",
+    "relations": [],
     "weeks": [
       "w1",
       "w4",
@@ -361,14 +333,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "基于 attention、MLP、residual 和 normalization 堆叠的序列建模架构。",
     "why": "是本课从零构建和优化的核心模型。",
-    "failure_conditions": "只会调用封装层而不理解 shape/计算路径，会让后续系统优化失去依据。",
+    "failure_conditions": [
+      "只会调用封装层而不理解 shape/计算路径，会让后续系统优化失去依据。"
+    ],
     "example": "追踪 [batch, seq, hidden] 张量穿过一层 decoder block。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Language Model"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -393,14 +362,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "用 query/key/value 相似度在序列位置之间聚合信息的机制。",
     "why": "它决定 token 间的信息交互，也是训练和推理的重要成本中心。",
-    "failure_conditions": "忽略 causal mask、shape、softmax 稳定性或内存布局会产生错误/低效。",
+    "failure_conditions": [
+      "忽略 causal mask、shape、softmax 稳定性或内存布局会产生错误/低效。"
+    ],
     "example": "计算 QK^T、mask、softmax，再对 V 加权。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Transformer"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -425,15 +391,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "阻止位置看到未来 token 的 attention mask。",
     "why": "保证 autoregressive LM 的训练目标与生成条件一致。",
-    "failure_conditions": "mask 方向或广播维度错会产生未来信息泄漏。",
-    "example": "位置 t 只能 attend 到 ≤t 的 token。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Self-Attention"
-      }
+    "failure_conditions": [
+      "mask 方向或广播维度错会产生未来信息泄漏。"
     ],
+    "example": "位置 t 只能 attend 到 ≤t 的 token。",
+    "relations": [],
     "weeks": [
       "w2"
     ],
@@ -447,7 +409,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "把相对位置信息通过旋转方式注入 query/key 的位置编码方法。",
     "why": "现代 decoder-only LM 常用它处理 token 顺序和相对位置。",
-    "failure_conditions": "超长外推并非自动可靠，频率/缩放处理会影响行为。",
+    "failure_conditions": [
+      "超长外推并非自动可靠，频率/缩放处理会影响行为。"
+    ],
     "example": "对每个 head 的 q/k 维度成对旋转。",
     "relations": [
       {
@@ -469,7 +433,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "在网络层中控制激活尺度的归一化机制，如 RMSNorm/LayerNorm 类方法。",
     "why": "影响深层网络训练稳定性。",
-    "failure_conditions": "placement、epsilon、dtype 不当会造成数值差异。",
+    "failure_conditions": [
+      "placement、epsilon、dtype 不当会造成数值差异。"
+    ],
     "example": "比较 pre-norm 与 post-norm block 的梯度稳定性。",
     "relations": [
       {
@@ -491,14 +457,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "使用 gated activation 的 Transformer feed-forward 变体。",
     "why": "展示现代 LM 的 MLP block 不是简单两层 ReLU，而是结构化容量选择。",
-    "failure_conditions": "hidden expansion 与参数预算计算错误会破坏公平比较。",
+    "failure_conditions": [
+      "hidden expansion 与参数预算计算错误会破坏公平比较。"
+    ],
     "example": "将输入投影到 gate/value 分支后相乘再投影回 hidden size。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Transformer"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -518,14 +481,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "训练前或训练过程中人为设定的模型/优化配置，如 width、depth、LR、batch、context。",
     "why": "这些选择控制容量、稳定性和资源使用。",
-    "failure_conditions": "一次改太多变量会让实验无法归因。",
+    "failure_conditions": [
+      "一次改太多变量会让实验无法归因。"
+    ],
     "example": "固定 compute 下比较不同 depth/width 配置。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Ablation"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -545,7 +505,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "由多个专家子网络组成、每个 token 只激活部分专家的稀疏模型结构。",
     "why": "可增加总参数容量而控制每 token 激活计算。",
-    "failure_conditions": "路由不均、专家塌缩和通信成本可能抵消理论收益。",
+    "failure_conditions": [
+      "路由不均、专家塌缩和通信成本可能抵消理论收益。"
+    ],
     "example": "top-k router 将 token 分配给少数 FFN experts。",
     "relations": [
       {
@@ -577,14 +539,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "MoE 中根据 token 表示选择专家的模块。",
     "why": "它决定稀疏计算路径与专家使用分布。",
-    "failure_conditions": "router 偏置会让少数专家过载、其他专家闲置。",
+    "failure_conditions": [
+      "router 偏置会让少数专家过载、其他专家闲置。"
+    ],
     "example": "对专家 logits 做 top-k 选择并产生 gating weight。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Mixture of Experts"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -604,15 +563,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "每个输入只激活模型参数的一部分。",
     "why": "是 MoE 用更大总参数但控制 active compute 的核心。",
-    "failure_conditions": "稀疏并不等于免费；路由/通信和硬件利用仍有成本。",
-    "example": "总计 8 个专家但每个 token 只用 2 个。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Mixture of Experts"
-      }
+    "failure_conditions": [
+      "稀疏并不等于免费；路由/通信和硬件利用仍有成本。"
     ],
+    "example": "总计 8 个专家但每个 token 只用 2 个。",
+    "relations": [],
     "weeks": [
       "w2"
     ],
@@ -626,14 +581,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "让 MoE token 分配不过度集中到少数专家的机制。",
     "why": "决定硬件利用率和专家学习机会。",
-    "failure_conditions": "只优化任务 loss 可能让 router 形成严重热点。",
+    "failure_conditions": [
+      "只优化任务 loss 可能让 router 形成严重热点。"
+    ],
     "example": "监控各 expert token count 并使用辅助约束。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Router"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -653,7 +605,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "模型中可训练参数的数量。",
     "why": "是容量和存储的基础指标，但不等于运行成本。",
-    "failure_conditions": "用总参数量代替 active parameters / FLOPs 会误判 MoE 等模型。",
+    "failure_conditions": [
+      "用总参数量代替 active parameters / FLOPs 会误判 MoE 等模型。"
+    ],
     "example": "分别报告 MoE total parameters 与 active parameters/token。",
     "relations": [
       {
@@ -680,18 +634,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "面向大规模并行数值计算的处理器，是现代 LM 训练/推理的主要硬件。",
     "why": "模型性能必须映射到 GPU 的计算与内存结构才能理解实际速度。",
-    "failure_conditions": "把 GPU 当成“更快 CPU”会忽略并行和 memory hierarchy。",
+    "failure_conditions": [
+      "把 GPU 当成“更快 CPU”会忽略并行和 memory hierarchy。"
+    ],
     "example": "矩阵乘法把大量线程映射到 GPU SM 上执行。",
     "relations": [
       {
         "relation": "related_to",
         "kind": "related_to",
         "target": "Memory Hierarchy"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Kernel"
       }
     ],
     "weeks": [
@@ -707,7 +658,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "不同容量/带宽/延迟的 GPU 存储层次。",
     "why": "很多 LM kernel 的瓶颈是数据移动而不是算术。",
-    "failure_conditions": "只看 HBM 容量，不看 shared/register/locality，会错过主要优化空间。",
+    "failure_conditions": [
+      "只看 HBM 容量，不看 shared/register/locality，会错过主要优化空间。"
+    ],
     "example": "让 tile 在更快的片上存储重复使用，减少 HBM round-trip。",
     "relations": [
       {
@@ -734,45 +687,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "GPU 的高带宽外部显存。",
     "why": "容量与带宽决定大张量读写和模型状态可驻留规模。",
-    "failure_conditions": "HBM 很快但相对片上存储仍昂贵；频繁往返会限制 kernel。",
+    "failure_conditions": [
+      "HBM 很快但相对片上存储仍昂贵；频繁往返会限制 kernel。"
+    ],
     "example": "attention 中间矩阵写回 HBM 会造成巨大 traffic。",
     "relations": [
       {
         "relation": "related_to",
         "kind": "related_to",
-        "target": "Memory Hierarchy"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
         "target": "KV Cache"
-      }
-    ],
-    "weeks": [
-      "w3"
-    ],
-    "source_weeks": [
-      "w3"
-    ]
-  },
-  "Kernel": {
-    "id": "Kernel",
-    "type": "Concept",
-    "status": "TEACHING_RECONSTRUCTION",
-    "definition": "一次提交到 GPU 执行的并行程序单元。",
-    "why": "高性能 LM 系统由大量 kernel 的计算、数据移动与同步组成。",
-    "failure_conditions": "kernel launch、shape specialization、同步成本常被高层代码掩盖。",
-    "example": "为 softmax 或 fused attention 编写专用 GPU kernel。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "GPU"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Triton"
       }
     ],
     "weeks": [
@@ -788,18 +711,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "单位数据搬运所完成的计算量。",
     "why": "帮助判断 kernel 更可能受算力还是内存带宽限制。",
-    "failure_conditions": "只用理论 FLOPs/bytes 而不考虑缓存和真实 traffic 会误判。",
+    "failure_conditions": [
+      "只用理论 FLOPs/bytes 而不考虑缓存和真实 traffic 会误判。"
+    ],
     "example": "比较 matmul 与 elementwise operation 的算术强度。",
     "relations": [
       {
         "relation": "related_to",
         "kind": "related_to",
         "target": "Roofline Model"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Memory Hierarchy"
       }
     ],
     "weeks": [
@@ -815,14 +735,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "用峰值算力、内存带宽和 arithmetic intensity 估算性能上界的模型。",
     "why": "提供定位 compute-bound vs memory-bound 的直觉。",
-    "failure_conditions": "它是上界模型，不替代真实 profiler。",
+    "failure_conditions": [
+      "它是上界模型，不替代真实 profiler。"
+    ],
     "example": "把 measured FLOP/s 与 arithmetic intensity 放到 roofline 图上。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Arithmetic Intensity"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -842,18 +759,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "用于编写高性能 GPU kernel 的语言/编译栈。",
     "why": "课程让学生用更接近硬件的方式实现 attention 等关键操作。",
-    "failure_conditions": "正确性、numerical stability、layout 与 autotuning 都可能出错。",
+    "failure_conditions": [
+      "正确性、numerical stability、layout 与 autotuning 都可能出错。"
+    ],
     "example": "用 Triton 实现 tiled matrix operation / FlashAttention2 核心。",
     "relations": [
       {
         "relation": "prerequisite",
         "kind": "prerequisite",
-        "target": "Kernel"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Kernel Fusion"
+        "target": "GPU Kernel"
       }
     ],
     "weeks": [
@@ -869,7 +783,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "把多个操作合并进更少 kernel，以减少中间内存 traffic 和 launch overhead。",
     "why": "是深度学习系统性能优化的常见路径。",
-    "failure_conditions": "融合过度可能增加寄存器压力、降低 occupancy。",
+    "failure_conditions": [
+      "融合过度可能增加寄存器压力、降低 occupancy。"
+    ],
     "example": "把 normalization + elementwise operations 合并执行。",
     "relations": [
       {
@@ -896,14 +812,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "通过 IO-aware tiling 避免显式存储完整 attention score matrix 的高效 attention 算法族。",
     "why": "它把 attention 的理论公式映射成更高效的内存访问。",
-    "failure_conditions": "块大小、mask、数值稳定与 backward 实现错误会导致结果不等价。",
+    "failure_conditions": [
+      "块大小、mask、数值稳定与 backward 实现错误会导致结果不等价。"
+    ],
     "example": "在片上分块计算 softmax attention，减少 HBM 读写。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Self-Attention"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -928,7 +841,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "测量程序各阶段的时间、内存和硬件行为。",
     "why": "性能优化必须从证据出发，而不是凭感觉。",
-    "failure_conditions": "microbenchmark 不能代表端到端；同步与 warmup 会扭曲测量。",
+    "failure_conditions": [
+      "microbenchmark 不能代表端到端；同步与 warmup 会扭曲测量。"
+    ],
     "example": "分别记录 kernel time、memory traffic 和 end-to-end tokens/s。",
     "relations": [
       {
@@ -960,18 +875,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "单位时间处理的 token / request 数量。",
     "why": "训练和服务都需要衡量总体处理能力。",
-    "failure_conditions": "只追吞吐可能牺牲单请求 latency 或改变 batch 行为。",
+    "failure_conditions": [
+      "只追吞吐可能牺牲单请求 latency 或改变 batch 行为。"
+    ],
     "example": "比较不同 batch size 下 tokens/s。",
     "relations": [
       {
         "relation": "opposes",
         "kind": "opposes",
         "target": "Latency"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Batching"
       }
     ],
     "weeks": [
@@ -989,15 +901,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "单个操作或请求从开始到完成的时间。",
     "why": "交互式推理和 kernel 调优都需要关注响应时间。",
-    "failure_conditions": "均值会掩盖 tail latency；同步方式会影响测量。",
-    "example": "报告 time-to-first-token 与 token decode latency。",
-    "relations": [
-      {
-        "relation": "opposes",
-        "kind": "opposes",
-        "target": "Throughput"
-      }
+    "failure_conditions": [
+      "均值会掩盖 tail latency；同步方式会影响测量。"
     ],
+    "example": "报告 time-to-first-token 与 token decode latency。",
+    "relations": [],
     "weeks": [
       "w3",
       "w5"
@@ -1013,7 +921,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "跨多个 GPU/节点协同完成训练的系统。",
     "why": "当模型/数据规模超过单卡时必须分配计算、状态与通信。",
-    "failure_conditions": "网络拓扑、collective、checkpoint 与 failure handling 会成为新约束。",
+    "failure_conditions": [
+      "网络拓扑、collective、checkpoint 与 failure handling 会成为新约束。"
+    ],
     "example": "8 张 GPU 上以 FSDP 训练同一 LM。",
     "relations": [
       {
@@ -1025,11 +935,6 @@
         "relation": "related_to",
         "kind": "related_to",
         "target": "FSDP"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Communication Overhead"
       }
     ],
     "weeks": [
@@ -1045,14 +950,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "每个 worker 处理不同数据 microbatch 并同步梯度/参数。",
     "why": "最直接扩展 batch 处理能力。",
-    "failure_conditions": "模型必须能放入单 worker；通信会限制扩展效率。",
+    "failure_conditions": [
+      "模型必须能放入单 worker；通信会限制扩展效率。"
+    ],
     "example": "8 卡各跑不同 batch 后 all-reduce gradients。",
     "relations": [
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "DDP"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -1072,7 +974,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "复制完整模型到每个 worker 的分布式数据并行方式。",
     "why": "实现简单、性能成熟，是分布式训练基线。",
-    "failure_conditions": "模型/optimizer state 被每卡复制，显存压力高。",
+    "failure_conditions": [
+      "模型/optimizer state 被每卡复制，显存压力高。"
+    ],
     "example": "每卡持有全量参数，backward 时 bucketed all-reduce。",
     "relations": [
       {
@@ -1099,18 +1003,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "把参数、梯度和 optimizer state 分片到多个 worker 的分布式训练策略。",
     "why": "降低单卡模型状态显存，支持更大模型。",
-    "failure_conditions": "频繁 gather/shard 可能增加通信，配置错误影响性能和 checkpoint。",
+    "failure_conditions": [
+      "频繁 gather/shard 可能增加通信，配置错误影响性能和 checkpoint。"
+    ],
     "example": "forward 前按需 all-gather 参数，使用后重新 shard。",
     "relations": [
       {
         "relation": "related_to",
         "kind": "related_to",
         "target": "Parameter Sharding"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Communication Overhead"
       }
     ],
     "weeks": [
@@ -1126,15 +1027,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "将模型状态按设备切分保存。",
     "why": "直接降低单设备驻留参数/优化器状态。",
-    "failure_conditions": "shard 粒度不合理会增加通信和复杂度。",
-    "example": "不同 rank 只长期保存参数子集。",
-    "relations": [
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "FSDP"
-      }
+    "failure_conditions": [
+      "shard 粒度不合理会增加通信和复杂度。"
     ],
+    "example": "不同 rank 只长期保存参数子集。",
+    "relations": [],
     "weeks": [
       "w4"
     ],
@@ -1148,7 +1045,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "把单个大算子的 tensor 维度切到多个设备并行计算。",
     "why": "单层本身无法放入单设备或需要更细粒度扩展时使用。",
-    "failure_conditions": "每层都可能产生高频通信，对互连要求高。",
+    "failure_conditions": [
+      "每层都可能产生高频通信，对互连要求高。"
+    ],
     "example": "把大矩阵的列/行分片到多卡。",
     "relations": [
       {
@@ -1175,7 +1074,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "把不同网络层分配到不同设备并以 microbatch 流水执行。",
     "why": "提供按层切分模型的另一条路径。",
-    "failure_conditions": "pipeline bubble、stage 不均衡与激活传输会降低效率。",
+    "failure_conditions": [
+      "pipeline bubble、stage 不均衡与激活传输会降低效率。"
+    ],
     "example": "将前半 Transformer blocks 与后半 blocks 分到不同 GPU。",
     "relations": [
       {
@@ -1197,18 +1098,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "多个 worker 对局部梯度进行聚合以保持一致更新。",
     "why": "是 data parallel 正确性的核心同步点。",
-    "failure_conditions": "同步时机/scale 错误会让有效 learning rate 变化或训练发散。",
+    "failure_conditions": [
+      "同步时机/scale 错误会让有效 learning rate 变化或训练发散。"
+    ],
     "example": "用 all-reduce 求和/平均每卡梯度。",
     "relations": [
       {
         "relation": "related_to",
         "kind": "related_to",
         "target": "All-Reduce"
-      },
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "DDP"
       }
     ],
     "weeks": [
@@ -1224,20 +1122,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "把多个设备上的值聚合并把结果返回每个参与者的 collective。",
     "why": "常用于梯度同步。",
-    "failure_conditions": "消息大小、拓扑、重叠策略会影响扩展效率。",
-    "example": "对 gradient bucket 做 sum/average。",
-    "relations": [
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Gradient Synchronization"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Communication Overhead"
-      }
+    "failure_conditions": [
+      "消息大小、拓扑、重叠策略会影响扩展效率。"
     ],
+    "example": "对 gradient bucket 做 sum/average。",
+    "relations": [],
     "weeks": [
       "w4"
     ],
@@ -1251,18 +1140,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "设备间传输和同步相对于计算引入的时间成本。",
     "why": "决定多 GPU 是否真正获得加速。",
-    "failure_conditions": "只看单卡 kernel 性能会忽略整个分布式系统瓶颈。",
+    "failure_conditions": [
+      "只看单卡 kernel 性能会忽略整个分布式系统瓶颈。"
+    ],
     "example": "计算通信比随模型、batch、parallelism 改变。",
     "relations": [
       {
         "relation": "related_to",
         "kind": "related_to",
         "target": "Distributed Training"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Load Balancing"
       }
     ],
     "weeks": [
@@ -1278,7 +1164,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "描述 loss/性能随模型规模、数据量或计算量变化的经验规律。",
     "why": "帮助用小实验推断更大训练规模的趋势和资源分配。",
-    "failure_conditions": "外推区间过大、数据/架构变化会让拟合失效。",
+    "failure_conditions": [
+      "外推区间过大、数据/架构变化会让拟合失效。"
+    ],
     "example": "对多个 pilot run 拟合 loss 与 compute 的 power law。",
     "relations": [
       {
@@ -1312,15 +1200,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "形如 y=a x^b + c 的经验尺度关系。",
     "why": "在 LM scaling 中常用于描述 loss 随资源增长的平滑趋势。",
-    "failure_conditions": "有限区间拟合不保证长期成立。",
-    "example": "对 log-log 数据做拟合并检查 residual。",
-    "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Scaling Law"
-      }
+    "failure_conditions": [
+      "有限区间拟合不保证长期成立。"
     ],
+    "example": "对 log-log 数据做拟合并检查 residual。",
+    "relations": [],
     "weeks": [
       "w5"
     ],
@@ -1334,14 +1218,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "在固定 compute 下选择模型规模与训练 token 数以获得更优结果的思想。",
     "why": "把“更大模型”改写为预算约束下的资源配置问题。",
-    "failure_conditions": "拟合错误或数据质量变化会改变最优点。",
+    "failure_conditions": [
+      "拟合错误或数据质量变化会改变最优点。"
+    ],
     "example": "在 1e19 FLOP 预算下预测模型规模与训练 token。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Scaling Law"
-      },
       {
         "relation": "prerequisite",
         "kind": "prerequisite",
@@ -1366,14 +1247,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "在相同训练计算量下比较不同模型/数据配置的实验设计。",
     "why": "控制 compute 后才能更公平比较 scale allocation。",
-    "failure_conditions": "训练效率或硬件实现差异会让理论 FLOPs 与实际成本不一致。",
+    "failure_conditions": [
+      "训练效率或硬件实现差异会让理论 FLOPs 与实际成本不一致。"
+    ],
     "example": "固定 FLOPs，扫 model size 与 token count。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Compute-Optimal Training"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -1393,7 +1271,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "使用训练好的 LM 处理 prompt 并生成输出的执行过程。",
     "why": "它有不同于训练的内存、batching 与 latency 约束。",
-    "failure_conditions": "照搬训练优化策略并不一定适合服务。",
+    "failure_conditions": [
+      "照搬训练优化策略并不一定适合服务。"
+    ],
     "example": "对在线请求分别优化 TTFT 与 decode throughput。",
     "relations": [
       {
@@ -1425,14 +1305,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "推理时一次性处理输入 prompt 并构建初始 KV cache 的阶段。",
     "why": "通常具有较高并行度和不同于 decode 的计算形态。",
-    "failure_conditions": "长 prompt 会放大 prefill latency 与 cache 占用。",
+    "failure_conditions": [
+      "长 prompt 会放大 prefill latency 与 cache 占用。"
+    ],
     "example": "一次 forward 处理 8K 输入 token。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Inference"
-      },
       {
         "relation": "opposes",
         "kind": "opposes",
@@ -1452,20 +1329,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "在自回归生成中逐 token 追加输出的阶段。",
     "why": "每一步只新增少量计算，但频繁读取 KV cache，常更受 memory/latency 约束。",
-    "failure_conditions": "把 decode 当普通大矩阵训练 workload 会误判性能。",
-    "example": "连续生成 256 token，每步读取已有 cache。",
-    "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Inference"
-      },
-      {
-        "relation": "opposes",
-        "kind": "opposes",
-        "target": "Prefill"
-      }
+    "failure_conditions": [
+      "把 decode 当普通大矩阵训练 workload 会误判性能。"
     ],
+    "example": "连续生成 256 token，每步读取已有 cache。",
+    "relations": [],
     "weeks": [
       "w5"
     ],
@@ -1479,19 +1347,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "缓存历史 token 的 attention key/value 以避免生成时重复计算。",
     "why": "显著减少 decode 重算，但占用随 batch、sequence、layers 增长的显存。",
-    "failure_conditions": "长 context/高并发可让 cache 成为主内存瓶颈。",
+    "failure_conditions": [
+      "长 context/高并发可让 cache 成为主内存瓶颈。"
+    ],
     "example": "服务系统为每个活跃 sequence 保存多层 K/V。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Self-Attention"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "HBM"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -1511,18 +1371,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "从模型输出分布选择下一个 token 的生成策略。",
     "why": "temperature/top-p 等会改变生成多样性与 rollout 分布。",
-    "failure_conditions": "评测或 RL 中不固定 sampling 配置会改变结果。",
+    "failure_conditions": [
+      "评测或 RL 中不固定 sampling 配置会改变结果。"
+    ],
     "example": "使用 temperature 0.7 与 top-p 0.9 生成多个推理轨迹。",
     "relations": [
       {
         "relation": "related_to",
         "kind": "related_to",
         "target": "Inference"
-      },
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "On-Policy Data"
       }
     ],
     "weeks": [
@@ -1538,7 +1395,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "把多个样本/请求组合执行以提高硬件利用率。",
     "why": "训练和推理吞吐高度依赖 batch 设计。",
-    "failure_conditions": "batch 过大增加内存和 latency；请求长度差异会造成 padding/调度浪费。",
+    "failure_conditions": [
+      "batch 过大增加内存和 latency；请求长度差异会造成 padding/调度浪费。"
+    ],
     "example": "动态组合多个 decode request。",
     "relations": [
       {
@@ -1565,18 +1424,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "用明确数据和协议测量模型或训练系统是否满足目标。",
     "why": "把“模型看起来更好”变成可审查的证据。",
-    "failure_conditions": "指标、数据、prompt 或 contamination 不受控会使结论失真。",
+    "failure_conditions": [
+      "指标、数据、prompt 或 contamination 不受控会使结论失真。"
+    ],
     "example": "锁定 eval set、prompt、seed 和 metric 比较多个 checkpoint。",
     "relations": [
       {
         "relation": "related_to",
         "kind": "related_to",
         "target": "Benchmark"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Reproducibility"
       },
       {
         "relation": "related_to",
@@ -1601,14 +1457,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "基于平均 token negative log-likelihood 的语言模型指标。",
     "why": "与训练目标直接相关，适合衡量预测分布拟合程度。",
-    "failure_conditions": "不同 tokenizer/数据集的 perplexity 通常不可直接横比。",
+    "failure_conditions": [
+      "不同 tokenizer/数据集的 perplexity 通常不可直接横比。"
+    ],
     "example": "在固定 tokenizer 与 held-out corpus 上比较 checkpoint。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Cross Entropy"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -1628,14 +1481,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "标准化任务、数据与评测协议的组合。",
     "why": "提供跨模型可比较的能力测量。",
-    "failure_conditions": "训练集泄漏、prompt tuning 和单一总分会造成误导。",
+    "failure_conditions": [
+      "训练集泄漏、prompt tuning 和单一总分会造成误导。"
+    ],
     "example": "用冻结协议运行多个任务并保留 raw outputs。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Evaluation"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -1655,14 +1505,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "训练数据中包含评测样本或其近似副本，导致测量被污染。",
     "why": "它会让 benchmark 提升看起来像泛化，实际可能是记忆。",
-    "failure_conditions": "仅查 exact string 会漏掉近重复/改写。",
+    "failure_conditions": [
+      "仅查 exact string 会漏掉近重复/改写。"
+    ],
     "example": "对 benchmark 与 pretraining corpus 做 exact + approximate overlap audit。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Benchmark"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -1682,7 +1529,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "针对具体任务能力而非训练 loss 的评测。",
     "why": "连接 scaling/训练指标与实际行为。",
-    "failure_conditions": "任务覆盖窄、prompt 选择偏置会夸大能力。",
+    "failure_conditions": [
+      "任务覆盖窄、prompt 选择偏置会夸大能力。"
+    ],
     "example": "分别评测数学、代码、知识问答而不是只看 perplexity。",
     "relations": [
       {
@@ -1709,14 +1558,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "由有限样本、随机 seed 和测量噪声带来的结果不确定性。",
     "why": "决定小分数差异是否值得解读。",
-    "failure_conditions": "只报点估计会把噪声当改进。",
+    "failure_conditions": [
+      "只报点估计会把噪声当改进。"
+    ],
     "example": "对多 seed 结果报告 mean/std 或 bootstrap interval。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Scaling Law"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -1736,7 +1582,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "控制其他因素，移除或改变一个组件以分析其因果贡献的实验。",
     "why": "帮助从复杂 LM 系统中获得可解释的工程判断。",
-    "failure_conditions": "一次改多个因素、训练预算不一致会让结论不可归因。",
+    "failure_conditions": [
+      "一次改多个因素、训练预算不一致会让结论不可归因。"
+    ],
     "example": "固定 compute，仅切换 data filter 或 architecture ingredient。",
     "relations": [
       {
@@ -1763,7 +1611,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "记录足够的代码、数据、配置和随机性信息，使结果可再次获得。",
     "why": "复杂训练系统必须靠可复现性区分真实改进与偶然结果。",
-    "failure_conditions": "版本、seed、data snapshot 或 eval protocol 缺失都会破坏复现。",
+    "failure_conditions": [
+      "版本、seed、data snapshot 或 eval protocol 缺失都会破坏复现。"
+    ],
     "example": "保存 git commit、config、dataset hash、seed 与 metric output。",
     "relations": [
       {
@@ -1792,7 +1642,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "用于基础 LM 预训练的大规模 token corpus。",
     "why": "数据内容与权重决定模型学习到的世界分布。",
-    "failure_conditions": "规模大不等于质量好，重复、污染、PII 和 domain skew 都会影响行为。",
+    "failure_conditions": [
+      "规模大不等于质量好，重复、污染、PII 和 domain skew 都会影响行为。"
+    ],
     "example": "从 Common Crawl 和高质量来源构建混合 corpus。",
     "relations": [
       {
@@ -1824,14 +1676,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "公开的大规模网页抓取数据来源。",
     "why": "是理解真实 pretraining data pipeline 的典型原始源。",
-    "failure_conditions": "原始网页包含导航、垃圾、重复、PII 和低质量内容，不能直接训练。",
+    "failure_conditions": [
+      "原始网页包含导航、垃圾、重复、PII 和低质量内容，不能直接训练。"
+    ],
     "example": "从 WARC/HTML 中抽取正文，再进入过滤与去重。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Pretraining Data"
-      },
       {
         "relation": "enables",
         "kind": "enables",
@@ -1851,14 +1700,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "从 HTML/网页结构中提取可训练正文文本。",
     "why": "决定后续过滤器看到的是内容还是模板噪声。",
-    "failure_conditions": "错误抽取会保留 boilerplate 或删除重要正文。",
+    "failure_conditions": [
+      "错误抽取会保留 boilerplate 或删除重要正文。"
+    ],
     "example": "将网页 HTML 转成清理后的正文字符串。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Common Crawl"
-      },
       {
         "relation": "enables",
         "kind": "enables",
@@ -1878,7 +1724,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "依据语言、质量、安全、规则或分类器保留/删除训练样本。",
     "why": "直接重塑训练分布。",
-    "failure_conditions": "过滤器偏差会系统性删除某类语言、风格或群体内容。",
+    "failure_conditions": [
+      "过滤器偏差会系统性删除某类语言、风格或群体内容。"
+    ],
     "example": "根据文本长度、语言、质量 score、unsafe score 进行筛选。",
     "relations": [
       {
@@ -1910,14 +1758,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "删除 exact 或 near-duplicate 样本，降低重复权重和泄漏。",
     "why": "影响 memorization、数据效率与 contamination。",
-    "failure_conditions": "只做 exact hash 会漏掉 boilerplate/近重复；过度去重也可能删掉合法模式。",
+    "failure_conditions": [
+      "只做 exact hash 会漏掉 boilerplate/近重复；过度去重也可能删掉合法模式。"
+    ],
     "example": "用 MinHash/LSH 类策略查找近重复文档。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Data Contamination"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -1937,15 +1782,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "检测并移除/处理个人可识别信息的过程。",
     "why": "降低训练数据隐私风险。",
-    "failure_conditions": "regex 覆盖不全；分类器误杀/漏检都需抽样审计。",
-    "example": "过滤电话号码、邮件、地址等敏感字段。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Data Filtering"
-      }
+    "failure_conditions": [
+      "regex 覆盖不全；分类器误杀/漏检都需抽样审计。"
     ],
+    "example": "过滤电话号码、邮件、地址等敏感字段。",
+    "relations": [],
     "weeks": [
       "w7"
     ],
@@ -1959,14 +1800,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "给文档估计“适合训练”的质量分数的模型或规则系统。",
     "why": "让大规模网页数据能按质量筛选/加权。",
-    "failure_conditions": "训练样本和标签偏差会固化成数据筛选偏差。",
+    "failure_conditions": [
+      "训练样本和标签偏差会固化成数据筛选偏差。"
+    ],
     "example": "用高质量 reference corpus 构建判别器后筛网页。",
     "relations": [
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Data Filtering"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -1986,20 +1824,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "多个来源/领域在训练 corpus 中的采样比例。",
     "why": "即使总 token 数相同，不同 mixture 会形成不同模型能力。",
-    "failure_conditions": "高质量小域被大规模通用数据淹没或人为过采样。",
-    "example": "配置 web/code/books/math 的采样权重。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Pretraining Data"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Dataset Bias"
-      }
+    "failure_conditions": [
+      "高质量小域被大规模通用数据淹没或人为过采样。"
     ],
+    "example": "配置 web/code/books/math 的采样权重。",
+    "relations": [],
     "weeks": [
       "w7"
     ],
@@ -2013,14 +1842,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "数据收集/过滤/采样造成的系统性分布偏差。",
     "why": "模型行为会继承并放大数据管线选择。",
-    "failure_conditions": "只看 aggregate quality，不做 slice audit 会隐藏偏差。",
+    "failure_conditions": [
+      "只看 aggregate quality，不做 slice audit 会隐藏偏差。"
+    ],
     "example": "比较不同语言/领域的 retention rate 与模型性能。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Data Filtering"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -2040,20 +1866,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "记录数据来源、版本、处理步骤和变换链的元数据。",
     "why": "没有 provenance 就无法审计、复现或解释模型行为。",
-    "failure_conditions": "数据 snapshot 或过滤配置缺失会让训练不可追踪。",
-    "example": "为每个 corpus shard 记录 source、timestamp、pipeline version。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Reproducibility"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Pretraining Data"
-      }
+    "failure_conditions": [
+      "数据 snapshot 或过滤配置缺失会让训练不可追踪。"
     ],
+    "example": "为每个 corpus shard 记录 source、timestamp、pipeline version。",
+    "relations": [],
     "weeks": [
       "w7"
     ],
@@ -2067,7 +1884,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "在示范的 input-output / reasoning traces 上继续监督训练基础模型。",
     "why": "把通用 next-token 模型塑造成更会遵循任务格式和行为的 policy 起点。",
-    "failure_conditions": "示范质量差或分布窄会直接限制行为。",
+    "failure_conditions": [
+      "示范质量差或分布窄会直接限制行为。"
+    ],
     "example": "用高质量数学推理轨迹训练 base LM。",
     "relations": [
       {
@@ -2094,15 +1913,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "用于训练模型遵循任务/指令的监督示范数据。",
     "why": "决定 SFT 模型学到的任务格式和行为先验。",
-    "failure_conditions": "示范模板偏差或错误 reasoning 会被模型模仿。",
-    "example": "prompt + reasoning trace + answer 三元组。",
-    "relations": [
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Supervised Fine-Tuning"
-      }
+    "failure_conditions": [
+      "示范模板偏差或错误 reasoning 会被模型模仿。"
     ],
+    "example": "prompt + reasoning trace + answer 三元组。",
+    "relations": [],
     "weeks": [
       "w8"
     ],
@@ -2116,14 +1931,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "表达两个或多个模型输出相对偏好的反馈数据。",
     "why": "可用于训练 reward model 或直接 preference optimization。",
-    "failure_conditions": "偏好噪声、标注策略和长度偏见会扭曲 reward。",
+    "failure_conditions": [
+      "偏好噪声、标注策略和长度偏见会扭曲 reward。"
+    ],
     "example": "标注 A/B response 中哪一个更符合目标。",
     "relations": [
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Reward Model"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -2143,7 +1955,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "把 response 映射到标量偏好/质量估计的模型。",
     "why": "在典型 RLHF 中把人类偏好转成可优化信号。",
-    "failure_conditions": "reward model 可被 policy exploit，且训练分布外不可靠。",
+    "failure_conditions": [
+      "reward model 可被 policy exploit，且训练分布外不可靠。"
+    ],
     "example": "在 pairwise preference 上学习 score(response)。",
     "relations": [
       {
@@ -2155,11 +1969,6 @@
         "relation": "enables",
         "kind": "enables",
         "target": "RLHF"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Reward Hacking"
       }
     ],
     "weeks": [
@@ -2175,14 +1984,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "利用人类反馈形成奖励信号并通过 RL 优化语言模型行为的一类流程。",
     "why": "连接 preference feedback 与 policy optimization。",
-    "failure_conditions": "“人类反馈”并不保证 reward 完整表达真实目标。",
+    "failure_conditions": [
+      "“人类反馈”并不保证 reward 完整表达真实目标。"
+    ],
     "example": "SFT policy → preference collection → reward → RL update。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Reward Model"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -2207,14 +2013,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "在给定 prompt/state 下定义输出 token/trajectory 分布的可训练模型。",
     "why": "RL 视角把语言模型看作产生动作序列的策略。",
-    "failure_conditions": "更新过大可能快速偏离 base/SFT 分布。",
+    "failure_conditions": [
+      "更新过大可能快速偏离 base/SFT 分布。"
+    ],
     "example": "当前 LM 根据 prompt 采样一条 reasoning trajectory。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Reinforcement Learning"
-      },
       {
         "relation": "enables",
         "kind": "enables",
@@ -2236,18 +2039,15 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "根据 policy 产生的行为和 reward 信号更新策略的方法族。",
     "why": "允许模型利用 outcome/feedback 优化监督数据没有直接给出的行为。",
-    "failure_conditions": "高方差、reward misspecification 与 distribution shift 会导致不稳定。",
+    "failure_conditions": [
+      "高方差、reward misspecification 与 distribution shift 会导致不稳定。"
+    ],
     "example": "采样多条输出、评分并根据优势更新模型。",
     "relations": [
       {
         "relation": "prerequisite",
         "kind": "prerequisite",
         "target": "Policy"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Reward Hacking"
       },
       {
         "relation": "enables",
@@ -2268,14 +2068,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "限制新 policy 与 reference policy 偏离程度的正则/约束。",
     "why": "在 RL post-training 中用于控制行为漂移和过度优化。",
-    "failure_conditions": "系数过强阻碍学习，过弱可能 reward overoptimization。",
+    "failure_conditions": [
+      "系数过强阻碍学习，过弱可能 reward overoptimization。"
+    ],
     "example": "对 policy/reference token distribution 的 KL 加 penalty。",
     "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "RLHF"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -2295,7 +2092,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "policy 找到提高 reward 却不真正满足设计者目标的捷径。",
     "why": "是 RL/对齐里最重要的失效模式之一。",
-    "failure_conditions": "同一 reward 同时当训练目标和最终质量标准会循环自证。",
+    "failure_conditions": [
+      "同一 reward 同时当训练目标和最终质量标准会循环自证。"
+    ],
     "example": "模型学会输出 verifier 接受但人类不认为正确的格式。",
     "relations": [
       {
@@ -2307,11 +2106,6 @@
         "relation": "related_to",
         "kind": "related_to",
         "target": "Verifiable Reward"
-      },
-      {
-        "relation": "opposes",
-        "kind": "opposes",
-        "target": "Alignment Evaluation"
       }
     ],
     "weeks": [
@@ -2329,14 +2123,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "由当前 policy 自己采样产生、用于 RL 更新的数据。",
     "why": "使训练分布随 policy 变化，是 RL 和 SFT 的关键区别。",
-    "failure_conditions": "rollout 配置或 stale policy 会改变更新分布。",
+    "failure_conditions": [
+      "rollout 配置或 stale policy 会改变更新分布。"
+    ],
     "example": "每轮用当前 checkpoint 对训练 prompts 重新采样。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Policy"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -2358,14 +2149,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "针对 post-training 目标、安全、任务遵循与副作用的独立评测。",
     "why": "防止把 reward 或单任务准确率当成“已经对齐”。",
-    "failure_conditions": "评测与训练 reward 同源、覆盖太窄会漏掉回归。",
+    "failure_conditions": [
+      "评测与训练 reward 同源、覆盖太窄会漏掉回归。"
+    ],
     "example": "用独立任务集检查准确率、长度、拒答与安全切片。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Evaluation"
-      },
       {
         "relation": "opposes",
         "kind": "opposes",
@@ -2387,14 +2175,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "用强化学习改善模型在多步推理任务上的策略与输出分布。",
     "why": "把可采样 reasoning trajectory 和 reward 结合起来学习。",
-    "failure_conditions": "训练 reward 的提高可能来自格式/长度/漏洞而非真实推理。",
+    "failure_conditions": [
+      "训练 reward 的提高可能来自格式/长度/漏洞而非真实推理。"
+    ],
     "example": "对数学题 rollout 多条 chain-of-thought 并用答案正确性奖励。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Reinforcement Learning"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -2419,20 +2204,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "可由程序/规则较可靠判定的 outcome 奖励。",
     "why": "让大量 reasoning rollout 能得到自动反馈。",
-    "failure_conditions": "verifier 仍可能有漏洞、污染或只覆盖最终答案而不覆盖过程。",
-    "example": "数学题最终答案与 ground truth 精确比对。",
-    "relations": [
-      {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Reasoning RL"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Reward Hacking"
-      }
+    "failure_conditions": [
+      "verifier 仍可能有漏洞、污染或只覆盖最终答案而不覆盖过程。"
     ],
+    "example": "数学题最终答案与 ground truth 精确比对。",
+    "relations": [],
     "weeks": [
       "w9"
     ],
@@ -2446,7 +2222,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "通过当前模型生成候选、筛选成功轨迹，再用成功样本继续监督改进的循环。",
     "why": "在 SFT 与 RL 之间提供一种自举式 reasoning 改进路径。",
-    "failure_conditions": "如果筛选器偏置或多样性不足，会反复强化局部策略。",
+    "failure_conditions": [
+      "如果筛选器偏置或多样性不足，会反复强化局部策略。"
+    ],
     "example": "采样多条 reasoning，保留验证成功的轨迹再 finetune。",
     "relations": [
       {
@@ -2473,14 +2251,11 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "基于同一 prompt 多个样本的组内相对 reward 构造 policy update 的方法。",
     "why": "是 2025 Assignment 5 reasoning RL 实践中的重要方法节点。",
-    "failure_conditions": "结果高度依赖 group sampling、reward normalization、KL 与实现细节。",
+    "failure_conditions": [
+      "结果高度依赖 group sampling、reward normalization、KL 与实现细节。"
+    ],
     "example": "对同一数学题采样一组 trajectories，用组内相对优势更新 policy。",
     "relations": [
-      {
-        "relation": "prerequisite",
-        "kind": "prerequisite",
-        "target": "Reasoning RL"
-      },
       {
         "relation": "related_to",
         "kind": "related_to",
@@ -2505,7 +2280,9 @@
     "status": "TEACHING_RECONSTRUCTION",
     "definition": "从 tokenization、architecture、training systems、scaling、data、evaluation 到 alignment 的完整语言模型工程栈。",
     "why": "是 CS336 “from scratch” 最终要建立的系统视角。",
-    "failure_conditions": "局部优化没有跨层验证时，可能把瓶颈或风险推到另一层。",
+    "failure_conditions": [
+      "局部优化没有跨层验证时，可能把瓶颈或风险推到另一层。"
+    ],
     "example": "修改 tokenizer 后重新检查 model shapes、training cost、data pipeline 和 eval。",
     "relations": [
       {
@@ -2534,6 +2311,30 @@
     ],
     "source_weeks": [
       "w9"
+    ]
+  },
+  "GPU Kernel": {
+    "id": "GPU Kernel",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "一次提交到 GPU 执行的并行程序单元。",
+    "why": "高性能 LM 系统由大量 kernel 的计算、数据移动与同步组成。",
+    "failure_conditions": [
+      "kernel launch、shape specialization、同步成本常被高层代码掩盖。"
+    ],
+    "example": "为 softmax 或 fused attention 编写专用 GPU kernel。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "GPU"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w3"
     ]
   }
 }

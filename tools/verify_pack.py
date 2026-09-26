@@ -126,6 +126,25 @@ def main(root: str) -> int:
     if total:
         fails.append(f"template filler detected: {total} records")
 
+
+
+    # 6. quiz cross-week dedup (issue #2/#3/#5)
+    weeks = ir.get("weeks", [])
+    qtexts = []
+    for w in weeks:
+        q = w.get("quiz") or {}
+        qtexts.append(json.dumps(q.get("q", "") + "|" + "|".join(q.get("choices", [])), ensure_ascii=False))
+    dup_q = len(qtexts) - len(set(qtexts))
+    print(f"[6] quiz cross-week duplicates: {dup_q} of {len(weeks)} weeks")
+    if dup_q:
+        fails.append(f"{dup_q} weeks share an identical quiz (placeholder repetition)")
+
+    # 7. failure_conditions must be list[str] (issue #4)
+    bad_fc = [x.get("id") for x in items if not isinstance(x.get("failure_conditions"), list)]
+    print(f"[7] failure_conditions not list[str]: {len(bad_fc)}")
+    if bad_fc:
+        fails.append(f"failure_conditions must be list[str] for: {bad_fc[:5]}")
+
     print()
     if fails:
         print("FAIL")

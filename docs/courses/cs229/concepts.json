@@ -1657,18 +1657,7 @@
       "正则强度选择不当会导致欠拟合或无法抑制过拟合"
     ],
     "example": "训练神经网络时加入权重惩罚减少过拟合。",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Learning Theory"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Statistical Learning"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "W04"
     ],
