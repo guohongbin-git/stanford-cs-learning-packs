@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.5",
+  "schema_version": "0.6",
   "program_id": "stanford_cs_program",
   "title": "Stanford Computer Science Human–Agent Co-learning Program Inventory",
   "as_of": "2026-09-24",
@@ -326,7 +326,7 @@
       "title": "Mathematical Foundations of Computing",
       "level": "CS100_intermediate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "HYPOTHESIS",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20103",
       "public_materials": {
         "youtube": "none_found",
@@ -702,7 +702,7 @@
       "title": "Operating Systems Principles",
       "level": "CS100_intermediate",
       "track": "Systems",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "HYPOTHESIS",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20111",
       "public_materials": {
         "youtube": "none_found",
@@ -1110,7 +1110,7 @@
       "title": "Game Development",
       "level": "CS100_intermediate",
       "track": "Graphics & Games",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "HYPOTHESIS",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20146",
       "public_materials": {
         "youtube": "unverified",
@@ -1196,7 +1196,7 @@
       "title": "Introduction to Human-Computer Interaction Design",
       "level": "CS100_intermediate",
       "track": "HCI",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "HYPOTHESIS",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20147",
       "public_materials": {
         "youtube": "none_found",
@@ -1251,7 +1251,7 @@
       "title": "Introduction to Computer Graphics and Imaging",
       "level": "CS100_intermediate",
       "track": "Graphics & Vision",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "HYPOTHESIS",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20148",
       "public_materials": {
         "youtube": "none_found",
@@ -1352,7 +1352,7 @@
       "title": "Introduction to the Theory of Computation",
       "level": "CS100_intermediate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "HYPOTHESIS",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20154",
       "public_materials": {
         "youtube": "none_found",
@@ -1381,7 +1381,7 @@
       "title": "Computer and Network Security",
       "level": "CS100_intermediate",
       "track": "Security",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "HYPOTHESIS",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20155",
       "public_materials": {
         "youtube": "none_found",
@@ -1441,7 +1441,7 @@
       "title": "Design and Analysis of Algorithms",
       "level": "CS100_intermediate",
       "track": "Theory",
-      "evidence_status": "SOURCE_CONFIRMED",
+      "evidence_status": "HYPOTHESIS",
       "evidence_url": "https://explorecourses.stanford.edu/search?view=catalog&q=CS%20161",
       "public_materials": {
         "youtube": "none_found",
@@ -5696,7 +5696,11 @@
       "CS230",
       "CS25",
       "CS336"
-    ]
+    ],
+    "evidence_status_counts": {
+      "SOURCE_CONFIRMED": 160,
+      "HYPOTHESIS": 8
+    }
   },
   "youtube_verification": {
     "policy": "v0.3 recency-gated policy (reference 2026-09): a YouTube course binding qualifies as confirmed_recent only when a public Stanford/course lecture-series playlist can be bound to an offering in Autumn 2023 or later. Historical confirmed playlists older than the cutoff are retained as archived and MUST NOT enter generation_queue. none_found still means a dedicated search found no qualifying public YouTube series at the time of verification; pending_verification at the program-material layer means no accepted recent material binding is currently available.",
@@ -6139,5 +6143,23 @@
       "CS106B"
     ],
     "note": "Expanded-source search (SEE/class-archive/official YouTube) completed for all 9 gateway courses."
+  },
+  "v06_changes": {
+    "corrected": [
+      "CS103",
+      "CS111",
+      "CS146",
+      "CS147",
+      "CS148",
+      "CS154",
+      "CS155",
+      "CS161"
+    ],
+    "correction": "searched_not_found courses had evidence_status=SOURCE_CONFIRMED, which contradicts 'no official playlist found'. Repointed to HYPOTHESIS (speculative, content inferred from catalog title only, no official video to verify against). This is a data-integrity fix; youtube_* and material_status_* counts are unaffected (they key on the youtube field / material_status).",
+    "evidence_status_counts": {
+      "SOURCE_CONFIRMED": 160,
+      "HYPOTHESIS": 8
+    },
+    "rationale": "Owner decision 2026-09-26: evidence_status must reflect whether content was verified against an official source. searched_not_found = none_found on public playlist => cannot be SOURCE_CONFIRMED. Distinct from pending_verification (not yet searched) and from TEACHING_RECONSTRUCTION (reconstructed from actual lectures)."
   }
 }
