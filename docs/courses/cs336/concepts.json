@@ -2336,5 +2336,307 @@
     "source_weeks": [
       "w3"
     ]
+  },
+  "Mixed Precision Training": {
+    "id": "Mixed Precision Training",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "前向/反向用 BF16（无需 loss scaler）、优化器内保留 FP32 master weights 的混合精度训练。",
+    "why": "BF16 指数位宽、动态范围大，可在不丢精度的前提下省显存、提速；FP32 master weights 保证微小更新不被舍入截断。",
+    "failure_conditions": [
+      "用 FP16 且不加动态 loss scaling 会在窄动态范围下溢出/下溢；优化器不用 FP32 master weights 会让微小更新被截断而停滞。"
+    ],
+    "example": "BF16 前向/反向 + FP32 optimizer state 训练同一 LM。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "FSDP"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "DDP"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Gradient Synchronization"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Memory Hierarchy"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w2",
+      "w7",
+      "w8",
+      "A2"
+    ]
+  },
+  "Activation Checkpointing": {
+    "id": "Activation Checkpointing",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "前向仅保存块入口激活、反向就地重算中间激活的 checkpointing 策略。",
+    "why": "以约 +30% 前向 FLOPs 换取激活显存从 O(B·S·H·L) 降到 O(√L)，是大模型训练的显存关键。",
+    "failure_conditions": [
+      "重算粒度（块入口 vs 层入口）与内存/计算权衡不当会让显存优化失效或反向变慢。"
+    ],
+    "example": "每 Transformer block 入口保存激活，反向时重算。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "FSDP"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Memory Hierarchy"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Kernel Fusion"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w6",
+      "A2"
+    ]
+  },
+  "ZeRO-1": {
+    "id": "ZeRO-1",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "ZeRO stage 1：仅把 optimizer state（动量/二阶动量/master weights）按 data-parallel 组分片。",
+    "why": "AdamW 每参数 16 字节优化器状态按并行组切分后显存降至 1/P_DP，通信量与 DDP 持平。",
+    "failure_conditions": [
+      "分片粒度（per-param vs per-layer）与 gather 时机不当会增加通信或显存峰值。"
+    ],
+    "example": "8 卡上按组分片 optimizer state，前向/反向同步梯度后更新。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "FSDP"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Parameter Sharding"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Gradient Synchronization"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w7",
+      "w8",
+      "A2"
+    ]
+  },
+  "Gradient Bucketing": {
+    "id": "Gradient Bucketing",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "按反向拓扑逆序把梯度装入 25–40MB 桶、注册 post-accumulate-grad hook、用独立 CUDA 流非阻塞异步 all-reduce。",
+    "why": "把通信藏进前序层反向计算中，是 DDP 三段演进（朴素 → Flat → Bucketed）的终点。",
+    "failure_conditions": [
+      "桶大小、注册时机（post-accumulate）、流同步不当会造成结果不等价或通信重叠失效。"
+    ],
+    "example": "Flat DDP 按逆序分桶，异步流规约把通信隐藏到层反向里。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "DDP"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "All-Reduce"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Communication Overhead"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Gradient Synchronization"
+      }
+    ],
+    "weeks": [
+      "w4"
+    ],
+    "source_weeks": [
+      "w7",
+      "w8",
+      "A2"
+    ]
+  },
+  "MinHash + LSH Deduplication": {
+    "id": "MinHash + LSH Deduplication",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "k-shingle 切分 → MinHash 签名 → b 带 × r 行分桶，按 Jaccard 阈值筛候选对、再用精确哈希去重的近重复检测。",
+    "why": "Assignment 4 去重核心：近重复会让预训练过拟合与评测泄漏，精确去重用 SHA-256 + 布隆过滤器。",
+    "failure_conditions": [
+      "band/行参数 r,b 与阈值不匹配会让召回/误杀失衡；只靠精确去重会漏近重复。"
+    ],
+    "example": "k-shingle 生成 MinHash 签名，按分桶找候选对，SHA-256 精确判重。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Deduplication"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Data Filtering"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Pretraining Data"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w13",
+      "w14",
+      "A4"
+    ]
+  },
+  "DPO": {
+    "id": "DPO",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "Direct Preference Optimization：用 Bradley-Terry 潜在奖励解析代换，绕过显式 reward model，直接对偏好比闭式优化。",
+    "why": "Assignment 5 Optional Part 2 的安全对齐方法：含 β·log ratio 形式，避免训练独立 reward model。",
+    "failure_conditions": [
+      "beta 取值、reference model 冻结、ratio 数值稳定性（log 空间）不当会让优化发散或 KL 失控。"
+    ],
+    "example": "对偏好对 (w_win,w_lose) 用 log 空间 ratio 与 KL 惩罚直接优化 policy。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "RLHF"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Preference Data"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Reward Model"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Policy"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w15",
+      "w16",
+      "w17",
+      "A5"
+    ]
+  },
+  "Online Softmax": {
+    "id": "Online Softmax",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "分块下递推 m⁽ʲ⁾=max(m⁽ʲ⁻¹⁾, m̃⁽ʲ⁾)、l⁽ʲ⁾=e^(m⁽ʲ⁻¹⁾−m⁽ʲ⁾)l⁽ʲ⁻¹⁾+l̃⁽ʲ⁾ 及输出就地缩量的增量 softmax。",
+    "why": "FlashAttention 数值稳定性的关键机制：避免显式存储 N×N 概率矩阵，利用行最大值与归一化因子在核内重算。",
+    "failure_conditions": [
+      "递推常数（旧最大值重缩放）实现错误会让前向/反向与全量 softmax 不等价。"
+    ],
+    "example": "在线维护 max 与 sum 常数，分块计算 attention 并就地缩放输出。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "FlashAttention"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Kernel Fusion"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Causal Masking"
+      }
+    ],
+    "weeks": [
+      "w3"
+    ],
+    "source_weeks": [
+      "w6",
+      "A2"
+    ]
+  },
+  "Pre-LN Residual Stream": {
+    "id": "Pre-LN Residual Stream",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "Pre-LN 残差流：x_{l+1}=x_l+SubLayer(Norm(x_l))，归一化放在子层内、残差直达浅层。",
+    "why": "Post-LN 深层梯度指数衰减，Pre-LN 的恒等残差通路保证梯度直达浅层，是深层训练稳定的架构关键。",
+    "failure_conditions": [
+      "残差路径、归一化位置（pre vs post）与初始化不当会让深层梯度消失/爆炸。"
+    ],
+    "example": "比较 pre-norm 与 post-norm block 的梯度稳定性与深层训练收敛。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Transformer"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Normalization"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Causal Masking"
+      }
+    ],
+    "weeks": [
+      "w2"
+    ],
+    "source_weeks": [
+      "w3",
+      "w4"
+    ]
   }
 }

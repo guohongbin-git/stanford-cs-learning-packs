@@ -191,3 +191,6 @@ This package is a **Learning Source Package**, not an authoritative LM engineeri
 Some `relations` entries were derived from week co-membership during repair (the concept was previously unlinked). They express teaching co-occurrence (`related_to`), not typed conceptual semantics; authored edges are unchanged. A semantic relation-typing pass (prerequisite / enables / opposes) remains optional future work.
 
 > **QA assets in this repo**: interactive screenshots / fullpage render are not committed (repository size). The complete QA bundle (13 screenshots, contact sheet, full-page render) ships with the Release zip. This directory's `package_manifest.json` describes exactly the files present here.
+
+## Repair log (2026-09-27)
+- Added 8 concepts validated against the **official cs336 schedule** (cs336.stanford.edu, Spring 2026) and its assignments: **Mixed Precision Training**, **Activation Checkpointing**, **ZeRO-1**, **Gradient Bucketing**, **MinHash + LSH Deduplication**, **DPO**, **Online Softmax**, **Pre-LN Residual Stream**. Each is bound to its pack week and official `source_weeks` (lecture numbers / assignment numbers A2–A5), relation-linked (`related_to`) to existing concepts, keeping the relations graph acyclic. Concept count 90 → 98. Updated the HTML embedded `concepts` and regenerated `package_manifest.json`.
