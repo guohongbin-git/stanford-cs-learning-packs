@@ -11,14 +11,12 @@
     "example": "用 Karel 在网格世界中完成铺石、爬楼梯与放置网球等任务",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Control Flow"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Method Decomposition"
+        "kind": "related_to",
+        "target": "Control Flow"
       }
     ],
     "weeks": [
@@ -40,14 +38,12 @@
     "example": "学生编写if-else程序根据成绩输出等级。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Method Decomposition"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Variable Scope"
+        "kind": "related_to",
+        "target": "Method Decomposition"
       }
     ],
     "weeks": [
@@ -69,14 +65,12 @@
     "example": "绘制图形程序时把绘制步骤拆成多个方法。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Variable Scope"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Boolean Logic"
+        "kind": "related_to",
+        "target": "Variable Scope"
       }
     ],
     "weeks": [
@@ -98,7 +92,10 @@
     "example": "Java方法中使用局部变量保存计算中间值。",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Boolean Logic"
+      },
+      {
         "kind": "related_to",
         "target": "Boolean Logic"
       }
@@ -122,7 +119,6 @@
     "example": "登录系统中组合用户名和密码验证条件。",
     "relations": [
       {
-        "relation": "enables",
         "kind": "enables",
         "target": "Array"
       }
@@ -146,14 +142,12 @@
     "example": "保存一组学生成绩并按位置读取。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "ArrayList"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "String Manipulation"
+        "kind": "related_to",
+        "target": "ArrayList"
       }
     ],
     "weeks": [
@@ -175,14 +169,12 @@
     "example": "用动态数组维护待办清单并按下标随机访问。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "String Manipulation"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "File I/O"
+        "kind": "related_to",
+        "target": "String Manipulation"
       }
     ],
     "weeks": [
@@ -204,14 +196,12 @@
     "example": "解析用户输入的姓名并生成格式化输出。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "File I/O"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Debugging"
+        "kind": "related_to",
+        "target": "File I/O"
       }
     ],
     "weeks": [
@@ -233,14 +223,8 @@
     "example": "读取配置文件加载程序参数。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Debugging"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Object-Oriented Design"
+        "target": "Debugging"
       }
     ],
     "weeks": [
@@ -262,14 +246,12 @@
     "example": "使用调试器追踪循环变量变化。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Object-Oriented Design"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Class"
+        "kind": "related_to",
+        "target": "Object-Oriented Design"
       }
     ],
     "weeks": [
@@ -291,14 +273,12 @@
     "example": "设计图书管理系统中的Book和Library对象。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Class"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Inheritance"
+        "kind": "related_to",
+        "target": "Class"
       }
     ],
     "weeks": [
@@ -320,14 +300,12 @@
     "example": "创建Student类保存学生信息。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Inheritance"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Interface"
+        "kind": "related_to",
+        "target": "Inheritance"
       }
     ],
     "weeks": [
@@ -349,14 +327,12 @@
     "example": "让Animal子类共享基础行为。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Interface"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Polymorphism"
+        "kind": "related_to",
+        "target": "Interface"
       }
     ],
     "weeks": [
@@ -378,14 +354,8 @@
     "example": "定义Drawable接口统一图形对象行为。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Polymorphism"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Graphics Program"
+        "target": "Polymorphism"
       }
     ],
     "weeks": [
@@ -407,14 +377,12 @@
     "example": "使用Shape接口绘制不同图形。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Graphics Program"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Event Handler"
+        "kind": "related_to",
+        "target": "Graphics Program"
       }
     ],
     "weeks": [
@@ -436,14 +404,12 @@
     "example": "编写画布程序绘制移动球体。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Event Handler"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Exception Handling"
+        "kind": "related_to",
+        "target": "Event Handler"
       }
     ],
     "weeks": [
@@ -465,7 +431,10 @@
     "example": "点击按钮时触发更新界面。",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Exception Handling"
+      },
+      {
         "kind": "related_to",
         "target": "Exception Handling"
       }
@@ -489,7 +458,6 @@
     "example": "读取文件失败时提示用户重新选择。",
     "relations": [
       {
-        "relation": "enables",
         "kind": "enables",
         "target": "Algorithm Analysis"
       }
@@ -513,14 +481,12 @@
     "example": "比较两种Java排序程序处理大量整数的性能",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Big O Notation"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Testing"
+        "kind": "related_to",
+        "target": "Big O Notation"
       }
     ],
     "weeks": [
@@ -542,7 +508,10 @@
     "example": "分析Array遍历为O(n)并估计百万数据运行成本",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Testing"
+      },
+      {
         "kind": "related_to",
         "target": "Testing"
       }
@@ -566,14 +535,8 @@
     "example": "为Java方法设计不同输入检查返回结果",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Algorithm Analysis"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Big O Notation"
+        "kind": "enables",
+        "target": "Encapsulation"
       }
     ],
     "weeks": [
@@ -595,14 +558,12 @@
     "example": "设计BankAccount类隐藏余额修改细节",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Constructor"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Static Method"
+        "kind": "related_to",
+        "target": "Constructor"
       }
     ],
     "weeks": [
@@ -624,14 +585,12 @@
     "example": "创建Student对象时设置姓名和学号",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Static Method"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Parameter Passing"
+        "kind": "related_to",
+        "target": "Static Method"
       }
     ],
     "weeks": [
@@ -653,14 +612,12 @@
     "example": "使用Math.max调用静态方法比较两个数字",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Parameter Passing"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Return Value"
+        "kind": "related_to",
+        "target": "Parameter Passing"
       }
     ],
     "weeks": [
@@ -682,14 +639,12 @@
     "example": "调用方法传入数组并修改其中元素",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Return Value"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Reference Type"
+        "kind": "related_to",
+        "target": "Return Value"
       }
     ],
     "weeks": [
@@ -711,14 +666,12 @@
     "example": "计算方法返回两个整数相加后的结果",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Reference Type"
+        "kind": "enables",
+        "target": "HashMap and Map Collections"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Primitive Type"
+        "kind": "related_to",
+        "target": "HashMap and Map Collections"
       }
     ],
     "weeks": [
@@ -740,14 +693,12 @@
     "example": "使用String引用指向文本对象进行处理",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Primitive Type"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Casting"
+        "kind": "related_to",
+        "target": "Primitive Type"
       }
     ],
     "weeks": [
@@ -769,7 +720,10 @@
     "example": "使用int变量保存学生成绩整数",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Casting"
+      },
+      {
         "kind": "related_to",
         "target": "Casting"
       }
@@ -793,8 +747,11 @@
     "example": "将Object引用转换为String读取文本",
     "relations": [
       {
-        "relation": "enables",
         "kind": "enables",
+        "target": "Console Output"
+      },
+      {
+        "kind": "related_to",
         "target": "Console Output"
       }
     ],
@@ -817,14 +774,12 @@
     "example": "使用System.out.println打印计算结果",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Graphics Object"
+        "kind": "enables",
+        "target": "Searching and Sorting"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Coordinate System"
+        "kind": "related_to",
+        "target": "Searching and Sorting"
       }
     ],
     "weeks": [
@@ -846,14 +801,12 @@
     "example": "使用Graphics绘制CS106A窗口中的图案",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Coordinate System"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Mouse Listener"
+        "kind": "related_to",
+        "target": "Coordinate System"
       }
     ],
     "weeks": [
@@ -875,14 +828,12 @@
     "example": "在画布坐标系中绘制圆形和矩形",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Mouse Listener"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Keyboard Listener"
+        "kind": "related_to",
+        "target": "Mouse Listener"
       }
     ],
     "weeks": [
@@ -904,14 +855,12 @@
     "example": "点击画布时创建新的图形对象",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Keyboard Listener"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Data Abstraction"
+        "kind": "related_to",
+        "target": "Keyboard Listener"
       }
     ],
     "weeks": [
@@ -933,14 +882,12 @@
     "example": "使用方向键控制屏幕中角色移动",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Data Abstraction"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Code Style"
+        "kind": "related_to",
+        "target": "Data Abstraction"
       }
     ],
     "weeks": [
@@ -962,14 +909,12 @@
     "example": "用List接口操作不同Java集合实现",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Code Style"
+        "kind": "enables",
+        "target": "Swing Components"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Documentation"
+        "kind": "related_to",
+        "target": "Swing Components"
       }
     ],
     "weeks": [
@@ -991,14 +936,12 @@
     "example": "按照Java命名规范编写类和方法",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Documentation"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "API Usage"
+        "kind": "related_to",
+        "target": "Documentation"
       }
     ],
     "weeks": [
@@ -1020,14 +963,12 @@
     "example": "为Java方法添加Javadoc描述参数和返回值",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "API Usage"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Karel the Robot"
+        "kind": "related_to",
+        "target": "API Usage"
       }
     ],
     "weeks": [
@@ -1049,14 +990,12 @@
     "example": "使用Java String API完成文本截取处理",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Karel the Robot"
+        "kind": "enables",
+        "target": "Threads and Concurrency"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Control Flow"
+        "kind": "related_to",
+        "target": "Threads and Concurrency"
       }
     ],
     "weeks": [
@@ -1078,14 +1017,12 @@
     "example": "用HashMap保存学生ID到姓名的映射关系",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Encapsulation"
+        "kind": "enables",
+        "target": "Iterator"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
-        "target": "Constructor"
+        "target": "Iterator"
       }
     ],
     "weeks": [
@@ -1107,14 +1044,8 @@
     "example": "使用Iterator遍历ArrayList并删除满足条件的元素",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Encapsulation"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Constructor"
+        "kind": "enables",
+        "target": "Reference Type"
       }
     ],
     "weeks": [
@@ -1136,14 +1067,8 @@
     "example": "使用JButton和JFrame创建简单计算器界面",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Graphics Object"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Coordinate System"
+        "kind": "enables",
+        "target": "Code Style"
       }
     ],
     "weeks": [
@@ -1163,18 +1088,7 @@
       "共享变量缺少同步会产生竞态条件"
     ],
     "example": "创建后台线程下载文件并更新界面状态",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Code Style"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Documentation"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "w9"
     ],
@@ -1194,14 +1108,8 @@
     "example": "比较线性查找和排序后二分查找效率",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Reference Type"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Primitive Type"
+        "kind": "enables",
+        "target": "Graphics Object"
       }
     ],
     "weeks": [
