@@ -2,3 +2,5 @@
 *.tmp
 *.log
 __pycache__/
+# pr_guard runtime output (per-run reports, stdout/stderr logs)
+/tools/reports/
