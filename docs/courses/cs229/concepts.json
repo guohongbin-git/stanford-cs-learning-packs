@@ -11,14 +11,12 @@
     "example": "使用标注图片训练模型识别物体类别。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Linear Regression"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Logistic Regression"
+        "kind": "related_to",
+        "target": "Linear Regression"
       }
     ],
     "weeks": [
@@ -42,14 +40,12 @@
     "example": "根据房屋面积预测连续价格数值。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Logistic Regression"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Generative Model"
+        "kind": "related_to",
+        "target": "Logistic Regression"
       }
     ],
     "weeks": [
@@ -71,14 +67,12 @@
     "example": "根据邮件词频预测垃圾邮件概率。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Generative Model"
+        "kind": "enables",
+        "target": "Gradient Descent"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Discriminative Model"
+        "kind": "related_to",
+        "target": "Gradient Descent"
       }
     ],
     "weeks": [
@@ -100,14 +94,12 @@
     "example": "学习图像分布后生成新的手写数字样本。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Discriminative Model"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "GLM"
+        "kind": "related_to",
+        "target": "Discriminative Model"
       }
     ],
     "weeks": [
@@ -129,14 +121,12 @@
     "example": "训练逻辑回归直接预测疾病类别概率。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "GLM"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "SVM"
+        "kind": "related_to",
+        "target": "GLM"
       }
     ],
     "weeks": [
@@ -158,14 +148,12 @@
     "example": "使用泊松回归预测单位时间事件发生次数。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "SVM"
+        "kind": "enables",
+        "target": "Prior"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Kernel Trick"
+        "kind": "related_to",
+        "target": "Prior"
       }
     ],
     "weeks": [
@@ -187,14 +175,12 @@
     "example": "文本分类中利用最大间隔分离正负样本。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Kernel Trick"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Margin"
+        "kind": "related_to",
+        "target": "Kernel Trick"
       }
     ],
     "weeks": [
@@ -216,14 +202,12 @@
     "example": "使用高斯核处理非线性可分数据分类。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Margin"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Learning Theory"
+        "kind": "related_to",
+        "target": "Margin"
       }
     ],
     "weeks": [
@@ -245,14 +229,12 @@
     "example": "支持向量机中计算分类超平面与最近样本距离。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Learning Theory"
+        "kind": "enables",
+        "target": "Convex Optimization"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Bias Variance Tradeoff"
+        "kind": "related_to",
+        "target": "Convex Optimization"
       }
     ],
     "weeks": [
@@ -274,14 +256,12 @@
     "example": "分析样本数量对模型泛化误差影响。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Bias Variance Tradeoff"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Regularization"
+        "kind": "related_to",
+        "target": "Bias Variance Tradeoff"
       }
     ],
     "weeks": [
@@ -303,14 +283,12 @@
     "example": "比较高阶模型与简单模型在测试误差上的变化。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Regularization"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Cross Validation"
+        "kind": "related_to",
+        "target": "Regularization"
       }
     ],
     "weeks": [
@@ -332,14 +310,12 @@
     "example": "岭回归中加入L2惩罚限制模型权重。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Cross Validation"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "EM Algorithm"
+        "kind": "related_to",
+        "target": "Cross Validation"
       }
     ],
     "weeks": [
@@ -361,14 +337,12 @@
     "example": "通过多折验证选择回归模型正则化强度。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "EM Algorithm"
+        "kind": "enables",
+        "target": "Loss Function"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Latent Variable"
+        "kind": "related_to",
+        "target": "Loss Function"
       }
     ],
     "weeks": [
@@ -390,14 +364,12 @@
     "example": "高斯混合模型中交替估计类别概率和参数。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Latent Variable"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "GMM"
+        "kind": "related_to",
+        "target": "Latent Variable"
       }
     ],
     "weeks": [
@@ -419,14 +391,12 @@
     "example": "图像生成模型中表示不可见语义因素。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "GMM"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "PCA"
+        "kind": "related_to",
+        "target": "GMM"
       }
     ],
     "weeks": [
@@ -448,14 +418,12 @@
     "example": "用多个高斯成分聚类用户行为模式。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "PCA"
+        "kind": "enables",
+        "target": "Clustering"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "SVD"
+        "kind": "related_to",
+        "target": "Clustering"
       }
     ],
     "weeks": [
@@ -477,14 +445,12 @@
     "example": "将高维人脸图像压缩到主要特征方向。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "SVD"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Eigenvector"
+        "kind": "related_to",
+        "target": "SVD"
       }
     ],
     "weeks": [
@@ -506,14 +472,12 @@
     "example": "推荐系统中分解用户物品评分矩阵。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Eigenvector"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Reinforcement Learning"
+        "kind": "related_to",
+        "target": "Eigenvector"
       }
     ],
     "weeks": [
@@ -535,14 +499,12 @@
     "example": "PCA中计算协方差矩阵主方向提取特征。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Reinforcement Learning"
+        "kind": "enables",
+        "target": "Feature Engineering"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "MDP"
+        "kind": "related_to",
+        "target": "Feature Engineering"
       }
     ],
     "weeks": [
@@ -564,14 +526,12 @@
     "example": "机器人通过试错奖励学习行走策略。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "MDP"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Policy"
+        "kind": "related_to",
+        "target": "MDP"
       }
     ],
     "weeks": [
@@ -593,14 +553,12 @@
     "example": "机器人导航中定义状态动作奖励转移关系。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Policy"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Value Function"
+        "kind": "related_to",
+        "target": "Policy"
       }
     ],
     "weeks": [
@@ -622,14 +580,12 @@
     "example": "机器人根据当前状态选择下一步控制动作。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Value Function"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Q Learning"
+        "kind": "related_to",
+        "target": "Value Function"
       }
     ],
     "weeks": [
@@ -651,14 +607,12 @@
     "example": "强化学习中估计状态未来累计奖励。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Q Learning"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Gradient Descent"
+        "kind": "related_to",
+        "target": "Q Learning"
       }
     ],
     "weeks": [
@@ -680,14 +634,8 @@
     "example": "游戏智能体通过奖励学习最佳移动策略。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Gradient Descent"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Maximum Likelihood"
+        "target": "Data Distribution Shift"
       }
     ],
     "weeks": [
@@ -709,14 +657,12 @@
     "example": "训练线性回归模型迭代降低均方误差。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Maximum Likelihood"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Loss Function"
+        "kind": "related_to",
+        "target": "Maximum Likelihood"
       }
     ],
     "weeks": [
@@ -738,14 +684,12 @@
     "example": "根据用户点击数据估计广告点击概率参数。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Loss Function"
+        "kind": "enables",
+        "target": "Optimization"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Feature Engineering"
+        "kind": "related_to",
+        "target": "Optimization"
       }
     ],
     "weeks": [
@@ -767,14 +711,12 @@
     "example": "使用平方误差衡量回归预测偏差。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Feature Engineering"
+        "kind": "enables",
+        "target": "Training Error"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Evaluation Metric"
+        "kind": "related_to",
+        "target": "Training Error"
       }
     ],
     "weeks": [
@@ -796,14 +738,12 @@
     "example": "为房价预测构造面积和位置组合特征。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Evaluation Metric"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Error Analysis"
+        "kind": "related_to",
+        "target": "Evaluation Metric"
       }
     ],
     "weeks": [
@@ -825,14 +765,12 @@
     "example": "使用F1分数评价类别不均衡分类模型。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Error Analysis"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Data Distribution Shift"
+        "kind": "related_to",
+        "target": "Error Analysis"
       }
     ],
     "weeks": [
@@ -854,14 +792,8 @@
     "example": "检查分类错误样本定位数据标注问题。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Data Distribution Shift"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Optimization"
+        "target": "Reinforcement Learning"
       }
     ],
     "weeks": [
@@ -885,14 +817,12 @@
     "example": "监控线上推荐数据变化发现用户行为漂移。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Optimization"
+        "kind": "enables",
+        "target": "Self-Supervised Learning"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Convex Optimization"
+        "kind": "related_to",
+        "target": "Self-Supervised Learning"
       }
     ],
     "weeks": [
@@ -914,14 +844,12 @@
     "example": "训练机器学习模型时寻找最小损失参数。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Convex Optimization"
+        "kind": "enables",
+        "target": "Classification"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Dual Problem"
+        "kind": "related_to",
+        "target": "Classification"
       }
     ],
     "weeks": [
@@ -945,14 +873,12 @@
     "example": "使用凸优化求解支持向量机分类参数。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Dual Problem"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Prior"
+        "kind": "related_to",
+        "target": "Dual Problem"
       }
     ],
     "weeks": [
@@ -974,14 +900,12 @@
     "example": "利用对偶形式求解带约束的SVM优化问题。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Prior"
+        "kind": "enables",
+        "target": "Support Vector"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Posterior"
+        "kind": "related_to",
+        "target": "Support Vector"
       }
     ],
     "weeks": [
@@ -1003,14 +927,12 @@
     "example": "贝叶斯分类中使用历史疾病比例作为先验。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Posterior"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Bayes Rule"
+        "kind": "related_to",
+        "target": "Posterior"
       }
     ],
     "weeks": [
@@ -1032,14 +954,12 @@
     "example": "医学诊断中结合检测结果更新疾病概率。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Bayes Rule"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Classification"
+        "kind": "related_to",
+        "target": "Bayes Rule"
       }
     ],
     "weeks": [
@@ -1061,14 +981,12 @@
     "example": "医学检测中根据阳性结果更新患者患病概率。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Classification"
+        "kind": "enables",
+        "target": "Naive Bayes"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Regression"
+        "kind": "related_to",
+        "target": "Naive Bayes"
       }
     ],
     "weeks": [
@@ -1090,14 +1008,12 @@
     "example": "邮件过滤系统根据文本特征判断垃圾邮件类别。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Regression"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Clustering"
+        "kind": "related_to",
+        "target": "Regression"
       }
     ],
     "weeks": [
@@ -1119,14 +1035,12 @@
     "example": "根据历史销售数据预测未来销量变化。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Clustering"
+        "kind": "enables",
+        "target": "Gradient"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Density Estimation"
+        "kind": "related_to",
+        "target": "Gradient"
       }
     ],
     "weeks": [
@@ -1148,14 +1062,12 @@
     "example": "用户画像系统根据消费行为划分客户群体。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Density Estimation"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Training Error"
+        "kind": "related_to",
+        "target": "Density Estimation"
       }
     ],
     "weeks": [
@@ -1177,14 +1089,8 @@
     "example": "根据样本估计股票收益概率分布。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Training Error"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Test Error"
+        "target": "PCA"
       }
     ],
     "weeks": [
@@ -1206,14 +1112,12 @@
     "example": "统计训练集预测结果与真实标签差异。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Test Error"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Overfitting"
+        "kind": "related_to",
+        "target": "Test Error"
       }
     ],
     "weeks": [
@@ -1235,14 +1139,12 @@
     "example": "在未见测试数据上计算模型预测误差。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Overfitting"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Underfitting"
+        "kind": "related_to",
+        "target": "Overfitting"
       }
     ],
     "weeks": [
@@ -1264,14 +1166,12 @@
     "example": "深度模型记忆训练图片导致测试准确率下降。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Underfitting"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Hyperparameter"
+        "kind": "related_to",
+        "target": "Underfitting"
       }
     ],
     "weeks": [
@@ -1293,14 +1193,12 @@
     "example": "简单线性模型无法拟合复杂用户行为。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Hyperparameter"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Model Selection"
+        "kind": "related_to",
+        "target": "Hyperparameter"
       }
     ],
     "weeks": [
@@ -1322,14 +1220,12 @@
     "example": "调整学习率和正则强度选择最佳模型配置。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Model Selection"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Statistical Learning"
+        "kind": "related_to",
+        "target": "Model Selection"
       }
     ],
     "weeks": [
@@ -1351,7 +1247,10 @@
     "example": "比较不同复杂度模型选择最佳预测方案。",
     "relations": [
       {
-        "relation": "related_to",
+        "kind": "enables",
+        "target": "Statistical Learning"
+      },
+      {
         "kind": "related_to",
         "target": "Statistical Learning"
       }
@@ -1377,8 +1276,11 @@
     "example": "分析训练样本规模对预测误差影响。",
     "relations": [
       {
-        "relation": "enables",
         "kind": "enables",
+        "target": "Decision Boundary"
+      },
+      {
+        "kind": "related_to",
         "target": "Decision Boundary"
       }
     ],
@@ -1403,14 +1305,12 @@
     "example": "二维分类任务中绘制不同类别分隔曲线。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Support Vector"
+        "kind": "enables",
+        "target": "Empirical Risk"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Feature Mapping"
+        "kind": "related_to",
+        "target": "Empirical Risk"
       }
     ],
     "weeks": [
@@ -1432,14 +1332,12 @@
     "example": "SVM分类中选择决定边界的关键样本。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Feature Mapping"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Naive Bayes"
+        "kind": "related_to",
+        "target": "Feature Mapping"
       }
     ],
     "weeks": [
@@ -1461,14 +1359,8 @@
     "example": "将二维输入映射到高维空间处理非线性分类。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Naive Bayes"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "GDA"
+        "target": "Learning Theory"
       }
     ],
     "weeks": [
@@ -1490,14 +1382,12 @@
     "example": "垃圾邮件过滤中根据词频计算类别概率。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "GDA"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Exponential Family"
+        "kind": "related_to",
+        "target": "GDA"
       }
     ],
     "weeks": [
@@ -1519,14 +1409,12 @@
     "example": "根据类别高斯分布预测新闻文本所属主题。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Exponential Family"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Likelihood"
+        "kind": "related_to",
+        "target": "Exponential Family"
       }
     ],
     "weeks": [
@@ -1548,14 +1436,12 @@
     "example": "用统一概率形式表示伯努利和高斯分布。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
+        "kind": "enables",
         "target": "Likelihood"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
-        "target": "Empirical Risk"
+        "kind": "related_to",
+        "target": "Likelihood"
       }
     ],
     "weeks": [
@@ -1577,14 +1463,8 @@
     "example": "计算参数产生观测数据的可能程度。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Empirical Risk"
-      },
-      {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Gradient"
+        "target": "SVM"
       }
     ],
     "weeks": [
@@ -1606,13 +1486,11 @@
     "example": "计算训练样本平均损失评价模型拟合程度。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Gradient"
+        "kind": "enables",
+        "target": "Regularizer"
       },
       {
-        "relation": "enables",
-        "kind": "enables",
+        "kind": "related_to",
         "target": "Regularizer"
       }
     ],
@@ -1635,9 +1513,8 @@
     "example": "计算损失函数对权重变化方向用于更新参数。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Regularizer"
+        "kind": "enables",
+        "target": "Generative Model"
       }
     ],
     "weeks": [
@@ -1659,14 +1536,12 @@
     "example": "训练神经网络时加入权重惩罚减少过拟合。",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Learning Theory"
+        "kind": "enables",
+        "target": "Generalization"
       },
       {
-        "relation": "related_to",
         "kind": "related_to",
-        "target": "Statistical Learning"
+        "target": "Generalization"
       }
     ],
     "weeks": [
@@ -1688,9 +1563,12 @@
     "example": "比较训练集和测试集表现判断模型迁移能力。",
     "relations": [
       {
-        "relation": "enables",
         "kind": "enables",
-        "target": "Supervised Learning"
+        "target": "Neural Networks"
+      },
+      {
+        "kind": "related_to",
+        "target": "Neural Networks"
       }
     ],
     "weeks": [
@@ -1712,14 +1590,8 @@
     "example": "使用多层感知机预测用户购买概率",
     "relations": [
       {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Learning Theory"
-      },
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Statistical Learning"
+        "kind": "enables",
+        "target": "EM Algorithm"
       }
     ],
     "weeks": [
@@ -1739,13 +1611,7 @@
       "预训练任务与下游目标不匹配会降低迁移效果"
     ],
     "example": "利用掩码预测训练文本表示模型",
-    "relations": [
-      {
-        "relation": "related_to",
-        "kind": "related_to",
-        "target": "Data Distribution Shift"
-      }
-    ],
+    "relations": [],
     "weeks": [
       "W08"
     ],
