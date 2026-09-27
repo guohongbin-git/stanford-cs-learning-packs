@@ -496,7 +496,7 @@
     "id": "Bayesian Network",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "利用有向无环图表示变量概率依赖关系的模型。",
+    "definition": "利用有向无环图表示变量概率依赖关系的模型。 d-separation 刻画条件独立性；变量消元法（Variable Elimination）与信念传播是精确推理算法。",
     "why": "表达复杂不确定因素之间的结构关系。",
     "failure_conditions": [
       "错误边结构会导致概率推断偏差。"
@@ -712,7 +712,7 @@
     "id": "CSP and Backtracking",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "约束满足问题将变量、取值域和约束定义为搜索空间，通过回溯寻找解",
+    "definition": "约束满足问题将变量、取值域和约束定义为搜索空间，通过回溯寻找解 AC-3 弧一致性在回溯前剪除无域值变量，提前传播约束、缩小搜索空间。",
     "why": "用变量、取值域与约束描述组合问题并求解",
     "failure_conditions": [
       "约束传播不足会导致搜索空间爆炸"
@@ -770,7 +770,7 @@
     "id": "Q-Learning",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "通过更新状态动作价值函数Q学习无需模型的最优策略",
+    "definition": "通过更新状态动作价值函数Q学习无需模型的最优策略 深度 Q 网络（DQN）用神经网络拟合 Q 函数，是 Q-Learning 的深度扩展。",
     "why": "在未知模型中通过采样估计动作价值并改进策略",
     "failure_conditions": [
       "探索不足会导致无法发现高价值动作"
@@ -799,7 +799,7 @@
     "id": "Expectimax and Alpha-Beta Pruning",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "用于博弈搜索的期望节点计算和无关分支剪枝优化方法",
+    "definition": "用于博弈搜索的期望节点计算和无关分支剪枝优化方法 蒙特树搜索（MCTS）是博弈树搜索的蒙特 Carlo 随机扩展。",
     "why": "在含随机或对抗因素的游戏树中高效搜索",
     "failure_conditions": [
       "错误评估随机节点会导致选择错误行动"
@@ -857,7 +857,7 @@
     "id": "Particle Filtering",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "用带权样本序列近似动态系统后验分布的序贯蒙特卡洛方法。",
+    "definition": "用带权样本序列近似动态系统后验分布的序贯蒙特卡洛方法。 隐马尔可夫模型（HMM）的前向-后向算法与 Viterbi 是粒子滤波的离散序列推理对应。",
     "why": "用带权样本序列近似动态系统的后验分布",
     "failure_conditions": [
       "长期不重采样导致权重集中到少数粒子（权重退化），后验近似失真"
@@ -886,7 +886,7 @@
     "id": "Linear Regression Basics",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "利用线性函数拟合输入变量与连续输出关系的方法",
+    "definition": "利用线性函数拟合输入变量与连续输出关系的方法 感知机（Perceptron）是线性分类器，Novikoff 定理给出可分离情形下的收敛步数界。",
     "why": "建立输入到连续输出的线性映射作为监督学习基线",
     "failure_conditions": [
       "线性假设无法表达复杂非线性关系"
@@ -909,6 +909,176 @@
     ],
     "source_weeks": [
       "w1"
+    ]
+  },
+  "MCTS (Monte Carlo Tree Search)": {
+    "id": "MCTS (Monte Carlo Tree Search)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "蒙特树搜索：用随机模拟（rollout）估计树节点价值，结合探索与利用（UCT 上界）在大型分支因子的博弈树中进行高质量搜索。",
+    "why": "无需精确价值函数即可在大分支因子博弈中规划。",
+    "failure_conditions": [
+      "模拟策略不当会导致节点估值系统性偏差。"
+    ],
+    "example": "AlphaGo 用 MCTS 进行落子搜索（结合策略网络与价值网络）。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Expectimax and Alpha-Beta Pruning"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Minimax"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "A Star Search"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "DQN (Deep Q-Network)": {
+    "id": "DQN (Deep Q-Network)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "深度 Q 网络：用神经网络拟合 Q 函数，结合经验回放（experience replay）与目标网络（target network）稳定 Q-Learning 的训练。",
+    "why": "使 Q-Learning 可扩展到高维状态（如图像输入）。",
+    "failure_conditions": [
+      "样本相关 / 目标不稳定会导致发散；需经验回放与目标网络稳定。"
+    ],
+    "example": "用 CNN 拟合 Atari 游戏状态-动作价值实现端到端控制。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Q-Learning"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Markov Decision Process"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Value Function"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "d-separation": {
+    "id": "d-separation (有分隔)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "d-separation（有向分离）是贝叶斯网络中判断条件独立性的图准则：依据某节点集下路径是“开放”还是“阻塞”决定条件独立性是否成立。",
+    "why": "从图结构直接读出条件独立性，简化联合概率分解。",
+    "failure_conditions": [
+      "错误判断开放 / 阻塞会导致错误的独立性假设。"
+    ],
+    "example": "已知共同原因（common cause）节点时，其两个子节点 d-分离。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bayesian Network"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Conditional Independence"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Factor Graph"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Variable Elimination": {
+    "id": "Variable Elimination (变量消元法)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "变量消元法是精确推理算法：按变量顺序将因子相乘并求和消去，避免对消去变量重复求和。",
+    "why": "以因子化分解降低联合概率边际计算的指数代价。",
+    "failure_conditions": [
+      "消除顺序（宽度）选择不当会指数级增大中间因子。"
+    ],
+    "example": "按最佳消除顺序计算事件边际概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bayesian Network"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Factor Graph"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Conditional Independence"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "DPLL (Davis-Putnam-Logemann-Loveland)": {
+    "id": "DPLL (Davis-Putnam-Logemann-Loveland)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "DPLL 是完整的回溯搜索求解一阶逻辑 / SAT 算法，结合单元传播（unit propagation）与纯符号规则（pure symbol）剪枝。",
+    "why": "为逻辑推理提供完备的判定过程。",
+    "failure_conditions": [
+      "不加入子句学习（clause learning）时在大实例上效率低。"
+    ],
+    "example": "用 DPLL 判定逻辑基的可满足性（SAT）。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "First Order Logic"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Knowledge Base"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "CSP and Backtracking"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
     ]
   }
 }
