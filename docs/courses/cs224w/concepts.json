@@ -90,7 +90,7 @@
     "id": "Node2Vec",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "结合返回参数和探索参数控制随机游走偏好的节点嵌入算法。",
+    "definition": "结合返回参数和探索参数控制随机游走偏好的节点嵌入算法。 其负采样目标亦可解释为矩阵分解（NetMF），使有偏随机游走与谱分解统一。 其负采样目标亦可解释为矩阵分解（NetMF），使有偏随机游走与谱分解统一。",
     "why": "同时捕获节点同质性和结构角色。",
     "failure_conditions": [
       "参数设置不当会导致局部或全局信息不足。"
@@ -119,7 +119,7 @@
     "id": "DeepWalk",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "利用随机游走产生节点序列并使用语言模型思想学习节点表示的方法。",
+    "definition": "利用随机游走产生节点序列并使用语言模型思想学习节点表示的方法。 其负采样目标可解释为矩阵分解（NetMF / Network Embedding as Matrix Factorization），将随机游走嵌入与谱方法统一起来。 其负采样目标可解释为矩阵分解（NetMF / Network Embedding as Matrix Factorization），将随机游走嵌入与谱方法统一起来。",
     "why": "连接图表示学习和自然语言处理技术。",
     "failure_conditions": [
       "游走样本不足会降低嵌入质量。"
@@ -235,7 +235,7 @@
     "id": "GCN",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "基于归一化邻接矩阵进行图卷积传播的神经网络模型。",
+    "definition": "基于归一化邻接矩阵进行图卷积传播的神经网络模型。 与 ChebNet（谱卷积切线展开）同属谱方法 GNN；单层 GCN 是 ChebNet 的一阶近似。 与 ChebNet（谱卷积切线展开）同属谱方法 GNN；单层 GCN 是 ChebNet 的一阶近似。",
     "why": "提供经典节点分类方法。",
     "failure_conditions": [
       "层数过深会产生表示过度平滑。"
@@ -457,7 +457,7 @@
     "id": "Link Prediction",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "预测图中潜在边存在可能性的任务。",
+    "definition": "预测图中潜在边存在可能性的任务。 涵盖知识图链接预测（TransE/TransR/RotatE）与图协同过滤推荐（LightGCN）。 涵盖知识图链接预测（TransE/TransR/RotatE）与图协同过滤推荐（LightGCN）。",
     "why": "发现隐藏关系。",
     "failure_conditions": [
       "训练边负采样不合理会造成偏差。"
@@ -499,7 +499,7 @@
     "id": "Motif",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "图中频繁出现的小规模结构模式。",
+    "definition": "图中频繁出现的小规模结构模式。 与图元（graphlet）计数（GDV）互补：Motif 侧重功能子结构，Graphlets/GDV 侧重子图结构计数。 与图元（graphlet）计数（GDV）互补：Motif 侧重功能子结构，Graphlets/GDV 侧重子图结构计数。",
     "why": "分析局部关系规律。",
     "failure_conditions": [
       "忽略高阶结构会遗漏网络模式。"
@@ -557,7 +557,7 @@
     "id": "Graph Generation",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "生成具有目标结构特征的新图的方法。",
+    "definition": "生成具有目标结构特征的新图的方法。 代表性工作 GraphRNN（序列分解）与 GCPN（自回归生成）将图生成建模为序列/树生成。 代表性工作 GraphRNN（序列分解）与 GCPN（自回归生成）将图生成建模为序列/树生成。",
     "why": "模拟复杂网络。",
     "failure_conditions": [
       "生成模型不能保持统计特征会失真。"
@@ -721,7 +721,7 @@
     "id": "KG Reasoning",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "根据实体关系图中的已有事实推断未知关系的方法",
+    "definition": "根据实体关系图中的已有事实推断未知关系的方法 知识推理包含平移模型 TransE/TransR 与旋转模型 RotatE，用于知识图链接预测。 知识推理包含平移模型 TransE/TransR 与旋转模型 RotatE，用于知识图链接预测。",
     "why": "在知识图谱上推断缺失关系与多跳事实",
     "failure_conditions": [
       "错误实体关系会产生错误推理链"
@@ -750,7 +750,7 @@
     "id": "Scaling Up GNNs",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "通过采样、分布式训练等方法扩展GNN处理大规模图",
+    "definition": "通过采样、分布式训练等方法扩展GNN处理大规模图 扩展到推荐系统：LightGCN、NNCF 将图神经网络用于图协同过滤。 扩展到推荐系统：LightGCN、NNCF 将图神经网络用于图协同过滤。",
     "why": "在大图上通过采样与分区实现可扩展训练",
     "failure_conditions": [
       "邻居爆炸导致计算和存储成本过高"
@@ -766,6 +766,108 @@
         "relation": "related_to",
         "kind": "related_to",
         "target": "Subgraph"
+      }
+    ],
+    "weeks": [
+      "w8"
+    ],
+    "source_weeks": [
+      "w8"
+    ]
+  },
+  "GIN (Graph Isomorphism Network)": {
+    "id": "GIN (Graph Isomorphism Network)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "图同构网络，理论上等价于 Weisfeiler-Lehman 测试：通过可学习的、可逆的聚合-合并函数达到 GNN 判别能力的理论上限。",
+    "why": "从理论刻画 GNN 的判别力，给出构造更强 GNN 的指南（如何避免信息丢失）。",
+    "failure_conditions": [
+      "聚合函数不可逆（如集合平均丢失重复度信息）则无法区分子图计数。"
+    ],
+    "example": "用带可学习权重的求和聚合而非平均，使 GIN 能区分不同结构的图。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Weisfeiler-Lehman Test"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Graph Neural Network"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Expressiveness"
+      }
+    ],
+    "weeks": [
+      "w6"
+    ],
+    "source_weeks": [
+      "w6"
+    ]
+  },
+  "Graphlets / GDV": {
+    "id": "Graphlets / GDV",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "图元（graphlet）是连通子图的基本计数单元；图元计数向量（Graphlet Degree Vector, GDV）将每个节点按其局部子图结构计数刻画为高维向量。",
+    "why": "通过局部子图结构计数刻画节点结构角色，用于节点分类、结构等价与子图匹配。",
+    "failure_conditions": [
+      "高维 GDV 在高阶稠密图上计算代价大且过拟合。"
+    ],
+    "example": "用 graphlet 响应向量（局部子图计数）对社交图中节点做结构等价分类。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Motif"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Subgraph"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Expressiveness"
+      }
+    ],
+    "weeks": [
+      "w7"
+    ],
+    "source_weeks": [
+      "w7"
+    ]
+  },
+  "Graph Transformer (Graphormer)": {
+    "id": "Graph Transformer (Graphormer)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "将注意力机制扩展到图结构：通过位置编码、邻域偏置与键/值偏置，将图的结构信息（距离、邻接、中心性）注入 Transformer 注意力。",
+    "why": "在保持 Transformer 表达力的同时恢复被标准注意力丢掉的图结构信息。",
+    "failure_conditions": [
+      "编码设计不当会退化为普通消息传递，失去相对位置与邻域信息。"
+    ],
+    "example": "用高斯位置编码 + 键值偏置的 Graphormer 在分子属性预测上超越 GCN。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Attention in Graphs"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "GAT"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Expressiveness"
       }
     ],
     "weeks": [
