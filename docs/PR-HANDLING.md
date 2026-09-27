@@ -11,6 +11,8 @@ Maintained by `tools/pr_guard.sh`, run as an hourly [launchd](#cron-policy) job.
 | PR #7–#12 (relations DAG) | **CLOSED — superseded** | main (v2.4) already acyclic; PRs forked from pre-v2.4 main |
 | PR #13 (program_ir evidence_status) | **CLOSED — superseded** | `program/program_ir.json` structurally identical to main (zero diff) |
 | Issue #14 (cs336 Deep Research 建议书) | **RECORDED** | 8 new concepts — recorded for human/next-agent adoption (needs official-source validation) |
+| Issue #15 (cs229 Deep Research 建议书) | **ADOPTED** | 9 new concepts validated against official cs229 schedule (Spring 2026) |
+| Issue #16 (cs224n Deep Research 建议书) | **ADOPTED** | 10 new concepts validated against official cs224n schedule (Winter 2026) |
 
 ## 1. The three PR outcomes
 

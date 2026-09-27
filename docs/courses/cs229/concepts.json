@@ -1741,5 +1741,311 @@
     "source_weeks": [
       "W08"
     ]
+  },
+  "Locally Weighted Regression": {
+    "id": "Locally Weighted Regression (LWR)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "预测点动态加权 J(θ)=Σw⁽ⁱ⁾(y⁽ⁱ⁾−θᵀx⁽ⁱ⁾)² 的非参数方法，高斯核带宽 τ 控制局部权重，推理需保存全量数据。",
+    "why": "是 cs229 'non-parametric learning' 的代表：单点预测 O(md²+d³)，τ 大退化为线性回归、小则过拟合。",
+    "failure_conditions": [
+      "带宽 τ 选择不当会过拟合/欠拟合；推理阶段保留全部训练数据导致显存与延迟代价高。"
+    ],
+    "example": "对查询点用高斯核局部加权，求解加权最小二乘 θ。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Linear Regression"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Logistic Regression"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Optimization"
+      }
+    ],
+    "weeks": [
+      "W01"
+    ],
+    "source_weeks": [
+      "W01"
+    ]
+  },
+  "Newton Method (IRLS)": {
+    "id": "Newton Method (IRLS, 迭代重加权最小二乘)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "逻辑回归的二阶优化 θ←θ−H⁻¹∇ℓ，Hessian=−XᵀDX 处处负半定 ⟹ 对数似然严格凹、无虚假局部极小、二阶收敛。",
+    "why": "cs229 W01 优化核心：二阶收敛快、无虚假局部极小，是逻辑回归的数值求解器。",
+    "failure_conditions": [
+      "Hessian 奇异/非正定时 Newton 步发散；需信赖域或加正则。"
+    ],
+    "example": "每次迭代构造 Hessian=−XᵀDX 并求解线性系统更新 θ。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Logistic Regression"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Gradient Descent"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Optimization"
+      }
+    ],
+    "weeks": [
+      "W01"
+    ],
+    "source_weeks": [
+      "W01"
+    ]
+  },
+  "SMO (Sequential Minimal Optimization)": {
+    "id": "SMO (Sequential Minimal Optimization)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "求解 SVM 对偶 QP 的工程算法：因等式约束 Σαᵢy⁽ⁱ⁾=0 须双变量联合解析更新，含误差缓存 E 与剪辑截断。",
+    "why": "cs229 W03 SVM 对偶的落地求解器，避免通用 QP 求解器，每步只更新两个乘子。",
+    "failure_conditions": [
+      "选择 heuristics 与误差缓存实现不当会破坏 KKT 或变慢。"
+    ],
+    "example": "每步选两个违反 KKT 的乘子联合解析更新，其余固定。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "SVM"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Dual Problem"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Convex Optimization"
+      }
+    ],
+    "weeks": [
+      "W03"
+    ],
+    "source_weeks": [
+      "W03"
+    ]
+  },
+  "Laplace Smoothing": {
+    "id": "Laplace Smoothing (拉普拉斯平滑)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "朴素贝叶斯零概率问题的狄利克雷共轭先验解：分子加 1、分母加 K，等价 Dirichlet(α=1) 先验。",
+    "why": "cs229 W02 生成模型的关键：避免零概率连乘导致整体概率塌为零。",
+    "failure_conditions": [
+      "α 取值不当（α→0 退化为 MLE 零概率、α 过大过度平滑）会让概率估计偏差。"
+    ],
+    "example": "对词频加 1、分母加词汇表大小 K 计算后验概率。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Naive Bayes"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Generative Model"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bayes Rule"
+      }
+    ],
+    "weeks": [
+      "W02"
+    ],
+    "source_weeks": [
+      "W02"
+    ]
+  },
+  "Factor Analysis": {
+    "id": "Factor Analysis (因子分析)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "d>m 时全协方差 GMM 奇异的低秩解法：x=μ+Λz+ε，Σ=ΛΛᵀ+Ψ，E/M 步闭式更新。",
+    "why": "cs229 W05 EM 章节核心：低秩因子模型解释观测协方差，是潜变量建模的闭式方法。",
+    "failure_conditions": [
+      "因子数 m、旋转、初始值不当会让 E/M 收敛到次优点或过拟合。"
+    ],
+    "example": "E 步取潜变量后验、M 步更新 Λ/Ψ，交替直到收敛。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "EM Algorithm"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "GMM"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Latent Variable"
+      }
+    ],
+    "weeks": [
+      "W05"
+    ],
+    "source_weeks": [
+      "W05"
+    ]
+  },
+  "k-means": {
+    "id": "k-means (k 均值聚类)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "离散簇划分 + 坐标下降：分配步与质心步交替，畸变函数 J=Σ‖x−μₖ‖² 单调不增 ⟹ 有限步收敛。",
+    "why": "cs229 W05 Clustering 代表：与 GMM 的软分配互补，硬划分、闭式更新。",
+    "failure_conditions": [
+      "k 取值、初始中心、非球状簇会让结果偏差；对离群点敏感。"
+    ],
+    "example": "交替执行分配步（最近质心）与更新步（簇内均值）。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Clustering"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "GMM"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Density Estimation"
+      }
+    ],
+    "weeks": [
+      "W05"
+    ],
+    "source_weeks": [
+      "W05"
+    ]
+  },
+  "VC Dimension": {
+    "id": "VC Dimension (VC 维)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "打散与 VC 维：仿射超平面 VC 维 = n+1；泛化界 ε(ĥ)≤ε(h*)+O(√(VC log(VC/m)/m))。",
+    "why": "cs229 W04 Learning Theory 核心：SVM 大间隔压制有效 VC 维(min(⌈R²/γ²⌉,d)+1)，解释核方法不过拟合。",
+    "failure_conditions": [
+      "高 VC 维在高维空间仍可能过拟合（R/γ 大时）；经验界与泛化界存在 gap。"
+    ],
+    "example": "用 VC 维量化假设空间复杂度，代入泛化界。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Learning Theory"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bias Variance Tradeoff"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Statistical Learning"
+      }
+    ],
+    "weeks": [
+      "W04"
+    ],
+    "source_weeks": [
+      "W04"
+    ]
+  },
+  "Ensemble Learning": {
+    "id": "Ensemble Learning (Bagging / 随机森林 / AdaBoost)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "Bagging 方差分解 Var(f̄)=ρσ²+(1−ρ)σ²/B（随机森林靠特征子采样压低 ρ）；AdaBoost 前向分步 + 指数损失，αₘ=½log((1−εₘ)/εₘ)。",
+    "why": "cs229 W04 Learning Theory 应用：集成降低方差/偏差，间隔理论解释泛化。",
+    "failure_conditions": [
+      "样本/特征相关（ρ 高）时集成收益有限；AdaBoost 对离群点敏感。"
+    ],
+    "example": "Bagging 自助采样 + 森林平均；AdaBoost 指数损失前向分步。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Learning Theory"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bias Variance Tradeoff"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Regularization"
+      }
+    ],
+    "weeks": [
+      "W04"
+    ],
+    "source_weeks": [
+      "W04"
+    ]
+  },
+  "LQR": {
+    "id": "LQR (Linear Quadratic Regulator)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "连续状态最优控制：逆向归纳导出 Riccati 差分方程；最优控制律 a*=−Ks；确定性等价原理（增益与噪声 Σ_w 解耦）。",
+    "why": "cs229 'reinforcement learning and adaptive control' 的 LQR 解：Riccati 方程求最优增益，是 LQG 的基础。",
+    "failure_conditions": [
+      "Riccati 方程求解/稳态极限、模型失配会让增益次优或发散。"
+    ],
+    "example": "递推 Riccati 方程得增益 K，线性反馈律 a*=−Ks。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Reinforcement Learning"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "MDP"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Policy"
+      }
+    ],
+    "weeks": [
+      "W07"
+    ],
+    "source_weeks": [
+      "W07"
+    ]
   }
 }

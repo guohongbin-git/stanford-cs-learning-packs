@@ -8,18 +8,18 @@
     },
     {
       "path": "CS224N_interactive_Winter2021_v0.1.html",
-      "bytes": 651478,
-      "sha256": "165cbdc0877a389e790d357b4d7a7069dd26809b62e50601754505d5e3326ec4"
+      "bytes": 658070,
+      "sha256": "f328a4792547f4bec3cd6bba560053ce5f2c643ae61a861f279f4b5d0218977b"
     },
     {
       "path": "README.md",
-      "bytes": 1865,
-      "sha256": "bdf3100eb9a3679a1250a468baca874bee39a389d0c31f71f0b7ba8136e86190"
+      "bytes": 2846,
+      "sha256": "b3a78b047575a053a6c6e183a34970af8de9972b53feb245e5f122c9f9f561dd"
     },
     {
       "path": "concepts.json",
-      "bytes": 25383,
-      "sha256": "c5ba82a1357a16bd04f3f8d9b8c61564f7a4afc37a6fc15db87939c96a0bae5e"
+      "bytes": 36157,
+      "sha256": "684baac36c3c84febd4f92f539eda0da220d085e49c455025ffb68363d1c35b0"
     },
     {
       "path": "course_ir.json",
