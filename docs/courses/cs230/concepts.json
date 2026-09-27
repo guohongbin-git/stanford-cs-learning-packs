@@ -123,7 +123,7 @@
     "id": "Adam Optimizer",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "结合一阶梯度动量和二阶梯度平方估计的自适应优化算法",
+    "definition": "结合一阶梯度动量和二阶梯度平方估计的自适应优化算法 Adam 结合动量（EMA）与 RMSProp，并施加偏差修正（bias correction）以消除初始步大的偏差。",
     "why": "提升深层模型参数更新效率。",
     "failure_conditions": [
       "参数默认设置不适合任务会导致泛化下降"
@@ -147,7 +147,7 @@
     "id": "Regularization",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "通过限制模型复杂度减少训练误差和泛化误差差距的方法",
+    "definition": "通过限制模型复杂度减少训练误差和泛化误差差距的方法 通过 L2 权重衰减或 Dropout 抑制过拟合，权衡模型复杂度与泛化。",
     "why": "降低模型复杂度。",
     "failure_conditions": [
       "正则强度过大会导致欠拟合，过弱无法抑制过拟合"
@@ -171,7 +171,7 @@
     "id": "Dropout",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "训练时随机关闭部分神经元减少共适应关系的正则化技术",
+    "definition": "训练时随机关闭部分神经元减少共适应关系的正则化技术 训练时随机置零神经元并按 1 / (1 - p) 缩放（inverted dropout），验证时不丢弃但缩放量。",
     "why": "减少神经元共适应抑制过拟合。",
     "failure_conditions": [
       "推理阶段缩放错误会造成预测概率偏差"
@@ -195,7 +195,7 @@
     "id": "Batch Normalization",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "对小批量激活值进行归一化并学习缩放平移参数的训练技术",
+    "definition": "对小批量激活值进行归一化并学习缩放平移参数的训练技术 训练时用批次统计量、推理时用全局滑动平均（moving average）固定统计量，并引入缩放 / 平移参数（gamma / beta）。",
     "why": "稳定训练过程并加快网络收敛。",
     "failure_conditions": [
       "批量过小时统计量不稳定影响模型性能"
@@ -219,7 +219,7 @@
     "id": "CNN",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "用局部卷积核在空间维度共享权重提取图像特征的网络结构",
+    "definition": "用局部卷积核在空间维度共享权重提取图像特征的网络结构 残差网络（ResNet）用跳跃连接（skip connection）解决深层梯度消失，使极深度网络可训练。",
     "why": "支撑视觉任务中的局部特征提取。",
     "failure_conditions": [
       "池化过大或卷积核过小会导致细节丢失，感受野不足限制全局建模"
@@ -489,7 +489,7 @@
     "id": "Transformer",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "基于自注意力、前馈网络和位置编码构建的序列模型架构",
+    "definition": "基于自注意力、前馈网络和位置编码构建的序列模型架构 用多头自注意力（multi-head self-attention）与位置编码建模序列长距离依赖。",
     "why": "支撑现代序列建模架构。",
     "failure_conditions": [
       "缺少有效位置表示会削弱顺序建模能力"
@@ -994,7 +994,7 @@
     "id": "Embedding",
     "type": "Concept",
     "status": "TEACHING_RECONSTRUCTION",
-    "definition": "将离散对象映射到连续向量空间表示的方法",
+    "definition": "将离散对象映射到连续向量空间表示的方法 将离散符号（词、实体）映射为可学习的低维稠密向量。",
     "why": "把离散对象映射到连续空间。",
     "failure_conditions": [
       "向量空间无法保留关键语义关系会影响下游任务"
@@ -1473,6 +1473,79 @@
     ],
     "source_weeks": [
       "W04"
+    ]
+  },
+  "Weight Initialization (Xavier / He)": {
+    "id": "Weight Initialization (Xavier / He)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "权重初始化方法：Xavier 初始化使激活输入/输出方差保持（适用于 tanh/sigmoid），He 初始化补偿 ReLU 的方差缩放（适用于 ReLU 系激活函数）。",
+    "why": "正确的初始化避免梯度消失 / 爆炸并加速收敛。",
+    "failure_conditions": [
+      "初始化不当（零初始化或方差过大）会导致对称性失效、梯度消失或梯度爆炸。"
+    ],
+    "example": "激活函数为 ReLU 的隐藏层用 He 初始化（方差 = 2 / n_in），tanh 层用 Xavier 初始化。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Neural Network"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Activation Function"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Vanishing Gradient"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Exploding Gradient"
+      }
+    ],
+    "weeks": [
+      "W02"
+    ],
+    "source_weeks": [
+      "W02"
+    ]
+  },
+  "ML Strategy (Train-Dev)": {
+    "id": "ML Strategy (Train-Dev)",
+    "type": "Concept",
+    "status": "TEACHING_RECONSTRUCTION",
+    "definition": "机器学习策略：以指标驱动开发方向，按数据集规模选择训练 / 验证 / 测试集的划分与评估方式（小数据集信验证集，大规模数据信测试集）。",
+    "why": "决定数据划分与模型选择策略，避免评估偏差。",
+    "failure_conditions": [
+      "集划分不当或数据集规模与评估标准不匹配会导致错误地选择模型。"
+    ],
+    "example": "小数据集用留出法（hold-out）验证集比较模型，大规模数据用训练集 / 测试集比较。",
+    "relations": [
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Train Dev Test Split"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Error Analysis"
+      },
+      {
+        "relation": "related_to",
+        "kind": "related_to",
+        "target": "Bias Variance Tradeoff"
+      }
+    ],
+    "weeks": [
+      "W06"
+    ],
+    "source_weeks": [
+      "W06"
     ]
   }
 }
